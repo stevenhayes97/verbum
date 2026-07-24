@@ -42,6 +42,27 @@ decl.)`).
 
 Either way, the back shows the English translation.
 
+## Vocabulary Tags
+
+Every card can optionally carry `tags: string[]` — thematic labels (e.g.
+`family`, `military`) independent of part-of-speech, for pulling
+category-based vocabulary sets that cut across nouns/adjectives/etc. later:
+
+```json
+"tags": ["family", "military"]
+```
+
+Tags are assigned on demand by asking Claude to tag a batch of words —
+there's no runtime tagging logic in the app itself, to keep it static and
+dependency-free.
+
+**Canonical tag list** (empty until words are tagged): before adding a new
+tag, check this list first and reuse an existing one if it fits, to avoid
+near-duplicates like `war` / `military` / `battle` meaning the same thing.
+New tags get added here as they're introduced.
+
+- _(none yet)_
+
 ## Data storage
 
 Flashcards live in plain JSON under `public/data/`, one file per category
