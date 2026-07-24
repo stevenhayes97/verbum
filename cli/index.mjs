@@ -22,15 +22,23 @@ function ordinal(n) {
   return `${n}${ORDINAL_SUFFIXES[n] ?? 'th'}`;
 }
 
+function declinedFront(card) {
+  const genitive = `${card.genitive.stem}${BOLD_RED}${card.genitive.ending}${RESET}`;
+  return `${card.nominative} / ${genitive} / ${ordinal(card.declension)} / ${card.gender}`;
+}
+
+function tripletFront(card) {
+  return `${card.masculine} / ${card.feminine} / ${card.neuter} (${card.declensionLabel} decl.)`;
+}
+
 function frontText(card) {
   switch (card.partOfSpeech) {
     case 'noun':
-    case 'adjective': {
-      const genitive = `${card.genitive.stem}${BOLD_RED}${card.genitive.ending}${RESET}`;
-      return `${card.nominative} / ${genitive} / ${ordinal(card.declension)} / ${card.gender}`;
-    }
+      return declinedFront(card);
+    case 'adjective':
+      return card.adjectiveForm === 'triplet' ? tripletFront(card) : declinedFront(card);
     default:
-      return card.nominative ?? '?';
+      return card.nominative ?? card.masculine ?? '?';
   }
 }
 

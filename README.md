@@ -19,22 +19,28 @@ Then open the printed `http://localhost:5173` URL in a browser.
 
 ### Terminal version
 
-A plain-Node CLI reads the same `public/data/nouns.json` file (no build
-step, no dependencies):
+A plain-Node CLI reads the same `public/data/*.json` files (no build step,
+no dependencies):
 
 ```bash
 npm run cli
 ```
 
-Press Enter to reveal the English translation, `n`/`p` to move next/prev,
-`s` to shuffle, `q` to quit.
+Pick a deck, then press Enter to reveal the English translation, `n`/`p`
+to move next/prev, `s` to shuffle, `q` to quit.
 
 ## Card format
 
-Nouns and adjectives share the same front-face format: **Nominative /
-Genitive / Declension / Gender** (e.g. `Pater / Patris / 3rd / Male`, or
-`Bonus / Boni / 2nd / Male`), with the non-stem part of the genitive
-bolded for emphasis. The back shows the English translation.
+Nouns, and 3rd-declension adjectives (fortis, felix, ...), show
+**Nominative / Genitive / Declension / Gender** (e.g. `Pater / Patris /
+3rd / Male`), with the non-stem part of the genitive bolded for emphasis.
+
+1st/2nd-declension adjectives (bonus, magnus, ...) don't decline that way —
+they have distinct masculine/feminine/neuter forms — so they instead show
+**Masculine / Feminine / Neuter** (e.g. `Bonus / Bona / Bonum (1st/2nd
+decl.)`).
+
+Either way, the back shows the English translation.
 
 ## Data storage
 
@@ -61,10 +67,27 @@ To add a noun, append an entry to `public/data/nouns.json`:
 }
 ```
 
+To add a 1st/2nd-declension adjective, append an entry to
+`public/data/adjectives.json` in the triplet form instead:
+
+```json
+{
+  "id": "adj-example",
+  "partOfSpeech": "adjective",
+  "adjectiveForm": "triplet",
+  "masculine": "Altus",
+  "feminine": "Alta",
+  "neuter": "Altum",
+  "declensionLabel": "1st/2nd",
+  "english": "tall, deep"
+}
+```
+
 To add a new category later: create `public/data/<category>.json`, add the
 matching card type to `src/types/flashcard.ts`, add a render case in
-`src/components/Flashcard/Flashcard.tsx`, and flip `enabled: true` for that
-category in `src/data/categories.ts`.
+`src/components/Flashcard/Flashcard.tsx` (and mirror it in
+`cli/index.mjs`), and flip `enabled: true` for that category in
+`src/data/categories.ts`.
 
 ## Background image
 
