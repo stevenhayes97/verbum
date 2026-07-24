@@ -17,6 +17,18 @@ Then open the printed `http://localhost:5173` URL in a browser.
 
 `npm run build && npm run preview` builds and serves the production bundle.
 
+### Terminal version
+
+A plain-Node CLI reads the same `public/data/nouns.json` file (no build
+step, no dependencies):
+
+```bash
+npm run cli
+```
+
+Press Enter to reveal the English translation, `n`/`p` to move next/prev,
+`s` to shuffle, `q` to quit.
+
 ## Card format
 
 Each noun card shows **Nominative / Genitive / Declension / Gender** on the
@@ -31,8 +43,8 @@ chosen over a CSV/text file, a Latin dictionary API, or a local database:
 JSON is easy to hand-edit, supports the structured fields the app needs
 (like splitting the genitive into `stem`/`ending` so only the ending gets
 bolded), needs no server, and — being plain files rather than anything
-React/Vite-specific — can be read directly by a future terminal/CLI version
-of this app.
+React/Vite-specific — is read directly by both the web app and the
+terminal CLI (`cli/index.mjs`), in the same repo, with no duplication.
 
 To add a noun, append an entry to `public/data/nouns.json`:
 
