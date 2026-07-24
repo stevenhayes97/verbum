@@ -8,7 +8,8 @@
       "genitive": { "stem": "Patr", "ending": "is" },
       "declension": 3,
       "gender": "Male",
-      "english": "father"
+      "english": "father",
+      "tags": ["family"]
     },
     {
       "id": "noun-mater",
@@ -17,7 +18,8 @@
       "genitive": { "stem": "Matr", "ending": "is" },
       "declension": 3,
       "gender": "Female",
-      "english": "mother"
+      "english": "mother",
+      "tags": ["family"]
     },
     {
       "id": "noun-rex",
@@ -26,7 +28,8 @@
       "genitive": { "stem": "Reg", "ending": "is" },
       "declension": 3,
       "gender": "Male",
-      "english": "king"
+      "english": "king",
+      "tags": ["people", "royalty"]
     },
     {
       "id": "noun-puella",
@@ -35,7 +38,8 @@
       "genitive": { "stem": "Puell", "ending": "ae" },
       "declension": 1,
       "gender": "Female",
-      "english": "girl"
+      "english": "girl",
+      "tags": ["people"]
     },
     {
       "id": "noun-nauta",
@@ -44,7 +48,8 @@
       "genitive": { "stem": "Naut", "ending": "ae" },
       "declension": 1,
       "gender": "Male",
-      "english": "sailor"
+      "english": "sailor",
+      "tags": ["people"]
     },
     {
       "id": "noun-dominus",
@@ -53,7 +58,8 @@
       "genitive": { "stem": "Domin", "ending": "i" },
       "declension": 2,
       "gender": "Male",
-      "english": "lord, master"
+      "english": "lord, master",
+      "tags": ["people"]
     },
     {
       "id": "noun-servus",
@@ -62,7 +68,8 @@
       "genitive": { "stem": "Serv", "ending": "i" },
       "declension": 2,
       "gender": "Male",
-      "english": "servant, slave"
+      "english": "servant, slave",
+      "tags": ["people"]
     },
     {
       "id": "noun-templum",
@@ -71,7 +78,8 @@
       "genitive": { "stem": "Templ", "ending": "i" },
       "declension": 2,
       "gender": "Neuter",
-      "english": "temple"
+      "english": "temple",
+      "tags": ["religion"]
     },
     {
       "id": "noun-manus",
@@ -80,7 +88,8 @@
       "genitive": { "stem": "Man", "ending": "us" },
       "declension": 4,
       "gender": "Female",
-      "english": "hand"
+      "english": "hand",
+      "tags": ["body"]
     },
     {
       "id": "noun-res",
@@ -89,7 +98,8 @@
       "genitive": { "stem": "R", "ending": "ei" },
       "declension": 5,
       "gender": "Female",
-      "english": "thing"
+      "english": "thing",
+      "tags": ["abstract"]
     }
   ]
 }
