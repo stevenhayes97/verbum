@@ -12,6 +12,10 @@ export interface BaseCard {
   english: string;
   notes?: string;
   examples?: string[];
+  // Thematic tags cutting across part-of-speech categories (e.g. "family",
+  // "military"). Assigned on demand, checked against the canonical list in
+  // README.md to avoid duplicate/near-duplicate tags.
+  tags?: string[];
 }
 
 export interface DeclinedWord extends BaseCard {
