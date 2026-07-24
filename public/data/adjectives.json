@@ -9,7 +9,8 @@
       "feminine": "Bona",
       "neuter": "Bonum",
       "declensionLabel": "1st/2nd",
-      "english": "good"
+      "english": "good",
+      "tags": ["character"]
     },
     {
       "id": "adj-magnus",
@@ -19,7 +20,8 @@
       "feminine": "Magna",
       "neuter": "Magnum",
       "declensionLabel": "1st/2nd",
-      "english": "great, large"
+      "english": "great, large",
+      "tags": ["size"]
     },
     {
       "id": "adj-parvus",
@@ -29,7 +31,8 @@
       "feminine": "Parva",
       "neuter": "Parvum",
       "declensionLabel": "1st/2nd",
-      "english": "small"
+      "english": "small",
+      "tags": ["size"]
     },
     {
       "id": "adj-longus",
@@ -39,7 +42,8 @@
       "feminine": "Longa",
       "neuter": "Longum",
       "declensionLabel": "1st/2nd",
-      "english": "long"
+      "english": "long",
+      "tags": ["size"]
     },
     {
       "id": "adj-fortis",
@@ -49,7 +53,8 @@
       "genitive": { "stem": "Fort", "ending": "is" },
       "declension": 3,
       "gender": "Male",
-      "english": "brave, strong"
+      "english": "brave, strong",
+      "tags": ["character"]
     },
     {
       "id": "adj-brevis",
@@ -59,7 +64,8 @@
       "genitive": { "stem": "Brev", "ending": "is" },
       "declension": 3,
       "gender": "Male",
-      "english": "short, brief"
+      "english": "short, brief",
+      "tags": ["size"]
     },
     {
       "id": "adj-omnis",
@@ -69,7 +75,8 @@
       "genitive": { "stem": "Omn", "ending": "is" },
       "declension": 3,
       "gender": "Male",
-      "english": "all, every"
+      "english": "all, every",
+      "tags": ["quantity"]
     },
     {
       "id": "adj-felix",
@@ -79,7 +86,8 @@
       "genitive": { "stem": "Felic", "ending": "is" },
       "declension": 3,
       "gender": "Male",
-      "english": "happy, lucky"
+      "english": "happy, lucky",
+      "tags": ["character"]
     }
   ]
 }
