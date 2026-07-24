@@ -1,0 +1,77 @@
+{
+  "category": "adjectives",
+  "cards": [
+    {
+      "id": "adj-bonus",
+      "partOfSpeech": "adjective",
+      "nominative": "Bonus",
+      "genitive": { "stem": "Bon", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "good"
+    },
+    {
+      "id": "adj-magnus",
+      "partOfSpeech": "adjective",
+      "nominative": "Magnus",
+      "genitive": { "stem": "Magn", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "great, large"
+    },
+    {
+      "id": "adj-parvus",
+      "partOfSpeech": "adjective",
+      "nominative": "Parvus",
+      "genitive": { "stem": "Parv", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "small"
+    },
+    {
+      "id": "adj-longus",
+      "partOfSpeech": "adjective",
+      "nominative": "Longus",
+      "genitive": { "stem": "Long", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "long"
+    },
+    {
+      "id": "adj-fortis",
+      "partOfSpeech": "adjective",
+      "nominative": "Fortis",
+      "genitive": { "stem": "Fort", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "brave, strong"
+    },
+    {
+      "id": "adj-brevis",
+      "partOfSpeech": "adjective",
+      "nominative": "Brevis",
+      "genitive": { "stem": "Brev", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "short, brief"
+    },
+    {
+      "id": "adj-omnis",
+      "partOfSpeech": "adjective",
+      "nominative": "Omnis",
+      "genitive": { "stem": "Omn", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "all, every"
+    },
+    {
+      "id": "adj-felix",
+      "partOfSpeech": "adjective",
+      "nominative": "Felix",
+      "genitive": { "stem": "Felic", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "happy, lucky"
+    }
+  ]
+}

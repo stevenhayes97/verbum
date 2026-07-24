@@ -14,16 +14,23 @@ export interface BaseCard {
   examples?: string[];
 }
 
-export interface NounCard extends BaseCard {
-  partOfSpeech: 'noun';
+export interface DeclinedWord extends BaseCard {
   nominative: string;
   genitive: GenitiveForm;
   declension: 1 | 2 | 3 | 4 | 5;
   gender: Gender;
 }
 
-// Future: VerbCard, AdjectiveCard, PrepositionCard, OtherCard join this union.
-export type Card = NounCard;
+export interface NounCard extends DeclinedWord {
+  partOfSpeech: 'noun';
+}
+
+export interface AdjectiveCard extends DeclinedWord {
+  partOfSpeech: 'adjective';
+}
+
+// Future: VerbCard, PrepositionCard, OtherCard join this union.
+export type Card = NounCard | AdjectiveCard;
 
 export interface CategoryFile {
   category: Category;

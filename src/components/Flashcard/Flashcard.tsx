@@ -6,6 +6,7 @@ import styles from './Flashcard.module.css';
 function renderFront(card: Card) {
   switch (card.partOfSpeech) {
     case 'noun':
+    case 'adjective':
       return (
         <>
           {card.nominative} / <GenitiveDisplay genitive={card.genitive} /> / {ordinal(card.declension)} /{' '}

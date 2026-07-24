@@ -2,8 +2,8 @@
 
 Project Verbum - a local Latin flashcard app.
 
-Latin on the front, English on the back. The app currently ships with the
-**Nouns** category; Verbs, Adjectives, Prepositions, and Other are stubbed
+Latin on the front, English on the back. The app currently ships with
+**Nouns** and **Adjectives**; Verbs, Prepositions, and Other are stubbed
 in the UI and will be filled in later.
 
 ## Running locally
@@ -31,9 +31,10 @@ Press Enter to reveal the English translation, `n`/`p` to move next/prev,
 
 ## Card format
 
-Each noun card shows **Nominative / Genitive / Declension / Gender** on the
-front (e.g. `Pater / Patris / 3rd / Male`), with the non-stem part of the
-genitive bolded for emphasis. The back shows the English translation.
+Nouns and adjectives share the same front-face format: **Nominative /
+Genitive / Declension / Gender** (e.g. `Pater / Patris / 3rd / Male`, or
+`Bonus / Boni / 2nd / Male`), with the non-stem part of the genitive
+bolded for emphasis. The back shows the English translation.
 
 ## Data storage
 
