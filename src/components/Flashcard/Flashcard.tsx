@@ -51,7 +51,9 @@ export function Flashcard({ card }: { card: Card }) {
       }}
     >
       <div className={`${styles.inner} ${flipped ? styles.isFlipped : ''}`}>
-        <div className={`${styles.face} ${styles.front}`}>{renderFront(card)}</div>
+        <div className={`${styles.face} ${styles.front}`}>
+          <span>{renderFront(card)}</span>
+        </div>
         <div className={`${styles.face} ${styles.back}`}>{card.english}</div>
       </div>
     </div>
