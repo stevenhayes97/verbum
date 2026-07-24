@@ -1,0 +1,39 @@
+.app {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  margin: 0 0 24px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.status {
+  color: #fff;
+}
+
+.footer {
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.75rem;
+}

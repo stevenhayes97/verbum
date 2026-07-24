@@ -1,0 +1,95 @@
+{
+  "category": "nouns",
+  "cards": [
+    {
+      "id": "noun-pater",
+      "partOfSpeech": "noun",
+      "nominative": "Pater",
+      "genitive": { "stem": "Patr", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "father"
+    },
+    {
+      "id": "noun-mater",
+      "partOfSpeech": "noun",
+      "nominative": "Mater",
+      "genitive": { "stem": "Matr", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "mother"
+    },
+    {
+      "id": "noun-rex",
+      "partOfSpeech": "noun",
+      "nominative": "Rex",
+      "genitive": { "stem": "Reg", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "king"
+    },
+    {
+      "id": "noun-puella",
+      "partOfSpeech": "noun",
+      "nominative": "Puella",
+      "genitive": { "stem": "Puell", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "girl"
+    },
+    {
+      "id": "noun-nauta",
+      "partOfSpeech": "noun",
+      "nominative": "Nauta",
+      "genitive": { "stem": "Naut", "ending": "ae" },
+      "declension": 1,
+      "gender": "Male",
+      "english": "sailor"
+    },
+    {
+      "id": "noun-dominus",
+      "partOfSpeech": "noun",
+      "nominative": "Dominus",
+      "genitive": { "stem": "Domin", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "lord, master"
+    },
+    {
+      "id": "noun-servus",
+      "partOfSpeech": "noun",
+      "nominative": "Servus",
+      "genitive": { "stem": "Serv", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "servant, slave"
+    },
+    {
+      "id": "noun-templum",
+      "partOfSpeech": "noun",
+      "nominative": "Templum",
+      "genitive": { "stem": "Templ", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "temple"
+    },
+    {
+      "id": "noun-manus",
+      "partOfSpeech": "noun",
+      "nominative": "Manus",
+      "genitive": { "stem": "Man", "ending": "us" },
+      "declension": 4,
+      "gender": "Female",
+      "english": "hand"
+    },
+    {
+      "id": "noun-res",
+      "partOfSpeech": "noun",
+      "nominative": "Res",
+      "genitive": { "stem": "R", "ending": "ei" },
+      "declension": 5,
+      "gender": "Female",
+      "english": "thing"
+    }
+  ]
+}
