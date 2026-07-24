@@ -31,14 +31,21 @@ to move next/prev, `s` to shuffle, `q` to quit.
 
 ## Card format
 
-Nouns, and 3rd-declension adjectives (fortis, felix, ...), show
-**Nominative / Genitive / Declension / Gender** (e.g. `Pater / Patris /
-3rd / Male`), with the non-stem part of the genitive bolded for emphasis.
+Adjective format depends on which of two Latin patterns a word follows —
+mixing these up loses information, so it's worth getting right per word:
 
-1st/2nd-declension adjectives (bonus, magnus, ...) don't decline that way —
-they have distinct masculine/feminine/neuter forms — so they instead show
-**Masculine / Feminine / Neuter** (e.g. `Bonus / Bona / Bonum (1st/2nd
-decl.)`).
+- **One-termination adjectives** (felix, prudens, ...) share a single
+  nominative form across all genders, distinguished only by genitive —
+  exactly like a noun. These, and all nouns, show **Nominative / Genitive
+  / Declension / Gender** (e.g. `Pater / Patris / 3rd / Male`, or `Felix /
+  Felicis / 3rd / Male`), with the non-stem part of the genitive bolded.
+- **Triplet-form adjectives** have distinct forms per gender, so they show
+  **Masculine / Feminine / Neuter** instead. This covers both 1st/2nd
+  declension adjectives (bonus, magnus, ...), e.g. `Bonus / Bona / Bonum
+  (1st/2nd decl.)`, *and* 3rd-declension two-termination adjectives
+  (fortis, brevis, omnis, ...) where masculine and feminine happen to
+  share a form and only the neuter differs, e.g. `Omnis / Omnis / Omne
+  (3rd decl.)`. Only `declensionLabel` differs between the two.
 
 Either way, the back shows the English translation.
 
@@ -102,8 +109,8 @@ To add a noun, append an entry to `public/data/nouns.json`:
 }
 ```
 
-To add a 1st/2nd-declension adjective, append an entry to
-`public/data/adjectives.json` in the triplet form instead:
+To add a triplet-form adjective (1st/2nd declension, or 3rd declension
+two-termination), append an entry to `public/data/adjectives.json`:
 
 ```json
 {
