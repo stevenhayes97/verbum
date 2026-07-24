@@ -14,16 +14,38 @@ export interface BaseCard {
   examples?: string[];
 }
 
-export interface NounCard extends BaseCard {
-  partOfSpeech: 'noun';
+export interface DeclinedWord extends BaseCard {
   nominative: string;
   genitive: GenitiveForm;
   declension: 1 | 2 | 3 | 4 | 5;
   gender: Gender;
 }
 
-// Future: VerbCard, AdjectiveCard, PrepositionCard, OtherCard join this union.
-export type Card = NounCard;
+export interface NounCard extends DeclinedWord {
+  partOfSpeech: 'noun';
+}
+
+// 3rd-declension-style adjectives (fortis, felix, ...): same nominative/genitive
+// shape as a noun, since they don't have 3 distinct gender forms.
+export interface DeclinedAdjectiveCard extends DeclinedWord {
+  partOfSpeech: 'adjective';
+  adjectiveForm: 'declined';
+}
+
+// 1st/2nd-declension adjectives (bonus, -a, -um): distinct masculine/feminine/neuter forms.
+export interface TripleFormAdjectiveCard extends BaseCard {
+  partOfSpeech: 'adjective';
+  adjectiveForm: 'triplet';
+  masculine: string;
+  feminine: string;
+  neuter: string;
+  declensionLabel: string;
+}
+
+export type AdjectiveCard = DeclinedAdjectiveCard | TripleFormAdjectiveCard;
+
+// Future: VerbCard, PrepositionCard, OtherCard join this union.
+export type Card = NounCard | AdjectiveCard;
 
 export interface CategoryFile {
   category: Category;

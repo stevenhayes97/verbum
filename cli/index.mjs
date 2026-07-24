@@ -6,7 +6,13 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DATA_PATH = path.join(__dirname, '..', 'public', 'data', 'nouns.json');
+const DATA_DIR = path.join(__dirname, '..', 'public', 'data');
+
+// Mirrors the enabled entries in src/data/categories.ts.
+const CATEGORIES = [
+  { id: 'nouns', label: 'Nouns', file: 'nouns.json' },
+  { id: 'adjectives', label: 'Adjectives', file: 'adjectives.json' },
+];
 
 const BOLD_RED = '\x1b[1;31m';
 const RESET = '\x1b[0m';
@@ -16,9 +22,24 @@ function ordinal(n) {
   return `${n}${ORDINAL_SUFFIXES[n] ?? 'th'}`;
 }
 
-function frontText(card) {
+function declinedFront(card) {
   const genitive = `${card.genitive.stem}${BOLD_RED}${card.genitive.ending}${RESET}`;
   return `${card.nominative} / ${genitive} / ${ordinal(card.declension)} / ${card.gender}`;
+}
+
+function tripletFront(card) {
+  return `${card.masculine} / ${card.feminine} / ${card.neuter} (${card.declensionLabel} decl.)`;
+}
+
+function frontText(card) {
+  switch (card.partOfSpeech) {
+    case 'noun':
+      return declinedFront(card);
+    case 'adjective':
+      return card.adjectiveForm === 'triplet' ? tripletFront(card) : declinedFront(card);
+    default:
+      return card.nominative ?? card.masculine ?? '?';
+  }
 }
 
 function shuffle(items) {
@@ -30,19 +51,32 @@ function shuffle(items) {
   return result;
 }
 
+async function chooseCategory(rl) {
+  console.log('Verbum — choose a deck:\n');
+  CATEGORIES.forEach((c, i) => console.log(`  [${i + 1}] ${c.label}`));
+
+  while (true) {
+    const answer = (await rl.question('\n> ')).trim();
+    const choice = CATEGORIES[Number(answer) - 1];
+    if (choice) return choice;
+    console.log('Not a valid choice, try again.');
+  }
+}
+
 async function main() {
-  const raw = await readFile(DATA_PATH, 'utf8');
+  const rl = createInterface({ input: stdin, output: stdout });
+  const category = await chooseCategory(rl);
+
+  const raw = await readFile(path.join(DATA_DIR, category.file), 'utf8');
   const { cards } = JSON.parse(raw);
 
   let deck = cards;
   let index = 0;
   let revealed = false;
 
-  const rl = createInterface({ input: stdin, output: stdout });
-
   while (true) {
     const card = deck[index];
-    console.log(`\nVerbum — Nouns (${index + 1}/${deck.length})\n`);
+    console.log(`\nVerbum — ${category.label} (${index + 1}/${deck.length})\n`);
     console.log(frontText(card));
     if (revealed) console.log(`\n→ ${card.english}`);
 
