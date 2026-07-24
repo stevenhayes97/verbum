@@ -42,6 +42,12 @@ decl.)`).
 
 Either way, the back shows the English translation.
 
+## Spelling Conventions
+
+Classical Latin orthography sometimes allows either `I` or `J` for the
+same sound (e.g. `Ianuarius`/`Januarius`, `maior`/`major`, `eius`/`ejus`).
+**Prefer `I` over `J`** consistently across all vocabulary entries.
+
 ## Vocabulary Tags
 
 Every card can optionally carry `tags: string[]` — thematic labels (e.g.
