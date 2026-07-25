@@ -88,6 +88,61 @@
       "gender": "Male",
       "english": "happy, lucky",
       "tags": ["character"]
+    },
+    {
+      "id": "adj-meus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Meus",
+      "feminine": "Mea",
+      "neuter": "Meum",
+      "declensionLabel": "1st/2nd",
+      "english": "my, mine",
+      "tags": ["possessive"]
+    },
+    {
+      "id": "adj-tuus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Tuus",
+      "feminine": "Tua",
+      "neuter": "Tuum",
+      "declensionLabel": "1st/2nd",
+      "english": "your (singular), yours",
+      "tags": ["possessive"]
+    },
+    {
+      "id": "adj-suus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Suus",
+      "feminine": "Sua",
+      "neuter": "Suum",
+      "declensionLabel": "1st/2nd",
+      "english": "his/her/its/their own (reflexive)",
+      "tags": ["possessive"]
+    },
+    {
+      "id": "adj-noster",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Noster",
+      "feminine": "Nostra",
+      "neuter": "Nostrum",
+      "declensionLabel": "1st/2nd",
+      "english": "our, ours",
+      "tags": ["possessive"]
+    },
+    {
+      "id": "adj-vester",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Vester",
+      "feminine": "Vestra",
+      "neuter": "Vestrum",
+      "declensionLabel": "1st/2nd",
+      "english": "your (plural), yours",
+      "tags": ["possessive"]
     }
   ]
 }

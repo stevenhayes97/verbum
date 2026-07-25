@@ -140,6 +140,7 @@ they're introduced.
 - `size` — physical dimension: big/small/long/short (Magnus, Parvus, Longus, Brevis)
 - `character` — personal qualities/traits: virtue, fortune, disposition (Bonus, Fortis, Felix)
 - `quantity` — quantifiers (Omnis)
+- `possessive` — possessive adjectives (Meus, Tuus, Suus, Noster, Vester)
 
 ## Data storage
 
