@@ -37,7 +37,7 @@ function App() {
         return res.json() as Promise<CategoryFile>;
       })
       .then((data) => {
-        setCards(data.cards);
+        setCards(shuffle(data.cards));
         setCurrentIndex(0);
       })
       .catch((err: Error) => setError(err.message))

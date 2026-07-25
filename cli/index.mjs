@@ -86,7 +86,7 @@ async function main() {
   const raw = await readFile(path.join(DATA_DIR, category.file), 'utf8');
   const { cards } = JSON.parse(raw);
 
-  let deck = cards;
+  let deck = shuffle(cards);
   let index = 0;
   let revealed = false;
 
