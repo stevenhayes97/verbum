@@ -3,8 +3,8 @@
 Project Verbum - a local Latin flashcard app.
 
 Latin on the front, English on the back. The app currently ships with
-**Nouns**, **Adjectives**, and **Verbs**; Prepositions and Other are
-stubbed in the UI and will be filled in later.
+**Nouns**, **Adjectives**, **Verbs**, and **Adverbs**; Prepositions and
+Other are stubbed in the UI and will be filled in later.
 
 ## Running locally
 
@@ -64,6 +64,18 @@ always the plain `-us` form. Deponent and intransitive verbs (which don't
 cleanly take that form — e.g. `venio`'s 4th part is conventionally the
 supine `ventum`, not `ventus`) are deliberately not included yet; how to
 represent them is an open design question for when one gets added.
+
+Adverbs are indeclinable — a single fixed form, no gender/case/number
+variation — so unlike nouns/adjectives/verbs there's no multi-form
+citation to show. The card is just the adverb itself, with its ending
+bolded, plus the adjective it derives from for the pattern connection:
+e.g. `Fortiter (from Fortis)`. Formation is predictable from the source
+adjective's declension: 1st/2nd declension adjectives add `-ē` to the
+stem (`longus` → `longē`), 3rd declension adjectives add `-iter` (or
+just `-er` if the stem already ends in `-nt`, e.g. `prudens` → `prudenter`
+not `prudentiter`). Irregular/suppletive adverbs (e.g. `bonus` → `bene`,
+not the regular `bone`) are deliberately not included yet, same reasoning
+as the deferred deponent verbs.
 
 ## Spelling Conventions
 
@@ -153,6 +165,18 @@ To add a verb, append an entry to `public/data/verbs.json`:
   "perfectPassiveParticiple": "Spectatus",
   "conjugation": "1st",
   "english": "to watch, look at"
+}
+```
+
+To add an adverb, append an entry to `public/data/adverbs.json`:
+
+```json
+{
+  "id": "adv-example",
+  "partOfSpeech": "adverb",
+  "adverb": { "stem": "Cert", "ending": "e" },
+  "sourceAdjective": "Certus",
+  "english": "certainly"
 }
 ```
 
