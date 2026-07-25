@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import type { AdjectiveCard, Card, DeclinedWord, NounCard } from '../../types/flashcard';
-import { GenitiveDisplay, ordinal } from '../../utils/genitive';
+import type { AdjectiveCard, Card, DeclinedWord, NounCard, VerbCard } from '../../types/flashcard';
+import { StemEndingDisplay, ordinal } from '../../utils/stemEnding';
 import styles from './Flashcard.module.css';
 
 function declinedFront(card: DeclinedWord) {
   return (
     <>
-      {card.nominative} / <GenitiveDisplay genitive={card.genitive} /> / {ordinal(card.declension)} / {card.gender}
+      {card.nominative} / <StemEndingDisplay form={card.genitive} /> / {ordinal(card.declension)} / {card.gender}
     </>
   );
 }
@@ -19,12 +19,23 @@ function tripletFront(card: Extract<AdjectiveCard, { adjectiveForm: 'triplet' }>
   );
 }
 
+function verbFront(card: VerbCard) {
+  return (
+    <>
+      {card.presentFirstSingular} / <StemEndingDisplay form={card.infinitive} /> / {card.perfectFirstSingular} /{' '}
+      {card.perfectPassiveParticiple} ({card.conjugation} conj.)
+    </>
+  );
+}
+
 function renderFront(card: Card) {
   switch (card.partOfSpeech) {
     case 'noun':
       return declinedFront(card as NounCard);
     case 'adjective':
       return card.adjectiveForm === 'triplet' ? tripletFront(card) : declinedFront(card);
+    case 'verb':
+      return verbFront(card);
     default:
       return null;
   }

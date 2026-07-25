@@ -3,8 +3,8 @@
 Project Verbum - a local Latin flashcard app.
 
 Latin on the front, English on the back. The app currently ships with
-**Nouns** and **Adjectives**; Verbs, Prepositions, and Other are stubbed
-in the UI and will be filled in later.
+**Nouns**, **Adjectives**, and **Verbs**; Prepositions and Other are
+stubbed in the UI and will be filled in later.
 
 ## Running locally
 
@@ -31,16 +31,39 @@ to move next/prev, `s` to shuffle, `q` to quit.
 
 ## Card format
 
-Nouns, and 3rd-declension adjectives (fortis, felix, ...), show
-**Nominative / Genitive / Declension / Gender** (e.g. `Pater / Patris /
-3rd / Male`), with the non-stem part of the genitive bolded for emphasis.
+Adjective format depends on which of two Latin patterns a word follows —
+mixing these up loses information, so it's worth getting right per word:
 
-1st/2nd-declension adjectives (bonus, magnus, ...) don't decline that way —
-they have distinct masculine/feminine/neuter forms — so they instead show
-**Masculine / Feminine / Neuter** (e.g. `Bonus / Bona / Bonum (1st/2nd
-decl.)`).
+- **One-termination adjectives** (felix, prudens, ...) share a single
+  nominative form across all genders, distinguished only by genitive —
+  exactly like a noun. These, and all nouns, show **Nominative / Genitive
+  / Declension / Gender** (e.g. `Pater / Patris / 3rd / Male`, or `Felix /
+  Felicis / 3rd / Male`), with the non-stem part of the genitive bolded.
+- **Triplet-form adjectives** have distinct forms per gender, so they show
+  **Masculine / Feminine / Neuter** instead. This covers both 1st/2nd
+  declension adjectives (bonus, magnus, ...), e.g. `Bonus / Bona / Bonum
+  (1st/2nd decl.)`, *and* 3rd-declension two-termination adjectives
+  (fortis, brevis, omnis, ...) where masculine and feminine happen to
+  share a form and only the neuter differs, e.g. `Omnis / Omnis / Omne
+  (3rd decl.)`. Only `declensionLabel` differs between the two.
 
 Either way, the back shows the English translation.
+
+Verbs show the standard Latin citation form — the four **principal
+parts**: 1st singular present / infinitive / 1st singular perfect /
+perfect passive participle (PPP), with conjugation shown parenthetically,
+e.g. `Amo / Amare / Amavi / Amatus (1st conj.)`. The infinitive's ending
+is bolded, the same way the genitive's ending is bolded for nouns —
+it's what reveals the conjugation (`-are`/`-ere`/`-ere`/`-ire` for
+1st/2nd/3rd/4th). The perfect stem is often irregular and can't be
+derived from the present stem (`video` → `vidi`, not `videvi`), which is
+exactly why it's an explicit field rather than inferred.
+
+Note: all current seed verbs are regular and transitive, so the PPP is
+always the plain `-us` form. Deponent and intransitive verbs (which don't
+cleanly take that form — e.g. `venio`'s 4th part is conventionally the
+supine `ventum`, not `ventus`) are deliberately not included yet; how to
+represent them is an open design question for when one gets added.
 
 ## Spelling Conventions
 
@@ -102,8 +125,8 @@ To add a noun, append an entry to `public/data/nouns.json`:
 }
 ```
 
-To add a 1st/2nd-declension adjective, append an entry to
-`public/data/adjectives.json` in the triplet form instead:
+To add a triplet-form adjective (1st/2nd declension, or 3rd declension
+two-termination), append an entry to `public/data/adjectives.json`:
 
 ```json
 {
@@ -115,6 +138,21 @@ To add a 1st/2nd-declension adjective, append an entry to
   "neuter": "Altum",
   "declensionLabel": "1st/2nd",
   "english": "tall, deep"
+}
+```
+
+To add a verb, append an entry to `public/data/verbs.json`:
+
+```json
+{
+  "id": "verb-example",
+  "partOfSpeech": "verb",
+  "presentFirstSingular": "Specto",
+  "infinitive": { "stem": "Spect", "ending": "are" },
+  "perfectFirstSingular": "Spectavi",
+  "perfectPassiveParticiple": "Spectatus",
+  "conjugation": "1st",
+  "english": "to watch, look at"
 }
 ```
 

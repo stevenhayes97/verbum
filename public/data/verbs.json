@@ -1,0 +1,165 @@
+{
+  "category": "verbs",
+  "cards": [
+    {
+      "id": "verb-amo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Amo",
+      "infinitive": { "stem": "Am", "ending": "are" },
+      "perfectFirstSingular": "Amavi",
+      "perfectPassiveParticiple": "Amatus",
+      "conjugation": "1st",
+      "english": "to love"
+    },
+    {
+      "id": "verb-laudo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Laudo",
+      "infinitive": { "stem": "Laud", "ending": "are" },
+      "perfectFirstSingular": "Laudavi",
+      "perfectPassiveParticiple": "Laudatus",
+      "conjugation": "1st",
+      "english": "to praise"
+    },
+    {
+      "id": "verb-voco",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Voco",
+      "infinitive": { "stem": "Voc", "ending": "are" },
+      "perfectFirstSingular": "Vocavi",
+      "perfectPassiveParticiple": "Vocatus",
+      "conjugation": "1st",
+      "english": "to call"
+    },
+    {
+      "id": "verb-paro",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Paro",
+      "infinitive": { "stem": "Par", "ending": "are" },
+      "perfectFirstSingular": "Paravi",
+      "perfectPassiveParticiple": "Paratus",
+      "conjugation": "1st",
+      "english": "to prepare"
+    },
+    {
+      "id": "verb-video",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Video",
+      "infinitive": { "stem": "Vid", "ending": "ere" },
+      "perfectFirstSingular": "Vidi",
+      "perfectPassiveParticiple": "Visus",
+      "conjugation": "2nd",
+      "english": "to see"
+    },
+    {
+      "id": "verb-habeo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Habeo",
+      "infinitive": { "stem": "Hab", "ending": "ere" },
+      "perfectFirstSingular": "Habui",
+      "perfectPassiveParticiple": "Habitus",
+      "conjugation": "2nd",
+      "english": "to have"
+    },
+    {
+      "id": "verb-moneo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Moneo",
+      "infinitive": { "stem": "Mon", "ending": "ere" },
+      "perfectFirstSingular": "Monui",
+      "perfectPassiveParticiple": "Monitus",
+      "conjugation": "2nd",
+      "english": "to warn, advise"
+    },
+    {
+      "id": "verb-terreo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Terreo",
+      "infinitive": { "stem": "Terr", "ending": "ere" },
+      "perfectFirstSingular": "Terrui",
+      "perfectPassiveParticiple": "Territus",
+      "conjugation": "2nd",
+      "english": "to frighten"
+    },
+    {
+      "id": "verb-duco",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Duco",
+      "infinitive": { "stem": "Duc", "ending": "ere" },
+      "perfectFirstSingular": "Duxi",
+      "perfectPassiveParticiple": "Ductus",
+      "conjugation": "3rd",
+      "english": "to lead"
+    },
+    {
+      "id": "verb-mitto",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Mitto",
+      "infinitive": { "stem": "Mitt", "ending": "ere" },
+      "perfectFirstSingular": "Misi",
+      "perfectPassiveParticiple": "Missus",
+      "conjugation": "3rd",
+      "english": "to send"
+    },
+    {
+      "id": "verb-rego",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Rego",
+      "infinitive": { "stem": "Reg", "ending": "ere" },
+      "perfectFirstSingular": "Rexi",
+      "perfectPassiveParticiple": "Rectus",
+      "conjugation": "3rd",
+      "english": "to rule"
+    },
+    {
+      "id": "verb-scribo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Scribo",
+      "infinitive": { "stem": "Scrib", "ending": "ere" },
+      "perfectFirstSingular": "Scripsi",
+      "perfectPassiveParticiple": "Scriptus",
+      "conjugation": "3rd",
+      "english": "to write"
+    },
+    {
+      "id": "verb-audio",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Audio",
+      "infinitive": { "stem": "Aud", "ending": "ire" },
+      "perfectFirstSingular": "Audivi",
+      "perfectPassiveParticiple": "Auditus",
+      "conjugation": "4th",
+      "english": "to hear"
+    },
+    {
+      "id": "verb-munio",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Munio",
+      "infinitive": { "stem": "Mun", "ending": "ire" },
+      "perfectFirstSingular": "Munivi",
+      "perfectPassiveParticiple": "Munitus",
+      "conjugation": "4th",
+      "english": "to fortify"
+    },
+    {
+      "id": "verb-custodio",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Custodio",
+      "infinitive": { "stem": "Custod", "ending": "ire" },
+      "perfectFirstSingular": "Custodivi",
+      "perfectPassiveParticiple": "Custoditus",
+      "conjugation": "4th",
+      "english": "to guard"
+    },
+    {
+      "id": "verb-finio",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Finio",
+      "infinitive": { "stem": "Fin", "ending": "ire" },
+      "perfectFirstSingular": "Finivi",
+      "perfectPassiveParticiple": "Finitus",
+      "conjugation": "4th",
+      "english": "to finish, end"
+    }
+  ]
+}
