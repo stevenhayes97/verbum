@@ -13,7 +13,9 @@ npm install
 npm run dev
 ```
 
-Then open the printed `http://localhost:5173` URL in a browser.
+Then open the printed URL in a browser — note it's `http://localhost:5173/verbum/`,
+not the bare root, since `vite.config.ts` sets `base: '/verbum/'` to match
+the GitHub Pages deploy path (see "Deployment" below).
 
 `npm run build && npm run preview` builds and serves the production bundle.
 
@@ -28,6 +30,32 @@ npm run cli
 
 Pick a deck, then press Enter to reveal the English translation, `n`/`p`
 to move next/prev, `s` to shuffle, `q` to quit.
+
+## Deployment
+
+The web app deploys to GitHub Pages at
+**https://stevenhayes97.github.io/verbum/** via
+`.github/workflows/deploy.yml`, which builds and publishes `dist/`
+automatically on every push to `main`. No third-party service is
+involved — Pages is a built-in GitHub feature, so nothing beyond the
+existing repo access is granted to anyone.
+
+**One-time manual step required** (can't be done via API/CLI): in the
+repo's Settings → Pages, set "Build and deployment" → Source to
+**"GitHub Actions"**. Until that's set, the workflow's deploy step will
+fail even though the build succeeds.
+
+Because the site is served from a subpath (`/verbum/`) rather than a
+domain root, `vite.config.ts` sets `base: '/verbum/'`, and anything that
+would otherwise use a root-absolute path (`/data/...`, `/images/...`)
+has to account for that instead:
+- `src/data/categories.ts`'s `dataUrl`s are built from
+  `import.meta.env.BASE_URL` rather than hardcoded `/data/...` paths.
+- The background image is applied as an inline style in `App.tsx` (built
+  from `import.meta.env.BASE_URL` too), not as a plain CSS `url(...)` in
+  `index.css` — Vite doesn't rewrite root-absolute CSS `url()`s for a
+  non-root `base`, so a hardcoded path there would silently 404 in
+  production while still working in dev.
 
 ## Card format
 

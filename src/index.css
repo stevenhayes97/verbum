@@ -11,11 +11,8 @@ body,
 body {
   margin: 0;
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-  /* Drop a Roman Forum photo at public/images/roman-forum.jpg and it will
-     appear automatically, layered over this gradient fallback. */
-  background-image: url('/images/roman-forum.jpg'),
-    linear-gradient(160deg, #3a2f28 0%, #6b4f3a 45%, #8a6a4a 70%, #4a3527 100%);
-  background-size: cover, cover;
-  background-position: center, center;
-  background-attachment: fixed, fixed;
+  /* Background image is applied inline in App.tsx, not here — a plain CSS
+     url('/images/...') wouldn't account for Vite's configured base path
+     (e.g. the /verbum/ subpath on GitHub Pages). */
+  background-color: #1a1410;
 }
