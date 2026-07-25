@@ -7,6 +7,16 @@ import { CardNav } from './components/CardNav/CardNav';
 import { shuffle } from './utils/shuffle';
 import styles from './App.module.css';
 
+// Root-absolute CSS url()s don't account for Vite's configured base path
+// (e.g. the /verbum/ subpath on GitHub Pages), so this is built from
+// import.meta.env.BASE_URL and applied inline instead of in index.css.
+const backgroundStyle = {
+  backgroundImage: `url('${import.meta.env.BASE_URL}images/roman-forum.jpg'), linear-gradient(160deg, #3a2f28 0%, #6b4f3a 45%, #8a6a4a 70%, #4a3527 100%)`,
+  backgroundSize: 'cover, cover',
+  backgroundPosition: 'center, center',
+  backgroundAttachment: 'fixed, fixed',
+};
+
 function App() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('nouns');
   const [cards, setCards] = useState<Card[]>([]);
@@ -37,7 +47,7 @@ function App() {
   const currentCard = cards[currentIndex];
 
   return (
-    <div className={styles.app}>
+    <div className={styles.app} style={backgroundStyle}>
       <div className={styles.overlay} />
       <div className={styles.content}>
         <h1 className={styles.title}>Verbum</h1>
