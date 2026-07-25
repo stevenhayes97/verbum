@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.item {
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.item.active {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
+  font-weight: 600;
+}
+
+.item:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
