@@ -160,6 +160,16 @@
       "perfectPassiveParticiple": "Finitus",
       "conjugation": "4th",
       "english": "to finish, end"
+    },
+    {
+      "id": "verb-aperio",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Aperio",
+      "infinitive": { "stem": "Aper", "ending": "ire" },
+      "perfectFirstSingular": "Aperui",
+      "perfectPassiveParticiple": "Apertus",
+      "conjugation": "4th",
+      "english": "to open"
     }
   ]
 }

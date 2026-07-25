@@ -56,8 +56,9 @@ e.g. `Amo / Amare / Amavi / Amatus (1st conj.)`. The infinitive's ending
 is bolded, the same way the genitive's ending is bolded for nouns —
 it's what reveals the conjugation (`-are`/`-ere`/`-ere`/`-ire` for
 1st/2nd/3rd/4th). The perfect stem is often irregular and can't be
-derived from the present stem (`video` → `vidi`, not `videvi`), which is
-exactly why it's an explicit field rather than inferred.
+derived from the present stem (`video` → `vidi`, not `videvi`; `aperio` →
+`aperui`, not the expected `aperivi`), which is exactly why it's an
+explicit field rather than inferred.
 
 Note: all current seed verbs are regular and transitive, so the PPP is
 always the plain `-us` form. Deponent and intransitive verbs (which don't
