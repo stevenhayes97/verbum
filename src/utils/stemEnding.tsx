@@ -1,10 +1,10 @@
-import type { GenitiveForm } from '../types/flashcard';
+import type { StemEndingForm } from '../types/flashcard';
 
-export function GenitiveDisplay({ genitive }: { genitive: GenitiveForm }) {
+export function StemEndingDisplay({ form }: { form: StemEndingForm }) {
   return (
     <>
-      {genitive.stem}
-      <strong>{genitive.ending}</strong>
+      {form.stem}
+      <strong>{form.ending}</strong>
     </>
   );
 }

@@ -3,8 +3,8 @@
 Project Verbum - a local Latin flashcard app.
 
 Latin on the front, English on the back. The app currently ships with
-**Nouns** and **Adjectives**; Verbs, Prepositions, and Other are stubbed
-in the UI and will be filled in later.
+**Nouns**, **Adjectives**, and **Verbs**; Prepositions and Other are
+stubbed in the UI and will be filled in later.
 
 ## Running locally
 
@@ -48,6 +48,22 @@ mixing these up loses information, so it's worth getting right per word:
   (3rd decl.)`. Only `declensionLabel` differs between the two.
 
 Either way, the back shows the English translation.
+
+Verbs show the standard Latin citation form — the four **principal
+parts**: 1st singular present / infinitive / 1st singular perfect /
+perfect passive participle (PPP), with conjugation shown parenthetically,
+e.g. `Amo / Amare / Amavi / Amatus (1st conj.)`. The infinitive's ending
+is bolded, the same way the genitive's ending is bolded for nouns —
+it's what reveals the conjugation (`-are`/`-ere`/`-ere`/`-ire` for
+1st/2nd/3rd/4th). The perfect stem is often irregular and can't be
+derived from the present stem (`video` → `vidi`, not `videvi`), which is
+exactly why it's an explicit field rather than inferred.
+
+Note: all current seed verbs are regular and transitive, so the PPP is
+always the plain `-us` form. Deponent and intransitive verbs (which don't
+cleanly take that form — e.g. `venio`'s 4th part is conventionally the
+supine `ventum`, not `ventus`) are deliberately not included yet; how to
+represent them is an open design question for when one gets added.
 
 ## Spelling Conventions
 
@@ -122,6 +138,21 @@ two-termination), append an entry to `public/data/adjectives.json`:
   "neuter": "Altum",
   "declensionLabel": "1st/2nd",
   "english": "tall, deep"
+}
+```
+
+To add a verb, append an entry to `public/data/verbs.json`:
+
+```json
+{
+  "id": "verb-example",
+  "partOfSpeech": "verb",
+  "presentFirstSingular": "Specto",
+  "infinitive": { "stem": "Spect", "ending": "are" },
+  "perfectFirstSingular": "Spectavi",
+  "perfectPassiveParticiple": "Spectatus",
+  "conjugation": "1st",
+  "english": "to watch, look at"
 }
 ```
 

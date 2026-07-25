@@ -12,6 +12,7 @@ const DATA_DIR = path.join(__dirname, '..', 'public', 'data');
 const CATEGORIES = [
   { id: 'nouns', label: 'Nouns', file: 'nouns.json' },
   { id: 'adjectives', label: 'Adjectives', file: 'adjectives.json' },
+  { id: 'verbs', label: 'Verbs', file: 'verbs.json' },
 ];
 
 const BOLD_RED = '\x1b[1;31m';
@@ -31,12 +32,19 @@ function tripletFront(card) {
   return `${card.masculine} / ${card.feminine} / ${card.neuter} (${card.declensionLabel} decl.)`;
 }
 
+function verbFront(card) {
+  const infinitive = `${card.infinitive.stem}${BOLD_RED}${card.infinitive.ending}${RESET}`;
+  return `${card.presentFirstSingular} / ${infinitive} / ${card.perfectFirstSingular} / ${card.perfectPassiveParticiple} (${card.conjugation} conj.)`;
+}
+
 function frontText(card) {
   switch (card.partOfSpeech) {
     case 'noun':
       return declinedFront(card);
     case 'adjective':
       return card.adjectiveForm === 'triplet' ? tripletFront(card) : declinedFront(card);
+    case 'verb':
+      return verbFront(card);
     default:
       return card.nominative ?? card.masculine ?? '?';
   }

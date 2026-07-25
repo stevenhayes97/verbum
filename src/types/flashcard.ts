@@ -2,7 +2,7 @@ export type PartOfSpeech = 'noun' | 'verb' | 'adjective' | 'preposition' | 'othe
 export type Category = 'nouns' | 'verbs' | 'adjectives' | 'prepositions' | 'other';
 export type Gender = 'Male' | 'Female' | 'Neuter';
 
-export interface GenitiveForm {
+export interface StemEndingForm {
   stem: string;
   ending: string;
 }
@@ -20,7 +20,7 @@ export interface BaseCard {
 
 export interface DeclinedWord extends BaseCard {
   nominative: string;
-  genitive: GenitiveForm;
+  genitive: StemEndingForm;
   declension: 1 | 2 | 3 | 4 | 5;
   gender: Gender;
 }
@@ -48,8 +48,19 @@ export interface TripleFormAdjectiveCard extends BaseCard {
 
 export type AdjectiveCard = DeclinedAdjectiveCard | TripleFormAdjectiveCard;
 
-// Future: VerbCard, PrepositionCard, OtherCard join this union.
-export type Card = NounCard | AdjectiveCard;
+export type Conjugation = '1st' | '2nd' | '3rd' | '4th';
+
+export interface VerbCard extends BaseCard {
+  partOfSpeech: 'verb';
+  presentFirstSingular: string;
+  infinitive: StemEndingForm;
+  perfectFirstSingular: string;
+  perfectPassiveParticiple: string;
+  conjugation: Conjugation;
+}
+
+// Future: PrepositionCard, OtherCard join this union.
+export type Card = NounCard | AdjectiveCard | VerbCard;
 
 export interface CategoryFile {
   category: Category;
