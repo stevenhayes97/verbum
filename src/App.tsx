@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { CATEGORIES } from './data/categories';
 import type { Card, Category, CategoryFile } from './types/flashcard';
+import { SectionNav } from './components/SectionNav/SectionNav';
 import { DeckSelector } from './components/DeckSelector/DeckSelector';
 import { Flashcard } from './components/Flashcard/Flashcard';
 import { CardNav } from './components/CardNav/CardNav';
@@ -51,6 +52,7 @@ function App() {
       <div className={styles.overlay} />
       <div className={styles.content}>
         <h1 className={styles.title}>Verbum</h1>
+        <SectionNav />
         <DeckSelector selected={selectedCategory} onSelect={setSelectedCategory} />
 
         {loading && <p className={styles.status}>Loading…</p>}
