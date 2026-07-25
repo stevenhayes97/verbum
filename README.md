@@ -112,6 +112,23 @@ Classical Latin orthography sometimes allows either `I` or `J` for the
 same sound (e.g. `Ianuarius`/`Januarius`, `maior`/`major`, `eius`/`ejus`).
 **Prefer `I` over `J`** consistently across all vocabulary entries.
 
+## Word IDs
+
+Each card's `id` is `<part-of-speech prefix>-<word>` (lowercase), e.g.
+`noun-pater`, `adj-bonus`, `verb-amo`, `adv-longe`.
+
+Latin homographs across *different* parts of speech (e.g. `malus` the
+adjective "bad" vs. `malus` the noun "apple tree") don't need any special
+handling — they naturally get different prefixes (`adj-malus` vs.
+`noun-malus`) since each category is its own file.
+
+Only when two entries of the **same** part of speech would otherwise
+share an id (e.g. `levis` meaning "light" and `levis` meaning "smooth"
+are two distinct Latin adjectives) does it need disambiguating: append
+the simplest/shortest English translation as a suffix, not the full
+gloss — `adj-levis-light` and `adj-levis-smooth`, not
+`adj-levis-light-in-weight`.
+
 ## Vocabulary Tags
 
 Every card can optionally carry `tags: string[]` — thematic labels (e.g.
