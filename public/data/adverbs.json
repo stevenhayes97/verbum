@@ -1,0 +1,61 @@
+{
+  "category": "adverbs",
+  "cards": [
+    {
+      "id": "adv-longe",
+      "partOfSpeech": "adverb",
+      "adverb": { "stem": "Long", "ending": "e" },
+      "sourceAdjective": "Longus",
+      "english": "far, at length"
+    },
+    {
+      "id": "adv-care",
+      "partOfSpeech": "adverb",
+      "adverb": { "stem": "Car", "ending": "e" },
+      "sourceAdjective": "Carus",
+      "english": "dearly"
+    },
+    {
+      "id": "adv-clare",
+      "partOfSpeech": "adverb",
+      "adverb": { "stem": "Clar", "ending": "e" },
+      "sourceAdjective": "Clarus",
+      "english": "clearly, brightly"
+    },
+    {
+      "id": "adv-pure",
+      "partOfSpeech": "adverb",
+      "adverb": { "stem": "Pur", "ending": "e" },
+      "sourceAdjective": "Purus",
+      "english": "purely"
+    },
+    {
+      "id": "adv-fortiter",
+      "partOfSpeech": "adverb",
+      "adverb": { "stem": "Fort", "ending": "iter" },
+      "sourceAdjective": "Fortis",
+      "english": "bravely"
+    },
+    {
+      "id": "adv-breviter",
+      "partOfSpeech": "adverb",
+      "adverb": { "stem": "Brev", "ending": "iter" },
+      "sourceAdjective": "Brevis",
+      "english": "briefly"
+    },
+    {
+      "id": "adv-acriter",
+      "partOfSpeech": "adverb",
+      "adverb": { "stem": "Acr", "ending": "iter" },
+      "sourceAdjective": "Acer",
+      "english": "keenly, sharply"
+    },
+    {
+      "id": "adv-prudenter",
+      "partOfSpeech": "adverb",
+      "adverb": { "stem": "Prudent", "ending": "er" },
+      "sourceAdjective": "Prudens",
+      "english": "wisely"
+    }
+  ]
+}

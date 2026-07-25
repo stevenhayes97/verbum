@@ -13,6 +13,7 @@ const CATEGORIES = [
   { id: 'nouns', label: 'Nouns', file: 'nouns.json' },
   { id: 'adjectives', label: 'Adjectives', file: 'adjectives.json' },
   { id: 'verbs', label: 'Verbs', file: 'verbs.json' },
+  { id: 'adverbs', label: 'Adverbs', file: 'adverbs.json' },
 ];
 
 const BOLD_RED = '\x1b[1;31m';
@@ -37,6 +38,11 @@ function verbFront(card) {
   return `${card.presentFirstSingular} / ${infinitive} / ${card.perfectFirstSingular} / ${card.perfectPassiveParticiple} (${card.conjugation} conj.)`;
 }
 
+function adverbFront(card) {
+  const adverb = `${card.adverb.stem}${BOLD_RED}${card.adverb.ending}${RESET}`;
+  return `${adverb} (from ${card.sourceAdjective})`;
+}
+
 function frontText(card) {
   switch (card.partOfSpeech) {
     case 'noun':
@@ -45,6 +51,8 @@ function frontText(card) {
       return card.adjectiveForm === 'triplet' ? tripletFront(card) : declinedFront(card);
     case 'verb':
       return verbFront(card);
+    case 'adverb':
+      return adverbFront(card);
     default:
       return card.nominative ?? card.masculine ?? '?';
   }

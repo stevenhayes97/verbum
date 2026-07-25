@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { AdjectiveCard, Card, DeclinedWord, NounCard, VerbCard } from '../../types/flashcard';
+import type { AdjectiveCard, AdverbCard, Card, DeclinedWord, NounCard, VerbCard } from '../../types/flashcard';
 import { StemEndingDisplay, ordinal } from '../../utils/stemEnding';
 import styles from './Flashcard.module.css';
 
@@ -28,6 +28,14 @@ function verbFront(card: VerbCard) {
   );
 }
 
+function adverbFront(card: AdverbCard) {
+  return (
+    <>
+      <StemEndingDisplay form={card.adverb} /> (from {card.sourceAdjective})
+    </>
+  );
+}
+
 function renderFront(card: Card) {
   switch (card.partOfSpeech) {
     case 'noun':
@@ -36,6 +44,8 @@ function renderFront(card: Card) {
       return card.adjectiveForm === 'triplet' ? tripletFront(card) : declinedFront(card);
     case 'verb':
       return verbFront(card);
+    case 'adverb':
+      return adverbFront(card);
     default:
       return null;
   }

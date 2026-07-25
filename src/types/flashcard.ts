@@ -1,5 +1,5 @@
-export type PartOfSpeech = 'noun' | 'verb' | 'adjective' | 'preposition' | 'other';
-export type Category = 'nouns' | 'verbs' | 'adjectives' | 'prepositions' | 'other';
+export type PartOfSpeech = 'noun' | 'verb' | 'adjective' | 'adverb' | 'preposition' | 'other';
+export type Category = 'nouns' | 'verbs' | 'adjectives' | 'adverbs' | 'prepositions' | 'other';
 export type Gender = 'Male' | 'Female' | 'Neuter';
 
 export interface StemEndingForm {
@@ -59,8 +59,14 @@ export interface VerbCard extends BaseCard {
   conjugation: Conjugation;
 }
 
+export interface AdverbCard extends BaseCard {
+  partOfSpeech: 'adverb';
+  adverb: StemEndingForm;
+  sourceAdjective: string;
+}
+
 // Future: PrepositionCard, OtherCard join this union.
-export type Card = NounCard | AdjectiveCard | VerbCard;
+export type Card = NounCard | AdjectiveCard | VerbCard | AdverbCard;
 
 export interface CategoryFile {
   category: Category;
