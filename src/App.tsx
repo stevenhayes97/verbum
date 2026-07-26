@@ -7,6 +7,7 @@ import { SetCustomizer } from './components/SetCustomizer/SetCustomizer';
 import { Flashcard } from './components/Flashcard/Flashcard';
 import { CardNav } from './components/CardNav/CardNav';
 import { shuffle } from './utils/shuffle';
+import { DEFAULT_MAX_CARDS } from './utils/constants';
 import styles from './App.module.css';
 
 async function fetchCategoryCards(dataUrl: string): Promise<Card[]> {
@@ -63,7 +64,8 @@ function App() {
   useEffect(() => {
     const pool = selectedTag ? rawCards.filter((c) => c.tags?.includes(selectedTag)) : rawCards;
     const deck = shuffle(pool);
-    setCards(cardCount ? deck.slice(0, cardCount) : deck);
+    const limit = cardCount ?? Math.min(pool.length, DEFAULT_MAX_CARDS);
+    setCards(deck.slice(0, limit));
     setCurrentIndex(0);
   }, [rawCards, selectedTag, cardCount]);
 

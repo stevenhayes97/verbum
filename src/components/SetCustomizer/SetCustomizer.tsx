@@ -1,4 +1,5 @@
 import type { Card } from '../../types/flashcard';
+import { DEFAULT_MAX_CARDS } from '../../utils/constants';
 import styles from './SetCustomizer.module.css';
 
 interface SetCustomizerProps {
@@ -48,7 +49,7 @@ export function SetCustomizer({ cards, selectedTag, onTagChange, cardCount, onCa
           type="number"
           min={1}
           max={poolSize || undefined}
-          placeholder={`${poolSize}`}
+          placeholder={`${Math.min(poolSize, DEFAULT_MAX_CARDS)}`}
           value={cardCount ?? ''}
           onChange={(e) => {
             const raw = e.target.value;
