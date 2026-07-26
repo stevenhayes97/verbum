@@ -5,3 +5,8 @@
 // every card in the app as a single session. An explicit count above this
 // is always honored, up to the actual pool size.
 export const DEFAULT_MAX_CARDS = 150;
+
+// Cap on how many tags can be selected at once in the set customizer, so
+// the tag-picker stays a quick, scannable choice rather than turning into
+// "select nearly everything."
+export const MAX_SELECTED_TAGS = 10;

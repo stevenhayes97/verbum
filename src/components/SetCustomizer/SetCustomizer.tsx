@@ -1,11 +1,11 @@
 import type { Card } from '../../types/flashcard';
-import { DEFAULT_MAX_CARDS } from '../../utils/constants';
+import { DEFAULT_MAX_CARDS, MAX_SELECTED_TAGS } from '../../utils/constants';
 import styles from './SetCustomizer.module.css';
 
 interface SetCustomizerProps {
   cards: Card[];
-  selectedTag: string | null;
-  onTagChange: (tag: string | null) => void;
+  selectedTags: string[];
+  onTagsChange: (tags: string[]) => void;
   cardCount: number | null;
   onCardCountChange: (count: number | null) => void;
 }
@@ -20,61 +20,81 @@ function countByTag(cards: Card[]): [string, number][] {
   return [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
 }
 
-export function SetCustomizer({ cards, selectedTag, onTagChange, cardCount, onCardCountChange }: SetCustomizerProps) {
+export function SetCustomizer({ cards, selectedTags, onTagsChange, cardCount, onCardCountChange }: SetCustomizerProps) {
   const tagCounts = countByTag(cards);
-  const poolSize = selectedTag ? (tagCounts.find(([tag]) => tag === selectedTag)?.[1] ?? 0) : cards.length;
+  const poolSize = selectedTags.length
+    ? cards.filter((c) => c.tags?.some((t) => selectedTags.includes(t))).length
+    : cards.length;
+  const atCap = selectedTags.length >= MAX_SELECTED_TAGS;
+
+  function toggleTag(tag: string) {
+    if (selectedTags.includes(tag)) {
+      onTagsChange(selectedTags.filter((t) => t !== tag));
+    } else if (!atCap) {
+      onTagsChange([...selectedTags, tag]);
+    }
+  }
 
   return (
     <div className={styles.customizer}>
-      <label className={styles.field}>
-        Tag
-        <select
-          className={styles.control}
-          value={selectedTag ?? ''}
-          onChange={(e) => onTagChange(e.target.value || null)}
-        >
-          <option value="">All tags ({cards.length})</option>
-          {tagCounts.map(([tag, count]) => (
-            <option key={tag} value={tag}>
-              {tag} ({count})
-            </option>
-          ))}
-        </select>
-      </label>
+      <div className={styles.field}>
+        <span>
+          Tags (up to {MAX_SELECTED_TAGS}) — {poolSize} card{poolSize === 1 ? '' : 's'}
+        </span>
+        <div className={styles.tagPills}>
+          {tagCounts.map(([tag, count]) => {
+            const selected = selectedTags.includes(tag);
+            return (
+              <button
+                key={tag}
+                type="button"
+                className={`${styles.tagPill} ${selected ? styles.selected : ''}`}
+                disabled={!selected && atCap}
+                title={!selected && atCap ? `Deselect a tag to pick a different one (max ${MAX_SELECTED_TAGS})` : undefined}
+                onClick={() => toggleTag(tag)}
+              >
+                {tag} ({count})
+              </button>
+            );
+          })}
+        </div>
+      </div>
 
-      <label className={styles.field}>
-        Count
-        <input
-          className={styles.control}
-          type="number"
-          min={1}
-          max={poolSize || undefined}
-          placeholder={`${Math.min(poolSize, DEFAULT_MAX_CARDS)}`}
-          value={cardCount ?? ''}
-          onChange={(e) => {
-            const raw = e.target.value;
-            if (raw === '') {
+      <div className={styles.countRow}>
+        <label className={styles.field}>
+          Count
+          <input
+            className={styles.control}
+            type="number"
+            min={1}
+            max={poolSize || undefined}
+            placeholder={`${Math.min(poolSize, DEFAULT_MAX_CARDS)}`}
+            value={cardCount ?? ''}
+            onChange={(e) => {
+              const raw = e.target.value;
+              if (raw === '') {
+                onCardCountChange(null);
+                return;
+              }
+              const clamped = Math.max(1, Math.min(poolSize, Number(raw)));
+              onCardCountChange(clamped);
+            }}
+          />
+        </label>
+
+        {(selectedTags.length > 0 || cardCount !== null) && (
+          <button
+            type="button"
+            className={styles.reset}
+            onClick={() => {
+              onTagsChange([]);
               onCardCountChange(null);
-              return;
-            }
-            const clamped = Math.max(1, Math.min(poolSize, Number(raw)));
-            onCardCountChange(clamped);
-          }}
-        />
-      </label>
-
-      {(selectedTag !== null || cardCount !== null) && (
-        <button
-          type="button"
-          className={styles.reset}
-          onClick={() => {
-            onTagChange(null);
-            onCardCountChange(null);
-          }}
-        >
-          Reset
-        </button>
-      )}
+            }}
+          >
+            Reset
+          </button>
+        )}
+      </div>
     </div>
   );
 }

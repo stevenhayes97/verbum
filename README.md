@@ -191,13 +191,16 @@ they're introduced.
 An **All** deck sits alongside the part-of-speech tabs (Nouns, Verbs, ...)
 and merges every enabled category together — this is where tags earn
 their keep, since a tag like `military` can span nouns, adjectives, verbs,
-and adverbs at once. Above the flashcard, a **Tag** dropdown (built from
-whatever tags actually appear in the currently loaded deck, each with a
-live count — not a hardcoded list) and a **Count** field let you narrow
-down to a themed subset of any size, in any deck, not just All. Both
-apply instantly and re-shuffle; a **Reset** button appears once either is
+and adverbs at once. Above the flashcard, a row of **Tag** toggle pills
+(built from whatever tags actually appear in the currently loaded deck,
+each with a live count — not a hardcoded list) lets you select up to 10
+tags at once; a card matches if it has *any* selected tag (OR, not AND),
+since most cards only carry one. Once 10 are selected the rest disable
+until you deselect one. A **Count** field lets you narrow further to a
+subset of any size, in any deck, not just All. Filters apply instantly
+and re-shuffle; a **Reset** button appears once any tag or a count is
 set. Picking a deck with no tagged cards yet (e.g. Verbs, Adverbs) just
-shows "All tags" until something in it gets tagged.
+shows no tag pills until something in it gets tagged.
 
 ## Data storage
 
