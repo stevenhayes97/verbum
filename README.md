@@ -171,7 +171,7 @@ they're introduced.
 - `people` — persons / social roles (Rex, Puella, Nauta, Dominus, Servus, Femina, Amicus, Homo, Agricola, Poeta, Puer)
 - `royalty` — kingship, rule (Rex)
 - `religion` — sacred, temple-related (Templum, Deus, Caelum)
-- `body` — body parts (Manus, Corpus, Caput, Pectus, Umerus, Bracchium, Crus, Pes, Membrum, Capillus, Os, Labrum, Auris, Collum)
+- `body` — body parts (Manus, Corpus, Caput, Pectus, Umerus, Bracchium, Crus, Pes, Membrum, Capillus, Os, Labrum, Auris, Collum, Dens, Cor, Venter)
 - `abstract` — generic/non-concrete nouns (Res, Verbum, Nomen, Vox, Fortuna, Vita, Fama, Animus, Periculum, Veritas, Origo, Mors, Ars)
 - `size` — physical dimension: big/small/long/short (Magnus, Parvus, Longus, Brevis)
 - `character` — personal qualities/traits: virtue, fortune, disposition (Bonus, Fortis, Felix, Virtus)

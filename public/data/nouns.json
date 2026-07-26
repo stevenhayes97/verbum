@@ -760,6 +760,36 @@
       "gender": "Neuter",
       "english": "neck",
       "tags": ["body"]
+    },
+    {
+      "id": "noun-dens",
+      "partOfSpeech": "noun",
+      "nominative": "Dens",
+      "genitive": { "stem": "Dent", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "tooth",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-cor",
+      "partOfSpeech": "noun",
+      "nominative": "Cor",
+      "genitive": { "stem": "Cord", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "heart",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-venter",
+      "partOfSpeech": "noun",
+      "nominative": "Venter",
+      "genitive": { "stem": "Ventr", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "belly, stomach",
+      "tags": ["body"]
     }
   ]
 }
