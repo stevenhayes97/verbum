@@ -17,6 +17,24 @@
   letter-spacing: 0.05em;
 }
 
+.summaryRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.advancedToggle {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
 .tagPills {
   display: flex;
   flex-wrap: wrap;
@@ -46,13 +64,6 @@
 .tagPill:disabled {
   opacity: 0.35;
   cursor: not-allowed;
-}
-
-.countRow {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 16px;
 }
 
 .control {

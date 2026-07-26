@@ -191,16 +191,20 @@ they're introduced.
 An **All** deck sits alongside the part-of-speech tabs (Nouns, Verbs, ...)
 and merges every enabled category together — this is where tags earn
 their keep, since a tag like `military` can span nouns, adjectives, verbs,
-and adverbs at once. Above the flashcard, a row of **Tag** toggle pills
-(built from whatever tags actually appear in the currently loaded deck,
-each with a live count — not a hardcoded list) lets you select up to 10
-tags at once; a card matches if it has *any* selected tag (OR, not AND),
-since most cards only carry one. Once 10 are selected the rest disable
-until you deselect one. A **Count** field lets you narrow further to a
-subset of any size, in any deck, not just All. Filters apply instantly
-and re-shuffle; a **Reset** button appears once any tag or a count is
-set. Picking a deck with no tagged cards yet (e.g. Verbs, Adverbs) just
-shows no tag pills until something in it gets tagged.
+and adverbs at once. Above the flashcard, an **Advanced** toggle — collapsed
+by default so the flashcard stays front and center — expands into a row of
+**Tag** toggle pills (built from whatever tags actually appear in the
+currently loaded deck, each with a live count — not a hardcoded list) and
+a **Count** field. Tags let you select up to 10 at once; a card matches if
+it has *any* selected tag (OR, not AND), since most cards only carry one.
+Once 10 are selected the rest disable until you deselect one. Count narrows
+further to a subset of any size, in any deck, not just All. Filters apply
+instantly and re-shuffle. When any tag or count filter is active, the
+toggle's label summarizes it (e.g. "Advanced (2 tags · 14 cards)") even
+while collapsed, and a **Reset** button stays visible next to it so you can
+clear filters without expanding the panel. Picking a deck with no tagged
+cards yet (e.g. Verbs, Adverbs) just shows no tag pills once expanded,
+until something in it gets tagged.
 
 ## Data storage
 
