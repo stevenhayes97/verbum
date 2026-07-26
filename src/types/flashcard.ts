@@ -65,8 +65,16 @@ export interface AdverbCard extends BaseCard {
   sourceAdjective: string;
 }
 
-// Future: PrepositionCard, OtherCard join this union.
-export type Card = NounCard | AdjectiveCard | VerbCard | AdverbCard;
+export type PrepositionCase = 'Accusative' | 'Ablative';
+
+export interface PrepositionCard extends BaseCard {
+  partOfSpeech: 'preposition';
+  preposition: string;
+  grammaticalCase: PrepositionCase;
+}
+
+// Future: OtherCard joins this union.
+export type Card = NounCard | AdjectiveCard | VerbCard | AdverbCard | PrepositionCard;
 
 export interface CategoryFile {
   category: Category;

@@ -14,6 +14,7 @@ const CATEGORIES = [
   { id: 'adjectives', label: 'Adjectives', file: 'adjectives.json' },
   { id: 'verbs', label: 'Verbs', file: 'verbs.json' },
   { id: 'adverbs', label: 'Adverbs', file: 'adverbs.json' },
+  { id: 'prepositions', label: 'Prepositions', file: 'prepositions.json' },
 ];
 
 const BOLD_RED = '\x1b[1;31m';
@@ -43,6 +44,10 @@ function adverbFront(card) {
   return `${adverb} (from ${card.sourceAdjective})`;
 }
 
+function prepositionFront(card) {
+  return `${card.preposition} (+ ${card.grammaticalCase})`;
+}
+
 function frontText(card) {
   switch (card.partOfSpeech) {
     case 'noun':
@@ -53,6 +58,8 @@ function frontText(card) {
       return verbFront(card);
     case 'adverb':
       return adverbFront(card);
+    case 'preposition':
+      return prepositionFront(card);
     default:
       return card.nominative ?? card.masculine ?? '?';
   }

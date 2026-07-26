@@ -1,5 +1,13 @@
 import { useEffect, useState } from 'react';
-import type { AdjectiveCard, AdverbCard, Card, DeclinedWord, NounCard, VerbCard } from '../../types/flashcard';
+import type {
+  AdjectiveCard,
+  AdverbCard,
+  Card,
+  DeclinedWord,
+  NounCard,
+  PrepositionCard,
+  VerbCard,
+} from '../../types/flashcard';
 import { StemEndingDisplay, ordinal } from '../../utils/stemEnding';
 import styles from './Flashcard.module.css';
 
@@ -36,6 +44,14 @@ function adverbFront(card: AdverbCard) {
   );
 }
 
+function prepositionFront(card: PrepositionCard) {
+  return (
+    <>
+      {card.preposition} (+ {card.grammaticalCase})
+    </>
+  );
+}
+
 function renderFront(card: Card) {
   switch (card.partOfSpeech) {
     case 'noun':
@@ -46,6 +62,8 @@ function renderFront(card: Card) {
       return verbFront(card);
     case 'adverb':
       return adverbFront(card);
+    case 'preposition':
+      return prepositionFront(card);
     default:
       return null;
   }
