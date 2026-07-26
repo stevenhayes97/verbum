@@ -148,16 +148,23 @@ reuse an existing one if it fits, to avoid near-duplicates like `war` /
 `military` / `battle` meaning the same thing. New tags get added here as
 they're introduced.
 
-- `family` — kinship terms (Pater, Mater)
-- `people` — persons / social roles (Rex, Puella, Nauta, Dominus, Servus)
+- `family` — kinship terms (Pater, Mater, Frater, Soror)
+- `people` — persons / social roles (Rex, Puella, Nauta, Dominus, Servus, Femina, Amicus, Homo)
 - `royalty` — kingship, rule (Rex)
 - `religion` — sacred, temple-related (Templum)
-- `body` — body parts (Manus)
-- `abstract` — generic/non-concrete nouns (Res)
+- `body` — body parts (Manus, Corpus)
+- `abstract` — generic/non-concrete nouns (Res, Verbum, Nomen, Vox)
 - `size` — physical dimension: big/small/long/short (Magnus, Parvus, Longus, Brevis)
 - `character` — personal qualities/traits: virtue, fortune, disposition (Bonus, Fortis, Felix)
 - `quantity` — quantifiers (Omnis)
 - `possessive` — possessive adjectives (Meus, Tuus, Suus, Noster, Vester)
+- `nature` — natural world/elements (Aqua, Terra, Silva, Flumen, Mons)
+- `place` — locations/geography (Via, Urbs)
+- `animals` (Equus)
+- `objects` — physical items (Liber)
+- `military` — war, army (Bellum, Miles, Dux)
+- `politics` — governance, civic life (Civitas, Lex, Pax, Dux)
+- `time` (Tempus)
 
 ## Data storage
 
