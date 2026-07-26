@@ -27,3 +27,15 @@ bank the way the vocab files intentionally do. When generating a fresh
 batch, vary sentence structure and grammatical construction too, not
 just which vocab words get slotted in — otherwise the sentence
 *templates* become the thing that gets memorized instead.
+
+## Sentence generation
+
+Beginner-level guardrails for generating practice sentences, for now —
+the user will loosen these as their Latin improves, so don't assume they
+stay fixed:
+
+- Nouns and adjectives: 1st, 2nd, and 3rd declension only. Skip 4th/5th
+  declension nouns (e.g. Manus, Res) when picking words for a sentence.
+- No adverbs.
+- Verbs: present tense only, but use both active and passive voice for
+  variety.
