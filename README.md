@@ -3,8 +3,9 @@
 Project Verbum - a local Latin flashcard app.
 
 Latin on the front, English on the back. The app currently ships with
-**Nouns**, **Adjectives**, **Verbs**, and **Adverbs**; Prepositions and
-Other are stubbed in the UI and will be filled in later.
+**Nouns**, **Adjectives**, **Verbs**, **Adverbs**, and **Prepositions** —
+all five originally planned categories; **Other** is stubbed in the UI
+for whatever doesn't fit those, and will be filled in later.
 
 ## Running locally
 
@@ -106,6 +107,18 @@ not `prudentiter`). Irregular/suppletive adverbs (e.g. `bonus` → `bene`,
 not the regular `bone`) are deliberately not included yet, same reasoning
 as the deferred deponent verbs.
 
+Prepositions show which case they govern — that's the grammatically
+essential fact about a Latin preposition, since English prepositions
+carry no case information at all. The card is `{preposition} (+ {case})`,
+e.g. `Cum (+ Ablative)`, `Ad (+ Accusative)`; no bolding, since a
+preposition itself doesn't decline. Most prepositions take a single
+fixed case, but `in` and `sub` genuinely take either case with a real
+meaning shift (static location vs. motion), so each gets **two separate
+cards** rather than one entry with two meanings: `In (+ Ablative)` → "in,
+on" vs. `In (+ Accusative)` → "into, onto". `Super`/`subter` (the other
+Latin prepositions that can take either case) are deliberately not
+included yet — same reasoning as other deferred edge cases.
+
 ## Spelling Conventions
 
 Classical Latin orthography sometimes allows either `I` or `J` for the
@@ -128,6 +141,12 @@ are two distinct Latin adjectives) does it need disambiguating: append
 the simplest/shortest English translation as a suffix, not the full
 gloss — `adj-levis-light` and `adj-levis-smooth`, not
 `adj-levis-light-in-weight`.
+
+A related but different case: dual-case prepositions like `in`/`sub`
+aren't homographs — it's the *same* word, not two distinct ones — so
+they're disambiguated by case instead of by meaning: `prep-in-ablative` /
+`prep-in-accusative`, `prep-sub-ablative` / `prep-sub-accusative`.
+Single-case prepositions use the plain pattern (`prep-ab`, `prep-cum`).
 
 ## Vocabulary Tags
 
@@ -245,6 +264,18 @@ To add an adverb, append an entry to `public/data/adverbs.json`:
   "adverb": { "stem": "Cert", "ending": "e" },
   "sourceAdjective": "Certus",
   "english": "certainly"
+}
+```
+
+To add a preposition, append an entry to `public/data/prepositions.json`:
+
+```json
+{
+  "id": "prep-sine",
+  "partOfSpeech": "preposition",
+  "preposition": "Sine",
+  "grammaticalCase": "Ablative",
+  "english": "without"
 }
 ```
 

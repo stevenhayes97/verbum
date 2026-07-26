@@ -1,0 +1,166 @@
+{
+  "category": "prepositions",
+  "cards": [
+    {
+      "id": "prep-ab",
+      "partOfSpeech": "preposition",
+      "preposition": "Ab",
+      "grammaticalCase": "Ablative",
+      "english": "from, by"
+    },
+    {
+      "id": "prep-cum",
+      "partOfSpeech": "preposition",
+      "preposition": "Cum",
+      "grammaticalCase": "Ablative",
+      "english": "with"
+    },
+    {
+      "id": "prep-de",
+      "partOfSpeech": "preposition",
+      "preposition": "De",
+      "grammaticalCase": "Ablative",
+      "english": "down from, concerning"
+    },
+    {
+      "id": "prep-ex",
+      "partOfSpeech": "preposition",
+      "preposition": "Ex",
+      "grammaticalCase": "Ablative",
+      "english": "out of, from"
+    },
+    {
+      "id": "prep-pro",
+      "partOfSpeech": "preposition",
+      "preposition": "Pro",
+      "grammaticalCase": "Ablative",
+      "english": "in front of, on behalf of"
+    },
+    {
+      "id": "prep-prae",
+      "partOfSpeech": "preposition",
+      "preposition": "Prae",
+      "grammaticalCase": "Ablative",
+      "english": "in front of, before"
+    },
+    {
+      "id": "prep-sine",
+      "partOfSpeech": "preposition",
+      "preposition": "Sine",
+      "grammaticalCase": "Ablative",
+      "english": "without"
+    },
+    {
+      "id": "prep-ad",
+      "partOfSpeech": "preposition",
+      "preposition": "Ad",
+      "grammaticalCase": "Accusative",
+      "english": "to, toward"
+    },
+    {
+      "id": "prep-ante",
+      "partOfSpeech": "preposition",
+      "preposition": "Ante",
+      "grammaticalCase": "Accusative",
+      "english": "before, in front of"
+    },
+    {
+      "id": "prep-apud",
+      "partOfSpeech": "preposition",
+      "preposition": "Apud",
+      "grammaticalCase": "Accusative",
+      "english": "at, among"
+    },
+    {
+      "id": "prep-circum",
+      "partOfSpeech": "preposition",
+      "preposition": "Circum",
+      "grammaticalCase": "Accusative",
+      "english": "around"
+    },
+    {
+      "id": "prep-contra",
+      "partOfSpeech": "preposition",
+      "preposition": "Contra",
+      "grammaticalCase": "Accusative",
+      "english": "against"
+    },
+    {
+      "id": "prep-inter",
+      "partOfSpeech": "preposition",
+      "preposition": "Inter",
+      "grammaticalCase": "Accusative",
+      "english": "between, among"
+    },
+    {
+      "id": "prep-ob",
+      "partOfSpeech": "preposition",
+      "preposition": "Ob",
+      "grammaticalCase": "Accusative",
+      "english": "on account of"
+    },
+    {
+      "id": "prep-per",
+      "partOfSpeech": "preposition",
+      "preposition": "Per",
+      "grammaticalCase": "Accusative",
+      "english": "through, by means of"
+    },
+    {
+      "id": "prep-post",
+      "partOfSpeech": "preposition",
+      "preposition": "Post",
+      "grammaticalCase": "Accusative",
+      "english": "after, behind"
+    },
+    {
+      "id": "prep-prope",
+      "partOfSpeech": "preposition",
+      "preposition": "Prope",
+      "grammaticalCase": "Accusative",
+      "english": "near"
+    },
+    {
+      "id": "prep-propter",
+      "partOfSpeech": "preposition",
+      "preposition": "Propter",
+      "grammaticalCase": "Accusative",
+      "english": "because of"
+    },
+    {
+      "id": "prep-trans",
+      "partOfSpeech": "preposition",
+      "preposition": "Trans",
+      "grammaticalCase": "Accusative",
+      "english": "across"
+    },
+    {
+      "id": "prep-in-ablative",
+      "partOfSpeech": "preposition",
+      "preposition": "In",
+      "grammaticalCase": "Ablative",
+      "english": "in, on"
+    },
+    {
+      "id": "prep-in-accusative",
+      "partOfSpeech": "preposition",
+      "preposition": "In",
+      "grammaticalCase": "Accusative",
+      "english": "into, onto"
+    },
+    {
+      "id": "prep-sub-ablative",
+      "partOfSpeech": "preposition",
+      "preposition": "Sub",
+      "grammaticalCase": "Ablative",
+      "english": "under, beneath"
+    },
+    {
+      "id": "prep-sub-accusative",
+      "partOfSpeech": "preposition",
+      "preposition": "Sub",
+      "grammaticalCase": "Accusative",
+      "english": "under, up to"
+    }
+  ]
+}
