@@ -166,6 +166,19 @@ they're introduced.
 - `politics` — governance, civic life (Civitas, Lex, Pax, Dux)
 - `time` (Tempus)
 
+## Custom Sets
+
+An **All** deck sits alongside the part-of-speech tabs (Nouns, Verbs, ...)
+and merges every enabled category together — this is where tags earn
+their keep, since a tag like `military` can span nouns, adjectives, verbs,
+and adverbs at once. Above the flashcard, a **Tag** dropdown (built from
+whatever tags actually appear in the currently loaded deck, each with a
+live count — not a hardcoded list) and a **Count** field let you narrow
+down to a themed subset of any size, in any deck, not just All. Both
+apply instantly and re-shuffle; a **Reset** button appears once either is
+set. Picking a deck with no tagged cards yet (e.g. Verbs, Adverbs) just
+shows "All tags" until something in it gets tagged.
+
 ## Data storage
 
 Flashcards live in plain JSON under `public/data/`, one file per category

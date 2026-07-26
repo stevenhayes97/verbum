@@ -3,10 +3,18 @@ import { CATEGORIES } from './data/categories';
 import type { Card, Category, CategoryFile } from './types/flashcard';
 import { SectionNav } from './components/SectionNav/SectionNav';
 import { DeckSelector } from './components/DeckSelector/DeckSelector';
+import { SetCustomizer } from './components/SetCustomizer/SetCustomizer';
 import { Flashcard } from './components/Flashcard/Flashcard';
 import { CardNav } from './components/CardNav/CardNav';
 import { shuffle } from './utils/shuffle';
 import styles from './App.module.css';
+
+async function fetchCategoryCards(dataUrl: string): Promise<Card[]> {
+  const res = await fetch(dataUrl);
+  if (!res.ok) throw new Error(`Failed to load ${dataUrl}`);
+  const data = (await res.json()) as CategoryFile;
+  return data.cards;
+}
 
 // Root-absolute CSS url()s don't account for Vite's configured base path
 // (e.g. the /verbum/ subpath on GitHub Pages), so this is built from
@@ -20,30 +28,44 @@ const backgroundStyle = {
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('nouns');
+  const [rawCards, setRawCards] = useState<Card[]>([]);
+  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [cardCount, setCardCount] = useState<number | null>(null);
   const [cards, setCards] = useState<Card[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // Fetches whichever category is selected -- 'all' merges every other
+  // enabled category instead of loading a single file.
   useEffect(() => {
-    const meta = CATEGORIES.find((c) => c.id === selectedCategory);
-    if (!meta) return;
-
     setLoading(true);
     setError(null);
 
-    fetch(meta.dataUrl)
-      .then((res) => {
-        if (!res.ok) throw new Error(`Failed to load ${meta.dataUrl}`);
-        return res.json() as Promise<CategoryFile>;
-      })
-      .then((data) => {
-        setCards(shuffle(data.cards));
-        setCurrentIndex(0);
+    const metas =
+      selectedCategory === 'all'
+        ? CATEGORIES.filter((c) => c.enabled && c.id !== 'all')
+        : CATEGORIES.filter((c) => c.id === selectedCategory);
+
+    Promise.all(metas.map((meta) => fetchCategoryCards(meta.dataUrl)))
+      .then((cardLists) => {
+        setRawCards(cardLists.flat());
+        setSelectedTag(null);
+        setCardCount(null);
       })
       .catch((err: Error) => setError(err.message))
       .finally(() => setLoading(false));
   }, [selectedCategory]);
+
+  // Derives the displayed deck from the raw category cards plus the tag/count
+  // filters -- re-shuffles and re-slices on any filter change without
+  // re-fetching.
+  useEffect(() => {
+    const pool = selectedTag ? rawCards.filter((c) => c.tags?.includes(selectedTag)) : rawCards;
+    const deck = shuffle(pool);
+    setCards(cardCount ? deck.slice(0, cardCount) : deck);
+    setCurrentIndex(0);
+  }, [rawCards, selectedTag, cardCount]);
 
   const currentCard = cards[currentIndex];
 
@@ -57,6 +79,15 @@ function App() {
 
         {loading && <p className={styles.status}>Loading…</p>}
         {error && <p className={styles.status}>{error}</p>}
+        {!loading && !error && (
+          <SetCustomizer
+            cards={rawCards}
+            selectedTag={selectedTag}
+            onTagChange={setSelectedTag}
+            cardCount={cardCount}
+            onCardCountChange={setCardCount}
+          />
+        )}
         {!loading && !error && currentCard && (
           <>
             <Flashcard card={currentCard} />

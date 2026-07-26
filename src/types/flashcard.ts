@@ -1,5 +1,5 @@
 export type PartOfSpeech = 'noun' | 'verb' | 'adjective' | 'adverb' | 'preposition' | 'other';
-export type Category = 'nouns' | 'verbs' | 'adjectives' | 'adverbs' | 'prepositions' | 'other';
+export type Category = 'all' | 'nouns' | 'verbs' | 'adjectives' | 'adverbs' | 'prepositions' | 'other';
 export type Gender = 'Male' | 'Female' | 'Neuter';
 
 export interface StemEndingForm {
