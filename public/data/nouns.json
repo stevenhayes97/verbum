@@ -350,6 +350,306 @@
       "gender": "Male",
       "english": "leader, general",
       "tags": ["military", "politics"]
+    },
+    {
+      "id": "noun-insula",
+      "partOfSpeech": "noun",
+      "nominative": "Insula",
+      "genitive": { "stem": "Insul", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "island",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-fortuna",
+      "partOfSpeech": "noun",
+      "nominative": "Fortuna",
+      "genitive": { "stem": "Fortun", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "fortune, luck",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-vita",
+      "partOfSpeech": "noun",
+      "nominative": "Vita",
+      "genitive": { "stem": "Vit", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "life",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-fama",
+      "partOfSpeech": "noun",
+      "nominative": "Fama",
+      "genitive": { "stem": "Fam", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "fame, reputation, rumor",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-ira",
+      "partOfSpeech": "noun",
+      "nominative": "Ira",
+      "genitive": { "stem": "Ir", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "anger",
+      "tags": ["emotion"]
+    },
+    {
+      "id": "noun-stella",
+      "partOfSpeech": "noun",
+      "nominative": "Stella",
+      "genitive": { "stem": "Stell", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "star",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-luna",
+      "partOfSpeech": "noun",
+      "nominative": "Luna",
+      "genitive": { "stem": "Lun", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "moon",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-porta",
+      "partOfSpeech": "noun",
+      "nominative": "Porta",
+      "genitive": { "stem": "Port", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "gate, door",
+      "tags": ["objects"]
+    },
+    {
+      "id": "noun-agricola",
+      "partOfSpeech": "noun",
+      "nominative": "Agricola",
+      "genitive": { "stem": "Agricol", "ending": "ae" },
+      "declension": 1,
+      "gender": "Male",
+      "english": "farmer",
+      "tags": ["people"]
+    },
+    {
+      "id": "noun-poeta",
+      "partOfSpeech": "noun",
+      "nominative": "Poeta",
+      "genitive": { "stem": "Poet", "ending": "ae" },
+      "declension": 1,
+      "gender": "Male",
+      "english": "poet",
+      "tags": ["people"]
+    },
+    {
+      "id": "noun-deus",
+      "partOfSpeech": "noun",
+      "nominative": "Deus",
+      "genitive": { "stem": "De", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "god",
+      "tags": ["religion"]
+    },
+    {
+      "id": "noun-populus",
+      "partOfSpeech": "noun",
+      "nominative": "Populus",
+      "genitive": { "stem": "Popul", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "people, nation",
+      "tags": ["politics"]
+    },
+    {
+      "id": "noun-locus",
+      "partOfSpeech": "noun",
+      "nominative": "Locus",
+      "genitive": { "stem": "Loc", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "place",
+      "tags": ["place"]
+    },
+    {
+      "id": "noun-animus",
+      "partOfSpeech": "noun",
+      "nominative": "Animus",
+      "genitive": { "stem": "Anim", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "mind, spirit",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-puer",
+      "partOfSpeech": "noun",
+      "nominative": "Puer",
+      "genitive": { "stem": "Puer", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "boy",
+      "tags": ["people"]
+    },
+    {
+      "id": "noun-ager",
+      "partOfSpeech": "noun",
+      "nominative": "Ager",
+      "genitive": { "stem": "Agr", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "field",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-donum",
+      "partOfSpeech": "noun",
+      "nominative": "Donum",
+      "genitive": { "stem": "Don", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "gift",
+      "tags": ["objects"]
+    },
+    {
+      "id": "noun-oppidum",
+      "partOfSpeech": "noun",
+      "nominative": "Oppidum",
+      "genitive": { "stem": "Oppid", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "town",
+      "tags": ["place"]
+    },
+    {
+      "id": "noun-periculum",
+      "partOfSpeech": "noun",
+      "nominative": "Periculum",
+      "genitive": { "stem": "Pericul", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "danger",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-caelum",
+      "partOfSpeech": "noun",
+      "nominative": "Caelum",
+      "genitive": { "stem": "Cael", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "sky, heaven",
+      "tags": ["nature", "religion"]
+    },
+    {
+      "id": "noun-virtus",
+      "partOfSpeech": "noun",
+      "nominative": "Virtus",
+      "genitive": { "stem": "Virtut", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "virtue, courage",
+      "tags": ["character"]
+    },
+    {
+      "id": "noun-veritas",
+      "partOfSpeech": "noun",
+      "nominative": "Veritas",
+      "genitive": { "stem": "Veritat", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "truth",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-libertas",
+      "partOfSpeech": "noun",
+      "nominative": "Libertas",
+      "genitive": { "stem": "Libertat", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "freedom, liberty",
+      "tags": ["politics"]
+    },
+    {
+      "id": "noun-ordo",
+      "partOfSpeech": "noun",
+      "nominative": "Ordo",
+      "genitive": { "stem": "Ordin", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "order, rank",
+      "tags": ["politics"]
+    },
+    {
+      "id": "noun-origo",
+      "partOfSpeech": "noun",
+      "nominative": "Origo",
+      "genitive": { "stem": "Origin", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "origin, source",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-mors",
+      "partOfSpeech": "noun",
+      "nominative": "Mors",
+      "genitive": { "stem": "Mort", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "death",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-ars",
+      "partOfSpeech": "noun",
+      "nominative": "Ars",
+      "genitive": { "stem": "Art", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "art, skill",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-pars",
+      "partOfSpeech": "noun",
+      "nominative": "Pars",
+      "genitive": { "stem": "Part", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "part",
+      "tags": ["quantity"]
+    },
+    {
+      "id": "noun-iter",
+      "partOfSpeech": "noun",
+      "nominative": "Iter",
+      "genitive": { "stem": "Itiner", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "journey, route",
+      "tags": ["place"]
+    },
+    {
+      "id": "noun-caput",
+      "partOfSpeech": "noun",
+      "nominative": "Caput",
+      "genitive": { "stem": "Capit", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "head",
+      "tags": ["body"]
     }
   ]
 }

@@ -149,22 +149,23 @@ reuse an existing one if it fits, to avoid near-duplicates like `war` /
 they're introduced.
 
 - `family` — kinship terms (Pater, Mater, Frater, Soror)
-- `people` — persons / social roles (Rex, Puella, Nauta, Dominus, Servus, Femina, Amicus, Homo)
+- `people` — persons / social roles (Rex, Puella, Nauta, Dominus, Servus, Femina, Amicus, Homo, Agricola, Poeta, Puer)
 - `royalty` — kingship, rule (Rex)
-- `religion` — sacred, temple-related (Templum)
-- `body` — body parts (Manus, Corpus)
-- `abstract` — generic/non-concrete nouns (Res, Verbum, Nomen, Vox)
+- `religion` — sacred, temple-related (Templum, Deus, Caelum)
+- `body` — body parts (Manus, Corpus, Caput)
+- `abstract` — generic/non-concrete nouns (Res, Verbum, Nomen, Vox, Fortuna, Vita, Fama, Animus, Periculum, Veritas, Origo, Mors, Ars)
 - `size` — physical dimension: big/small/long/short (Magnus, Parvus, Longus, Brevis)
-- `character` — personal qualities/traits: virtue, fortune, disposition (Bonus, Fortis, Felix)
-- `quantity` — quantifiers (Omnis)
+- `character` — personal qualities/traits: virtue, fortune, disposition (Bonus, Fortis, Felix, Virtus)
+- `quantity` — quantifiers (Omnis, Pars)
 - `possessive` — possessive adjectives (Meus, Tuus, Suus, Noster, Vester)
-- `nature` — natural world/elements (Aqua, Terra, Silva, Flumen, Mons)
-- `place` — locations/geography (Via, Urbs)
+- `nature` — natural world/elements (Aqua, Terra, Silva, Flumen, Mons, Insula, Stella, Luna, Ager, Caelum)
+- `place` — locations/geography (Via, Urbs, Locus, Oppidum, Iter)
 - `animals` (Equus)
-- `objects` — physical items (Liber)
+- `objects` — physical items (Liber, Porta, Donum)
 - `military` — war, army (Bellum, Miles, Dux)
-- `politics` — governance, civic life (Civitas, Lex, Pax, Dux)
+- `politics` — governance, civic life (Civitas, Lex, Pax, Dux, Populus, Libertas, Ordo)
 - `time` (Tempus)
+- `emotion` (Ira)
 
 ## Custom Sets
 
