@@ -650,6 +650,146 @@
       "gender": "Neuter",
       "english": "head",
       "tags": ["body"]
+    },
+    {
+      "id": "noun-pectus",
+      "partOfSpeech": "noun",
+      "nominative": "Pectus",
+      "genitive": { "stem": "Pector", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "chest, breast",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-umerus",
+      "partOfSpeech": "noun",
+      "nominative": "Umerus",
+      "genitive": { "stem": "Umer", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "shoulder",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-bracchium",
+      "partOfSpeech": "noun",
+      "nominative": "Bracchium",
+      "genitive": { "stem": "Bracchi", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "arm",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-crus",
+      "partOfSpeech": "noun",
+      "nominative": "Crus",
+      "genitive": { "stem": "Crur", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "leg, shin",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-pes",
+      "partOfSpeech": "noun",
+      "nominative": "Pes",
+      "genitive": { "stem": "Ped", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "foot",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-membrum",
+      "partOfSpeech": "noun",
+      "nominative": "Membrum",
+      "genitive": { "stem": "Membr", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "limb",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-capillus",
+      "partOfSpeech": "noun",
+      "nominative": "Capillus",
+      "genitive": { "stem": "Capill", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "hair",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-os-mouth",
+      "partOfSpeech": "noun",
+      "nominative": "Os",
+      "genitive": { "stem": "Or", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "mouth, face",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-labrum",
+      "partOfSpeech": "noun",
+      "nominative": "Labrum",
+      "genitive": { "stem": "Labr", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "lip",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-auris",
+      "partOfSpeech": "noun",
+      "nominative": "Auris",
+      "genitive": { "stem": "Aur", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "ear",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-collum",
+      "partOfSpeech": "noun",
+      "nominative": "Collum",
+      "genitive": { "stem": "Coll", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "neck",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-dens",
+      "partOfSpeech": "noun",
+      "nominative": "Dens",
+      "genitive": { "stem": "Dent", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "tooth",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-cor",
+      "partOfSpeech": "noun",
+      "nominative": "Cor",
+      "genitive": { "stem": "Cord", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "heart",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-venter",
+      "partOfSpeech": "noun",
+      "nominative": "Venter",
+      "genitive": { "stem": "Ventr", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "belly, stomach",
+      "tags": ["body"]
     }
   ]
 }
