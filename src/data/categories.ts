@@ -19,4 +19,7 @@ export const CATEGORIES: CategoryMeta[] = [
   { id: 'adverbs', label: 'Adverbs', dataUrl: `${DATA_BASE}adverbs.json`, enabled: true },
   { id: 'prepositions', label: 'Prepositions', dataUrl: `${DATA_BASE}prepositions.json`, enabled: false },
   { id: 'other', label: 'Other', dataUrl: `${DATA_BASE}other.json`, enabled: false },
+  // dataUrl unused -- App.tsx special-cases 'all' to fetch+merge every
+  // other enabled category instead of a single file.
+  { id: 'all', label: 'All', dataUrl: '', enabled: true },
 ];
