@@ -1,20 +1,58 @@
 .customizer {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 20px;
-  flex-wrap: wrap;
 }
 
 .field {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  align-items: center;
+  gap: 8px;
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.tagPills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  max-width: 680px;
+}
+
+.tagPill {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 0.8rem;
+  text-transform: none;
+  letter-spacing: normal;
+  cursor: pointer;
+}
+
+.tagPill.selected {
+  background: #fff;
+  color: #1a1410;
+  font-weight: 600;
+}
+
+.tagPill:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.countRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 16px;
 }
 
 .control {
@@ -28,10 +66,6 @@
 
 .control::placeholder {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.control option {
-  color: #1a1410;
 }
 
 input.control {

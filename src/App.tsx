@@ -30,7 +30,7 @@ const backgroundStyle = {
 function App() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('nouns');
   const [rawCards, setRawCards] = useState<Card[]>([]);
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [cardCount, setCardCount] = useState<number | null>(null);
   const [cards, setCards] = useState<Card[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,7 +51,7 @@ function App() {
     Promise.all(metas.map((meta) => fetchCategoryCards(meta.dataUrl)))
       .then((cardLists) => {
         setRawCards(cardLists.flat());
-        setSelectedTag(null);
+        setSelectedTags([]);
         setCardCount(null);
       })
       .catch((err: Error) => setError(err.message))
@@ -60,14 +60,18 @@ function App() {
 
   // Derives the displayed deck from the raw category cards plus the tag/count
   // filters -- re-shuffles and re-slices on any filter change without
-  // re-fetching.
+  // re-fetching. Multiple selected tags are OR'd together (a card matches if
+  // it has any of them), since most cards only carry one tag -- requiring
+  // all selected tags on one card would return almost nothing.
   useEffect(() => {
-    const pool = selectedTag ? rawCards.filter((c) => c.tags?.includes(selectedTag)) : rawCards;
+    const pool = selectedTags.length
+      ? rawCards.filter((c) => c.tags?.some((t) => selectedTags.includes(t)))
+      : rawCards;
     const deck = shuffle(pool);
     const limit = cardCount ?? Math.min(pool.length, DEFAULT_MAX_CARDS);
     setCards(deck.slice(0, limit));
     setCurrentIndex(0);
-  }, [rawCards, selectedTag, cardCount]);
+  }, [rawCards, selectedTags, cardCount]);
 
   const currentCard = cards[currentIndex];
 
@@ -84,8 +88,8 @@ function App() {
         {!loading && !error && (
           <SetCustomizer
             cards={rawCards}
-            selectedTag={selectedTag}
-            onTagChange={setSelectedTag}
+            selectedTags={selectedTags}
+            onTagsChange={setSelectedTags}
             cardCount={cardCount}
             onCardCountChange={setCardCount}
           />
