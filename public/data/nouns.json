@@ -100,6 +100,256 @@
       "gender": "Female",
       "english": "thing",
       "tags": ["abstract"]
+    },
+    {
+      "id": "noun-aqua",
+      "partOfSpeech": "noun",
+      "nominative": "Aqua",
+      "genitive": { "stem": "Aqu", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "water",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-terra",
+      "partOfSpeech": "noun",
+      "nominative": "Terra",
+      "genitive": { "stem": "Terr", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "land, earth",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-via",
+      "partOfSpeech": "noun",
+      "nominative": "Via",
+      "genitive": { "stem": "Vi", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "road, way",
+      "tags": ["place"]
+    },
+    {
+      "id": "noun-silva",
+      "partOfSpeech": "noun",
+      "nominative": "Silva",
+      "genitive": { "stem": "Silv", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "forest, wood",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-femina",
+      "partOfSpeech": "noun",
+      "nominative": "Femina",
+      "genitive": { "stem": "Femin", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "woman",
+      "tags": ["people"]
+    },
+    {
+      "id": "noun-amicus",
+      "partOfSpeech": "noun",
+      "nominative": "Amicus",
+      "genitive": { "stem": "Amic", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "friend",
+      "tags": ["people"]
+    },
+    {
+      "id": "noun-equus",
+      "partOfSpeech": "noun",
+      "nominative": "Equus",
+      "genitive": { "stem": "Equ", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "horse",
+      "tags": ["animals"]
+    },
+    {
+      "id": "noun-liber",
+      "partOfSpeech": "noun",
+      "nominative": "Liber",
+      "genitive": { "stem": "Libr", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "book",
+      "tags": ["objects"]
+    },
+    {
+      "id": "noun-verbum",
+      "partOfSpeech": "noun",
+      "nominative": "Verbum",
+      "genitive": { "stem": "Verb", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "word",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-bellum",
+      "partOfSpeech": "noun",
+      "nominative": "Bellum",
+      "genitive": { "stem": "Bell", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "war",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-homo",
+      "partOfSpeech": "noun",
+      "nominative": "Homo",
+      "genitive": { "stem": "Homin", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "man, human being",
+      "tags": ["people"]
+    },
+    {
+      "id": "noun-civitas",
+      "partOfSpeech": "noun",
+      "nominative": "Civitas",
+      "genitive": { "stem": "Civitat", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "state, citizenship, community",
+      "tags": ["politics"]
+    },
+    {
+      "id": "noun-tempus",
+      "partOfSpeech": "noun",
+      "nominative": "Tempus",
+      "genitive": { "stem": "Tempor", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "time",
+      "tags": ["time"]
+    },
+    {
+      "id": "noun-corpus",
+      "partOfSpeech": "noun",
+      "nominative": "Corpus",
+      "genitive": { "stem": "Corpor", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "body",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-nomen",
+      "partOfSpeech": "noun",
+      "nominative": "Nomen",
+      "genitive": { "stem": "Nomin", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "name",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-flumen",
+      "partOfSpeech": "noun",
+      "nominative": "Flumen",
+      "genitive": { "stem": "Flumin", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "river",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-lex",
+      "partOfSpeech": "noun",
+      "nominative": "Lex",
+      "genitive": { "stem": "Leg", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "law",
+      "tags": ["politics"]
+    },
+    {
+      "id": "noun-pax",
+      "partOfSpeech": "noun",
+      "nominative": "Pax",
+      "genitive": { "stem": "Pac", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "peace",
+      "tags": ["politics"]
+    },
+    {
+      "id": "noun-vox",
+      "partOfSpeech": "noun",
+      "nominative": "Vox",
+      "genitive": { "stem": "Voc", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "voice",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-urbs",
+      "partOfSpeech": "noun",
+      "nominative": "Urbs",
+      "genitive": { "stem": "Urb", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "city",
+      "tags": ["place"]
+    },
+    {
+      "id": "noun-mons",
+      "partOfSpeech": "noun",
+      "nominative": "Mons",
+      "genitive": { "stem": "Mont", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "mountain",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-miles",
+      "partOfSpeech": "noun",
+      "nominative": "Miles",
+      "genitive": { "stem": "Milit", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "soldier",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-frater",
+      "partOfSpeech": "noun",
+      "nominative": "Frater",
+      "genitive": { "stem": "Fratr", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "brother",
+      "tags": ["family"]
+    },
+    {
+      "id": "noun-soror",
+      "partOfSpeech": "noun",
+      "nominative": "Soror",
+      "genitive": { "stem": "Soror", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "sister",
+      "tags": ["family"]
+    },
+    {
+      "id": "noun-dux",
+      "partOfSpeech": "noun",
+      "nominative": "Dux",
+      "genitive": { "stem": "Duc", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "leader, general",
+      "tags": ["military", "politics"]
     }
   ]
 }
