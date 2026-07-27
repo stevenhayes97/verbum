@@ -1,5 +1,6 @@
 export type PartOfSpeech = 'noun' | 'verb' | 'adjective' | 'adverb' | 'preposition' | 'other';
 export type Category = 'all' | 'nouns' | 'verbs' | 'adjectives' | 'adverbs' | 'prepositions' | 'other';
+export type Section = 'flashcards' | 'about' | 'sentence-practice';
 export type Gender = 'Male' | 'Female' | 'Neuter';
 
 export interface StemEndingForm {
@@ -79,4 +80,18 @@ export type Card = NounCard | AdjectiveCard | VerbCard | AdverbCard | Prepositio
 export interface CategoryFile {
   category: Category;
   cards: Card[];
+}
+
+export interface Sentence {
+  id: string;
+  latin: string;
+  english: string;
+}
+
+// Unlike the vocab files, sentences.json is wiped and regenerated wholesale
+// each refresh (see CLAUDE.md) -- the `generated` date makes that lifecycle
+// visible in the data itself rather than only in the docs.
+export interface SentenceFile {
+  generated: string;
+  sentences: Sentence[];
 }
