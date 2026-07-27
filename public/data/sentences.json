@@ -1,0 +1,20 @@
+{
+  "generated": "2026-07-27",
+  "sentences": [
+    {
+      "id": "sentence-1",
+      "latin": "Miles fortis oppidum custodit.",
+      "english": "The brave soldier guards the town."
+    },
+    {
+      "id": "sentence-2",
+      "latin": "Liber a puero scribitur.",
+      "english": "The book is written by the boy."
+    },
+    {
+      "id": "sentence-3",
+      "latin": "Nauta in insula amicum meum videt.",
+      "english": "The sailor sees my friend on the island."
+    }
+  ]
+}

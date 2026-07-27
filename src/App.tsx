@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import { CATEGORIES } from './data/categories';
-import type { Card, Category, CategoryFile } from './types/flashcard';
+import type { Card, Category, CategoryFile, Section } from './types/flashcard';
 import { SectionNav } from './components/SectionNav/SectionNav';
 import { DeckSelector } from './components/DeckSelector/DeckSelector';
 import { SetCustomizer } from './components/SetCustomizer/SetCustomizer';
 import { Flashcard } from './components/Flashcard/Flashcard';
 import { CardNav } from './components/CardNav/CardNav';
+import { SentencePractice } from './components/SentencePractice/SentencePractice';
 import { shuffle } from './utils/shuffle';
 import { DEFAULT_MAX_CARDS } from './utils/constants';
 import styles from './App.module.css';
@@ -28,6 +29,7 @@ const backgroundStyle = {
 };
 
 function App() {
+  const [section, setSection] = useState<Section>('flashcards');
   const [selectedCategory, setSelectedCategory] = useState<Category>('nouns');
   const [rawCards, setRawCards] = useState<Card[]>([]);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -80,32 +82,39 @@ function App() {
       <div className={styles.overlay} />
       <div className={styles.content}>
         <h1 className={styles.title}>Verbum</h1>
-        <SectionNav />
-        <DeckSelector selected={selectedCategory} onSelect={setSelectedCategory} />
+        <SectionNav selected={section} onSelect={setSection} />
 
-        {loading && <p className={styles.status}>Loading…</p>}
-        {error && <p className={styles.status}>{error}</p>}
-        {!loading && !error && (
-          <SetCustomizer
-            cards={rawCards}
-            selectedTags={selectedTags}
-            onTagsChange={setSelectedTags}
-            cardCount={cardCount}
-            onCardCountChange={setCardCount}
-          />
-        )}
-        {!loading && !error && currentCard && (
+        {section === 'flashcards' && (
           <>
-            <Flashcard card={currentCard} />
-            <CardNav
-              index={currentIndex}
-              total={cards.length}
-              onPrev={() => setCurrentIndex((i) => (i - 1 + cards.length) % cards.length)}
-              onNext={() => setCurrentIndex((i) => (i + 1) % cards.length)}
-              onShuffle={() => setCards((c) => shuffle(c))}
-            />
+            <DeckSelector selected={selectedCategory} onSelect={setSelectedCategory} />
+
+            {loading && <p className={styles.status}>Loading…</p>}
+            {error && <p className={styles.status}>{error}</p>}
+            {!loading && !error && (
+              <SetCustomizer
+                cards={rawCards}
+                selectedTags={selectedTags}
+                onTagsChange={setSelectedTags}
+                cardCount={cardCount}
+                onCardCountChange={setCardCount}
+              />
+            )}
+            {!loading && !error && currentCard && (
+              <>
+                <Flashcard card={currentCard} />
+                <CardNav
+                  index={currentIndex}
+                  total={cards.length}
+                  onPrev={() => setCurrentIndex((i) => (i - 1 + cards.length) % cards.length)}
+                  onNext={() => setCurrentIndex((i) => (i + 1) % cards.length)}
+                  onShuffle={() => setCards((c) => shuffle(c))}
+                />
+              </>
+            )}
           </>
         )}
+
+        {section === 'sentence-practice' && <SentencePractice />}
 
         <footer className={styles.footer}>
           Verbum — a Latin flashcard app
