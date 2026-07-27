@@ -9,7 +9,8 @@
       "perfectFirstSingular": "Amavi",
       "perfectPassiveParticiple": "Amatus",
       "conjugation": "1st",
-      "english": "to love"
+      "english": "to love",
+      "tags": ["emotion"]
     },
     {
       "id": "verb-laudo",
@@ -19,7 +20,8 @@
       "perfectFirstSingular": "Laudavi",
       "perfectPassiveParticiple": "Laudatus",
       "conjugation": "1st",
-      "english": "to praise"
+      "english": "to praise",
+      "tags": ["communication"]
     },
     {
       "id": "verb-voco",
@@ -29,7 +31,8 @@
       "perfectFirstSingular": "Vocavi",
       "perfectPassiveParticiple": "Vocatus",
       "conjugation": "1st",
-      "english": "to call"
+      "english": "to call",
+      "tags": ["communication"]
     },
     {
       "id": "verb-paro",
@@ -39,7 +42,8 @@
       "perfectFirstSingular": "Paravi",
       "perfectPassiveParticiple": "Paratus",
       "conjugation": "1st",
-      "english": "to prepare"
+      "english": "to prepare",
+      "tags": ["change-of-state"]
     },
     {
       "id": "verb-video",
@@ -49,7 +53,8 @@
       "perfectFirstSingular": "Vidi",
       "perfectPassiveParticiple": "Visus",
       "conjugation": "2nd",
-      "english": "to see"
+      "english": "to see",
+      "tags": ["perception"]
     },
     {
       "id": "verb-habeo",
@@ -59,7 +64,8 @@
       "perfectFirstSingular": "Habui",
       "perfectPassiveParticiple": "Habitus",
       "conjugation": "2nd",
-      "english": "to have"
+      "english": "to have",
+      "tags": ["possession"]
     },
     {
       "id": "verb-moneo",
@@ -69,7 +75,8 @@
       "perfectFirstSingular": "Monui",
       "perfectPassiveParticiple": "Monitus",
       "conjugation": "2nd",
-      "english": "to warn, advise"
+      "english": "to warn, advise",
+      "tags": ["communication"]
     },
     {
       "id": "verb-terreo",
@@ -79,7 +86,8 @@
       "perfectFirstSingular": "Terrui",
       "perfectPassiveParticiple": "Territus",
       "conjugation": "2nd",
-      "english": "to frighten"
+      "english": "to frighten",
+      "tags": ["emotion"]
     },
     {
       "id": "verb-duco",
@@ -89,7 +97,8 @@
       "perfectFirstSingular": "Duxi",
       "perfectPassiveParticiple": "Ductus",
       "conjugation": "3rd",
-      "english": "to lead"
+      "english": "to lead",
+      "tags": ["motion"]
     },
     {
       "id": "verb-mitto",
@@ -99,7 +108,8 @@
       "perfectFirstSingular": "Misi",
       "perfectPassiveParticiple": "Missus",
       "conjugation": "3rd",
-      "english": "to send"
+      "english": "to send",
+      "tags": ["motion"]
     },
     {
       "id": "verb-rego",
@@ -109,7 +119,8 @@
       "perfectFirstSingular": "Rexi",
       "perfectPassiveParticiple": "Rectus",
       "conjugation": "3rd",
-      "english": "to rule"
+      "english": "to rule",
+      "tags": ["governance"]
     },
     {
       "id": "verb-scribo",
@@ -119,7 +130,8 @@
       "perfectFirstSingular": "Scripsi",
       "perfectPassiveParticiple": "Scriptus",
       "conjugation": "3rd",
-      "english": "to write"
+      "english": "to write",
+      "tags": ["communication"]
     },
     {
       "id": "verb-audio",
@@ -129,7 +141,8 @@
       "perfectFirstSingular": "Audivi",
       "perfectPassiveParticiple": "Auditus",
       "conjugation": "4th",
-      "english": "to hear"
+      "english": "to hear",
+      "tags": ["perception"]
     },
     {
       "id": "verb-munio",
@@ -139,7 +152,8 @@
       "perfectFirstSingular": "Munivi",
       "perfectPassiveParticiple": "Munitus",
       "conjugation": "4th",
-      "english": "to fortify"
+      "english": "to fortify",
+      "tags": ["governance"]
     },
     {
       "id": "verb-custodio",
@@ -149,7 +163,8 @@
       "perfectFirstSingular": "Custodivi",
       "perfectPassiveParticiple": "Custoditus",
       "conjugation": "4th",
-      "english": "to guard"
+      "english": "to guard",
+      "tags": ["governance"]
     },
     {
       "id": "verb-finio",
@@ -159,7 +174,8 @@
       "perfectFirstSingular": "Finivi",
       "perfectPassiveParticiple": "Finitus",
       "conjugation": "4th",
-      "english": "to finish, end"
+      "english": "to finish, end",
+      "tags": ["change-of-state"]
     },
     {
       "id": "verb-aperio",
@@ -169,7 +185,8 @@
       "perfectFirstSingular": "Aperui",
       "perfectPassiveParticiple": "Apertus",
       "conjugation": "4th",
-      "english": "to open"
+      "english": "to open",
+      "tags": ["change-of-state"]
     }
   ]
 }

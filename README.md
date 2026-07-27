@@ -186,6 +186,27 @@ they're introduced.
 - `time` (Tempus)
 - `emotion` (Ira)
 
+## Verb Tags
+
+Verbs don't fit the topic-based list above — they're actions, not subject
+domains, so most of them have no natural home in `family`, `body`,
+`military`, etc. Verbs instead use a **separate, action-based** canonical
+tag list, grouped by semantic type rather than theme. The same "check
+first, reuse if it fits" rule applies before adding a new one:
+
+- `perception` — Video, Audio
+- `communication` — Voco, Laudo, Scribo, Moneo
+- `emotion` — Amo, Terreo
+- `possession` — Habeo
+- `motion` — Duco, Mitto
+- `governance` — Rego, Munio, Custodio
+- `change-of-state` — Paro, Finio, Aperio
+
+The two tag lists are intentionally disjoint — a verb and a noun won't
+usually match on the same tag in the "All" deck's filter — with one
+deliberate exception: `emotion` is shared with the noun list above (Ira),
+since the concept really is the same one.
+
 ## Custom Sets
 
 An **All** deck sits alongside the part-of-speech tabs (Nouns, Verbs, ...)
