@@ -39,3 +39,13 @@ stay fixed:
 - No adverbs.
 - Verbs: present tense only, but use both active and passive voice for
   variety.
+- Avoid sentences where a modifier (prepositional phrase, adjective, etc.)
+  could plausibly attach to more than one word, producing multiple valid
+  English translations. E.g. "Nauta in insula amicum meum videt" reads
+  equally well as "the sailor, on the island, sees my friend" or "the
+  sailor sees my friend, who is on the island" — there's no way to tell
+  from the Latin which one is intended, which makes it impossible to
+  check a student's answer against one canonical translation. When a
+  sentence could go either way, restructure it (word order, a different
+  preposition, or splitting into a relative clause) until only one
+  reading holds.
