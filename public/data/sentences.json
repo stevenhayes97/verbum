@@ -3,18 +3,53 @@
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Miles fortis oppidum custodit.",
-      "english": "The brave soldier guards the town."
+      "latin": "Puella librum videt.",
+      "english": "The girl sees the book."
     },
     {
       "id": "sentence-2",
-      "latin": "Liber a puero scribitur.",
-      "english": "The book is written by the boy."
+      "latin": "Dominus bonus servum habet.",
+      "english": "The good master has the servant."
     },
     {
       "id": "sentence-3",
-      "latin": "Nauta in insula amicum meum videt.",
-      "english": "The sailor sees my friend on the island."
+      "latin": "Templum a servo custoditur.",
+      "english": "The temple is guarded by the servant."
+    },
+    {
+      "id": "sentence-4",
+      "latin": "Nauta matri donum mittit.",
+      "english": "The sailor sends a gift to the mother."
+    },
+    {
+      "id": "sentence-5",
+      "latin": "Porta magna aperitur.",
+      "english": "The large gate is opened."
+    },
+    {
+      "id": "sentence-6",
+      "latin": "Miles ex oppido ducitur.",
+      "english": "The soldier is led out of the town."
+    },
+    {
+      "id": "sentence-7",
+      "latin": "Pater cum matre vocem audit.",
+      "english": "The father, along with the mother, hears the voice."
+    },
+    {
+      "id": "sentence-8",
+      "latin": "Milites a duce reguntur.",
+      "english": "The soldiers are ruled by the leader."
+    },
+    {
+      "id": "sentence-9",
+      "latin": "Equus servum parvum terret.",
+      "english": "The horse frightens the small servant."
+    },
+    {
+      "id": "sentence-10",
+      "latin": "Dux milites laudat.",
+      "english": "The leader praises the soldiers."
     }
   ]
 }
