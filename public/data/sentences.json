@@ -1,55 +1,80 @@
 {
-  "generated": "2026-07-27",
+  "generated": "2026-07-28",
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Puella librum videt.",
-      "english": "The girl sees the book."
+      "latin": "Pater servum monet.",
+      "english": "The father warns the servant."
     },
     {
       "id": "sentence-2",
-      "latin": "Dominus bonus servum habet.",
-      "english": "The good master has the servant."
+      "latin": "Poeta felix librum scribit.",
+      "english": "The happy poet writes the book."
     },
     {
       "id": "sentence-3",
-      "latin": "Templum a servo custoditur.",
-      "english": "The temple is guarded by the servant."
+      "latin": "Femina donum magnum habet.",
+      "english": "The woman has the large gift."
     },
     {
       "id": "sentence-4",
-      "latin": "Nauta matri donum mittit.",
-      "english": "The sailor sends a gift to the mother."
+      "latin": "Populus a rege regitur.",
+      "english": "The people are ruled by the king."
     },
     {
       "id": "sentence-5",
-      "latin": "Porta magna aperitur.",
-      "english": "The large gate is opened."
+      "latin": "Urbs magna custoditur.",
+      "english": "The large city is guarded."
     },
     {
       "id": "sentence-6",
-      "latin": "Miles ex oppido ducitur.",
-      "english": "The soldier is led out of the town."
+      "latin": "Nauta trans flumen ducitur.",
+      "english": "The sailor is led across the river."
     },
     {
       "id": "sentence-7",
-      "latin": "Pater cum matre vocem audit.",
-      "english": "The father, along with the mother, hears the voice."
+      "latin": "Poeta sorori librum mittit.",
+      "english": "The poet sends the book to the sister."
     },
     {
       "id": "sentence-8",
-      "latin": "Milites a duce reguntur.",
-      "english": "The soldiers are ruled by the leader."
+      "latin": "Servi a domino terrentur.",
+      "english": "The servants are frightened by the master."
     },
     {
       "id": "sentence-9",
-      "latin": "Equus servum parvum terret.",
-      "english": "The horse frightens the small servant."
+      "latin": "Frater cum sorore periculum videt.",
+      "english": "The brother, together with the sister, sees the danger."
     },
     {
       "id": "sentence-10",
-      "latin": "Dux milites laudat.",
-      "english": "The leader praises the soldiers."
+      "latin": "Rex agricolas laudat.",
+      "english": "The king praises the farmers."
+    },
+    {
+      "id": "sentence-11",
+      "latin": "Nomen regis auditur.",
+      "english": "The king's name is heard."
+    },
+    {
+      "id": "sentence-12",
+      "latin": "Miles propter periculum urbem munit.",
+      "english": "The soldier fortifies the city because of the danger."
+    },
+    {
+      "id": "sentence-13",
+      "latin": "Puella librum meum amat.",
+      "english": "The girl loves my book."
+    },
+    {
+      "id": "sentence-14",
+      "latin": "Dux inter milites videtur.",
+      "english": "The leader is seen among the soldiers."
+    },
+    {
+      "id": "sentence-15",
+      "latin": "Miles fortis puellam parvam vocat.",
+      "english": "The brave soldier calls the small girl."
     }
   ]
 }
