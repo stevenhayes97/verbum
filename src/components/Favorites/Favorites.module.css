@@ -14,14 +14,20 @@
 
 .table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   color: #fff;
+}
+
+.table th,
+.table td {
+  width: 50%;
+  text-align: left;
 }
 
 .table th {
   position: sticky;
   top: 0;
-  text-align: left;
   padding: 12px 16px;
   font-size: 0.8rem;
   text-transform: uppercase;
