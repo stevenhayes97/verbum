@@ -15,7 +15,11 @@
 .table {
   width: 100%;
   table-layout: fixed;
-  border-collapse: collapse;
+  /* border-collapse + a sticky <th> lets a hairline of the row scrolling
+     underneath bleed through the header in Chromium; separate borders
+     avoids it. */
+  border-collapse: separate;
+  border-spacing: 0;
   color: #fff;
 }
 
@@ -32,8 +36,12 @@
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  background: rgba(0, 0, 0, 0.35);
+  /* Opaque (not translucent like the rest of the panel) so rows scrolling
+     underneath the sticky header disappear cleanly instead of bleeding
+     through it. */
+  background: #1a1410;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
 
 .table td {
