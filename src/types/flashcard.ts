@@ -1,6 +1,6 @@
 export type PartOfSpeech = 'noun' | 'verb' | 'adjective' | 'adverb' | 'preposition' | 'other';
 export type Category = 'all' | 'nouns' | 'verbs' | 'adjectives' | 'adverbs' | 'prepositions' | 'other';
-export type Section = 'flashcards' | 'about' | 'sentence-practice';
+export type Section = 'flashcards' | 'about' | 'sentence-practice' | 'favorites';
 export type Gender = 'Male' | 'Female' | 'Neuter';
 
 export interface StemEndingForm {
@@ -94,4 +94,18 @@ export interface Sentence {
 export interface SentenceFile {
   generated: string;
   sentences: Sentence[];
+}
+
+// A personal, growing reference list -- unlike Sentence, this is display-only
+// (a table row, not a flip card), so it skips the declension/gender/stem-
+// ending fields NounCard needs for flashcard mechanics.
+export interface FavoriteWord {
+  id: string;
+  nominative: string;
+  genitive: string;
+  english: string;
+}
+
+export interface FavoritesFile {
+  words: FavoriteWord[];
 }

@@ -1,0 +1,46 @@
+{
+  "words": [
+    {
+      "id": "favorite-imperium",
+      "nominative": "Imperium",
+      "genitive": "imperii",
+      "english": "power, command, empire"
+    },
+    {
+      "id": "favorite-psittacus",
+      "nominative": "Psittacus",
+      "genitive": "psittaci",
+      "english": "parrot"
+    },
+    {
+      "id": "favorite-stella",
+      "nominative": "Stella",
+      "genitive": "stellae",
+      "english": "star"
+    },
+    {
+      "id": "favorite-nauta",
+      "nominative": "Nauta",
+      "genitive": "nautae",
+      "english": "sailor"
+    },
+    {
+      "id": "favorite-sidus",
+      "nominative": "Sidus",
+      "genitive": "sideris",
+      "english": "star, constellation"
+    },
+    {
+      "id": "favorite-aquila",
+      "nominative": "Aquila",
+      "genitive": "aquilae",
+      "english": "eagle"
+    },
+    {
+      "id": "favorite-astrum",
+      "nominative": "Astrum",
+      "genitive": "astri",
+      "english": "star, constellation"
+    }
+  ]
+}
