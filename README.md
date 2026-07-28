@@ -265,6 +265,37 @@ documented in `CLAUDE.md` (1st–3rd declension nouns and adjectives only,
 no adverbs, present tense verbs in both active and passive voice). Those
 guardrails loosen as the user's Latin improves.
 
+## Favorites
+
+The **Favorites** section is a personal, growing list of favorite Latin
+words — a reference table, not a quiz, so both columns are visible at once
+instead of hidden behind a flip. Each row shows the Latin nominative and
+genitive (e.g. "Imperium, imperii") next to the English translation.
+
+Words live in `public/data/favorites.json`:
+
+```json
+{
+  "words": [
+    {
+      "id": "favorite-imperium",
+      "nominative": "Imperium",
+      "genitive": "imperii",
+      "english": "power, command, empire"
+    }
+  ]
+}
+```
+
+Unlike `sentences.json`, this file follows the same **append + edit only**
+lifecycle as the vocab files — it's meant to grow indefinitely as a running
+collection, never wiped. It's deliberately a lighter shape than a full
+`NounCard`: no declension number, gender, or stem/ending split, since
+nothing here needs flashcard mechanics — just the two columns shown in the
+table. Words can (and do) overlap with the main vocab decks; favoriting a
+word you're already studying elsewhere is expected, not a duplicate to
+avoid.
+
 ## Data storage
 
 Flashcards live in plain JSON under `public/data/`, one file per category

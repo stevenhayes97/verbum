@@ -19,11 +19,15 @@ Vocab files (`public/data/nouns.json`, `verbs.json`, `adjectives.json`,
 only** — add new entries or correct existing ones, but never wipe or
 wholesale-regenerate one of these files.
 
-A future sentence-practice JSON file (not built yet) is the opposite:
-every refresh is a **full wipe and regenerate**, not an append. The
-point of that feature is testing translation ability, not sentence
-recall, so the practice set must not accumulate into a fixed, memorizable
-bank the way the vocab files intentionally do. When generating a fresh
+`public/data/favorites.json` (the user's personal "favorite words" list,
+shown as a table) follows this same **append + edit only** lifecycle —
+it's meant to accumulate as a running collection, never wiped.
+
+`public/data/sentences.json` is the opposite: every refresh is a **full
+wipe and regenerate**, not an append. The point of that feature is
+testing translation ability, not sentence recall, so the practice set
+must not accumulate into a fixed, memorizable bank the way the vocab
+files (and favorites.json) intentionally do. When generating a fresh
 batch, vary sentence structure and grammatical construction too, not
 just which vocab words get slotted in — otherwise the sentence
 *templates* become the thing that gets memorized instead.

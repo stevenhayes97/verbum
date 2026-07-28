@@ -7,6 +7,7 @@ const SECTIONS: { id: Section; label: string; enabled: boolean }[] = [
   { id: 'flashcards', label: 'Flashcards', enabled: true },
   { id: 'about', label: 'About', enabled: false },
   { id: 'sentence-practice', label: 'Sentence Practice', enabled: true },
+  { id: 'favorites', label: 'Favorites', enabled: true },
 ];
 
 interface SectionNavProps {
