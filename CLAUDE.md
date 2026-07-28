@@ -38,6 +38,7 @@ Beginner-level guardrails for generating practice sentences, for now —
 the user will loosen these as their Latin improves, so don't assume they
 stay fixed:
 
+- Unless a specific count is requested, generate 15 sentences per batch.
 - Nouns and adjectives: 1st, 2nd, and 3rd declension only. Skip 4th/5th
   declension nouns (e.g. Manus, Res) when picking words for a sentence.
 - No adverbs.
