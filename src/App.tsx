@@ -11,6 +11,7 @@ import { Favorites } from './components/Favorites/Favorites';
 import { VocabList } from './components/VocabList/VocabList';
 import { shuffle } from './utils/shuffle';
 import { DEFAULT_MAX_CARDS } from './utils/constants';
+import { cardMatchesFilters } from './utils/declension';
 import styles from './App.module.css';
 
 async function fetchCategoryCards(dataUrl: string): Promise<Card[]> {
@@ -35,6 +36,7 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('nouns');
   const [rawCards, setRawCards] = useState<Card[]>([]);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [selectedDeclensions, setSelectedDeclensions] = useState<number[]>([]);
   const [cardCount, setCardCount] = useState<number | null>(null);
   const [cards, setCards] = useState<Card[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,26 +58,27 @@ function App() {
       .then((cardLists) => {
         setRawCards(cardLists.flat());
         setSelectedTags([]);
+        setSelectedDeclensions([]);
         setCardCount(null);
       })
       .catch((err: Error) => setError(err.message))
       .finally(() => setLoading(false));
   }, [selectedCategory]);
 
-  // Derives the displayed deck from the raw category cards plus the tag/count
-  // filters -- re-shuffles and re-slices on any filter change without
-  // re-fetching. Multiple selected tags are OR'd together (a card matches if
-  // it has any of them), since most cards only carry one tag -- requiring
-  // all selected tags on one card would return almost nothing.
+  // Derives the displayed deck from the raw category cards plus the
+  // tag/declension/count filters -- re-shuffles and re-slices on any filter
+  // change without re-fetching. Multiple selected tags (or declensions) are
+  // OR'd together within their own dimension (a card matches if it has any
+  // of them), since most cards only carry one tag -- requiring all selected
+  // tags on one card would return almost nothing. The tag and declension
+  // dimensions are AND'd together.
   useEffect(() => {
-    const pool = selectedTags.length
-      ? rawCards.filter((c) => c.tags?.some((t) => selectedTags.includes(t)))
-      : rawCards;
+    const pool = rawCards.filter((c) => cardMatchesFilters(c, selectedTags, selectedDeclensions));
     const deck = shuffle(pool);
     const limit = cardCount ?? Math.min(pool.length, DEFAULT_MAX_CARDS);
     setCards(deck.slice(0, limit));
     setCurrentIndex(0);
-  }, [rawCards, selectedTags, cardCount]);
+  }, [rawCards, selectedTags, selectedDeclensions, cardCount]);
 
   const currentCard = cards[currentIndex];
 
@@ -97,6 +100,8 @@ function App() {
                 cards={rawCards}
                 selectedTags={selectedTags}
                 onTagsChange={setSelectedTags}
+                selectedDeclensions={selectedDeclensions}
+                onDeclensionsChange={setSelectedDeclensions}
                 cardCount={cardCount}
                 onCardCountChange={setCardCount}
               />
