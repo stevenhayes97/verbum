@@ -940,6 +940,56 @@
       "gender": "Male",
       "english": "centurion",
       "tags": ["military", "people"]
+    },
+    {
+      "id": "noun-sol",
+      "partOfSpeech": "noun",
+      "nominative": "Sol",
+      "genitive": { "stem": "Sol", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "sun",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-ignis",
+      "partOfSpeech": "noun",
+      "nominative": "Ignis",
+      "genitive": { "stem": "Ign", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "fire",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-arbor",
+      "partOfSpeech": "noun",
+      "nominative": "Arbor",
+      "genitive": { "stem": "Arbor", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "tree",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-canis",
+      "partOfSpeech": "noun",
+      "nominative": "Canis",
+      "genitive": { "stem": "Can", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "dog",
+      "tags": ["animals"]
+    },
+    {
+      "id": "noun-iudex",
+      "partOfSpeech": "noun",
+      "nominative": "Iudex",
+      "genitive": { "stem": "Iudic", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "judge",
+      "tags": ["people", "politics"]
     }
   ]
 }
