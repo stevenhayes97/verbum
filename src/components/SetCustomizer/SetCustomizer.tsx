@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import type { Card } from '../../types/flashcard';
 import { DEFAULT_MAX_CARDS, MAX_SELECTED_TAGS } from '../../utils/constants';
+import { cardMatchesFilters, getDeclensions } from '../../utils/declension';
+import { ordinal } from '../../utils/stemEnding';
 import styles from './SetCustomizer.module.css';
 
 interface SetCustomizerProps {
   cards: Card[];
   selectedTags: string[];
   onTagsChange: (tags: string[]) => void;
+  selectedDeclensions: number[];
+  onDeclensionsChange: (declensions: number[]) => void;
   cardCount: number | null;
   onCardCountChange: (count: number | null) => void;
 }
@@ -21,14 +25,31 @@ function countByTag(cards: Card[]): [string, number][] {
   return [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
 }
 
-export function SetCustomizer({ cards, selectedTags, onTagsChange, cardCount, onCardCountChange }: SetCustomizerProps) {
+function countByDeclension(cards: Card[]): [number, number][] {
+  const counts = new Map<number, number>();
+  for (const card of cards) {
+    for (const declension of getDeclensions(card)) {
+      counts.set(declension, (counts.get(declension) ?? 0) + 1);
+    }
+  }
+  return [...counts.entries()].sort((a, b) => a[0] - b[0]);
+}
+
+export function SetCustomizer({
+  cards,
+  selectedTags,
+  onTagsChange,
+  selectedDeclensions,
+  onDeclensionsChange,
+  cardCount,
+  onCardCountChange,
+}: SetCustomizerProps) {
   const [open, setOpen] = useState(false);
   const tagCounts = countByTag(cards);
-  const poolSize = selectedTags.length
-    ? cards.filter((c) => c.tags?.some((t) => selectedTags.includes(t))).length
-    : cards.length;
+  const declensionCounts = countByDeclension(cards);
+  const poolSize = cards.filter((c) => cardMatchesFilters(c, selectedTags, selectedDeclensions)).length;
   const atCap = selectedTags.length >= MAX_SELECTED_TAGS;
-  const filtered = selectedTags.length > 0 || cardCount !== null;
+  const filtered = selectedTags.length > 0 || selectedDeclensions.length > 0 || cardCount !== null;
 
   function toggleTag(tag: string) {
     if (selectedTags.includes(tag)) {
@@ -38,8 +59,17 @@ export function SetCustomizer({ cards, selectedTags, onTagsChange, cardCount, on
     }
   }
 
+  function toggleDeclension(declension: number) {
+    if (selectedDeclensions.includes(declension)) {
+      onDeclensionsChange(selectedDeclensions.filter((d) => d !== declension));
+    } else {
+      onDeclensionsChange([...selectedDeclensions, declension]);
+    }
+  }
+
+  const filterCount = selectedTags.length + selectedDeclensions.length;
   const toggleLabel = filtered
-    ? `Advanced (${selectedTags.length} tag${selectedTags.length === 1 ? '' : 's'} · ${poolSize} card${poolSize === 1 ? '' : 's'}) ${open ? '▾' : '▸'}`
+    ? `Advanced (${filterCount} filter${filterCount === 1 ? '' : 's'} · ${poolSize} card${poolSize === 1 ? '' : 's'}) ${open ? '▾' : '▸'}`
     : `Advanced ${open ? '▾' : '▸'}`;
 
   return (
@@ -55,6 +85,7 @@ export function SetCustomizer({ cards, selectedTags, onTagsChange, cardCount, on
             className={styles.reset}
             onClick={() => {
               onTagsChange([]);
+              onDeclensionsChange([]);
               onCardCountChange(null);
             }}
           >
@@ -87,6 +118,34 @@ export function SetCustomizer({ cards, selectedTags, onTagsChange, cardCount, on
               })}
             </div>
           </div>
+
+          {declensionCounts.length > 0 && (
+            <div className={styles.field}>
+              <span>Declension</span>
+              <div className={styles.tagPills}>
+                <button
+                  type="button"
+                  className={`${styles.tagPill} ${selectedDeclensions.length === 0 ? styles.selected : ''}`}
+                  onClick={() => onDeclensionsChange([])}
+                >
+                  All
+                </button>
+                {declensionCounts.map(([declension, count]) => {
+                  const selected = selectedDeclensions.includes(declension);
+                  return (
+                    <button
+                      key={declension}
+                      type="button"
+                      className={`${styles.tagPill} ${selected ? styles.selected : ''}`}
+                      onClick={() => toggleDeclension(declension)}
+                    >
+                      {ordinal(declension)} ({count})
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
           <label className={styles.field}>
             Count
