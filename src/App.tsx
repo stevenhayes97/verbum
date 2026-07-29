@@ -8,6 +8,7 @@ import { Flashcard } from './components/Flashcard/Flashcard';
 import { CardNav } from './components/CardNav/CardNav';
 import { SentencePractice } from './components/SentencePractice/SentencePractice';
 import { Favorites } from './components/Favorites/Favorites';
+import { VocabList } from './components/VocabList/VocabList';
 import { shuffle } from './utils/shuffle';
 import { DEFAULT_MAX_CARDS } from './utils/constants';
 import styles from './App.module.css';
@@ -116,6 +117,7 @@ function App() {
         )}
 
         {section === 'sentence-practice' && <SentencePractice />}
+        {section === 'vocab-list' && <VocabList />}
         {section === 'favorites' && <Favorites />}
 
         <footer className={styles.footer}>

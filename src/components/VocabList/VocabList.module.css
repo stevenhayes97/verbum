@@ -1,0 +1,82 @@
+.status {
+  color: #fff;
+}
+
+.listWrap {
+  max-width: 560px;
+  max-height: 65vh;
+  margin: 0 auto;
+  overflow-y: auto;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.group {
+  padding: 16px 0 4px;
+}
+
+.group:first-child {
+  padding-top: 0;
+}
+
+.group:last-child {
+  padding-bottom: 0;
+}
+
+.groupTitle {
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  margin: 0 0 10px;
+  padding: 0 16px;
+  text-align: left;
+}
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  /* border-collapse + a sticky <th> lets a hairline of the row scrolling
+     underneath bleed through the header in Chromium; separate borders
+     avoids it. */
+  border-collapse: separate;
+  border-spacing: 0;
+  color: #fff;
+}
+
+.table th,
+.table td {
+  width: 50%;
+  text-align: left;
+}
+
+.table th {
+  position: sticky;
+  top: 0;
+  padding: 12px 16px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  /* Opaque (not translucent like the rest of the panel) so rows scrolling
+     underneath the sticky header disappear cleanly instead of bleeding
+     through it. */
+  background: #1a1410;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 1rem;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .listWrap {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}

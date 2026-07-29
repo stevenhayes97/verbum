@@ -143,6 +143,116 @@
       "declensionLabel": "1st/2nd",
       "english": "your (plural), yours",
       "tags": ["possessive"]
+    },
+    {
+      "id": "adj-novus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Novus",
+      "feminine": "Nova",
+      "neuter": "Novum",
+      "declensionLabel": "1st/2nd",
+      "english": "new",
+      "tags": ["time"]
+    },
+    {
+      "id": "adj-vetus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "declined",
+      "nominative": "Vetus",
+      "genitive": { "stem": "Veter", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "old",
+      "tags": ["time"]
+    },
+    {
+      "id": "adj-pulcher",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Pulcher",
+      "feminine": "Pulchra",
+      "neuter": "Pulchrum",
+      "declensionLabel": "1st/2nd",
+      "english": "beautiful, handsome",
+      "tags": ["appearance"]
+    },
+    {
+      "id": "adj-miser",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Miser",
+      "feminine": "Misera",
+      "neuter": "Miserum",
+      "declensionLabel": "1st/2nd",
+      "english": "wretched, miserable, unhappy",
+      "tags": ["emotion"]
+    },
+    {
+      "id": "adj-sanctus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Sanctus",
+      "feminine": "Sancta",
+      "neuter": "Sanctum",
+      "declensionLabel": "1st/2nd",
+      "english": "holy, sacred",
+      "tags": ["religion"]
+    },
+    {
+      "id": "adj-altus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Altus",
+      "feminine": "Alta",
+      "neuter": "Altum",
+      "declensionLabel": "1st/2nd",
+      "english": "tall, high, deep",
+      "tags": ["size"]
+    },
+    {
+      "id": "adj-fidelis",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Fidelis",
+      "feminine": "Fidelis",
+      "neuter": "Fidele",
+      "declensionLabel": "3rd",
+      "english": "faithful, loyal",
+      "tags": ["character"]
+    },
+    {
+      "id": "adj-gravis",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Gravis",
+      "feminine": "Gravis",
+      "neuter": "Grave",
+      "declensionLabel": "3rd",
+      "english": "heavy, serious, severe",
+      "tags": ["character"]
+    },
+    {
+      "id": "adj-dulcis",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Dulcis",
+      "feminine": "Dulcis",
+      "neuter": "Dulce",
+      "declensionLabel": "3rd",
+      "english": "sweet, pleasant",
+      "tags": ["appearance"]
+    },
+    {
+      "id": "adj-multus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Multus",
+      "feminine": "Multa",
+      "neuter": "Multum",
+      "declensionLabel": "1st/2nd",
+      "english": "much, many",
+      "tags": ["quantity"]
     }
   ]
 }

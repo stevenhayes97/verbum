@@ -790,6 +790,156 @@
       "gender": "Male",
       "english": "belly, stomach",
       "tags": ["body"]
+    },
+    {
+      "id": "noun-aurora",
+      "partOfSpeech": "noun",
+      "nominative": "Aurora",
+      "genitive": { "stem": "Auror", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "dawn",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-gloria",
+      "partOfSpeech": "noun",
+      "nominative": "Gloria",
+      "genitive": { "stem": "Glori", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "glory, fame",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-regina",
+      "partOfSpeech": "noun",
+      "nominative": "Regina",
+      "genitive": { "stem": "Regin", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "queen",
+      "tags": ["people", "royalty"]
+    },
+    {
+      "id": "noun-umbra",
+      "partOfSpeech": "noun",
+      "nominative": "Umbra",
+      "genitive": { "stem": "Umbr", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "shadow, shade",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-musa",
+      "partOfSpeech": "noun",
+      "nominative": "Musa",
+      "genitive": { "stem": "Mus", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "Muse, song, poem",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-gladius",
+      "partOfSpeech": "noun",
+      "nominative": "Gladius",
+      "genitive": { "stem": "Glad", "ending": "ii" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "sword",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-hasta",
+      "partOfSpeech": "noun",
+      "nominative": "Hasta",
+      "genitive": { "stem": "Hast", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "spear",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-scutum",
+      "partOfSpeech": "noun",
+      "nominative": "Scutum",
+      "genitive": { "stem": "Scut", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "shield",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-legio",
+      "partOfSpeech": "noun",
+      "nominative": "Legio",
+      "genitive": { "stem": "Legion", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "legion",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-hostis",
+      "partOfSpeech": "noun",
+      "nominative": "Hostis",
+      "genitive": { "stem": "Host", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "enemy",
+      "tags": ["military", "people"]
+    },
+    {
+      "id": "noun-victoria",
+      "partOfSpeech": "noun",
+      "nominative": "Victoria",
+      "genitive": { "stem": "Victori", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "victory",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-proelium",
+      "partOfSpeech": "noun",
+      "nominative": "Proelium",
+      "genitive": { "stem": "Proel", "ending": "ii" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "battle",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-vulnus",
+      "partOfSpeech": "noun",
+      "nominative": "Vulnus",
+      "genitive": { "stem": "Vulner", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "wound",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-exercitus",
+      "partOfSpeech": "noun",
+      "nominative": "Exercitus",
+      "genitive": { "stem": "Exercit", "ending": "us" },
+      "declension": 4,
+      "gender": "Male",
+      "english": "army",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-centurio",
+      "partOfSpeech": "noun",
+      "nominative": "Centurio",
+      "genitive": { "stem": "Centurion", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "centurion",
+      "tags": ["military", "people"]
     }
   ]
 }
