@@ -3,103 +3,78 @@
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Miles fortis urbem custodit.",
-      "english": "The brave soldier guards the city."
+      "latin": "Canis dominum amat.",
+      "english": "The dog loves the master."
     },
     {
       "id": "sentence-2",
-      "latin": "Dux civitatem magnam regit.",
-      "english": "The leader rules the great state."
+      "latin": "Arbor a nauta videtur.",
+      "english": "The tree is seen by the sailor."
     },
     {
       "id": "sentence-3",
-      "latin": "Liber a poeta scribitur.",
-      "english": "The book is written by the poet."
+      "latin": "Iudicis vox populum terret.",
+      "english": "The judge's voice frightens the people."
     },
     {
       "id": "sentence-4",
-      "latin": "Nomen ducis auditur.",
-      "english": "The leader's name is heard."
+      "latin": "Regina duci gladium mittit.",
+      "english": "The queen sends the sword to the leader."
     },
     {
       "id": "sentence-5",
-      "latin": "Poeta fratri librum mittit.",
-      "english": "The poet sends the book to the brother."
+      "latin": "Sub sole poeta scribit.",
+      "english": "Under the sun, the poet writes."
     },
     {
       "id": "sentence-6",
-      "latin": "In silva miles voces audit.",
-      "english": "In the forest, the soldier hears voices."
+      "latin": "Miles gladium habet et centurio legionem regit.",
+      "english": "The soldier has a sword and the centurion rules the legion."
     },
     {
       "id": "sentence-7",
-      "latin": "Trans flumen agricola equum ducit.",
-      "english": "Across the river, the farmer leads the horse."
+      "latin": "Ignis magnus servos terret.",
+      "english": "The great fire frightens the servants."
     },
     {
       "id": "sentence-8",
-      "latin": "Puella parva a matre amatur.",
-      "english": "The small girl is loved by the mother."
+      "latin": "Poeta librum longum scribit.",
+      "english": "The poet writes a long book."
     },
     {
       "id": "sentence-9",
-      "latin": "Propter bellum populus templum munit.",
-      "english": "Because of the war, the people fortify the temple."
+      "latin": "Servi a domino audiuntur.",
+      "english": "The servants are heard by the master."
     },
     {
       "id": "sentence-10",
-      "latin": "Servus dominum bonum laudat.",
-      "english": "The servant praises the good master."
+      "latin": "Puer parvus canem videt.",
+      "english": "The small boy sees the dog."
     },
     {
       "id": "sentence-11",
-      "latin": "Servi a domino vocantur.",
-      "english": "The servants are called by the master."
+      "latin": "Per silvam miles hostem videt.",
+      "english": "Through the forest, the soldier sees the enemy."
     },
     {
       "id": "sentence-12",
-      "latin": "In agris agricolae equos habent.",
-      "english": "In the fields, the farmers have horses."
+      "latin": "Porta ab agricola aperitur.",
+      "english": "The door is opened by the farmer."
     },
     {
       "id": "sentence-13",
-      "latin": "Femina donum parvum aperit.",
-      "english": "The woman opens the small gift."
+      "latin": "Femina fidelis servum fortem laudat.",
+      "english": "The faithful woman praises the brave servant."
     },
     {
       "id": "sentence-14",
-      "latin": "Porta a servo aperitur.",
-      "english": "The door is opened by the servant."
+      "latin": "Libri a poetis scribuntur.",
+      "english": "The books are written by the poets."
     },
     {
       "id": "sentence-15",
-      "latin": "Sorori rex donum magnum mittit.",
-      "english": "To the sister, the king sends the great gift."
-    },
-    {
-      "id": "sentence-16",
-      "latin": "Puer et puella librum vident.",
-      "english": "The boy and the girl see the book."
-    },
-    {
-      "id": "sentence-17",
-      "latin": "Agricola agros parat et poeta librum scribit.",
-      "english": "The farmer prepares the fields and the poet writes the book."
-    },
-    {
-      "id": "sentence-18",
-      "latin": "Omnes milites civitatem custodiunt.",
-      "english": "All the soldiers guard the state."
-    },
-    {
-      "id": "sentence-19",
-      "latin": "Periculum populum terret.",
-      "english": "Danger frightens the people."
-    },
-    {
-      "id": "sentence-20",
-      "latin": "Vox matris pueros vocat.",
-      "english": "The mother's voice calls the boys."
+      "latin": "Rex civitatem magnam regit et pacem amat.",
+      "english": "The king rules the great state and loves peace."
     }
   ]
 }
