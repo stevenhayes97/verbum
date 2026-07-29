@@ -81,12 +81,11 @@ export function VocabList() {
     <div>
       {loading && <p className={styles.status}>Loading…</p>}
       {error && <p className={styles.status}>{error}</p>}
-      {!loading &&
-        !error &&
-        groups.map((group) => (
-          <div key={group.label} className={styles.group}>
-            <h2 className={styles.groupTitle}>{group.label}</h2>
-            <div className={styles.tableWrap}>
+      {!loading && !error && (
+        <div className={styles.listWrap}>
+          {groups.map((group) => (
+            <div key={group.label} className={styles.group}>
+              <h2 className={styles.groupTitle}>{group.label}</h2>
               <table className={styles.table}>
                 <thead>
                   <tr>
@@ -104,8 +103,9 @@ export function VocabList() {
                 </tbody>
               </table>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+      )}
     </div>
   );
 }

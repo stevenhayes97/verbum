@@ -2,31 +2,35 @@
   color: #fff;
 }
 
-.group {
-  margin-bottom: 28px;
-}
-
-.group:last-child {
-  margin-bottom: 0;
-}
-
-.groupTitle {
+.listWrap {
   max-width: 560px;
-  color: #fff;
-  font-size: 1.1rem;
-  letter-spacing: 0.05em;
-  margin: 0 auto 10px;
-  text-align: left;
-}
-
-.tableWrap {
-  max-width: 560px;
-  max-height: 60vh;
+  max-height: 65vh;
   margin: 0 auto;
   overflow-y: auto;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.group {
+  padding: 16px 0 4px;
+}
+
+.group:first-child {
+  padding-top: 0;
+}
+
+.group:last-child {
+  padding-bottom: 0;
+}
+
+.groupTitle {
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  margin: 0 0 10px;
+  padding: 0 16px;
+  text-align: left;
 }
 
 .table {
@@ -72,7 +76,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .tableWrap {
+  .listWrap {
     background: rgba(0, 0, 0, 0.3);
   }
 }
