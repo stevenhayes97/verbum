@@ -196,12 +196,13 @@ tag list, grouped by semantic type rather than theme. The same "check
 first, reuse if it fits" rule applies before adding a new one:
 
 - `perception` — Video, Audio
-- `communication` — Voco, Laudo, Scribo, Moneo
-- `emotion` — Amo, Terreo
+- `communication` — Voco, Laudo, Scribo, Moneo, Respondeo
+- `emotion` — Amo, Terreo, Invideo
 - `possession` — Habeo, Do
 - `motion` — Duco, Mitto
-- `governance` — Rego, Munio, Custodio
+- `governance` — Rego, Munio, Custodio, Impero
 - `change-of-state` — Paro, Finio, Aperio
+- `cognition` — Credo
 
 The two tag lists are intentionally disjoint — a verb and a noun won't
 usually match on the same tag in the "All" deck's filter — with one
