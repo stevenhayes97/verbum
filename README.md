@@ -168,7 +168,7 @@ reuse an existing one if it fits, to avoid near-duplicates like `war` /
 they're introduced.
 
 - `family` — kinship terms (Pater, Mater, Frater, Soror, Filius, Filia, Avus, Avia, Maritus, Uxor, Vir, Familia, Nepos, Neptis)
-- `people` — persons / social roles (Rex, Puella, Nauta, Dominus, Servus, Femina, Amicus, Homo, Agricola, Poeta, Puer, Regina, Hostis, Centurio)
+- `people` — persons / social roles (Rex, Puella, Nauta, Dominus, Servus, Femina, Amicus, Homo, Agricola, Poeta, Puer, Regina, Hostis, Centurio, Amica)
 - `royalty` — kingship, rule (Rex, Regina)
 - `religion` — sacred, temple-related (Templum, Deus, Caelum, Sanctus)
 - `body` — body parts (Manus, Corpus, Caput, Pectus, Umerus, Bracchium, Crus, Pes, Membrum, Capillus, Os, Labrum, Auris, Collum, Dens, Cor, Venter)
