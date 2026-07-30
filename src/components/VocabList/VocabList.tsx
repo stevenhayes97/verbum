@@ -82,29 +82,35 @@ export function VocabList() {
       {loading && <p className={styles.status}>Loading…</p>}
       {error && <p className={styles.status}>{error}</p>}
       {!loading && !error && (
-        <div className={styles.listWrap}>
-          {groups.map((group) => (
-            <div key={group.label} className={styles.group}>
-              <h2 className={styles.groupTitle}>{group.label}</h2>
-              <table className={styles.table}>
-                <thead>
-                  <tr>
-                    <th>Latin</th>
-                    <th>English</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {group.cards.map((card) => (
-                    <tr key={card.id}>
-                      <td>{latinText(card)}</td>
-                      <td>{card.english}</td>
+        <>
+          <p className={styles.disclaimer}>
+            For more complete or nuanced definitions, consult the Logeion app or a Lewis &amp;
+            Short dictionary.
+          </p>
+          <div className={styles.listWrap}>
+            {groups.map((group) => (
+              <div key={group.label} className={styles.group}>
+                <h2 className={styles.groupTitle}>{group.label}</h2>
+                <table className={styles.table}>
+                  <thead>
+                    <tr>
+                      <th>Latin</th>
+                      <th>English</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          ))}
-        </div>
+                  </thead>
+                  <tbody>
+                    {group.cards.map((card) => (
+                      <tr key={card.id}>
+                        <td>{latinText(card)}</td>
+                        <td>{card.english}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ))}
+          </div>
+        </>
       )}
     </div>
   );

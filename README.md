@@ -167,7 +167,7 @@ reuse an existing one if it fits, to avoid near-duplicates like `war` /
 `military` / `battle` meaning the same thing. New tags get added here as
 they're introduced.
 
-- `family` — kinship terms (Pater, Mater, Frater, Soror)
+- `family` — kinship terms (Pater, Mater, Frater, Soror, Filius, Filia, Avus, Avia, Maritus, Uxor, Vir, Familia, Nepos, Neptis)
 - `people` — persons / social roles (Rex, Puella, Nauta, Dominus, Servus, Femina, Amicus, Homo, Agricola, Poeta, Puer, Regina, Hostis, Centurio)
 - `royalty` — kingship, rule (Rex, Regina)
 - `religion` — sacred, temple-related (Templum, Deus, Caelum, Sanctus)
@@ -199,7 +199,7 @@ first, reuse if it fits" rule applies before adding a new one:
 - `communication` — Voco, Laudo, Scribo, Moneo, Respondeo
 - `emotion` — Amo, Terreo, Invideo
 - `possession` — Habeo, Do
-- `motion` — Duco, Mitto
+- `motion` — Duco, Mitto, Porto, Tollo
 - `governance` — Rego, Munio, Custodio, Impero, Iubeo
 - `change-of-state` — Paro, Finio, Aperio
 - `cognition` — Credo

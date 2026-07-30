@@ -990,6 +990,106 @@
       "gender": "Male",
       "english": "judge",
       "tags": ["people", "politics"]
+    },
+    {
+      "id": "noun-filius",
+      "partOfSpeech": "noun",
+      "nominative": "Filius",
+      "genitive": { "stem": "Fili", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "son",
+      "tags": ["family"]
+    },
+    {
+      "id": "noun-filia",
+      "partOfSpeech": "noun",
+      "nominative": "Filia",
+      "genitive": { "stem": "Fili", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "daughter",
+      "tags": ["family"]
+    },
+    {
+      "id": "noun-avus",
+      "partOfSpeech": "noun",
+      "nominative": "Avus",
+      "genitive": { "stem": "Av", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "grandfather",
+      "tags": ["family"]
+    },
+    {
+      "id": "noun-avia",
+      "partOfSpeech": "noun",
+      "nominative": "Avia",
+      "genitive": { "stem": "Avi", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "grandmother",
+      "tags": ["family"]
+    },
+    {
+      "id": "noun-maritus",
+      "partOfSpeech": "noun",
+      "nominative": "Maritus",
+      "genitive": { "stem": "Marit", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "husband",
+      "tags": ["family"]
+    },
+    {
+      "id": "noun-uxor",
+      "partOfSpeech": "noun",
+      "nominative": "Uxor",
+      "genitive": { "stem": "Uxor", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "wife",
+      "tags": ["family"]
+    },
+    {
+      "id": "noun-vir",
+      "partOfSpeech": "noun",
+      "nominative": "Vir",
+      "genitive": { "stem": "Vir", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "man, husband",
+      "tags": ["family"]
+    },
+    {
+      "id": "noun-familia",
+      "partOfSpeech": "noun",
+      "nominative": "Familia",
+      "genitive": { "stem": "Famili", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "family, household",
+      "tags": ["family"]
+    },
+    {
+      "id": "noun-nepos",
+      "partOfSpeech": "noun",
+      "nominative": "Nepos",
+      "genitive": { "stem": "Nepot", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "grandson, nephew",
+      "tags": ["family"]
+    },
+    {
+      "id": "noun-neptis",
+      "partOfSpeech": "noun",
+      "nominative": "Neptis",
+      "genitive": { "stem": "Nept", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "granddaughter, niece",
+      "tags": ["family"]
     }
   ]
 }
