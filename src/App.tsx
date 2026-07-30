@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { CATEGORIES } from './data/categories';
-import type { Card, Category, CategoryFile, Section } from './types/flashcard';
+import type { Card, Category, CategoryFile, Section, Sentence, SentenceFile } from './types/flashcard';
 import { SectionNav } from './components/SectionNav/SectionNav';
 import { DeckSelector } from './components/DeckSelector/DeckSelector';
 import { SetCustomizer } from './components/SetCustomizer/SetCustomizer';
@@ -21,6 +21,11 @@ async function fetchCategoryCards(dataUrl: string): Promise<Card[]> {
   const data = (await res.json()) as CategoryFile;
   return data.cards;
 }
+
+// Built from import.meta.env.BASE_URL for the same reason categories.ts does
+// it -- a plain "/data/..." path breaks once the site is served from the
+// /verbum/ subpath on GitHub Pages.
+const SENTENCES_URL = `${import.meta.env.BASE_URL}data/sentences.json`;
 
 // Root-absolute CSS url()s don't account for Vite's configured base path
 // (e.g. the /verbum/ subpath on GitHub Pages), so this is built from
@@ -43,6 +48,18 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  // Sentence Practice state lives here (not inside SentencePractice) for the
+  // same reason the flashcard state above does: App never unmounts when
+  // `section` changes, only the JSX under each `section === '...'` branch
+  // does, so keeping state here lets you leave for Declension Tables (or any
+  // other section) and come back to the same sentence instead of a
+  // freshly-refetched, re-shuffled deck at index 0.
+  const [sentences, setSentences] = useState<Sentence[]>([]);
+  const [sentenceIndex, setSentenceIndex] = useState(0);
+  const [sentencesLoading, setSentencesLoading] = useState(true);
+  const [sentencesError, setSentencesError] = useState<string | null>(null);
+  const [sentencesLoaded, setSentencesLoaded] = useState(false);
 
   // Fetches whichever category is selected -- 'all' merges every other
   // enabled category instead of loading a single file.
@@ -80,6 +97,29 @@ function App() {
     setCards(deck.slice(0, limit));
     setCurrentIndex(0);
   }, [rawCards, selectedTags, selectedDeclensions, cardCount]);
+
+  // Fetches sentences.json the first time Sentence Practice is visited, not
+  // eagerly on app load -- sentencesLoaded guards against re-fetching (and
+  // re-shuffling, which would reset the user's place) on subsequent visits.
+  useEffect(() => {
+    if (section !== 'sentence-practice' || sentencesLoaded) return;
+
+    setSentencesLoading(true);
+    setSentencesError(null);
+
+    fetch(SENTENCES_URL)
+      .then((res) => {
+        if (!res.ok) throw new Error(`Failed to load ${SENTENCES_URL}`);
+        return res.json() as Promise<SentenceFile>;
+      })
+      .then((data) => {
+        setSentences(shuffle(data.sentences));
+        setSentenceIndex(0);
+        setSentencesLoaded(true);
+      })
+      .catch((err: Error) => setSentencesError(err.message))
+      .finally(() => setSentencesLoading(false));
+  }, [section, sentencesLoaded]);
 
   const currentCard = cards[currentIndex];
 
@@ -122,7 +162,16 @@ function App() {
           </>
         )}
 
-        {section === 'sentence-practice' && <SentencePractice />}
+        {section === 'sentence-practice' && (
+          <SentencePractice
+            sentences={sentences}
+            currentIndex={sentenceIndex}
+            onIndexChange={setSentenceIndex}
+            onShuffle={() => setSentences((s) => shuffle(s))}
+            loading={sentencesLoading}
+            error={sentencesError}
+          />
+        )}
         {section === 'vocab-list' && <VocabList />}
         {section === 'favorites' && <Favorites />}
         {section === 'declension-tables' && <DeclensionTables />}
