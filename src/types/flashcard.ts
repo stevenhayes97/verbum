@@ -1,6 +1,12 @@
 export type PartOfSpeech = 'noun' | 'verb' | 'adjective' | 'adverb' | 'preposition' | 'other';
 export type Category = 'all' | 'nouns' | 'verbs' | 'adjectives' | 'adverbs' | 'prepositions' | 'other';
-export type Section = 'flashcards' | 'about' | 'sentence-practice' | 'favorites' | 'vocab-list';
+export type Section =
+  | 'flashcards'
+  | 'about'
+  | 'sentence-practice'
+  | 'favorites'
+  | 'vocab-list'
+  | 'declension-tables';
 export type Gender = 'Male' | 'Female' | 'Neuter';
 
 export interface StemEndingForm {
