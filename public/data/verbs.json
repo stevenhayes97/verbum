@@ -46,6 +46,17 @@
       "tags": ["change-of-state"]
     },
     {
+      "id": "verb-do",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Do",
+      "infinitive": { "stem": "D", "ending": "are" },
+      "perfectFirstSingular": "Dedi",
+      "perfectPassiveParticiple": "Datus",
+      "conjugation": "1st",
+      "english": "to give",
+      "tags": ["possession"]
+    },
+    {
       "id": "verb-video",
       "partOfSpeech": "verb",
       "presentFirstSingular": "Video",
