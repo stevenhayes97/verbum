@@ -3,578 +3,128 @@
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Filius filiam portat.",
-      "english": "The son carries the daughter."
+      "latin": "Miles gladium habet.",
+      "english": "The soldier has a sword."
     },
     {
       "id": "sentence-2",
-      "latin": "Filius aviam tollit.",
-      "english": "The son lifts the grandmother."
+      "latin": "Rex leges dat.",
+      "english": "The king gives laws."
     },
     {
       "id": "sentence-3",
-      "latin": "Filius virum portat.",
-      "english": "The son carries the man."
+      "latin": "Dux milites ducit.",
+      "english": "The general leads the soldiers."
     },
     {
       "id": "sentence-4",
-      "latin": "Filius nepotem tollit.",
-      "english": "The son lifts the grandson."
+      "latin": "Poeta librum scribit.",
+      "english": "The poet writes a book."
     },
     {
       "id": "sentence-5",
-      "latin": "Filia avum portat.",
-      "english": "The daughter carries the grandfather."
+      "latin": "Miles bellum finit.",
+      "english": "The soldier ends the war."
     },
     {
       "id": "sentence-6",
-      "latin": "Filia uxorem tollit.",
-      "english": "The daughter lifts the wife."
+      "latin": "Urbs a militibus custoditur.",
+      "english": "The city is guarded by the soldiers."
     },
     {
       "id": "sentence-7",
-      "latin": "Filia familiam portat.",
-      "english": "The daughter carries the family."
+      "latin": "Liber a poeta scribitur.",
+      "english": "The book is written by the poet."
     },
     {
       "id": "sentence-8",
-      "latin": "Avus filium tollit.",
-      "english": "The grandfather lifts the son."
+      "latin": "Templum aperitur.",
+      "english": "The temple is opened."
     },
     {
       "id": "sentence-9",
-      "latin": "Avus maritum portat.",
-      "english": "The grandfather carries the husband."
+      "latin": "Donum puellae datur.",
+      "english": "The gift is given to the girl."
     },
     {
       "id": "sentence-10",
-      "latin": "Avus virum tollit.",
-      "english": "The grandfather lifts the man."
+      "latin": "Miles fortis hostem terret.",
+      "english": "The brave soldier frightens the enemy."
     },
     {
       "id": "sentence-11",
-      "latin": "Avus neptem portat.",
-      "english": "The grandfather carries the granddaughter."
+      "latin": "Puella pulchra a puero amatur.",
+      "english": "The beautiful girl is loved by the boy."
     },
     {
       "id": "sentence-12",
-      "latin": "Avia avum tollit.",
-      "english": "The grandmother lifts the grandfather."
+      "latin": "Dux magnus civitatem regit.",
+      "english": "The great general rules the state."
     },
     {
       "id": "sentence-13",
-      "latin": "Avia uxorem portat.",
-      "english": "The grandmother carries the wife."
+      "latin": "Pater meus fratrem meum laudat.",
+      "english": "My father praises my brother."
     },
     {
       "id": "sentence-14",
-      "latin": "Avia nepotem tollit.",
-      "english": "The grandmother lifts the grandson."
+      "latin": "Soror tua matrem tuam amat.",
+      "english": "Your sister loves your mother."
     },
     {
       "id": "sentence-15",
-      "latin": "Maritus filiam portat.",
-      "english": "The husband carries the daughter."
+      "latin": "Servi nostri dominum nostrum vocant.",
+      "english": "Our slaves call our master."
     },
     {
       "id": "sentence-16",
-      "latin": "Maritus aviam tollit.",
-      "english": "The husband lifts the grandmother."
+      "latin": "Rex militibus donum dat.",
+      "english": "The king gives a gift to the soldiers."
     },
     {
       "id": "sentence-17",
-      "latin": "Maritus familiam portat.",
-      "english": "The husband carries the family."
+      "latin": "Legio urbem munit.",
+      "english": "The legion fortifies the city."
     },
     {
       "id": "sentence-18",
-      "latin": "Uxor filium tollit.",
-      "english": "The wife lifts the son."
+      "latin": "Dominus servum vocat, sed servus non respondet.",
+      "english": "The master calls the slave, but the slave does not answer."
     },
     {
       "id": "sentence-19",
-      "latin": "Uxor avum portat.",
-      "english": "The wife carries the grandfather."
+      "latin": "Miles gladium habet et scutum portat.",
+      "english": "The soldier has a sword and carries a shield."
     },
     {
       "id": "sentence-20",
-      "latin": "Uxor virum tollit.",
-      "english": "The wife lifts the man."
+      "latin": "Milites urbem custodiunt.",
+      "english": "The soldiers guard the city."
     },
     {
       "id": "sentence-21",
-      "latin": "Uxor nepotem portat.",
-      "english": "The wife carries the grandson."
+      "latin": "Hostes a legione terrentur.",
+      "english": "The enemies are frightened by the legion."
     },
     {
       "id": "sentence-22",
-      "latin": "Vir filiam tollit.",
-      "english": "The man lifts the daughter."
+      "latin": "Dux milites suos ducit.",
+      "english": "The general leads his own soldiers."
     },
     {
       "id": "sentence-23",
-      "latin": "Vir maritum portat.",
-      "english": "The man carries the husband."
+      "latin": "Filius reginae gladium habet.",
+      "english": "The queen's son has a sword."
     },
     {
       "id": "sentence-24",
-      "latin": "Vir familiam tollit.",
-      "english": "The man lifts the family."
+      "latin": "Templum sanctum a populo laudatur.",
+      "english": "The holy temple is praised by the people."
     },
     {
       "id": "sentence-25",
-      "latin": "Familia filium portat.",
-      "english": "The family carries the son."
-    },
-    {
-      "id": "sentence-26",
-      "latin": "Familia aviam tollit.",
-      "english": "The family lifts the grandmother."
-    },
-    {
-      "id": "sentence-27",
-      "latin": "Familia uxorem portat.",
-      "english": "The family carries the wife."
-    },
-    {
-      "id": "sentence-28",
-      "latin": "Familia neptem tollit.",
-      "english": "The family lifts the granddaughter."
-    },
-    {
-      "id": "sentence-29",
-      "latin": "Nepos avum portat.",
-      "english": "The grandson carries the grandfather."
-    },
-    {
-      "id": "sentence-30",
-      "latin": "Nepos maritum tollit.",
-      "english": "The grandson lifts the husband."
-    },
-    {
-      "id": "sentence-31",
-      "latin": "Nepos familiam portat.",
-      "english": "The grandson carries the family."
-    },
-    {
-      "id": "sentence-32",
-      "latin": "Neptis filiam tollit.",
-      "english": "The granddaughter lifts the daughter."
-    },
-    {
-      "id": "sentence-33",
-      "latin": "Neptis aviam portat.",
-      "english": "The granddaughter carries the grandmother."
-    },
-    {
-      "id": "sentence-34",
-      "latin": "Neptis virum tollit.",
-      "english": "The granddaughter lifts the man."
-    },
-    {
-      "id": "sentence-35",
-      "latin": "Filii filiam tollunt.",
-      "english": "The sons lift the daughter."
-    },
-    {
-      "id": "sentence-36",
-      "latin": "Filiae filium portant.",
-      "english": "The daughters carry the son."
-    },
-    {
-      "id": "sentence-37",
-      "latin": "Avi filium tollunt.",
-      "english": "The grandfathers lift the son."
-    },
-    {
-      "id": "sentence-38",
-      "latin": "Aviae filium portant.",
-      "english": "The grandmothers carry the son."
-    },
-    {
-      "id": "sentence-39",
-      "latin": "Mariti filium tollunt.",
-      "english": "The husbands lift the son."
-    },
-    {
-      "id": "sentence-40",
-      "latin": "Uxores filium portant.",
-      "english": "The wives carry the son."
-    },
-    {
-      "id": "sentence-41",
-      "latin": "Viri filium tollunt.",
-      "english": "The men lift the son."
-    },
-    {
-      "id": "sentence-42",
-      "latin": "Familiae filium portant.",
-      "english": "The families carry the son."
-    },
-    {
-      "id": "sentence-43",
-      "latin": "Nepotes filium tollunt.",
-      "english": "The grandsons lift the son."
-    },
-    {
-      "id": "sentence-44",
-      "latin": "Neptes filium portant.",
-      "english": "The granddaughters carry the son."
-    },
-    {
-      "id": "sentence-45",
-      "latin": "Filius maritos portat.",
-      "english": "The son carries the husbands."
-    },
-    {
-      "id": "sentence-46",
-      "latin": "Avus filios tollit.",
-      "english": "The grandfather lifts the sons."
-    },
-    {
-      "id": "sentence-47",
-      "latin": "Avia familias portat.",
-      "english": "The grandmother carries the families."
-    },
-    {
-      "id": "sentence-48",
-      "latin": "Uxor avias tollit.",
-      "english": "The wife lifts the grandmothers."
-    },
-    {
-      "id": "sentence-49",
-      "latin": "Familia filios portat.",
-      "english": "The family carries the sons."
-    },
-    {
-      "id": "sentence-50",
-      "latin": "Nepos viros tollit.",
-      "english": "The grandson lifts the men."
-    },
-    {
-      "id": "sentence-51",
-      "latin": "Filius portatur.",
-      "english": "The son is carried."
-    },
-    {
-      "id": "sentence-52",
-      "latin": "Filia tollitur.",
-      "english": "The daughter is lifted."
-    },
-    {
-      "id": "sentence-53",
-      "latin": "Avus portatur.",
-      "english": "The grandfather is carried."
-    },
-    {
-      "id": "sentence-54",
-      "latin": "Avia tollitur.",
-      "english": "The grandmother is lifted."
-    },
-    {
-      "id": "sentence-55",
-      "latin": "Maritus portatur.",
-      "english": "The husband is carried."
-    },
-    {
-      "id": "sentence-56",
-      "latin": "Uxor tollitur.",
-      "english": "The wife is lifted."
-    },
-    {
-      "id": "sentence-57",
-      "latin": "Vir portatur.",
-      "english": "The man is carried."
-    },
-    {
-      "id": "sentence-58",
-      "latin": "Familia tollitur.",
-      "english": "The family is lifted."
-    },
-    {
-      "id": "sentence-59",
-      "latin": "Nepos portatur.",
-      "english": "The grandson is carried."
-    },
-    {
-      "id": "sentence-60",
-      "latin": "Neptis tollitur.",
-      "english": "The granddaughter is lifted."
-    },
-    {
-      "id": "sentence-61",
-      "latin": "Filii tolluntur.",
-      "english": "The sons are lifted."
-    },
-    {
-      "id": "sentence-62",
-      "latin": "Filiae portantur.",
-      "english": "The daughters are carried."
-    },
-    {
-      "id": "sentence-63",
-      "latin": "Avi tolluntur.",
-      "english": "The grandfathers are lifted."
-    },
-    {
-      "id": "sentence-64",
-      "latin": "Aviae portantur.",
-      "english": "The grandmothers are carried."
-    },
-    {
-      "id": "sentence-65",
-      "latin": "Mariti tolluntur.",
-      "english": "The husbands are lifted."
-    },
-    {
-      "id": "sentence-66",
-      "latin": "Uxores portantur.",
-      "english": "The wives are carried."
-    },
-    {
-      "id": "sentence-67",
-      "latin": "Viri tolluntur.",
-      "english": "The men are lifted."
-    },
-    {
-      "id": "sentence-68",
-      "latin": "Familiae portantur.",
-      "english": "The families are carried."
-    },
-    {
-      "id": "sentence-69",
-      "latin": "Nepotes tolluntur.",
-      "english": "The grandsons are lifted."
-    },
-    {
-      "id": "sentence-70",
-      "latin": "Neptes portantur.",
-      "english": "The granddaughters are carried."
-    },
-    {
-      "id": "sentence-71",
-      "latin": "Filius filiam portat et uxorem tollit.",
-      "english": "The son carries the daughter and lifts the wife."
-    },
-    {
-      "id": "sentence-72",
-      "latin": "Filia avum portat et virum tollit.",
-      "english": "The daughter carries the grandfather and lifts the man."
-    },
-    {
-      "id": "sentence-73",
-      "latin": "Avus aviam portat et familiam tollit.",
-      "english": "The grandfather carries the grandmother and lifts the family."
-    },
-    {
-      "id": "sentence-74",
-      "latin": "Avia maritum portat et nepotem tollit.",
-      "english": "The grandmother carries the husband and lifts the grandson."
-    },
-    {
-      "id": "sentence-75",
-      "latin": "Maritus uxorem portat et neptem tollit.",
-      "english": "The husband carries the wife and lifts the granddaughter."
-    },
-    {
-      "id": "sentence-76",
-      "latin": "Uxor virum portat et filium tollit.",
-      "english": "The wife carries the man and lifts the son."
-    },
-    {
-      "id": "sentence-77",
-      "latin": "Vir familiam portat et filiam tollit.",
-      "english": "The man carries the family and lifts the daughter."
-    },
-    {
-      "id": "sentence-78",
-      "latin": "Familia nepotem portat et avum tollit.",
-      "english": "The family carries the grandson and lifts the grandfather."
-    },
-    {
-      "id": "sentence-79",
-      "latin": "Nepos neptem portat et aviam tollit.",
-      "english": "The grandson carries the granddaughter and lifts the grandmother."
-    },
-    {
-      "id": "sentence-80",
-      "latin": "Neptis filium portat et maritum tollit.",
-      "english": "The granddaughter carries the son and lifts the husband."
-    },
-    {
-      "id": "sentence-81",
-      "latin": "Filius avum tollit et virum portat.",
-      "english": "The son lifts the grandfather and carries the man."
-    },
-    {
-      "id": "sentence-82",
-      "latin": "Filia aviam tollit et familiam portat.",
-      "english": "The daughter lifts the grandmother and carries the family."
-    },
-    {
-      "id": "sentence-83",
-      "latin": "Avus maritum tollit et nepotem portat.",
-      "english": "The grandfather lifts the husband and carries the grandson."
-    },
-    {
-      "id": "sentence-84",
-      "latin": "Avia uxorem tollit et neptem portat.",
-      "english": "The grandmother lifts the wife and carries the granddaughter."
-    },
-    {
-      "id": "sentence-85",
-      "latin": "Filius avum portat et uxor nepotem tollit.",
-      "english": "The son carries the grandfather and the wife lifts the grandson."
-    },
-    {
-      "id": "sentence-86",
-      "latin": "Filia aviam portat et vir neptem tollit.",
-      "english": "The daughter carries the grandmother and the man lifts the granddaughter."
-    },
-    {
-      "id": "sentence-87",
-      "latin": "Avus maritum portat et familia filium tollit.",
-      "english": "The grandfather carries the husband and the family lifts the son."
-    },
-    {
-      "id": "sentence-88",
-      "latin": "Avia uxorem portat et nepos filiam tollit.",
-      "english": "The grandmother carries the wife and the grandson lifts the daughter."
-    },
-    {
-      "id": "sentence-89",
-      "latin": "Maritus virum portat et neptis avum tollit.",
-      "english": "The husband carries the man and the granddaughter lifts the grandfather."
-    },
-    {
-      "id": "sentence-90",
-      "latin": "Uxor familiam portat et filius aviam tollit.",
-      "english": "The wife carries the family and the son lifts the grandmother."
-    },
-    {
-      "id": "sentence-91",
-      "latin": "Vir nepotem portat et filia maritum tollit.",
-      "english": "The man carries the grandson and the daughter lifts the husband."
-    },
-    {
-      "id": "sentence-92",
-      "latin": "Familia neptem portat et avus uxorem tollit.",
-      "english": "The family carries the granddaughter and the grandfather lifts the wife."
-    },
-    {
-      "id": "sentence-93",
-      "latin": "Nepos filium portat et avia virum tollit.",
-      "english": "The grandson carries the son and the grandmother lifts the man."
-    },
-    {
-      "id": "sentence-94",
-      "latin": "Neptis filiam portat et maritus familiam tollit.",
-      "english": "The granddaughter carries the daughter and the husband lifts the family."
-    },
-    {
-      "id": "sentence-95",
-      "latin": "Filius portatur et maritus familiam tollit.",
-      "english": "The son is carried and the husband lifts the family."
-    },
-    {
-      "id": "sentence-96",
-      "latin": "Filia portatur et uxor nepotem tollit.",
-      "english": "The daughter is carried and the wife lifts the grandson."
-    },
-    {
-      "id": "sentence-97",
-      "latin": "Avus portatur et vir neptem tollit.",
-      "english": "The grandfather is carried and the man lifts the granddaughter."
-    },
-    {
-      "id": "sentence-98",
-      "latin": "Avia portatur et familia filium tollit.",
-      "english": "The grandmother is carried and the family lifts the son."
-    },
-    {
-      "id": "sentence-99",
-      "latin": "Maritus portatur et nepos filiam tollit.",
-      "english": "The husband is carried and the grandson lifts the daughter."
-    },
-    {
-      "id": "sentence-100",
-      "latin": "Uxor portatur et neptis avum tollit.",
-      "english": "The wife is carried and the granddaughter lifts the grandfather."
-    },
-    {
-      "id": "sentence-101",
-      "latin": "Vir portatur et filius aviam tollit.",
-      "english": "The man is carried and the son lifts the grandmother."
-    },
-    {
-      "id": "sentence-102",
-      "latin": "Familia portatur et filia maritum tollit.",
-      "english": "The family is carried and the daughter lifts the husband."
-    },
-    {
-      "id": "sentence-103",
-      "latin": "Nepos portatur et avus uxorem tollit.",
-      "english": "The grandson is carried and the grandfather lifts the wife."
-    },
-    {
-      "id": "sentence-104",
-      "latin": "Neptis portatur et avia virum tollit.",
-      "english": "The granddaughter is carried and the grandmother lifts the man."
-    },
-    {
-      "id": "sentence-105",
-      "latin": "Filii avias portant.",
-      "english": "The sons carry the grandmothers."
-    },
-    {
-      "id": "sentence-106",
-      "latin": "Filiae maritos tollunt.",
-      "english": "The daughters lift the husbands."
-    },
-    {
-      "id": "sentence-107",
-      "latin": "Avi uxores portant.",
-      "english": "The grandfathers carry the wives."
-    },
-    {
-      "id": "sentence-108",
-      "latin": "Aviae viros tollunt.",
-      "english": "The grandmothers lift the men."
-    },
-    {
-      "id": "sentence-109",
-      "latin": "Mariti familias portant.",
-      "english": "The husbands carry the families."
-    },
-    {
-      "id": "sentence-110",
-      "latin": "Uxores nepotes tollunt.",
-      "english": "The wives lift the grandsons."
-    },
-    {
-      "id": "sentence-111",
-      "latin": "Viri neptes portant.",
-      "english": "The men carry the granddaughters."
-    },
-    {
-      "id": "sentence-112",
-      "latin": "Familiae filios tollunt.",
-      "english": "The families lift the sons."
-    },
-    {
-      "id": "sentence-113",
-      "latin": "Vir uxorem portat.",
-      "english": "The husband carries the wife."
-    },
-    {
-      "id": "sentence-114",
-      "latin": "Viri uxores portant.",
-      "english": "The husbands carry the wives."
-    },
-    {
-      "id": "sentence-115",
-      "latin": "Uxores viros tollunt.",
-      "english": "The wives lift the husbands."
+      "latin": "Omnis populus vocem regis audit.",
+      "english": "All the people hear the voice of the king."
     }
   ]
 }
