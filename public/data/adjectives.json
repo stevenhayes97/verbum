@@ -253,6 +253,61 @@
       "declensionLabel": "1st/2nd",
       "english": "much, many",
       "tags": ["quantity"]
+    },
+    {
+      "id": "adj-formosus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Formosus",
+      "feminine": "Formosa",
+      "neuter": "Formosum",
+      "declensionLabel": "1st/2nd",
+      "english": "shapely, beautiful",
+      "tags": ["appearance"]
+    },
+    {
+      "id": "adj-candidus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Candidus",
+      "feminine": "Candida",
+      "neuter": "Candidum",
+      "declensionLabel": "1st/2nd",
+      "english": "white, radiant, fair",
+      "tags": ["appearance"]
+    },
+    {
+      "id": "adj-decorus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Decorus",
+      "feminine": "Decora",
+      "neuter": "Decorum",
+      "declensionLabel": "1st/2nd",
+      "english": "fitting, becoming, graceful",
+      "tags": ["appearance"]
+    },
+    {
+      "id": "adj-venustus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Venustus",
+      "feminine": "Venusta",
+      "neuter": "Venustum",
+      "declensionLabel": "1st/2nd",
+      "english": "charming, attractive, graceful",
+      "tags": ["appearance"]
+    },
+    {
+      "id": "adj-praeclarus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Praeclarus",
+      "feminine": "Praeclara",
+      "neuter": "Praeclarum",
+      "declensionLabel": "1st/2nd",
+      "english": "brilliant, illustrious, splendid",
+      "tags": ["character"]
     }
   ]
 }
