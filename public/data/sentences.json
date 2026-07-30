@@ -3,158 +3,503 @@
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Miles gladium habet.",
-      "english": "The soldier has a sword."
+      "latin": "Felix vir a femina omni amatur.",
+      "english": "The happy man is loved by every woman."
     },
     {
       "id": "sentence-2",
-      "latin": "Rex leges dat.",
-      "english": "The king gives laws."
+      "latin": "Formosus vir a felici femina laudatur.",
+      "english": "The handsome man is praised by the happy woman."
     },
     {
       "id": "sentence-3",
-      "latin": "Dux milites ducit.",
-      "english": "The general leads the soldiers."
+      "latin": "Vir a femina bona vocatur formosus.",
+      "english": "The handsome man is called by the good woman."
     },
     {
       "id": "sentence-4",
-      "latin": "Poeta librum scribit.",
-      "english": "The poet writes a book."
+      "latin": "A viro magno femina parva videtur.",
+      "english": "The small woman is seen by the great man."
     },
     {
       "id": "sentence-5",
-      "latin": "Miles bellum finit.",
-      "english": "The soldier ends the war."
+      "latin": "Monetur vir formosus a femina parva.",
+      "english": "The handsome man is warned by the small woman."
     },
     {
       "id": "sentence-6",
-      "latin": "Urbs a militibus custoditur.",
-      "english": "The city is guarded by the soldiers."
+      "latin": "Magnus vir a femina venusta terretur.",
+      "english": "The great man is frightened by the charming woman."
     },
     {
       "id": "sentence-7",
-      "latin": "Liber a poeta scribitur.",
-      "english": "The book is written by the poet."
+      "latin": "Parvus vir a dulci femina ducitur.",
+      "english": "The small man is led by the sweet woman."
     },
     {
       "id": "sentence-8",
-      "latin": "Templum aperitur.",
-      "english": "The temple is opened."
+      "latin": "Vir a femina candida auditur formosus.",
+      "english": "The handsome man is heard by the fair woman."
     },
     {
       "id": "sentence-9",
-      "latin": "Donum puellae datur.",
-      "english": "The gift is given to the girl."
+      "latin": "A femina alta vir gravis custoditur.",
+      "english": "The serious man is guarded by the tall woman."
     },
     {
       "id": "sentence-10",
-      "latin": "Miles fortis hostem terret.",
-      "english": "The brave soldier frightens the enemy."
+      "latin": "Amatur vir omnis a femina misera.",
+      "english": "Every man is loved by the miserable woman."
     },
     {
       "id": "sentence-11",
-      "latin": "Puella pulchra a puero amatur.",
-      "english": "The beautiful girl is loved by the boy."
+      "latin": "Felix femina a viro vetere laudatur.",
+      "english": "The happy woman is praised by the old man."
     },
     {
       "id": "sentence-12",
-      "latin": "Dux magnus civitatem regit.",
-      "english": "The great general rules the state."
+      "latin": "Gravis vir a formosa femina vocatur.",
+      "english": "The serious man is called by the shapely woman."
     },
     {
       "id": "sentence-13",
-      "latin": "Pater meus fratrem meum laudat.",
-      "english": "My father praises my brother."
+      "latin": "Femina a viro brevi videtur gravis.",
+      "english": "The serious woman is seen by the short man."
     },
     {
       "id": "sentence-14",
-      "latin": "Soror tua matrem tuam amat.",
-      "english": "Your sister loves your mother."
+      "latin": "A femina pulchra vir altus monetur.",
+      "english": "The tall man is warned by the beautiful woman."
     },
     {
       "id": "sentence-15",
-      "latin": "Servi nostri dominum nostrum vocant.",
-      "english": "Our slaves call our master."
+      "latin": "Terretur femina pulchra a viro brevi.",
+      "english": "The beautiful woman is frightened by the short man."
     },
     {
       "id": "sentence-16",
-      "latin": "Rex militibus donum dat.",
-      "english": "The king gives a gift to the soldiers."
+      "latin": "Praeclara femina a viro brevi ducitur.",
+      "english": "The illustrious woman is led by the short man."
     },
     {
       "id": "sentence-17",
-      "latin": "Legio urbem munit.",
-      "english": "The legion fortifies the city."
+      "latin": "Brevis femina a fideli viro auditur.",
+      "english": "The short woman is heard by the faithful man."
     },
     {
       "id": "sentence-18",
-      "latin": "Dominus servum vocat, sed servus non respondet.",
-      "english": "The master calls the slave, but the slave does not answer."
+      "latin": "Femina a viro pulchro custoditur magna.",
+      "english": "The great woman is guarded by the handsome man."
     },
     {
       "id": "sentence-19",
-      "latin": "Miles gladium habet et scutum portat.",
-      "english": "The soldier has a sword and carries a shield."
+      "latin": "A viro forti femina magna amatur.",
+      "english": "The great woman is loved by the brave man."
     },
     {
       "id": "sentence-20",
-      "latin": "Milites urbem custodiunt.",
-      "english": "The soldiers guard the city."
+      "latin": "Laudatur femina venusta a viro pulchro.",
+      "english": "The charming woman is praised by the handsome man."
     },
     {
       "id": "sentence-21",
-      "latin": "Hostes a legione terrentur.",
-      "english": "The enemies are frightened by the legion."
+      "latin": "Formosus vir a femina alta vocatur.",
+      "english": "The handsome man is called by the tall woman."
     },
     {
       "id": "sentence-22",
-      "latin": "Dux milites suos ducit.",
-      "english": "The general leads his own soldiers."
+      "latin": "Altus vir ab omni femina videtur.",
+      "english": "The tall man is seen by every woman."
     },
     {
       "id": "sentence-23",
-      "latin": "Filius reginae gladium habet.",
-      "english": "The queen's son has a sword."
+      "latin": "Vir a femina misera monetur fidelis.",
+      "english": "The faithful man is warned by the miserable woman."
     },
     {
       "id": "sentence-24",
-      "latin": "Templum sanctum a populo laudatur.",
-      "english": "The holy temple is praised by the people."
+      "latin": "A viro sancto femina brevis terretur.",
+      "english": "The short woman is frightened by the holy man."
     },
     {
       "id": "sentence-25",
-      "latin": "Omnis populus vocem regis audit.",
-      "english": "All the people hear the voice of the king."
+      "latin": "Ducitur vir candidus a femina fideli.",
+      "english": "The fair man is led by the faithful woman."
     },
     {
       "id": "sentence-26",
-      "latin": "Vir formosam uxorem amat.",
-      "english": "The husband loves his shapely wife."
+      "latin": "Formosa femina a viro parvo auditur.",
+      "english": "The shapely woman is heard by the small man."
     },
     {
       "id": "sentence-27",
-      "latin": "Uxor candida a viro laudatur.",
-      "english": "The fair wife is praised by the husband."
+      "latin": "Fidelis vir ab omni femina custoditur.",
+      "english": "The faithful man is guarded by every woman."
     },
     {
       "id": "sentence-28",
-      "latin": "Vir decoram uxorem videt.",
-      "english": "The husband sees his graceful wife."
+      "latin": "Femina a viro magno amatur pulchra.",
+      "english": "The beautiful woman is loved by the great man."
     },
     {
       "id": "sentence-29",
-      "latin": "Uxor venusta a viro custoditur.",
-      "english": "The charming wife is guarded by the husband."
+      "latin": "A viro bono femina omnis laudatur.",
+      "english": "Every woman is praised by the good man."
     },
     {
       "id": "sentence-30",
-      "latin": "Vir praeclaram uxorem laudat.",
-      "english": "The husband praises his illustrious wife."
+      "latin": "Vocatur femina parva a viro formoso.",
+      "english": "The small woman is called by the handsome man."
     },
     {
       "id": "sentence-31",
-      "latin": "Vir pulchram uxorem ducit.",
-      "english": "The husband leads his beautiful wife."
+      "latin": "Sanctus vir a femina brevi videtur.",
+      "english": "The holy man is seen by the short woman."
+    },
+    {
+      "id": "sentence-32",
+      "latin": "Gravis vir a vetere femina monetur.",
+      "english": "The serious man is warned by the old woman."
+    },
+    {
+      "id": "sentence-33",
+      "latin": "Vir a femina forti terretur altus.",
+      "english": "The tall man is frightened by the brave woman."
+    },
+    {
+      "id": "sentence-34",
+      "latin": "A viro sancto femina magna ducitur.",
+      "english": "The great woman is led by the holy man."
+    },
+    {
+      "id": "sentence-35",
+      "latin": "Auditur vir fortis a femina bona.",
+      "english": "The brave man is heard by the good woman."
+    },
+    {
+      "id": "sentence-36",
+      "latin": "Fortis femina a viro candido custoditur.",
+      "english": "The brave woman is guarded by the fair man."
+    },
+    {
+      "id": "sentence-37",
+      "latin": "Fidelis femina a decoro viro amatur.",
+      "english": "The faithful woman is loved by the graceful man."
+    },
+    {
+      "id": "sentence-38",
+      "latin": "Femina a viro omni laudatur brevis.",
+      "english": "The short woman is praised by every man."
+    },
+    {
+      "id": "sentence-39",
+      "latin": "A femina misera vir gravis vocatur.",
+      "english": "The serious man is called by the miserable woman."
+    },
+    {
+      "id": "sentence-40",
+      "latin": "Videtur femina alta a viro decoro.",
+      "english": "The tall woman is seen by the graceful man."
+    },
+    {
+      "id": "sentence-41",
+      "latin": "Alta femina a viro magno monetur.",
+      "english": "The tall woman is warned by the great man."
+    },
+    {
+      "id": "sentence-42",
+      "latin": "Felix vir ab omni femina terretur.",
+      "english": "The happy man is frightened by every woman."
+    },
+    {
+      "id": "sentence-43",
+      "latin": "Femina a viro venusto ducitur magna.",
+      "english": "The great woman is led by the charming man."
+    },
+    {
+      "id": "sentence-44",
+      "latin": "A femina vetere vir magnus auditur.",
+      "english": "The great man is heard by the old woman."
+    },
+    {
+      "id": "sentence-45",
+      "latin": "Custoditur femina felix a viro gravi.",
+      "english": "The happy woman is guarded by the serious man."
+    },
+    {
+      "id": "sentence-46",
+      "latin": "Dulcis vir a femina vetere amatur.",
+      "english": "The sweet man is loved by the old woman."
+    },
+    {
+      "id": "sentence-47",
+      "latin": "Sanctus vir a magna femina laudatur.",
+      "english": "The holy man is praised by the great woman."
+    },
+    {
+      "id": "sentence-48",
+      "latin": "Femina a viro parvo vocatur dulcis.",
+      "english": "The sweet woman is called by the small man."
+    },
+    {
+      "id": "sentence-49",
+      "latin": "A viro parvo femina sancta videtur.",
+      "english": "The holy woman is seen by the small man."
+    },
+    {
+      "id": "sentence-50",
+      "latin": "Monetur femina vetus a viro parvo.",
+      "english": "The old woman is warned by the small man."
+    },
+    {
+      "id": "sentence-51",
+      "latin": "Sanctus vir fidelem feminam amat.",
+      "english": "The holy man loves the faithful woman."
+    },
+    {
+      "id": "sentence-52",
+      "latin": "Femina decorum virum laudat omnis.",
+      "english": "Every woman praises the graceful man."
+    },
+    {
+      "id": "sentence-53",
+      "latin": "Dulcem virum vetus femina vocat.",
+      "english": "The old woman calls the sweet man."
+    },
+    {
+      "id": "sentence-54",
+      "latin": "Videt femina omnem virum bona.",
+      "english": "The good woman sees every man."
+    },
+    {
+      "id": "sentence-55",
+      "latin": "Decora femina monet pulchrum virum.",
+      "english": "The graceful woman warns the handsome man."
+    },
+    {
+      "id": "sentence-56",
+      "latin": "Miser vir candidam feminam terret.",
+      "english": "The miserable man frightens the fair woman."
+    },
+    {
+      "id": "sentence-57",
+      "latin": "Vir veterem feminam ducit pulcher.",
+      "english": "The handsome man leads the old woman."
+    },
+    {
+      "id": "sentence-58",
+      "latin": "Miserum virum omnis femina audit.",
+      "english": "Every woman hears the miserable man."
+    },
+    {
+      "id": "sentence-59",
+      "latin": "Custodit vir decoram feminam candidus.",
+      "english": "The fair man guards the graceful woman."
+    },
+    {
+      "id": "sentence-60",
+      "latin": "Vetus femina amat altum virum.",
+      "english": "The old woman loves the tall man."
+    },
+    {
+      "id": "sentence-61",
+      "latin": "Venustus vir altam feminam laudat.",
+      "english": "The charming man praises the tall woman."
+    },
+    {
+      "id": "sentence-62",
+      "latin": "Vir dulcem feminam vocat candidus.",
+      "english": "The fair man calls the sweet woman."
+    },
+    {
+      "id": "sentence-63",
+      "latin": "Candidam feminam gravis vir videt.",
+      "english": "The serious man sees the fair woman."
+    },
+    {
+      "id": "sentence-64",
+      "latin": "Monet vir parvam feminam magnus.",
+      "english": "The great man warns the small woman."
+    },
+    {
+      "id": "sentence-65",
+      "latin": "Brevis femina terret candidum virum.",
+      "english": "The short woman frightens the fair man."
+    },
+    {
+      "id": "sentence-66",
+      "latin": "Magnus vir bonam feminam ducit.",
+      "english": "The great man leads the good woman."
+    },
+    {
+      "id": "sentence-67",
+      "latin": "Femina miserum virum audit venusta.",
+      "english": "The charming woman hears the miserable man."
+    },
+    {
+      "id": "sentence-68",
+      "latin": "Sanctum virum candida femina custodit.",
+      "english": "The fair woman guards the holy man."
+    },
+    {
+      "id": "sentence-69",
+      "latin": "Amat vir omnem feminam fidelis.",
+      "english": "The faithful man loves every woman."
+    },
+    {
+      "id": "sentence-70",
+      "latin": "Brevis vir laudat omnem feminam.",
+      "english": "The short man praises every woman."
+    },
+    {
+      "id": "sentence-71",
+      "latin": "Bona femina pulchrum virum vocat.",
+      "english": "The good woman calls the handsome man."
+    },
+    {
+      "id": "sentence-72",
+      "latin": "Vir miseram feminam videt parvus.",
+      "english": "The small man sees the miserable woman."
+    },
+    {
+      "id": "sentence-73",
+      "latin": "Magnam feminam omnis vir monet.",
+      "english": "Every man warns the great woman."
+    },
+    {
+      "id": "sentence-74",
+      "latin": "Terret femina felicem virum praeclara.",
+      "english": "The illustrious woman frightens the happy man."
+    },
+    {
+      "id": "sentence-75",
+      "latin": "Omnis femina ducit miserum virum.",
+      "english": "Every woman leads the miserable man."
+    },
+    {
+      "id": "sentence-76",
+      "latin": "Brevis vir miseram feminam audit.",
+      "english": "The short man hears the miserable woman."
+    },
+    {
+      "id": "sentence-77",
+      "latin": "Femina decorum virum custodit magna.",
+      "english": "The great woman guards the graceful man."
+    },
+    {
+      "id": "sentence-78",
+      "latin": "Magnum virum praeclara femina amat.",
+      "english": "The illustrious woman loves the great man."
+    },
+    {
+      "id": "sentence-79",
+      "latin": "Laudat vir altam feminam praeclarus.",
+      "english": "The illustrious man praises the tall woman."
+    },
+    {
+      "id": "sentence-80",
+      "latin": "Formosus vir vocat pulchram feminam.",
+      "english": "The handsome man calls the beautiful woman."
+    },
+    {
+      "id": "sentence-81",
+      "latin": "Praeclara femina omnem virum videt.",
+      "english": "The illustrious woman sees every man."
+    },
+    {
+      "id": "sentence-82",
+      "latin": "Femina miserum virum monet brevis.",
+      "english": "The short woman warns the miserable man."
+    },
+    {
+      "id": "sentence-83",
+      "latin": "Sanctum virum formosa femina terret.",
+      "english": "The shapely woman frightens the holy man."
+    },
+    {
+      "id": "sentence-84",
+      "latin": "Ducit vir brevem feminam sanctus.",
+      "english": "The holy man leads the short woman."
+    },
+    {
+      "id": "sentence-85",
+      "latin": "Bonus vir audit sanctam feminam.",
+      "english": "The good man hears the holy woman."
+    },
+    {
+      "id": "sentence-86",
+      "latin": "Venusta femina brevem virum custodit.",
+      "english": "The charming woman guards the short man."
+    },
+    {
+      "id": "sentence-87",
+      "latin": "Femina candidum virum amat formosa.",
+      "english": "The shapely woman loves the fair man."
+    },
+    {
+      "id": "sentence-88",
+      "latin": "Pulchram feminam sanctus vir laudat.",
+      "english": "The holy man praises the beautiful woman."
+    },
+    {
+      "id": "sentence-89",
+      "latin": "Vocat femina magnum virum fortis.",
+      "english": "The brave woman calls the great man."
+    },
+    {
+      "id": "sentence-90",
+      "latin": "Gravis vir videt formosam feminam.",
+      "english": "The serious man sees the shapely woman."
+    },
+    {
+      "id": "sentence-91",
+      "latin": "Fortis vir venustae feminae credit.",
+      "english": "The brave man trusts the charming woman."
+    },
+    {
+      "id": "sentence-92",
+      "latin": "Femina parvo viro imperat candida.",
+      "english": "The fair woman commands the small man."
+    },
+    {
+      "id": "sentence-93",
+      "latin": "Praeclaro viro candida femina credit.",
+      "english": "The fair woman trusts the illustrious man."
+    },
+    {
+      "id": "sentence-94",
+      "latin": "Imperat vir forti feminae dulcis.",
+      "english": "The sweet man commands the brave woman."
+    },
+    {
+      "id": "sentence-95",
+      "latin": "Omnis femina credit venusto viro.",
+      "english": "Every woman trusts the charming man."
+    },
+    {
+      "id": "sentence-96",
+      "latin": "Bonus vir pulchrae feminae imperat.",
+      "english": "The good man commands the beautiful woman."
+    },
+    {
+      "id": "sentence-97",
+      "latin": "Vir sanctae feminae credit candidus.",
+      "english": "The fair man trusts the holy woman."
+    },
+    {
+      "id": "sentence-98",
+      "latin": "Candido viro felix femina imperat.",
+      "english": "The happy woman commands the fair man."
+    },
+    {
+      "id": "sentence-99",
+      "latin": "Credit femina pulchro viro magna.",
+      "english": "The great woman trusts the handsome man."
+    },
+    {
+      "id": "sentence-100",
+      "latin": "Vetus vir imperat brevi feminae.",
+      "english": "The old man commands the short woman."
     }
   ]
 }
