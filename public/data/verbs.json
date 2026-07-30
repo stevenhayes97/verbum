@@ -253,6 +253,28 @@
       "conjugation": "4th",
       "english": "to open",
       "tags": ["change-of-state"]
+    },
+    {
+      "id": "verb-porto",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Porto",
+      "infinitive": { "stem": "Port", "ending": "are" },
+      "perfectFirstSingular": "Portavi",
+      "perfectPassiveParticiple": "Portatus",
+      "conjugation": "1st",
+      "english": "to carry",
+      "tags": ["motion"]
+    },
+    {
+      "id": "verb-tollo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Tollo",
+      "infinitive": { "stem": "Toll", "ending": "ere" },
+      "perfectFirstSingular": "Sustuli",
+      "perfectPassiveParticiple": "Sublatus",
+      "conjugation": "3rd",
+      "english": "to lift, raise",
+      "tags": ["motion"]
     }
   ]
 }

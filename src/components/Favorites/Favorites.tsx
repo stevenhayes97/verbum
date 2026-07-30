@@ -31,26 +31,32 @@ export function Favorites() {
       {loading && <p className={styles.status}>Loading…</p>}
       {error && <p className={styles.status}>{error}</p>}
       {!loading && !error && (
-        <div className={styles.tableWrap}>
-          <table className={styles.table}>
-            <thead>
-              <tr>
-                <th>Latin</th>
-                <th>English</th>
-              </tr>
-            </thead>
-            <tbody>
-              {words.map((word) => (
-                <tr key={word.id}>
-                  <td>
-                    {word.nominative}, {word.genitive}
-                  </td>
-                  <td>{word.english}</td>
+        <>
+          <p className={styles.disclaimer}>
+            For more complete or nuanced definitions, consult the Logeion app or a Lewis &amp;
+            Short dictionary.
+          </p>
+          <div className={styles.tableWrap}>
+            <table className={styles.table}>
+              <thead>
+                <tr>
+                  <th>Latin</th>
+                  <th>English</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {words.map((word) => (
+                  <tr key={word.id}>
+                    <td>
+                      {word.nominative}, {word.genitive}
+                    </td>
+                    <td>{word.english}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
       )}
     </div>
   );
