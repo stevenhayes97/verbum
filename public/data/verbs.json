@@ -134,6 +134,17 @@
       "tags": ["communication"]
     },
     {
+      "id": "verb-iubeo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Iubeo",
+      "infinitive": { "stem": "Iub", "ending": "ere" },
+      "perfectFirstSingular": "Iussi",
+      "perfectPassiveParticiple": "Iussus",
+      "conjugation": "2nd",
+      "english": "to order, command",
+      "tags": ["governance"]
+    },
+    {
       "id": "verb-duco",
       "partOfSpeech": "verb",
       "presentFirstSingular": "Duco",
