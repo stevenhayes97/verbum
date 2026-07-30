@@ -174,7 +174,7 @@ they're introduced.
 - `body` — body parts (Manus, Corpus, Caput, Pectus, Umerus, Bracchium, Crus, Pes, Membrum, Capillus, Os, Labrum, Auris, Collum, Dens, Cor, Venter)
 - `abstract` — generic/non-concrete nouns (Res, Verbum, Nomen, Vox, Fortuna, Vita, Fama, Animus, Periculum, Veritas, Origo, Mors, Ars, Gloria, Musa)
 - `size` — physical dimension: big/small/long/short (Magnus, Parvus, Longus, Brevis, Altus)
-- `character` — personal qualities/traits: virtue, fortune, disposition (Bonus, Fortis, Felix, Virtus, Fidelis, Gravis)
+- `character` — personal qualities/traits: virtue, fortune, disposition (Bonus, Fortis, Felix, Virtus, Fidelis, Gravis, Praeclarus)
 - `quantity` — quantifiers (Omnis, Pars, Multus)
 - `possessive` — possessive adjectives (Meus, Tuus, Suus, Noster, Vester)
 - `nature` — natural world/elements (Aqua, Terra, Silva, Flumen, Mons, Insula, Stella, Luna, Ager, Caelum, Aurora, Umbra)
@@ -185,7 +185,7 @@ they're introduced.
 - `politics` — governance, civic life (Civitas, Lex, Pax, Dux, Populus, Libertas, Ordo)
 - `time` (Tempus, Novus, Vetus)
 - `emotion` (Ira, Miser)
-- `appearance` — physical/sensory descriptive qualities (Pulcher, Dulcis)
+- `appearance` — physical/sensory descriptive qualities (Pulcher, Dulcis, Formosus, Candidus, Decorus, Venustus)
 
 ## Verb Tags
 
