@@ -125,6 +125,36 @@
       "id": "sentence-25",
       "latin": "Omnis populus vocem regis audit.",
       "english": "All the people hear the voice of the king."
+    },
+    {
+      "id": "sentence-26",
+      "latin": "Vir formosam uxorem amat.",
+      "english": "The husband loves his shapely wife."
+    },
+    {
+      "id": "sentence-27",
+      "latin": "Uxor candida a viro laudatur.",
+      "english": "The fair wife is praised by the husband."
+    },
+    {
+      "id": "sentence-28",
+      "latin": "Vir decoram uxorem videt.",
+      "english": "The husband sees his graceful wife."
+    },
+    {
+      "id": "sentence-29",
+      "latin": "Uxor venusta a viro custoditur.",
+      "english": "The charming wife is guarded by the husband."
+    },
+    {
+      "id": "sentence-30",
+      "latin": "Vir praeclaram uxorem laudat.",
+      "english": "The husband praises his illustrious wife."
+    },
+    {
+      "id": "sentence-31",
+      "latin": "Vir pulchram uxorem ducit.",
+      "english": "The husband leads his beautiful wife."
     }
   ]
 }
