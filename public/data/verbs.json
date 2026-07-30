@@ -57,6 +57,17 @@
       "tags": ["possession"]
     },
     {
+      "id": "verb-impero",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Impero",
+      "infinitive": { "stem": "Imper", "ending": "are" },
+      "perfectFirstSingular": "Imperavi",
+      "perfectPassiveParticiple": "Imperatus",
+      "conjugation": "1st",
+      "english": "to command, order",
+      "tags": ["governance"]
+    },
+    {
       "id": "verb-video",
       "partOfSpeech": "verb",
       "presentFirstSingular": "Video",
@@ -101,6 +112,28 @@
       "tags": ["emotion"]
     },
     {
+      "id": "verb-invideo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Invideo",
+      "infinitive": { "stem": "Invid", "ending": "ere" },
+      "perfectFirstSingular": "Invidi",
+      "perfectPassiveParticiple": "Invisus",
+      "conjugation": "2nd",
+      "english": "to envy, be jealous of",
+      "tags": ["emotion"]
+    },
+    {
+      "id": "verb-respondeo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Respondeo",
+      "infinitive": { "stem": "Respond", "ending": "ere" },
+      "perfectFirstSingular": "Respondi",
+      "perfectPassiveParticiple": "Responsus",
+      "conjugation": "2nd",
+      "english": "to answer, reply",
+      "tags": ["communication"]
+    },
+    {
       "id": "verb-duco",
       "partOfSpeech": "verb",
       "presentFirstSingular": "Duco",
@@ -143,6 +176,17 @@
       "conjugation": "3rd",
       "english": "to write",
       "tags": ["communication"]
+    },
+    {
+      "id": "verb-credo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Credo",
+      "infinitive": { "stem": "Cred", "ending": "ere" },
+      "perfectFirstSingular": "Credidi",
+      "perfectPassiveParticiple": "Creditus",
+      "conjugation": "3rd",
+      "english": "to believe, trust",
+      "tags": ["cognition"]
     },
     {
       "id": "verb-audio",
