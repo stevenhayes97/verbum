@@ -198,7 +198,7 @@ first, reuse if it fits" rule applies before adding a new one:
 - `perception` — Video, Audio
 - `communication` — Voco, Laudo, Scribo, Moneo
 - `emotion` — Amo, Terreo
-- `possession` — Habeo
+- `possession` — Habeo, Do
 - `motion` — Duco, Mitto
 - `governance` — Rego, Munio, Custodio
 - `change-of-state` — Paro, Finio, Aperio
