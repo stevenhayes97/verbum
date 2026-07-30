@@ -1090,6 +1090,16 @@
       "gender": "Female",
       "english": "granddaughter, niece",
       "tags": ["family"]
+    },
+    {
+      "id": "noun-amica",
+      "partOfSpeech": "noun",
+      "nominative": "Amica",
+      "genitive": { "stem": "Amic", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "friend",
+      "tags": ["people"]
     }
   ]
 }
