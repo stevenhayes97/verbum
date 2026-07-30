@@ -200,7 +200,7 @@ first, reuse if it fits" rule applies before adding a new one:
 - `emotion` — Amo, Terreo, Invideo
 - `possession` — Habeo, Do
 - `motion` — Duco, Mitto
-- `governance` — Rego, Munio, Custodio, Impero
+- `governance` — Rego, Munio, Custodio, Impero, Iubeo
 - `change-of-state` — Paro, Finio, Aperio
 - `cognition` — Credo
 
