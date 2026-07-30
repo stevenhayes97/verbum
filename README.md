@@ -297,6 +297,33 @@ table. Words can (and do) overlap with the main vocab decks; favoriting a
 word you're already studying elsewhere is expected, not a duplicate to
 avoid.
 
+## Declension Tables
+
+The **Declension Tables** section is a static grammar reference: quick
+lookup charts of case endings for all five declensions, for when you need
+to check an ending rather than quiz yourself on a word. It's not a quiz
+and not a vocab list, so it sits outside the flashcard mechanics entirely.
+
+Nine tables are shown, one per pattern that has genuinely different
+endings from its neighbors — not just one table per declension number:
+
+- 1st declension (*puella*)
+- 2nd declension `-us` (*dominus*), 2nd declension `-er` (*liber*), and
+  2nd declension neuter (*bellum*)
+- 3rd declension (*rēx*) and 3rd declension neuter (*corpus*)
+- 4th declension (*frūctus*) and 4th declension neuter (*cornū*)
+- 5th declension (*rēs*)
+
+Each table shows Nominative/Genitive/Dative/Accusative/Ablative/Vocative
+across Singular/Plural.
+
+Unlike the vocab and favorites files, this content lives in
+`src/data/declensionTables.ts` as a hard-coded TypeScript module, not
+`public/data/*.json`. It's fixed grammatical knowledge rather than a
+growing or per-word collection, so it doesn't fit the append-only or
+wipe-and-regenerate lifecycles those files follow — there's no fetch, no
+loading state, and no expectation that it changes often.
+
 ## Data storage
 
 Flashcards live in plain JSON under `public/data/`, one file per category

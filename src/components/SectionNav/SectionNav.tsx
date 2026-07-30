@@ -9,6 +9,7 @@ const SECTIONS: { id: Section; label: string; enabled: boolean }[] = [
   { id: 'sentence-practice', label: 'Sentence Practice', enabled: true },
   { id: 'vocab-list', label: 'Vocab List', enabled: true },
   { id: 'favorites', label: 'Favorites', enabled: true },
+  { id: 'declension-tables', label: 'Declensions', enabled: true },
 ];
 
 interface SectionNavProps {
