@@ -1,9 +1,9 @@
-name: Translation Review
+name: Iudex
 
-# Reviews Latin -> English translations touched by a PR, using the Cursor
-# CLI ("cursor agent") as an LLM judge. Confidence < 95% is a warning
-# (annotation only); confidence < 90% fails this check. See the
-# "Automated Translation Review" section of README.md for details.
+# Iudex ("judge", in Latin) reviews Latin -> English translations touched
+# by a PR, using the Cursor CLI ("cursor agent") as an LLM judge.
+# Confidence < 95% is a warning (annotation only); confidence < 90% fails
+# this check. See the "Iudex" section of README.md for details.
 
 on:
   pull_request:
@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: translation-review-${{ github.event.pull_request.number }}
+  group: iudex-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
 env:
@@ -24,7 +24,8 @@ env:
   REVIEW_OUTPUT_PATH: ${{ github.workspace }}/translation-review.json
 
 jobs:
-  review:
+  iudex:
+    name: Iudex
     runs-on: ubuntu-latest
     steps:
       - name: Checkout PR
@@ -64,7 +65,8 @@ jobs:
         if: steps.changed.outputs.has_changes == 'true'
         run: |
           {
-            echo "You are reviewing a pull request to the \"Verbum\" Latin flashcard app."
+            echo "You are Iudex (\"judge\", in Latin) - the automated translation-review"
+            echo "agent for the \"Verbum\" Latin flashcard app, reviewing a pull request."
             echo "Vocabulary/sentence entries live in public/data/*.json; each entry has one"
             echo "or more Latin fields and an \"english\" field holding the English"
             echo "translation/gloss. Read this repo's README.md and CLAUDE.md yourself for"
@@ -103,7 +105,7 @@ jobs:
             echo '```'
           } > "$RUNNER_TEMP/review-prompt.txt"
 
-      - name: Run Cursor agent translation review
+      - name: Run Iudex (Cursor agent)
         if: steps.changed.outputs.has_changes == 'true'
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}

@@ -58,13 +58,13 @@ has to account for that instead:
   non-root `base`, so a hardcoded path there would silently 404 in
   production while still working in dev.
 
-## Automated Translation Review
+## Iudex (Automated Translation Review)
 
-Every pull request runs a **Translation Review** GitHub Actions check
-(`.github/workflows/translation-review.yml`) that catches mistranslations
-before they land, on top of the manual review already expected per
-`CLAUDE.md`. It only looks at what that PR actually changed — the entries
-added or edited in `public/data/*.json` — not the whole vocabulary bank, so
+Every pull request runs an **Iudex** ("judge", in Latin) GitHub Actions
+check (`.github/workflows/iudex.yml`) that catches mistranslations before
+they land, on top of the manual review already expected per `CLAUDE.md`.
+It only looks at what that PR actually changed — the entries added or
+edited in `public/data/*.json` — not the whole vocabulary bank, so
 unrelated PRs aren't affected by pre-existing entries and the deck doesn't
 get re-graded from scratch every time.
 
@@ -92,6 +92,14 @@ the CLI. The model is set via the `REVIEW_MODEL` env in the workflow file
 editing the file via a `TRANSLATION_REVIEW_MODEL` Actions variable) — worth
 double-checking against `agent --list-models` on the account that owns the
 key, since exact model slugs can change.
+
+Iudex currently runs as a single judge model. Since sentences are generated
+by Claude (Sonnet, per the "Sentence Practice" section below) and Iudex's
+default judge is also a Claude model (Opus), a future improvement worth
+considering is running a second, cross-lab judge in parallel — a cheaper
+model like Composer or Grok — so the check isn't relying on a single model
+family to both write and grade the same content. Deferred for now pending
+how Opus's usage cost plays out in practice; not implemented yet.
 
 ## Card format
 

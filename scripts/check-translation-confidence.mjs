@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Parses the JSON review produced by the Cursor CLI translation-review step
-// (see .github/workflows/translation-review.yml) and turns per-entry
+// Parses the JSON review produced by Iudex, the Cursor CLI translation
+// review agent (see .github/workflows/iudex.yml), and turns per-entry
 // confidence scores into GitHub Actions annotations + a pass/warn/fail
 // exit code. Plain Node, no dependencies, mirroring cli/index.mjs.
 import { readFile } from 'node:fs/promises';
@@ -80,7 +80,7 @@ async function writeStepSummary({ failures, warnings, passes }) {
   if (!summaryPath) return;
 
   const lines = [
-    '## Translation review',
+    '## Iudex — translation review',
     '',
     `- ❌ Failing (< ${FAIL_THRESHOLD}%): ${failures.length}`,
     `- ⚠️ Warning (${FAIL_THRESHOLD}–${WARN_THRESHOLD}%): ${warnings.length}`,
@@ -148,7 +148,7 @@ async function main() {
   }
 
   console.log(
-    `Translation review: ${passes.length} passing, ${warnings.length} warning(s), ${failures.length} failing (of ${entries.length} reviewed entries).`,
+    `Iudex: ${passes.length} passing, ${warnings.length} warning(s), ${failures.length} failing (of ${entries.length} reviewed entries).`,
   );
 
   await writeStepSummary({ failures, warnings, passes });
