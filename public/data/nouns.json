@@ -1230,6 +1230,186 @@
       "gender": "Female",
       "english": "eternity",
       "tags": ["abstract"]
+    },
+    {
+      "id": "noun-regnum",
+      "partOfSpeech": "noun",
+      "nominative": "Regnum",
+      "genitive": { "stem": "Regn", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "kingdom, reign",
+      "tags": ["royalty"]
+    },
+    {
+      "id": "noun-corona",
+      "partOfSpeech": "noun",
+      "nominative": "Corona",
+      "genitive": { "stem": "Coron", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "crown, wreath",
+      "tags": ["royalty"]
+    },
+    {
+      "id": "noun-sceptrum",
+      "partOfSpeech": "noun",
+      "nominative": "Sceptrum",
+      "genitive": { "stem": "Sceptr", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "scepter",
+      "tags": ["royalty"]
+    },
+    {
+      "id": "noun-solium",
+      "partOfSpeech": "noun",
+      "nominative": "Solium",
+      "genitive": { "stem": "Soli", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "throne, seat",
+      "tags": ["royalty"]
+    },
+    {
+      "id": "noun-princeps",
+      "partOfSpeech": "noun",
+      "nominative": "Princeps",
+      "genitive": { "stem": "Princip", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "chief, leader, emperor",
+      "tags": ["royalty", "politics"]
+    },
+    {
+      "id": "noun-tyrannus",
+      "partOfSpeech": "noun",
+      "nominative": "Tyrannus",
+      "genitive": { "stem": "Tyrann", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "tyrant",
+      "tags": ["politics", "royalty"]
+    },
+    {
+      "id": "noun-praetor",
+      "partOfSpeech": "noun",
+      "nominative": "Praetor",
+      "genitive": { "stem": "Praetor", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "praetor, magistrate",
+      "tags": ["politics"]
+    },
+    {
+      "id": "noun-plebs",
+      "partOfSpeech": "noun",
+      "nominative": "Plebs",
+      "genitive": { "stem": "Pleb", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "common people, plebeians",
+      "tags": ["politics", "people"]
+    },
+    {
+      "id": "noun-patricius",
+      "partOfSpeech": "noun",
+      "nominative": "Patricius",
+      "genitive": { "stem": "Patrici", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "patrician, nobleman",
+      "tags": ["politics", "people"]
+    },
+    {
+      "id": "noun-curia",
+      "partOfSpeech": "noun",
+      "nominative": "Curia",
+      "genitive": { "stem": "Curi", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "senate house, curia",
+      "tags": ["politics", "place"]
+    },
+    {
+      "id": "noun-edictum",
+      "partOfSpeech": "noun",
+      "nominative": "Edictum",
+      "genitive": { "stem": "Edict", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "edict, decree",
+      "tags": ["politics"]
+    },
+    {
+      "id": "noun-foedus",
+      "partOfSpeech": "noun",
+      "nominative": "Foedus",
+      "genitive": { "stem": "Foeder", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "treaty, alliance",
+      "tags": ["politics"]
+    },
+    {
+      "id": "noun-provincia",
+      "partOfSpeech": "noun",
+      "nominative": "Provincia",
+      "genitive": { "stem": "Provinci", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "province",
+      "tags": ["politics", "place"]
+    },
+    {
+      "id": "noun-sagitta",
+      "partOfSpeech": "noun",
+      "nominative": "Sagitta",
+      "genitive": { "stem": "Sagitt", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "arrow",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-turris",
+      "partOfSpeech": "noun",
+      "nominative": "Turris",
+      "genitive": { "stem": "Turr", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "tower",
+      "tags": ["military", "place"]
+    },
+    {
+      "id": "noun-vallum",
+      "partOfSpeech": "noun",
+      "nominative": "Vallum",
+      "genitive": { "stem": "Vall", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "rampart, wall",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-signum",
+      "partOfSpeech": "noun",
+      "nominative": "Signum",
+      "genitive": { "stem": "Sign", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "sign, signal, standard",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-cohors",
+      "partOfSpeech": "noun",
+      "nominative": "Cohors",
+      "genitive": { "stem": "Cohort", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "cohort",
+      "tags": ["military"]
     }
   ]
 }
