@@ -58,6 +58,41 @@ has to account for that instead:
   non-root `base`, so a hardcoded path there would silently 404 in
   production while still working in dev.
 
+## Automated Translation Review
+
+Every pull request runs a **Translation Review** GitHub Actions check
+(`.github/workflows/translation-review.yml`) that catches mistranslations
+before they land, on top of the manual review already expected per
+`CLAUDE.md`. It only looks at what that PR actually changed — the entries
+added or edited in `public/data/*.json` — not the whole vocabulary bank, so
+unrelated PRs aren't affected by pre-existing entries and the deck doesn't
+get re-graded from scratch every time.
+
+For each added/modified entry, it uses the [Cursor CLI](https://cursor.com/docs/cli)
+(`agent -p`, the same headless agent behind Cursor's Cloud Agents) as an LLM
+judge, asking it to score how confident it is that the `english` field
+correctly translates the corresponding Latin, per this repo's own
+conventions (spelling preferences, sense selection, etc. — the same rules a
+human or Claude would apply when adding an entry):
+
+- **≥ 95% confidence** — passes silently.
+- **90–95% confidence** — posts a warning annotation on the check, but
+  doesn't fail the PR.
+- **< 90% confidence** — fails the check (a non-zero exit from the
+  workflow job).
+
+A failing check only *blocks merging* if it's configured as a required
+status check under the branch protection rule for `main` (Settings →
+Branches) — that's a one-time manual setup step, same as the Pages source
+setting above. The workflow also needs a `CURSOR_API_KEY` repo secret
+(Settings → Secrets and variables → Actions), generated from
+[cursor.com/dashboard/api](https://cursor.com/dashboard/api), to authenticate
+the CLI. The model is set via the `REVIEW_MODEL` env in the workflow file
+(defaulting to a high-reasoning Claude Opus variant, overridable without
+editing the file via a `TRANSLATION_REVIEW_MODEL` Actions variable) — worth
+double-checking against `agent --list-models` on the account that owns the
+key, since exact model slugs can change.
+
 ## Card format
 
 Adjective format depends on which of two Latin patterns a word follows —
