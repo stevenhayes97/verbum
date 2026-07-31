@@ -330,6 +330,28 @@
       "declensionLabel": "3rd",
       "english": "immortal, undying",
       "tags": ["religion"]
+    },
+    {
+      "id": "adj-regius",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Regius",
+      "feminine": "Regia",
+      "neuter": "Regium",
+      "declensionLabel": "1st/2nd",
+      "english": "royal, kingly",
+      "tags": ["royalty"]
+    },
+    {
+      "id": "adj-regalis",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Regalis",
+      "feminine": "Regalis",
+      "neuter": "Regale",
+      "declensionLabel": "3rd",
+      "english": "regal, royal",
+      "tags": ["royalty"]
     }
   ]
 }
