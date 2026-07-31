@@ -275,6 +275,17 @@
       "conjugation": "3rd",
       "english": "to lift, raise",
       "tags": ["motion"]
+    },
+    {
+      "id": "verb-regno",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Regno",
+      "infinitive": { "stem": "Regn", "ending": "are" },
+      "perfectFirstSingular": "Regnavi",
+      "perfectPassiveParticiple": "Regnatus",
+      "conjugation": "1st",
+      "english": "to reign, rule",
+      "tags": ["governance"]
     }
   ]
 }

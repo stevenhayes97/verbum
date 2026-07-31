@@ -1100,6 +1100,136 @@
       "gender": "Female",
       "english": "friend",
       "tags": ["people"]
+    },
+    {
+      "id": "noun-imperator",
+      "partOfSpeech": "noun",
+      "nominative": "Imperator",
+      "genitive": { "stem": "Imperator", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "commander, emperor",
+      "tags": ["politics", "military"]
+    },
+    {
+      "id": "noun-senatus",
+      "partOfSpeech": "noun",
+      "nominative": "Senatus",
+      "genitive": { "stem": "Senat", "ending": "us" },
+      "declension": 4,
+      "gender": "Male",
+      "english": "senate",
+      "tags": ["politics"]
+    },
+    {
+      "id": "noun-consul",
+      "partOfSpeech": "noun",
+      "nominative": "Consul",
+      "genitive": { "stem": "Consul", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "consul",
+      "tags": ["politics"]
+    },
+    {
+      "id": "noun-aquila",
+      "partOfSpeech": "noun",
+      "nominative": "Aquila",
+      "genitive": { "stem": "Aquil", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "eagle, standard",
+      "tags": ["animals", "military"]
+    },
+    {
+      "id": "noun-vexillum",
+      "partOfSpeech": "noun",
+      "nominative": "Vexillum",
+      "genitive": { "stem": "Vexill", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "standard, banner",
+      "tags": ["military"]
+    },
+    {
+      "id": "noun-triumphus",
+      "partOfSpeech": "noun",
+      "nominative": "Triumphus",
+      "genitive": { "stem": "Triumph", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "triumph",
+      "tags": ["military", "politics"]
+    },
+    {
+      "id": "noun-gladiator",
+      "partOfSpeech": "noun",
+      "nominative": "Gladiator",
+      "genitive": { "stem": "Gladiator", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "gladiator",
+      "tags": ["people", "military"]
+    },
+    {
+      "id": "noun-fatum",
+      "partOfSpeech": "noun",
+      "nominative": "Fatum",
+      "genitive": { "stem": "Fat", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "fate, destiny",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-numen",
+      "partOfSpeech": "noun",
+      "nominative": "Numen",
+      "genitive": { "stem": "Numin", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "divine will, deity",
+      "tags": ["religion"]
+    },
+    {
+      "id": "noun-draco",
+      "partOfSpeech": "noun",
+      "nominative": "Draco",
+      "genitive": { "stem": "Dracon", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "serpent, dragon",
+      "tags": ["animals"]
+    },
+    {
+      "id": "noun-oraculum",
+      "partOfSpeech": "noun",
+      "nominative": "Oraculum",
+      "genitive": { "stem": "Oracul", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "oracle",
+      "tags": ["religion"]
+    },
+    {
+      "id": "noun-nox",
+      "partOfSpeech": "noun",
+      "nominative": "Nox",
+      "genitive": { "stem": "Noct", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "night",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-aeternitas",
+      "partOfSpeech": "noun",
+      "nominative": "Aeternitas",
+      "genitive": { "stem": "Aeternitat", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "eternity",
+      "tags": ["abstract"]
     }
   ]
 }
