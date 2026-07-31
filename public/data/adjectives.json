@@ -308,6 +308,28 @@
       "declensionLabel": "1st/2nd",
       "english": "brilliant, illustrious, splendid",
       "tags": ["character"]
+    },
+    {
+      "id": "adj-ferox",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "declined",
+      "nominative": "Ferox",
+      "genitive": { "stem": "Feroc", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "fierce, savage",
+      "tags": ["character"]
+    },
+    {
+      "id": "adj-immortalis",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Immortalis",
+      "feminine": "Immortalis",
+      "neuter": "Immortale",
+      "declensionLabel": "3rd",
+      "english": "immortal, undying",
+      "tags": ["religion"]
     }
   ]
 }
