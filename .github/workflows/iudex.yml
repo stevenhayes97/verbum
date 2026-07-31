@@ -1,0 +1,118 @@
+name: Iudex
+
+# Iudex ("judge", in Latin) reviews Latin -> English translations touched
+# by a PR, using the Cursor CLI ("cursor agent") as an LLM judge.
+# Confidence < 95% is a warning (annotation only); confidence < 90% fails
+# this check. See the "Iudex" section of README.md for details.
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: iudex-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+env:
+  # Override without editing this file by setting a repo/org Actions
+  # variable named TRANSLATION_REVIEW_MODEL (Settings > Secrets and
+  # variables > Actions > Variables).
+  REVIEW_MODEL: ${{ vars.TRANSLATION_REVIEW_MODEL || 'claude-opus-5-thinking-high' }}
+  REVIEW_OUTPUT_PATH: ${{ github.workspace }}/translation-review.json
+
+jobs:
+  iudex:
+    name: Iudex
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Compute changed vocabulary/data files
+        id: changed
+        run: |
+          set -euo pipefail
+          BASE_SHA="${{ github.event.pull_request.base.sha }}"
+          HEAD_SHA="${{ github.event.pull_request.head.sha }}"
+
+          CHANGED_FILES="$(git diff --name-only "$BASE_SHA" "$HEAD_SHA" -- 'public/data/*.json')"
+
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "No public/data/*.json files changed in this PR - skipping translation review."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          echo "Changed data files:"
+          echo "$CHANGED_FILES"
+
+          git diff "$BASE_SHA" "$HEAD_SHA" -- 'public/data/*.json' > "$RUNNER_TEMP/data-diff.txt"
+
+      - name: Install Cursor CLI
+        if: steps.changed.outputs.has_changes == 'true'
+        run: |
+          curl https://cursor.com/install -fsS | bash
+          echo "$HOME/.cursor/bin" >> "$GITHUB_PATH"
+
+      - name: Build review prompt
+        if: steps.changed.outputs.has_changes == 'true'
+        run: |
+          {
+            echo "You are Iudex (\"judge\", in Latin) - the automated translation-review"
+            echo "agent for the \"Verbum\" Latin flashcard app, reviewing a pull request."
+            echo "Vocabulary/sentence entries live in public/data/*.json; each entry has one"
+            echo "or more Latin fields and an \"english\" field holding the English"
+            echo "translation/gloss. Read this repo's README.md and CLAUDE.md yourself for"
+            echo "the project's translation conventions (spelling preferences, sense"
+            echo "selection, tag list, etc.) before judging accuracy."
+            echo ""
+            echo "Below is the unified diff of public/data/*.json for this pull request,"
+            echo "scoped to just the files it touched. Only evaluate entries that were"
+            echo "ADDED or MODIFIED by this diff (added lines, or an object containing"
+            echo "changed lines) - ignore unrelated existing entries and removed entries."
+            echo ""
+            echo "For every added/modified entry that has an \"english\" translation, judge"
+            echo "whether that translation is an accurate, appropriately-scoped rendering"
+            echo "of the corresponding Latin field(s) in the same entry (or, for"
+            echo "sentences.json, of the \"latin\" sentence), per this repo's own"
+            echo "conventions. Assign a confidence score from 0-100 representing how"
+            echo "confident you are that the translation is correct as written."
+            echo ""
+            echo "Write your findings as a single strict JSON array (no markdown code"
+            echo "fences, no surrounding prose) to exactly this file path:"
+            echo "  $REVIEW_OUTPUT_PATH"
+            echo "Each array element must have this shape:"
+            echo '  { "id": string, "file": string, "latin": string, "english": string, "confidence": number, "reasoning": string }'
+            echo "\"reasoning\" should be one short sentence explaining the score,"
+            echo "especially for anything below 95."
+            echo "If there are no added/modified entries with an \"english\" field to"
+            echo "review (e.g. a purely structural or tag-only change), write an empty"
+            echo "JSON array: []"
+            echo ""
+            echo "Do not modify any files in this repository. Do not write anything"
+            echo "anywhere other than the single output file path given above."
+            echo ""
+            echo "Diff to review:"
+            echo '```diff'
+            cat "$RUNNER_TEMP/data-diff.txt"
+            echo '```'
+          } > "$RUNNER_TEMP/review-prompt.txt"
+
+      - name: Run Iudex (Cursor agent)
+        if: steps.changed.outputs.has_changes == 'true'
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: |
+          set -euo pipefail
+          agent -p --force --output-format json --model "$REVIEW_MODEL" "$(cat "$RUNNER_TEMP/review-prompt.txt")"
+
+      - name: Check translation confidence thresholds
+        if: steps.changed.outputs.has_changes == 'true'
+        run: node scripts/check-translation-confidence.mjs "$REVIEW_OUTPUT_PATH"
