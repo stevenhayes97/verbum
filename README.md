@@ -229,18 +229,19 @@ they're introduced.
 - `body` — body parts (Manus, Corpus, Caput, Pectus, Umerus, Bracchium, Crus, Pes, Membrum, Capillus, Os, Labrum, Auris, Collum, Dens, Cor, Venter)
 - `abstract` — generic/non-concrete nouns (Res, Verbum, Nomen, Vox, Fortuna, Vita, Fama, Animus, Periculum, Veritas, Origo, Mors, Ars, Gloria, Musa, Fatum, Aeternitas)
 - `size` — physical dimension: big/small/long/short (Magnus, Parvus, Longus, Brevis, Altus)
-- `character` — personal qualities/traits: virtue, fortune, disposition (Bonus, Fortis, Felix, Virtus, Fidelis, Gravis, Praeclarus, Ferox, Sapiens)
+- `character` — personal qualities/traits: virtue, fortune, disposition (Bonus, Fortis, Felix, Virtus, Fidelis, Gravis, Praeclarus, Ferox, Sapiens, Iustus)
 - `quantity` — quantifiers (Omnis, Pars, Multus)
 - `possessive` — possessive adjectives (Meus, Tuus, Suus, Noster, Vester)
-- `nature` — natural world/elements (Aqua, Terra, Silva, Flumen, Mons, Insula, Stella, Luna, Ager, Caelum, Aurora, Umbra, Nox, Flos)
-- `place` — locations/geography (Via, Urbs, Locus, Oppidum, Iter)
+- `nature` — natural world/elements (Aqua, Terra, Silva, Flumen, Mons, Insula, Stella, Luna, Ager, Caelum, Aurora, Umbra, Nox, Flos, Lapis, Mare)
+- `place` — locations/geography (Via, Urbs, Locus, Oppidum, Iter, Schola)
 - `animals` (Equus, Aquila, Draco, Avis, Piscis)
 - `objects` — physical items (Liber, Porta, Donum, Mensa)
+- `food` — food and drink (Cibus, Vinum)
 - `military` — war, army (Bellum, Miles, Dux, Gladius, Hasta, Scutum, Legio, Hostis, Victoria, Proelium, Vulnus, Exercitus, Centurio, Imperator, Aquila, Vexillum, Triumphus, Gladiator)
 - `politics` — governance, civic life (Civitas, Lex, Pax, Dux, Populus, Libertas, Ordo, Imperator, Senatus, Consul, Triumphus)
 - `time` (Tempus, Novus, Vetus)
 - `emotion` (Ira, Miser)
-- `appearance` — physical/sensory descriptive qualities (Pulcher, Dulcis, Formosus, Candidus, Decorus, Venustus, Niger, Albus, Ruber)
+- `appearance` — physical/sensory descriptive qualities (Pulcher, Dulcis, Formosus, Candidus, Decorus, Venustus, Niger, Albus, Ruber, Clarus)
 
 ## Verb Tags
 
@@ -254,10 +255,10 @@ first, reuse if it fits" rule applies before adding a new one:
 - `communication` — Voco, Laudo, Scribo, Moneo, Respondeo, Dico
 - `emotion` — Amo, Terreo, Invideo
 - `possession` — Habeo, Do, Emo, Capio
-- `motion` — Duco, Mitto, Porto, Tollo
-- `governance` — Rego, Munio, Custodio, Impero, Iubeo, Regno
-- `change-of-state` — Paro, Finio, Aperio, Facio
-- `cognition` — Credo, Scio
+- `motion` — Duco, Mitto, Porto, Tollo, Peto
+- `governance` — Rego, Munio, Custodio, Impero, Iubeo, Regno, Servo
+- `change-of-state` — Paro, Finio, Aperio, Facio, Iungo
+- `cognition` — Credo, Scio, Cogito, Quaero
 
 The two tag lists are intentionally disjoint — a verb and a noun won't
 usually match on the same tag in the "All" deck's filter — with one

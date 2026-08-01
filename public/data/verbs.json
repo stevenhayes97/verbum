@@ -341,6 +341,61 @@
       "conjugation": "4th",
       "english": "to know",
       "tags": ["cognition"]
+    },
+    {
+      "id": "verb-cogito",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Cogito",
+      "infinitive": { "stem": "Cogit", "ending": "are" },
+      "perfectFirstSingular": "Cogitavi",
+      "perfectPassiveParticiple": "Cogitatus",
+      "conjugation": "1st",
+      "english": "to think, consider",
+      "tags": ["cognition"]
+    },
+    {
+      "id": "verb-iungo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Iungo",
+      "infinitive": { "stem": "Iung", "ending": "ere" },
+      "perfectFirstSingular": "Iunxi",
+      "perfectPassiveParticiple": "Iunctus",
+      "conjugation": "3rd",
+      "english": "to join, unite",
+      "tags": ["change-of-state"]
+    },
+    {
+      "id": "verb-quaero",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Quaero",
+      "infinitive": { "stem": "Quaer", "ending": "ere" },
+      "perfectFirstSingular": "Quaesivi",
+      "perfectPassiveParticiple": "Quaesitus",
+      "conjugation": "3rd",
+      "english": "to seek, ask, inquire",
+      "tags": ["cognition"]
+    },
+    {
+      "id": "verb-peto",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Peto",
+      "infinitive": { "stem": "Pet", "ending": "ere" },
+      "perfectFirstSingular": "Petivi",
+      "perfectPassiveParticiple": "Petitus",
+      "conjugation": "3rd",
+      "english": "to seek, attack, make for",
+      "tags": ["motion"]
+    },
+    {
+      "id": "verb-servo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Servo",
+      "infinitive": { "stem": "Serv", "ending": "are" },
+      "perfectFirstSingular": "Servavi",
+      "perfectPassiveParticiple": "Servatus",
+      "conjugation": "1st",
+      "english": "to save, protect, preserve",
+      "tags": ["governance"]
     }
   ]
 }

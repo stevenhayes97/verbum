@@ -406,6 +406,58 @@
       "neuter": "Facile",
       "declensionLabel": "3rd",
       "english": "easy"
+    },
+    {
+      "id": "adj-verus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Verus",
+      "feminine": "Vera",
+      "neuter": "Verum",
+      "declensionLabel": "1st/2nd",
+      "english": "true"
+    },
+    {
+      "id": "adj-iustus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Iustus",
+      "feminine": "Iusta",
+      "neuter": "Iustum",
+      "declensionLabel": "1st/2nd",
+      "english": "just, fair",
+      "tags": ["character"]
+    },
+    {
+      "id": "adj-clarus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Clarus",
+      "feminine": "Clara",
+      "neuter": "Clarum",
+      "declensionLabel": "1st/2nd",
+      "english": "clear, bright, famous",
+      "tags": ["appearance"]
+    },
+    {
+      "id": "adj-celer",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Celer",
+      "feminine": "Celeris",
+      "neuter": "Celere",
+      "declensionLabel": "3rd",
+      "english": "swift, quick"
+    },
+    {
+      "id": "adj-difficilis",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Difficilis",
+      "feminine": "Difficilis",
+      "neuter": "Difficile",
+      "declensionLabel": "3rd",
+      "english": "difficult"
     }
   ]
 }
