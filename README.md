@@ -223,24 +223,24 @@ reuse an existing one if it fits, to avoid near-duplicates like `war` /
 they're introduced.
 
 - `family` — kinship terms (Pater, Mater, Frater, Soror, Filius, Filia, Avus, Avia, Maritus, Uxor, Vir, Familia, Nepos, Neptis)
-- `people` — persons / social roles (Rex, Puella, Nauta, Dominus, Servus, Femina, Amicus, Homo, Agricola, Poeta, Puer, Regina, Hostis, Centurio, Amica, Gladiator)
+- `people` — persons / social roles (Rex, Puella, Nauta, Dominus, Servus, Femina, Amicus, Homo, Agricola, Poeta, Puer, Regina, Hostis, Centurio, Amica, Gladiator, Magister)
 - `royalty` — kingship, rule (Rex, Regina)
 - `religion` — sacred, temple-related (Templum, Deus, Caelum, Sanctus, Numen, Oraculum, Immortalis)
 - `body` — body parts (Manus, Corpus, Caput, Pectus, Umerus, Bracchium, Crus, Pes, Membrum, Capillus, Os, Labrum, Auris, Collum, Dens, Cor, Venter)
 - `abstract` — generic/non-concrete nouns (Res, Verbum, Nomen, Vox, Fortuna, Vita, Fama, Animus, Periculum, Veritas, Origo, Mors, Ars, Gloria, Musa, Fatum, Aeternitas)
 - `size` — physical dimension: big/small/long/short (Magnus, Parvus, Longus, Brevis, Altus)
-- `character` — personal qualities/traits: virtue, fortune, disposition (Bonus, Fortis, Felix, Virtus, Fidelis, Gravis, Praeclarus, Ferox)
+- `character` — personal qualities/traits: virtue, fortune, disposition (Bonus, Fortis, Felix, Virtus, Fidelis, Gravis, Praeclarus, Ferox, Sapiens)
 - `quantity` — quantifiers (Omnis, Pars, Multus)
 - `possessive` — possessive adjectives (Meus, Tuus, Suus, Noster, Vester)
-- `nature` — natural world/elements (Aqua, Terra, Silva, Flumen, Mons, Insula, Stella, Luna, Ager, Caelum, Aurora, Umbra, Nox)
+- `nature` — natural world/elements (Aqua, Terra, Silva, Flumen, Mons, Insula, Stella, Luna, Ager, Caelum, Aurora, Umbra, Nox, Flos)
 - `place` — locations/geography (Via, Urbs, Locus, Oppidum, Iter)
-- `animals` (Equus, Aquila, Draco)
-- `objects` — physical items (Liber, Porta, Donum)
+- `animals` (Equus, Aquila, Draco, Avis, Piscis)
+- `objects` — physical items (Liber, Porta, Donum, Mensa)
 - `military` — war, army (Bellum, Miles, Dux, Gladius, Hasta, Scutum, Legio, Hostis, Victoria, Proelium, Vulnus, Exercitus, Centurio, Imperator, Aquila, Vexillum, Triumphus, Gladiator)
 - `politics` — governance, civic life (Civitas, Lex, Pax, Dux, Populus, Libertas, Ordo, Imperator, Senatus, Consul, Triumphus)
 - `time` (Tempus, Novus, Vetus)
 - `emotion` (Ira, Miser)
-- `appearance` — physical/sensory descriptive qualities (Pulcher, Dulcis, Formosus, Candidus, Decorus, Venustus)
+- `appearance` — physical/sensory descriptive qualities (Pulcher, Dulcis, Formosus, Candidus, Decorus, Venustus, Niger, Albus, Ruber)
 
 ## Verb Tags
 
@@ -251,13 +251,13 @@ tag list, grouped by semantic type rather than theme. The same "check
 first, reuse if it fits" rule applies before adding a new one:
 
 - `perception` — Video, Audio
-- `communication` — Voco, Laudo, Scribo, Moneo, Respondeo
+- `communication` — Voco, Laudo, Scribo, Moneo, Respondeo, Dico
 - `emotion` — Amo, Terreo, Invideo
-- `possession` — Habeo, Do
+- `possession` — Habeo, Do, Emo, Capio
 - `motion` — Duco, Mitto, Porto, Tollo
 - `governance` — Rego, Munio, Custodio, Impero, Iubeo, Regno
-- `change-of-state` — Paro, Finio, Aperio
-- `cognition` — Credo
+- `change-of-state` — Paro, Finio, Aperio, Facio
+- `cognition` — Credo, Scio
 
 The two tag lists are intentionally disjoint — a verb and a noun won't
 usually match on the same tag in the "All" deck's filter — with one

@@ -1410,6 +1410,56 @@
       "gender": "Female",
       "english": "cohort",
       "tags": ["military"]
+    },
+    {
+      "id": "noun-flos",
+      "partOfSpeech": "noun",
+      "nominative": "Flos",
+      "genitive": { "stem": "Flor", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "flower",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-avis",
+      "partOfSpeech": "noun",
+      "nominative": "Avis",
+      "genitive": { "stem": "Av", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "bird",
+      "tags": ["animals"]
+    },
+    {
+      "id": "noun-piscis",
+      "partOfSpeech": "noun",
+      "nominative": "Piscis",
+      "genitive": { "stem": "Pisc", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "fish",
+      "tags": ["animals"]
+    },
+    {
+      "id": "noun-magister",
+      "partOfSpeech": "noun",
+      "nominative": "Magister",
+      "genitive": { "stem": "Magistr", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "teacher, master",
+      "tags": ["people"]
+    },
+    {
+      "id": "noun-mensa",
+      "partOfSpeech": "noun",
+      "nominative": "Mensa",
+      "genitive": { "stem": "Mens", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "table",
+      "tags": ["objects"]
     }
   ]
 }
