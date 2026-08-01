@@ -1460,6 +1460,56 @@
       "gender": "Female",
       "english": "table",
       "tags": ["objects"]
+    },
+    {
+      "id": "noun-lapis",
+      "partOfSpeech": "noun",
+      "nominative": "Lapis",
+      "genitive": { "stem": "Lapid", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "stone",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-mare",
+      "partOfSpeech": "noun",
+      "nominative": "Mare",
+      "genitive": { "stem": "Mar", "ending": "is" },
+      "declension": 3,
+      "gender": "Neuter",
+      "english": "sea",
+      "tags": ["nature"]
+    },
+    {
+      "id": "noun-cibus",
+      "partOfSpeech": "noun",
+      "nominative": "Cibus",
+      "genitive": { "stem": "Cib", "ending": "i" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "food",
+      "tags": ["food"]
+    },
+    {
+      "id": "noun-vinum",
+      "partOfSpeech": "noun",
+      "nominative": "Vinum",
+      "genitive": { "stem": "Vin", "ending": "i" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "wine",
+      "tags": ["food"]
+    },
+    {
+      "id": "noun-schola",
+      "partOfSpeech": "noun",
+      "nominative": "Schola",
+      "genitive": { "stem": "Schol", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "school",
+      "tags": ["place"]
     }
   ]
 }
