@@ -1,8 +1,10 @@
 #!/usr/bin/env node
-// Parses the JSON review produced by Iudex, the Cursor CLI translation
-// review agent (see .github/workflows/iudex.yml), and turns per-entry
-// confidence scores into GitHub Actions annotations + a pass/warn/fail
-// exit code. Plain Node, no dependencies, mirroring cli/index.mjs.
+// Parses the JSON review produced by one of Verbum's Cursor CLI
+// translation-review judges (Iudex, Altera Sententia, ... - see
+// .github/workflows/translation-judge.yml) and turns per-entry confidence
+// scores into GitHub Actions annotations + a pass/warn/fail exit code.
+// Plain Node, no dependencies, mirroring cli/index.mjs. Shared by every
+// judge, so its output isn't branded to any one agent's name.
 import { readFile } from 'node:fs/promises';
 
 const FAIL_THRESHOLD = 90;
@@ -75,12 +77,12 @@ function describe(entry) {
   return `[${entry.file}] ${entry.id} ("${entry.latin}" → "${entry.english}") — confidence ${confidenceText}: ${entry.reasoning}`;
 }
 
-async function writeStepSummary({ failures, warnings, passes }) {
+async function writeStepSummary({ failures, warnings, passes }, judgeName) {
   const summaryPath = process.env.GITHUB_STEP_SUMMARY;
   if (!summaryPath) return;
 
   const lines = [
-    '## Iudex — translation review',
+    `## ${judgeName} — translation review`,
     '',
     `- ❌ Failing (< ${FAIL_THRESHOLD}%): ${failures.length}`,
     `- ⚠️ Warning (${FAIL_THRESHOLD}–${WARN_THRESHOLD}%): ${warnings.length}`,
@@ -110,6 +112,7 @@ async function writeStepSummary({ failures, warnings, passes }) {
 
 async function main() {
   const inputPath = process.argv[2] ?? '/tmp/translation-review.json';
+  const judgeName = process.env.AGENT_NAME || 'Translation review';
 
   let raw;
   try {
@@ -148,10 +151,10 @@ async function main() {
   }
 
   console.log(
-    `Iudex: ${passes.length} passing, ${warnings.length} warning(s), ${failures.length} failing (of ${entries.length} reviewed entries).`,
+    `${judgeName}: ${passes.length} passing, ${warnings.length} warning(s), ${failures.length} failing (of ${entries.length} reviewed entries).`,
   );
 
-  await writeStepSummary({ failures, warnings, passes });
+  await writeStepSummary({ failures, warnings, passes }, judgeName);
 
   if (failures.length > 0) {
     process.exitCode = 1;
