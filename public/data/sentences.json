@@ -1,80 +1,130 @@
 {
-  "generated": "2026-07-31",
+  "generated": "2026-08-01",
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Dux militem fortem regit.",
-      "english": "The leader rules the brave soldier."
+      "latin": "Pater filio suo librum bonum dat.",
+      "english": "The father gives his own son a good book."
     },
     {
       "id": "sentence-2",
-      "latin": "Regina a duce fideli amatur.",
-      "english": "The queen is loved by the loyal leader."
+      "latin": "Liber magnus a puero portatur.",
+      "english": "The big book is carried by the boy."
     },
     {
       "id": "sentence-3",
-      "latin": "Imperator ferox regnat.",
-      "english": "The fierce emperor reigns."
+      "latin": "Servi domino suo donum magnum dant.",
+      "english": "The servants give their master a large gift."
     },
     {
       "id": "sentence-4",
-      "latin": "Gladiatorem draco magnus terret.",
-      "english": "The great dragon frightens the gladiator."
+      "latin": "Templum sanctum aperitur.",
+      "english": "The holy temple is opened."
     },
     {
       "id": "sentence-5",
-      "latin": "Poeta gloriae multae invidet.",
-      "english": "The poet envies much glory."
+      "latin": "Canis magnus viam longam custodit.",
+      "english": "The big dog guards the long road."
     },
     {
       "id": "sentence-6",
-      "latin": "Canis a puero forti custoditur.",
-      "english": "The dog is guarded by the brave boy."
+      "latin": "Puella a fratre suo vocatur.",
+      "english": "The girl is called by her own brother."
     },
     {
       "id": "sentence-7",
-      "latin": "Deus templum sanctum munit.",
-      "english": "The god protects the holy temple."
+      "latin": "Magister pueris multa verba dicit.",
+      "english": "The teacher says many words to the boys."
     },
     {
       "id": "sentence-8",
-      "latin": "Legio a centurione forti ducitur.",
-      "english": "The legion is led by the brave centurion."
+      "latin": "Liber meus a sorore mea servatur.",
+      "english": "My book is kept safe by my sister."
     },
     {
       "id": "sentence-9",
-      "latin": "Consul legionem magnam ducit.",
-      "english": "The consul leads the great legion."
+      "latin": "Nauta insulam parvam petit.",
+      "english": "The sailor makes for the small island."
     },
     {
       "id": "sentence-10",
-      "latin": "Hostis aquilam sanctam tollit.",
-      "english": "The enemy lifts the holy eagle."
+      "latin": "Dona bona a servis parantur.",
+      "english": "Good gifts are prepared by the servants."
     },
     {
       "id": "sentence-11",
-      "latin": "Iudex populo scribit.",
-      "english": "The judge writes to the people."
+      "latin": "Vir fortis feminam pulchram amat.",
+      "english": "The brave man loves the beautiful woman."
     },
     {
       "id": "sentence-12",
-      "latin": "Fatum a numine regitur.",
-      "english": "Fate is ruled by divine will."
+      "latin": "Femina a viro forti amatur.",
+      "english": "The woman is loved by the brave man."
     },
     {
       "id": "sentence-13",
-      "latin": "Sol terram videt.",
-      "english": "The sun sees the earth."
+      "latin": "Puer nautae fideli credit.",
+      "english": "The boy believes the loyal sailor."
     },
     {
       "id": "sentence-14",
-      "latin": "Liber bonus a poeta habetur.",
-      "english": "The good book is possessed by the poet."
+      "latin": "Milites a rege forti reguntur.",
+      "english": "The soldiers are ruled by the strong king."
     },
     {
       "id": "sentence-15",
-      "latin": "Musa immortalis vocatur.",
-      "english": "The immortal Muse is called."
+      "latin": "Servi agros suos custodiunt.",
+      "english": "The servants guard their own fields."
+    },
+    {
+      "id": "sentence-16",
+      "latin": "Rex militibus fortibus imperat.",
+      "english": "The king commands the brave soldiers."
+    },
+    {
+      "id": "sentence-17",
+      "latin": "Urbs magna a viris custoditur.",
+      "english": "The great city is guarded by the men."
+    },
+    {
+      "id": "sentence-18",
+      "latin": "Mater filiae suae donum parvum dat.",
+      "english": "The mother gives her own daughter a small gift."
+    },
+    {
+      "id": "sentence-19",
+      "latin": "Libri mei a fratribus meis habentur.",
+      "english": "My books are kept by my brothers."
+    },
+    {
+      "id": "sentence-20",
+      "latin": "Rex iustus regnat.",
+      "english": "The just king reigns."
+    },
+    {
+      "id": "sentence-21",
+      "latin": "Amicus amicae verba dulcia dicit.",
+      "english": "The friend says sweet words to his friend."
+    },
+    {
+      "id": "sentence-22",
+      "latin": "Agri nostri a servis multis parantur.",
+      "english": "Our fields are prepared by many servants."
+    },
+    {
+      "id": "sentence-23",
+      "latin": "Puer canem parvum videt.",
+      "english": "The boy sees the small dog."
+    },
+    {
+      "id": "sentence-24",
+      "latin": "Puer patri suo respondet.",
+      "english": "The boy answers his own father."
+    },
+    {
+      "id": "sentence-25",
+      "latin": "Porta magna ab agricola aperitur.",
+      "english": "The great gate is opened by the farmer."
     }
   ]
 }
