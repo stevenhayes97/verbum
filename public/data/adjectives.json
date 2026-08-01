@@ -352,6 +352,60 @@
       "declensionLabel": "3rd",
       "english": "regal, royal",
       "tags": ["royalty"]
+    },
+    {
+      "id": "adj-niger",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Niger",
+      "feminine": "Nigra",
+      "neuter": "Nigrum",
+      "declensionLabel": "1st/2nd",
+      "english": "black",
+      "tags": ["appearance"]
+    },
+    {
+      "id": "adj-albus",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Albus",
+      "feminine": "Alba",
+      "neuter": "Album",
+      "declensionLabel": "1st/2nd",
+      "english": "white, pale",
+      "tags": ["appearance"]
+    },
+    {
+      "id": "adj-ruber",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Ruber",
+      "feminine": "Rubra",
+      "neuter": "Rubrum",
+      "declensionLabel": "1st/2nd",
+      "english": "red",
+      "tags": ["appearance"]
+    },
+    {
+      "id": "adj-sapiens",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "declined",
+      "nominative": "Sapiens",
+      "genitive": { "stem": "Sapient", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "wise",
+      "tags": ["character"]
+    },
+    {
+      "id": "adj-facilis",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Facilis",
+      "feminine": "Facilis",
+      "neuter": "Facile",
+      "declensionLabel": "3rd",
+      "english": "easy"
     }
   ]
 }

@@ -286,6 +286,61 @@
       "conjugation": "1st",
       "english": "to reign, rule",
       "tags": ["governance"]
+    },
+    {
+      "id": "verb-facio",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Facio",
+      "infinitive": { "stem": "Fac", "ending": "ere" },
+      "perfectFirstSingular": "Feci",
+      "perfectPassiveParticiple": "Factus",
+      "conjugation": "3rd",
+      "english": "to do, make",
+      "tags": ["change-of-state"]
+    },
+    {
+      "id": "verb-dico",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Dico",
+      "infinitive": { "stem": "Dic", "ending": "ere" },
+      "perfectFirstSingular": "Dixi",
+      "perfectPassiveParticiple": "Dictus",
+      "conjugation": "3rd",
+      "english": "to say, speak",
+      "tags": ["communication"]
+    },
+    {
+      "id": "verb-emo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Emo",
+      "infinitive": { "stem": "Em", "ending": "ere" },
+      "perfectFirstSingular": "Emi",
+      "perfectPassiveParticiple": "Emptus",
+      "conjugation": "3rd",
+      "english": "to buy",
+      "tags": ["possession"]
+    },
+    {
+      "id": "verb-capio",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Capio",
+      "infinitive": { "stem": "Cap", "ending": "ere" },
+      "perfectFirstSingular": "Cepi",
+      "perfectPassiveParticiple": "Captus",
+      "conjugation": "3rd",
+      "english": "to take, seize, capture",
+      "tags": ["possession"]
+    },
+    {
+      "id": "verb-scio",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Scio",
+      "infinitive": { "stem": "Sc", "ending": "ire" },
+      "perfectFirstSingular": "Scivi",
+      "perfectPassiveParticiple": "Scitus",
+      "conjugation": "4th",
+      "english": "to know",
+      "tags": ["cognition"]
     }
   ]
 }
