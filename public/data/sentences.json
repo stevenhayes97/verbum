@@ -51,8 +51,8 @@
     },
     {
       "id": "sentence-9",
-      "latin": "Gladius fortis militis a duce sapienti laudatur.",
-      "english": "The soldier's strong sword is praised by the wise general.",
+      "latin": "Gladius longus militis a duce sapienti laudatur.",
+      "english": "The soldier's long sword is praised by the wise general.",
       "difficulty": "intermediate"
     },
     {
@@ -76,7 +76,7 @@
     {
       "id": "sentence-13",
       "latin": "Dux legionis milites fortes ad proelium magnum ducit.",
-      "english": "The general of the legion leads the brave soldiers into the great battle.",
+      "english": "The general of the legion leads the brave soldiers to the great battle.",
       "difficulty": "challenging"
     },
     {
@@ -87,8 +87,8 @@
     },
     {
       "id": "sentence-15",
-      "latin": "Imperator clarus victoriam magnam gladiatorum fortium quaerit.",
-      "english": "The famous emperor seeks a great victory of the brave gladiators.",
+      "latin": "Imperator clarus victoriam magnam contra gladiatores fortes quaerit.",
+      "english": "The famous emperor seeks a great victory against the brave gladiators.",
       "difficulty": "challenging"
     }
   ]
