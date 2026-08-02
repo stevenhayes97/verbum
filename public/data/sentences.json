@@ -33,32 +33,32 @@
     },
     {
       "id": "sentence-6",
-      "latin": "Magister puellae librum novum dat.",
-      "english": "The teacher gives the girl a new book.",
+      "latin": "Magister puero librum novum dat.",
+      "english": "The teacher gives the boy a new book.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-7",
-      "latin": "Puella hunc librum aperit.",
-      "english": "The girl opens this book.",
+      "latin": "Puer hunc librum aperit.",
+      "english": "The boy opens this book.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-8",
-      "latin": "Puer verba longa scribit.",
-      "english": "The boy writes long words.",
+      "latin": "Puella verba longa scribit.",
+      "english": "The girl writes long words.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-9",
-      "latin": "Sed puer verbum difficile quaerit.",
-      "english": "But the boy seeks a difficult word.",
+      "latin": "Sed puella verbum difficile quaerit.",
+      "english": "But the girl seeks a difficult word.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-10",
-      "latin": "Magister puerum monet et puellam laudat.",
-      "english": "The teacher advises the boy and praises the girl.",
+      "latin": "Magister puellam monet et puerum laudat.",
+      "english": "The teacher advises the girl and praises the boy.",
       "difficulty": "easy"
     },
     {
@@ -93,14 +93,14 @@
     },
     {
       "id": "sentence-16",
-      "latin": "Amicus aquam dulcem et cibum bonum portat.",
-      "english": "The friend carries sweet water and good food.",
+      "latin": "Amicus aquam multam et cibum bonum portat.",
+      "english": "The friend carries much water and good food.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-17",
-      "latin": "Nauta amicum suum de periculo monet.",
-      "english": "The sailor warns his own friend about the danger.",
+      "latin": "Nauta amicum suum vocat et monet.",
+      "english": "The sailor calls and advises his own friend.",
       "difficulty": "intermediate"
     },
     {
@@ -135,20 +135,20 @@
     },
     {
       "id": "sentence-23",
-      "latin": "Ea vox periculum et mortem omnis populi dicit.",
-      "english": "That voice tells of the danger and the death of the whole people.",
+      "latin": "Ea vox omnem populum urbis nostrae de periculo gravi monet.",
+      "english": "That voice warns the whole people of our city about a grave danger.",
       "difficulty": "challenging"
     },
     {
       "id": "sentence-24",
-      "latin": "Femina misera verbis gravibus illius numinis terretur.",
-      "english": "The wretched woman is frightened by the grave words of that deity.",
+      "latin": "Femina misera illis verbis dei immortalis terretur.",
+      "english": "The wretched woman is frightened by those words of the immortal god.",
       "difficulty": "challenging"
     },
     {
       "id": "sentence-25",
-      "latin": "Sed omnis populus urbis nostrae a numine immortali servatur.",
-      "english": "But the whole people of our city is saved by the immortal deity.",
+      "latin": "Sed omnis populus urbis a numine immortali servatur.",
+      "english": "But the whole people of the city is saved by the immortal deity.",
       "difficulty": "challenging"
     }
   ]
