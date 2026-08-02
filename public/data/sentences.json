@@ -3,92 +3,152 @@
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Agricola canem bonum habet.",
-      "english": "The farmer has a good dog.",
+      "latin": "Magister puerum et puellam vocat.",
+      "english": "The teacher calls the boy and the girl.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-2",
-      "latin": "Is canis agrum magnum custodit.",
-      "english": "That dog guards the large field.",
+      "latin": "Puer librum magnum portat.",
+      "english": "The boy carries a large book.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-3",
-      "latin": "Sed canis umbram longam videt.",
-      "english": "But the dog sees a long shadow.",
+      "latin": "Puella mensam parvam videt.",
+      "english": "The girl sees a small table.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-4",
-      "latin": "Itaque canis parvus umbra terretur.",
-      "english": "And so the small dog is frightened by the shadow.",
+      "latin": "Magister verba clara dicit.",
+      "english": "The teacher says clear words.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-5",
-      "latin": "Sed agricola canem suum servat.",
-      "english": "But the farmer protects his own dog.",
+      "latin": "Itaque verba magistri audiuntur.",
+      "english": "And so the teacher's words are heard.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-6",
-      "latin": "Poeta clarus regi librum novum dat.",
-      "english": "The famous poet gives the king a new book.",
-      "difficulty": "intermediate"
+      "latin": "Magister puellae librum novum dat.",
+      "english": "The teacher gives the girl a new book.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-7",
-      "latin": "Rex hoc donum laudat et poetam vocat.",
-      "english": "The king praises this gift and calls the poet.",
-      "difficulty": "intermediate"
+      "latin": "Puella hunc librum aperit.",
+      "english": "The girl opens this book.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-8",
-      "latin": "Poeta felix ad solium regium vocatur.",
-      "english": "The fortunate poet is called to the royal throne.",
-      "difficulty": "intermediate"
+      "latin": "Puer verba longa scribit.",
+      "english": "The boy writes long words.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-9",
-      "latin": "Rex poetam fidelem amicum suum facit.",
-      "english": "The king makes the loyal poet his own friend.",
-      "difficulty": "intermediate"
+      "latin": "Sed puer verbum difficile quaerit.",
+      "english": "But the boy seeks a difficult word.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-10",
-      "latin": "Itaque poeta per omnem terram laudatur.",
-      "english": "And so the poet is praised throughout the whole land.",
-      "difficulty": "intermediate"
+      "latin": "Magister puerum monet et puellam laudat.",
+      "english": "The teacher advises the boy and praises the girl.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-11",
-      "latin": "Iudex sapiens et fidelis leges veteres civitatis nostrae custodit.",
-      "english": "The wise and loyal judge guards the old laws of our state.",
-      "difficulty": "challenging"
+      "latin": "Nauta fidelis iter longum et difficile parat.",
+      "english": "The loyal sailor prepares a long and difficult journey.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-12",
-      "latin": "Sed tyrannus ferox edictum novum et grave populo dat.",
-      "english": "But the fierce tyrant gives the people a new and harsh edict.",
-      "difficulty": "challenging"
+      "latin": "Nauta stellas claras et lunam candidam videt.",
+      "english": "The sailor sees the bright stars and the radiant moon.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-13",
-      "latin": "Multi homines urbis magnae et pulchrae illo edicto terrentur.",
-      "english": "Many men of the great and beautiful city are frightened by that edict.",
-      "difficulty": "challenging"
+      "latin": "Nauta periculo maris magni terretur.",
+      "english": "The sailor is frightened by the danger of the great sea.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-14",
-      "latin": "Sed veritas et libertas a iudice iusto et forti servantur.",
-      "english": "But truth and freedom are protected by the just and brave judge.",
-      "difficulty": "challenging"
+      "latin": "Sed nauta fortis insulam parvam et pulchram petit.",
+      "english": "But the brave sailor makes for a small and beautiful island.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-15",
-      "latin": "Itaque populus fortis iudicem bonum contra eum tyrannum servat.",
-      "english": "And so the brave people protect the good judge against that tyrant.",
+      "latin": "Nauta amico suo piscem magnum dat.",
+      "english": "The sailor gives his own friend a large fish.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-16",
+      "latin": "Amicus aquam dulcem et cibum bonum portat.",
+      "english": "The friend carries sweet water and good food.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-17",
+      "latin": "Nauta amicum suum de periculo monet.",
+      "english": "The sailor warns his own friend about the danger.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-18",
+      "latin": "Amicus verba nautae audit et respondet.",
+      "english": "The friend hears the sailor's words and replies.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-19",
+      "latin": "Itaque nauta amicum ad mare ducit.",
+      "english": "And so the sailor leads the friend to the sea.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-20",
+      "latin": "Iter longum finitur et nauta laudatur.",
+      "english": "The long journey is finished and the sailor is praised.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-21",
+      "latin": "Femina sapiens et fidelis oraculum dei immortalis quaerit.",
+      "english": "The wise and loyal woman seeks the oracle of the immortal god.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-22",
+      "latin": "In templo vetere vox clara numinis sancti auditur.",
+      "english": "In the old temple the clear voice of the holy deity is heard.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-23",
+      "latin": "Ea vox periculum et mortem omnis populi dicit.",
+      "english": "That voice tells of the danger and the death of the whole people.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-24",
+      "latin": "Femina misera verbis gravibus illius numinis terretur.",
+      "english": "The wretched woman is frightened by the grave words of that deity.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-25",
+      "latin": "Sed omnis populus urbis nostrae a numine immortali servatur.",
+      "english": "But the whole people of our city is saved by the immortal deity.",
       "difficulty": "challenging"
     }
   ]
