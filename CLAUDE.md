@@ -54,3 +54,23 @@ stay fixed:
   sentence could go either way, restructure it (word order, a different
   preposition, or splitting into a relative clause) until only one
   reading holds.
+
+### Difficulty tiers
+
+Every sentence gets a `difficulty: "easy" | "intermediate" | "challenging"`
+field. All three tiers stay within the guardrails above (present tense
+only, 1st–3rd declension, no adverbs) — difficulty comes from vocabulary
+and structure, not from unlocking new grammar early:
+
+- **easy** — short (roughly 4–6 words), common/high-frequency vocab, one
+  clause, simple SVO/SOV order, mostly active voice.
+- **intermediate** — slightly longer (roughly 6–9 words), a mix of active
+  and passive voice, dative indirect objects and/or possessive adjectives,
+  broader vocab.
+- **challenging** — longer (roughly 8–12 words), denser modifier use
+  (multiple adjectives/genitives per noun), more 3rd-declension nouns and
+  adjectives, passive voice with an ablative agent (a/ab), less common
+  vocab — while still respecting the unambiguous-modifier rule above.
+
+Unless told otherwise, split a batch evenly across the three tiers (e.g.
+a default batch of 15 = 5 easy / 5 intermediate / 5 challenging).

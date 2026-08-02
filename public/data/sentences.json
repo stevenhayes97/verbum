@@ -3,128 +3,93 @@
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Pater filio suo librum bonum dat.",
-      "english": "The father gives his own son a good book."
+      "latin": "Puella magistrum videt.",
+      "english": "The girl sees the teacher.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-2",
-      "latin": "Liber magnus a puero portatur.",
-      "english": "The big book is carried by the boy."
+      "latin": "Servus dominum audit.",
+      "english": "The servant hears the master.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-3",
-      "latin": "Servi domino suo donum magnum dant.",
-      "english": "The servants give their master a large gift."
+      "latin": "Filia matri credit.",
+      "english": "The daughter believes the mother.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-4",
-      "latin": "Templum sanctum aperitur.",
-      "english": "The holy temple is opened."
+      "latin": "Liber a puero portatur.",
+      "english": "The book is carried by the boy.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-5",
-      "latin": "Canis magnus viam longam custodit.",
-      "english": "The big dog guards the long road."
+      "latin": "Magister puero librum dat.",
+      "english": "The teacher gives the boy a book.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-6",
-      "latin": "Puella a fratre suo vocatur.",
-      "english": "The girl is called by her own brother."
+      "latin": "Rex filiae suae coronam pulchram dat.",
+      "english": "The king gives his own daughter a beautiful crown.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-7",
-      "latin": "Magister pueris multa verba dicit.",
-      "english": "The teacher says many words to the boys."
+      "latin": "Urbs magna a militibus fortibus custoditur.",
+      "english": "The great city is guarded by brave soldiers.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-8",
-      "latin": "Liber meus a sorore mea servatur.",
-      "english": "My book is protected by my sister."
+      "latin": "Nauta amico fideli donum pulchrum mittit.",
+      "english": "The sailor sends the faithful friend a beautiful gift.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-9",
-      "latin": "Nauta insulam parvam petit.",
-      "english": "The sailor makes for the small island."
+      "latin": "Gladius longus militis a duce sapienti laudatur.",
+      "english": "The soldier's long sword is praised by the wise general.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-10",
-      "latin": "Dona bona a servis parantur.",
-      "english": "Good gifts are prepared by the servants."
+      "latin": "Femina fratri suo verba dulcia scribit.",
+      "english": "The woman writes her own brother sweet words.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-11",
-      "latin": "Vir fortis feminam pulchram amat.",
-      "english": "The brave man loves the beautiful woman."
+      "latin": "Miles fortis gladium longum et scutum grave portat.",
+      "english": "The brave soldier carries a long sword and a heavy shield.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-12",
-      "latin": "Femina a viro forti amatur.",
-      "english": "The woman is loved by the brave man."
+      "latin": "Oppidum parvum a militibus fortibus et centurione fideli custoditur.",
+      "english": "The small town is guarded by brave soldiers and a loyal centurion.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-13",
-      "latin": "Puer nautae fideli credit.",
-      "english": "The boy believes the loyal sailor."
+      "latin": "Dux legionis milites fortes ad proelium magnum ducit.",
+      "english": "The general of the legion leads the brave soldiers to the great battle.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-14",
-      "latin": "Milites a rege forti reguntur.",
-      "english": "The soldiers are ruled by the strong king."
+      "latin": "Vexillum legionis a centurione forti et milite fideli portatur.",
+      "english": "The legion's standard is carried by a strong centurion and a loyal soldier.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-15",
-      "latin": "Servi agros suos custodiunt.",
-      "english": "The servants guard their own fields."
-    },
-    {
-      "id": "sentence-16",
-      "latin": "Rex militibus fortibus imperat.",
-      "english": "The king commands the brave soldiers."
-    },
-    {
-      "id": "sentence-17",
-      "latin": "Urbs magna a viris custoditur.",
-      "english": "The great city is guarded by the men."
-    },
-    {
-      "id": "sentence-18",
-      "latin": "Mater filiae suae donum parvum dat.",
-      "english": "The mother gives her own daughter a small gift."
-    },
-    {
-      "id": "sentence-19",
-      "latin": "Libri mei a fratribus meis habentur.",
-      "english": "My books are possessed by my brothers."
-    },
-    {
-      "id": "sentence-20",
-      "latin": "Rex iustus regnat.",
-      "english": "The just king reigns."
-    },
-    {
-      "id": "sentence-21",
-      "latin": "Frater sorori verba dulcia dicit.",
-      "english": "The brother says sweet words to the sister."
-    },
-    {
-      "id": "sentence-22",
-      "latin": "Agri nostri a servis multis parantur.",
-      "english": "Our fields are prepared by many servants."
-    },
-    {
-      "id": "sentence-23",
-      "latin": "Puer canem parvum videt.",
-      "english": "The boy sees the small dog."
-    },
-    {
-      "id": "sentence-24",
-      "latin": "Puer patri suo respondet.",
-      "english": "The boy answers his own father."
-    },
-    {
-      "id": "sentence-25",
-      "latin": "Porta magna ab agricola aperitur.",
-      "english": "The great gate is opened by the farmer."
+      "latin": "Imperator clarus victoriam magnam contra gladiatores fortes quaerit.",
+      "english": "The famous emperor seeks a great victory against the brave gladiators.",
+      "difficulty": "challenging"
     }
   ]
 }

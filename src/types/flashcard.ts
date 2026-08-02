@@ -88,10 +88,13 @@ export interface CategoryFile {
   cards: Card[];
 }
 
+export type Difficulty = 'easy' | 'intermediate' | 'challenging';
+
 export interface Sentence {
   id: string;
   latin: string;
   english: string;
+  difficulty: Difficulty;
 }
 
 // Unlike the vocab files, sentences.json is wiped and regenerated wholesale

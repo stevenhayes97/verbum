@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { CATEGORIES } from './data/categories';
-import type { Card, Category, CategoryFile, Section, Sentence, SentenceFile } from './types/flashcard';
+import type { Card, Category, CategoryFile, Difficulty, Section, Sentence, SentenceFile } from './types/flashcard';
 import { SectionNav } from './components/SectionNav/SectionNav';
 import { DeckSelector } from './components/DeckSelector/DeckSelector';
 import { SetCustomizer } from './components/SetCustomizer/SetCustomizer';
@@ -13,6 +13,7 @@ import { DeclensionTables } from './components/DeclensionTables/DeclensionTables
 import { shuffle } from './utils/shuffle';
 import { DEFAULT_MAX_CARDS } from './utils/constants';
 import { cardMatchesFilters } from './utils/declension';
+import { sentenceMatchesFilters } from './utils/sentence';
 import styles from './App.module.css';
 
 async function fetchCategoryCards(dataUrl: string): Promise<Card[]> {
@@ -55,6 +56,8 @@ function App() {
   // does, so keeping state here lets you leave for Declension Tables (or any
   // other section) and come back to the same sentence instead of a
   // freshly-refetched, re-shuffled deck at index 0.
+  const [rawSentences, setRawSentences] = useState<Sentence[]>([]);
+  const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>(['easy']);
   const [sentences, setSentences] = useState<Sentence[]>([]);
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const [sentencesLoading, setSentencesLoading] = useState(true);
@@ -113,13 +116,21 @@ function App() {
         return res.json() as Promise<SentenceFile>;
       })
       .then((data) => {
-        setSentences(shuffle(data.sentences));
-        setSentenceIndex(0);
+        setRawSentences(data.sentences);
         setSentencesLoaded(true);
       })
       .catch((err: Error) => setSentencesError(err.message))
       .finally(() => setSentencesLoading(false));
   }, [section, sentencesLoaded]);
+
+  // Derives the displayed sentence pool from the raw fetched sentences plus
+  // the difficulty filter -- re-shuffles and resets to the first card on any
+  // filter change, mirroring the rawCards -> cards derivation above.
+  useEffect(() => {
+    const pool = rawSentences.filter((s) => sentenceMatchesFilters(s, selectedDifficulties));
+    setSentences(shuffle(pool));
+    setSentenceIndex(0);
+  }, [rawSentences, selectedDifficulties]);
 
   const currentCard = cards[currentIndex];
 
@@ -170,6 +181,8 @@ function App() {
             onShuffle={() => setSentences((s) => shuffle(s))}
             loading={sentencesLoading}
             error={sentencesError}
+            selectedDifficulties={selectedDifficulties}
+            onDifficultiesChange={setSelectedDifficulties}
           />
         )}
         {section === 'vocab-list' && <VocabList />}
