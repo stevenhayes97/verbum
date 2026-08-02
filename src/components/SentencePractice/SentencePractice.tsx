@@ -8,7 +8,6 @@ interface SentencePracticeProps {
   sentences: Sentence[];
   currentIndex: number;
   onIndexChange: (index: number) => void;
-  onShuffle: () => void;
   loading: boolean;
   error: string | null;
   selectedDifficulties: Difficulty[];
@@ -19,7 +18,6 @@ export function SentencePractice({
   sentences,
   currentIndex,
   onIndexChange,
-  onShuffle,
   loading,
   error,
   selectedDifficulties,
@@ -29,7 +27,10 @@ export function SentencePractice({
 
   return (
     <div>
-      <p className={styles.intro}>Translate the Latin, then tap the card to check yourself.</p>
+      <p className={styles.intro}>
+        Translate the Latin, then tap the card to check yourself. Each difficulty tier is one short
+        story, so the cards run in order.
+      </p>
 
       <SentenceFilters selectedDifficulties={selectedDifficulties} onDifficultiesChange={onDifficultiesChange} />
 
@@ -43,7 +44,6 @@ export function SentencePractice({
             total={sentences.length}
             onPrev={() => onIndexChange((currentIndex - 1 + sentences.length) % sentences.length)}
             onNext={() => onIndexChange((currentIndex + 1) % sentences.length)}
-            onShuffle={onShuffle}
           />
         </>
       )}

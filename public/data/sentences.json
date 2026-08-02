@@ -1,94 +1,94 @@
 {
-  "generated": "2026-08-01",
+  "generated": "2026-08-02",
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Puella magistrum videt.",
-      "english": "The girl sees the teacher.",
+      "latin": "Agricola canem bonum habet.",
+      "english": "The farmer has a good dog.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-2",
-      "latin": "Servus dominum audit.",
-      "english": "The servant hears the master.",
+      "latin": "Is canis agrum magnum custodit.",
+      "english": "That dog guards the large field.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-3",
-      "latin": "Filia matri credit.",
-      "english": "The daughter believes the mother.",
+      "latin": "Sed canis umbram longam videt.",
+      "english": "But the dog sees a long shadow.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-4",
-      "latin": "Liber a puero portatur.",
-      "english": "The book is carried by the boy.",
+      "latin": "Itaque canis parvus umbra terretur.",
+      "english": "And so the small dog is frightened by the shadow.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-5",
-      "latin": "Magister puero librum dat.",
-      "english": "The teacher gives the boy a book.",
+      "latin": "Sed agricola canem suum servat.",
+      "english": "But the farmer protects his own dog.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-6",
-      "latin": "Rex filiae suae coronam pulchram dat.",
-      "english": "The king gives his own daughter a beautiful crown.",
+      "latin": "Poeta clarus regi librum novum dat.",
+      "english": "The famous poet gives the king a new book.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-7",
-      "latin": "Urbs magna a militibus fortibus custoditur.",
-      "english": "The great city is guarded by brave soldiers.",
+      "latin": "Rex hoc donum laudat et poetam vocat.",
+      "english": "The king praises this gift and calls the poet.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-8",
-      "latin": "Nauta amico fideli donum pulchrum mittit.",
-      "english": "The sailor sends the faithful friend a beautiful gift.",
+      "latin": "Poeta felix ad solium regium vocatur.",
+      "english": "The fortunate poet is called to the royal throne.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-9",
-      "latin": "Gladius longus militis a duce sapienti laudatur.",
-      "english": "The soldier's long sword is praised by the wise general.",
+      "latin": "Rex poetam fidelem amicum suum facit.",
+      "english": "The king makes the loyal poet his own friend.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-10",
-      "latin": "Femina fratri suo verba dulcia scribit.",
-      "english": "The woman writes her own brother sweet words.",
+      "latin": "Itaque poeta per omnem terram laudatur.",
+      "english": "And so the poet is praised throughout the whole land.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-11",
-      "latin": "Miles fortis gladium longum et scutum grave portat.",
-      "english": "The brave soldier carries a long sword and a heavy shield.",
+      "latin": "Iudex sapiens et fidelis leges veteres civitatis nostrae custodit.",
+      "english": "The wise and loyal judge guards the old laws of our state.",
       "difficulty": "challenging"
     },
     {
       "id": "sentence-12",
-      "latin": "Oppidum parvum a militibus fortibus et centurione fideli custoditur.",
-      "english": "The small town is guarded by brave soldiers and a loyal centurion.",
+      "latin": "Sed tyrannus ferox edictum novum et grave populo dat.",
+      "english": "But the fierce tyrant gives the people a new and harsh edict.",
       "difficulty": "challenging"
     },
     {
       "id": "sentence-13",
-      "latin": "Dux legionis milites fortes ad proelium magnum ducit.",
-      "english": "The general of the legion leads the brave soldiers to the great battle.",
+      "latin": "Multi homines urbis magnae et pulchrae illo edicto terrentur.",
+      "english": "Many men of the great and beautiful city are frightened by that edict.",
       "difficulty": "challenging"
     },
     {
       "id": "sentence-14",
-      "latin": "Vexillum legionis a centurione forti et milite fideli portatur.",
-      "english": "The legion's standard is carried by a strong centurion and a loyal soldier.",
+      "latin": "Sed veritas et libertas a iudice iusto et forti servantur.",
+      "english": "But truth and freedom are protected by the just and brave judge.",
       "difficulty": "challenging"
     },
     {
       "id": "sentence-15",
-      "latin": "Imperator clarus victoriam magnam contra gladiatores fortes quaerit.",
-      "english": "The famous emperor seeks a great victory against the brave gladiators.",
+      "latin": "Itaque populus fortis iudicem bonum contra eum tyrannum servat.",
+      "english": "And so the brave people protect the good judge against that tyrant.",
       "difficulty": "challenging"
     }
   ]

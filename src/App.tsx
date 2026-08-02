@@ -102,8 +102,8 @@ function App() {
   }, [rawCards, selectedTags, selectedDeclensions, cardCount]);
 
   // Fetches sentences.json the first time Sentence Practice is visited, not
-  // eagerly on app load -- sentencesLoaded guards against re-fetching (and
-  // re-shuffling, which would reset the user's place) on subsequent visits.
+  // eagerly on app load -- sentencesLoaded guards against re-fetching, which
+  // would reset the user's place, on subsequent visits.
   useEffect(() => {
     if (section !== 'sentence-practice' || sentencesLoaded) return;
 
@@ -124,11 +124,15 @@ function App() {
   }, [section, sentencesLoaded]);
 
   // Derives the displayed sentence pool from the raw fetched sentences plus
-  // the difficulty filter -- re-shuffles and resets to the first card on any
-  // filter change, mirroring the rawCards -> cards derivation above.
+  // the difficulty filter, resetting to the first card on any filter change.
+  // Unlike the rawCards -> cards derivation above, the pool is deliberately
+  // NOT shuffled: each difficulty tier is written as one coherent paragraph
+  // (see CLAUDE.md, "Paragraph coherence"), so file order is the reading
+  // order. filter() preserves it, which also means selecting several tiers
+  // plays their paragraphs back to back rather than interleaving them.
   useEffect(() => {
     const pool = rawSentences.filter((s) => sentenceMatchesFilters(s, selectedDifficulties));
-    setSentences(shuffle(pool));
+    setSentences(pool);
     setSentenceIndex(0);
   }, [rawSentences, selectedDifficulties]);
 
@@ -178,7 +182,6 @@ function App() {
             sentences={sentences}
             currentIndex={sentenceIndex}
             onIndexChange={setSentenceIndex}
-            onShuffle={() => setSentences((s) => shuffle(s))}
             loading={sentencesLoading}
             error={sentencesError}
             selectedDifficulties={selectedDifficulties}

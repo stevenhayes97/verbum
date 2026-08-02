@@ -30,7 +30,10 @@ must not accumulate into a fixed, memorizable bank the way the vocab
 files (and favorites.json) intentionally do. When generating a fresh
 batch, vary sentence structure and grammatical construction too, not
 just which vocab words get slotted in — otherwise the sentence
-*templates* become the thing that gets memorized instead.
+*templates* become the thing that gets memorized instead. Vary the
+premise as well: new characters, new settings, new situations each
+time, so the little stories described under "Paragraph coherence" below
+don't become the memorizable thing either.
 
 ## Sentence generation
 
@@ -74,3 +77,37 @@ and structure, not from unlocking new grammar early:
 
 Unless told otherwise, split a batch evenly across the three tiers (e.g.
 a default batch of 15 = 5 easy / 5 intermediate / 5 challenging).
+
+### Paragraph coherence
+
+Each difficulty grouping reads as a **single coherent paragraph** — a
+little mini-story — not a pile of disconnected sentences. The sentences
+in a tier share characters, a setting, and a through-line, and they're
+written to be read in file order: the first sentence opens the scene,
+the last one closes it. The app presents sentences in file order, so
+narrative order in `sentences.json` is the order the user practices in.
+
+The three paragraphs must be **unrelated to each other** — three
+separate mini-stories with their own casts and settings, not one
+narrative split across the tiers and not three chapters of the same
+story. A default batch of 15 is therefore three 5-sentence stories:
+one easy, one intermediate, one challenging, with nothing carrying over
+between them.
+
+To let the prose actually flow, two categories of cohesion vocabulary
+are allowed even when they aren't in the vocab files:
+
+- Conjunctions — `et`, `sed`, `nam`, `itaque`, `quod`, `ubi`.
+- Personal and demonstrative pronouns — `is/ea/id`, `hic`, `ille`.
+
+Adverbs are still off-limits, which rules out the obvious sequencing
+words (`deinde`, `tum`, `postea`). Carry sequence with conjunctions and
+word order instead.
+
+The unambiguous-translation rule above extends to pronoun reference. A
+sentence still has to yield one canonical English translation **on its
+own**, without the reader inferring a referent from its neighbours — so
+when two masculine referents are in play, don't lean on a bare `eum` to
+pick one out; repeat the noun. Cohesion should come from continuity of
+scene and repeated named characters first, pronouns only where the
+referent is unmistakable.

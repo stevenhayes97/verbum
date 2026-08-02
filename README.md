@@ -289,15 +289,25 @@ until something in it gets tagged.
 
 The **Sentence Practice** section (in the top nav, alongside Flashcards)
 drills translation rather than recall: each card shows a Latin sentence,
-and tapping it reveals the English. Same flip/Prev/Next/Shuffle interaction
-as the vocab flashcards, and the set is shuffled on load. The tag/count
-customizer doesn't apply here — sentences aren't tagged or split into decks.
+and tapping it reveals the English. Same flip/Prev/Next interaction as the
+vocab flashcards, but **no Shuffle button** — sentence order is meaningful
+here (see below), so the cards always run in the order they're written in
+the file. The tag/count customizer doesn't apply either — sentences aren't
+tagged or split into decks.
 
 Each sentence carries a `difficulty` of `easy`, `intermediate`, or
 `challenging`. A pill filter above the card lets you pick which tier(s) are
 in play — Easy, Intermediate, Challenging, or All — and multiple tiers can
 be selected at once; it defaults to Easy only. See CLAUDE.md's "Sentence
 generation" section for the rubric behind each tier.
+
+Each tier is written as **one coherent paragraph** — a short story whose
+sentences share characters and a setting and build on each other — so
+Prev/Next walks you through a narrative rather than a random pile. The
+three paragraphs are unrelated to one another: a batch of 15 is three
+separate 5-sentence stories, one per tier. Selecting several tiers at once
+plays their paragraphs back to back (easy, then intermediate, then
+challenging) instead of interleaving them.
 
 Sentences live in `public/data/sentences.json`:
 
@@ -330,7 +340,11 @@ documented in `CLAUDE.md` (1st–3rd declension nouns and adjectives only,
 no adverbs, present tense verbs in both active and passive voice). Those
 guardrails loosen as the user's Latin improves. All three difficulty tiers
 stay within these same guardrails — the tiers vary vocabulary and sentence
-structure, not grammar.
+structure, not grammar. The one deliberate exception is cohesion: because
+each tier has to read as a paragraph, conjunctions (`et`, `sed`, `nam`,
+`itaque`) and demonstrative/personal pronouns (`is/ea/id`, `hic`, `ille`)
+may be used even though they aren't in the vocab files. Adverbs stay
+banned, sequencing words included.
 
 ## Favorites
 

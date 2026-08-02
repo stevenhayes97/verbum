@@ -5,7 +5,10 @@ interface CardNavProps {
   total: number;
   onPrev: () => void;
   onNext: () => void;
-  onShuffle: () => void;
+  // Optional: omitted where card order is meaningful and must not be
+  // randomized (Sentence Practice, whose tiers read as paragraphs). The
+  // Shuffle button is hidden entirely rather than disabled in that case.
+  onShuffle?: () => void;
 }
 
 export function CardNav({ index, total, onPrev, onNext, onShuffle }: CardNavProps) {
@@ -20,9 +23,11 @@ export function CardNav({ index, total, onPrev, onNext, onShuffle }: CardNavProp
       <button type="button" onClick={onNext} disabled={total === 0}>
         Next →
       </button>
-      <button type="button" onClick={onShuffle} disabled={total === 0} className={styles.shuffle}>
-        Shuffle
-      </button>
+      {onShuffle && (
+        <button type="button" onClick={onShuffle} disabled={total === 0} className={styles.shuffle}>
+          Shuffle
+        </button>
+      )}
     </div>
   );
 }
