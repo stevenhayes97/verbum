@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { CATEGORIES } from '../../data/categories';
 import type { Card, CategoryFile } from '../../types/flashcard';
 import styles from './VocabList.module.css';
@@ -44,6 +44,12 @@ function latinText(card: Card): string {
   }
 }
 
+// Matches against the same Latin text the row shows (so a search for a
+// genitive like "patris" hits) plus the English gloss.
+function matches(card: Card, query: string): boolean {
+  return `${latinText(card)} ${card.english}`.toLowerCase().includes(query);
+}
+
 async function fetchCategoryCards(dataUrl: string): Promise<Card[]> {
   const res = await fetch(dataUrl);
   if (!res.ok) throw new Error(`Failed to load ${dataUrl}`);
@@ -55,6 +61,7 @@ export function VocabList() {
   const [groups, setGroups] = useState<Group[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [query, setQuery] = useState('');
 
   useEffect(() => {
     setLoading(true);
@@ -77,6 +84,16 @@ export function VocabList() {
       .finally(() => setLoading(false));
   }, []);
 
+  // Groups that end up with no matching card drop out entirely, so the
+  // headings left standing all have rows under them.
+  const visibleGroups = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    if (!needle) return groups;
+    return groups
+      .map((group) => ({ ...group, cards: group.cards.filter((card) => matches(card, needle)) }))
+      .filter((group) => group.cards.length > 0);
+  }, [groups, query]);
+
   return (
     <div>
       {loading && <p className={styles.status}>Loading…</p>}
@@ -87,29 +104,43 @@ export function VocabList() {
             For more complete or nuanced definitions, consult the Logeion app or a Lewis &amp;
             Short dictionary.
           </p>
-          <div className={styles.listWrap}>
-            {groups.map((group) => (
-              <div key={group.label} className={styles.group}>
-                <h2 className={styles.groupTitle}>{group.label}</h2>
-                <table className={styles.table}>
-                  <thead>
-                    <tr>
-                      <th>Latin</th>
-                      <th>English</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {group.cards.map((card) => (
-                      <tr key={card.id}>
-                        <td>{latinText(card)}</td>
-                        <td>{card.english}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            ))}
+          <div className={styles.searchWrap}>
+            <input
+              type="search"
+              className={styles.search}
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search Latin or English…"
+              aria-label="Search vocabulary"
+            />
           </div>
+          {visibleGroups.length === 0 ? (
+            <p className={styles.empty}>No words match “{query.trim()}”.</p>
+          ) : (
+            <div className={styles.listWrap}>
+              {visibleGroups.map((group) => (
+                <div key={group.label} className={styles.group}>
+                  <h2 className={styles.groupTitle}>{group.label}</h2>
+                  <table className={styles.table}>
+                    <thead>
+                      <tr>
+                        <th>Latin</th>
+                        <th>English</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {group.cards.map((card) => (
+                        <tr key={card.id}>
+                          <td>{latinText(card)}</td>
+                          <td>{card.english}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ))}
+            </div>
+          )}
         </>
       )}
     </div>

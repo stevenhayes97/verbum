@@ -12,6 +12,55 @@
   text-align: left;
 }
 
+.searchWrap {
+  max-width: 560px;
+  margin: 0 auto 10px;
+  padding: 0 16px;
+}
+
+.search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.search::placeholder {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.search:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* WebKit's own clear button is a dark glyph that all but disappears against
+   the translucent panel; the white mask keeps it visible. */
+.search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 2 L14 14 M14 2 L2 14' stroke='black' stroke-width='2'/%3E%3C/svg%3E")
+    center / contain no-repeat;
+  cursor: pointer;
+}
+
+.empty {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0 16px;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: left;
+}
+
 .listWrap {
   max-width: 560px;
   max-height: 65vh;
@@ -86,7 +135,12 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .listWrap {
+  .listWrap,
+  .search {
     background: rgba(0, 0, 0, 0.3);
+  }
+
+  .search:focus {
+    background: rgba(0, 0, 0, 0.45);
   }
 }
