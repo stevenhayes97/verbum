@@ -41,6 +41,12 @@
       "nominative": "Astrum",
       "genitive": "astri",
       "english": "star, constellation"
+    },
+    {
+      "id": "favorite-aurora",
+      "nominative": "Aurora",
+      "genitive": "aurorae",
+      "english": "dawn, daybreak"
     }
   ]
 }
