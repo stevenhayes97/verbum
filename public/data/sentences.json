@@ -45,8 +45,8 @@
     },
     {
       "id": "sentence-8",
-      "latin": "Filius flores pulchros tollit.",
-      "english": "The son picks up beautiful flowers.",
+      "latin": "Filius flores pulchros capit.",
+      "english": "The son takes beautiful flowers.",
       "difficulty": "easy"
     },
     {
@@ -142,7 +142,7 @@
     {
       "id": "sentence-24",
       "latin": "Is magister contra poetam verba gravia dicit.",
-      "english": "That teacher speaks harsh words against the poet.",
+      "english": "That teacher speaks severe words against the poet.",
       "difficulty": "intermediate"
     },
     {
@@ -189,8 +189,8 @@
     },
     {
       "id": "sentence-32",
-      "latin": "Signum clarum ducis sapientis a militibus fidelibus tollitur.",
-      "english": "The bright standard of the wise leader is raised by the loyal soldiers.",
+      "latin": "Vexillum rubrum ducis sapientis a militibus fidelibus tollitur.",
+      "english": "The red banner of the wise leader is raised by the loyal soldiers.",
       "difficulty": "challenging"
     },
     {
@@ -207,8 +207,8 @@
     },
     {
       "id": "sentence-35",
-      "latin": "Itaque milites nostri victoriam claram et gloriam magnam habent.",
-      "english": "And so our soldiers have a bright victory and great glory.",
+      "latin": "Itaque milites nostri victoriam magnam et pacem longam habent.",
+      "english": "And so our soldiers have a great victory and a long peace.",
       "difficulty": "challenging"
     }
   ]
