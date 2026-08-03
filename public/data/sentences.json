@@ -3,212 +3,128 @@
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Agricola agrum magnum habet.",
-      "english": "The farmer has a large field.",
+      "latin": "Puella aviam bonam habet.",
+      "english": "The girl has a good grandmother.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-2",
-      "latin": "Filius agricolae equum album habet.",
-      "english": "The farmer's son has a white horse.",
+      "latin": "Avia a puella amatur.",
+      "english": "The grandmother is loved by the girl.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-3",
-      "latin": "Mater cibum bonum parat.",
-      "english": "The mother prepares good food.",
+      "latin": "Avia donum pulchrum parat.",
+      "english": "The grandmother prepares a beautiful gift.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-4",
-      "latin": "Filius aquam multam portat.",
-      "english": "The son carries much water.",
+      "latin": "Puella donum novum aperit.",
+      "english": "The girl opens the new gift.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-5",
-      "latin": "Ager a cane fideli custoditur.",
-      "english": "The field is guarded by the loyal dog.",
+      "latin": "Puella in dono librum magnum videt.",
+      "english": "The girl sees a large book in the gift.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-6",
-      "latin": "Nam agricola canem nigrum amat.",
-      "english": "For the farmer loves the black dog.",
+      "latin": "Avia puellam ad flumen ducit.",
+      "english": "The grandmother leads the girl to the river.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-7",
-      "latin": "Equus filium ad silvam portat.",
-      "english": "The horse carries the son to the forest.",
+      "latin": "Sed puella librum portat.",
+      "english": "But the girl carries the book.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-8",
-      "latin": "Filius flores pulchros capit.",
-      "english": "The son takes beautiful flowers.",
+      "latin": "Avia et puella pisces parvos vident.",
+      "english": "The grandmother and the girl see the small fish.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-9",
-      "latin": "Filius avem albam videt.",
-      "english": "The son sees a white bird.",
+      "latin": "Flores albi ab avia portantur.",
+      "english": "The white flowers are carried by the grandmother.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-10",
-      "latin": "Sed avis equum terret.",
-      "english": "But the bird frightens the horse.",
+      "latin": "Itaque puella aviam et flumen amat.",
+      "english": "And so the girl loves the grandmother and the river.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-11",
-      "latin": "Filius equum fortem servat.",
-      "english": "The son protects the strong horse.",
-      "difficulty": "easy"
+      "latin": "Iudex iustus in civitate nostra leges custodit.",
+      "english": "The just judge guards the laws in our state.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-12",
-      "latin": "Equus filium ad agrum portat.",
-      "english": "The horse carries the son to the field.",
-      "difficulty": "easy"
+      "latin": "Femina misera verba sua iudici dicit.",
+      "english": "The wretched woman speaks her own words to the judge.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-13",
-      "latin": "Filius matri flores dat.",
-      "english": "The son gives the flowers to the mother.",
-      "difficulty": "easy"
+      "latin": "Iudex verba feminae audit et veritatem quaerit.",
+      "english": "The judge hears the woman's words and seeks the truth.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-14",
-      "latin": "Filius bonus a matre laudatur.",
-      "english": "The good son is praised by the mother.",
-      "difficulty": "easy"
+      "latin": "Sed vir ferox contra feminam verba multa dicit.",
+      "english": "But a fierce man speaks many words against the woman.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-15",
-      "latin": "Itaque familia cibum et vinum habet.",
-      "english": "And so the family has food and wine.",
-      "difficulty": "easy"
+      "latin": "Nam vir ferox feminae miserae invidet.",
+      "english": "For the fierce man envies the wretched woman.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-16",
-      "latin": "Rex iustus poetam clarum ad urbem magnam vocat.",
-      "english": "The just king calls the famous poet to the great city.",
+      "latin": "Sed iudex sapiens feminae miserae credit.",
+      "english": "But the wise judge believes the wretched woman.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-17",
-      "latin": "Poeta librum pulchrum ad regem portat.",
-      "english": "The poet carries a beautiful book to the king.",
+      "latin": "Itaque femina misera a iudice iusto servatur.",
+      "english": "And so the wretched woman is protected by the just judge.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-18",
-      "latin": "Rex verba poetae audit et librum laudat.",
-      "english": "The king hears the poet's words and praises the book.",
+      "latin": "Populus civitatis virum ferocem videt et verba iudicis audit.",
+      "english": "The people of the state see the fierce man and hear the judge's words.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-19",
-      "latin": "Liber pulcher in urbe nostra laudatur.",
-      "english": "The beautiful book is praised in our city.",
+      "latin": "Nam lex nostra a populo fideli amatur.",
+      "english": "For our law is loved by the loyal people.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-20",
-      "latin": "Rex filio suo librum poetae dat.",
-      "english": "The king gives the poet's book to his own son.",
+      "latin": "Itaque veritas et libertas in civitate nostra servantur.",
+      "english": "And so truth and freedom are preserved in our state.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-21",
-      "latin": "Filius regis librum aperit et verba clara videt.",
-      "english": "The king's son opens the book and sees the clear words.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-22",
-      "latin": "Itaque filius regis poetam laudat et donum parat.",
-      "english": "And so the king's son praises the poet and prepares a gift.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-23",
-      "latin": "Sed magister miser gloriae poetae invidet.",
-      "english": "But a wretched teacher envies the poet's glory.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-24",
-      "latin": "Is magister contra poetam verba gravia dicit.",
-      "english": "That teacher speaks severe words against the poet.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-25",
-      "latin": "Sed rex iustus poetam fidelem servat.",
-      "english": "But the just king protects the loyal poet.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-26",
-      "latin": "Magister miser ex urbe magna mittitur.",
-      "english": "The wretched teacher is sent out of the great city.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-27",
-      "latin": "Poeta librum novum de rege scribit.",
-      "english": "The poet writes a new book about the king.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-28",
-      "latin": "Nam populus urbis verba dulcia poetae amat.",
-      "english": "For the people of the city love the poet's sweet words.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-29",
-      "latin": "Itaque donum magnum viro claro datur.",
-      "english": "And so a great gift is given to the famous man.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-30",
-      "latin": "Poeta librum novum regi iusto dat.",
-      "english": "The poet gives the new book to the just king.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-31",
-      "latin": "Dux fortis legionis nostrae vallum altum et longum munit.",
-      "english": "The brave leader of our legion fortifies the high and long rampart.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-32",
-      "latin": "Vexillum rubrum ducis sapientis a militibus fidelibus tollitur.",
-      "english": "The red banner of the wise leader is raised by the loyal soldiers.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-33",
-      "latin": "Sed cohors nostra ab hostibus ferocibus sagittis multis petitur.",
-      "english": "But our cohort is attacked by the fierce enemies with many arrows.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-34",
-      "latin": "Milites fortes cohortis nostrae hostes feroces hastis longis terrent.",
-      "english": "The brave soldiers of our cohort frighten the fierce enemies with long spears.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-35",
-      "latin": "Itaque milites nostri victoriam magnam et pacem longam habent.",
-      "english": "And so our soldiers have a great victory and a long peace.",
+      "latin": "Agricolae miseri oppidi nostri a dracone feroci montis alti terrentur.",
+      "english": "The wretched farmers of our town are frightened by the fierce dragon of the high mountain.",
       "difficulty": "challenging"
     }
   ]
