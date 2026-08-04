@@ -10,6 +10,7 @@ import { SentencePractice } from './components/SentencePractice/SentencePractice
 import { Favorites } from './components/Favorites/Favorites';
 import { VocabList } from './components/VocabList/VocabList';
 import { DeclensionTables } from './components/DeclensionTables/DeclensionTables';
+import { About } from './components/About/About';
 import { useSentenceDeck } from './hooks/useSentenceDeck';
 import { shuffle } from './utils/shuffle';
 import { DEFAULT_MAX_CARDS } from './utils/constants';
@@ -158,6 +159,7 @@ function App() {
             onDifficultiesChange={sentenceDeck.setSelectedDifficulties}
           />
         )}
+        {section === 'about' && <About />}
         {section === 'vocab-list' && <VocabList />}
         {section === 'favorites' && <Favorites />}
         {section === 'declension-tables' && <DeclensionTables />}
