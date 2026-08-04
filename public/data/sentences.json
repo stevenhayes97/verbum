@@ -1,130 +1,130 @@
 {
-  "generated": "2026-08-03",
+  "generated": "2026-08-04",
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Puella aviam bonam habet.",
-      "english": "The girl has a good grandmother.",
+      "latin": "Agricola canem parvum habet.",
+      "english": "The farmer has a small dog.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-2",
-      "latin": "Avia a puella amatur.",
-      "english": "The grandmother is loved by the girl.",
+      "latin": "Canis agricolam bonum amat.",
+      "english": "The dog loves the good farmer.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-3",
-      "latin": "Avia donum pulchrum parat.",
-      "english": "The grandmother prepares a beautiful gift.",
+      "latin": "Agricola canem in agrum ducit.",
+      "english": "The farmer leads the dog into the field.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-4",
-      "latin": "Puella donum novum aperit.",
-      "english": "The girl opens the new gift.",
+      "latin": "Canis agrum magnum custodit.",
+      "english": "The dog guards the large field.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-5",
-      "latin": "Puella in dono librum magnum videt.",
-      "english": "The girl sees a large book in the gift.",
+      "latin": "Agricola aquam et cibum parat.",
+      "english": "The farmer prepares water and food.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-6",
-      "latin": "Avia puellam ad flumen ducit.",
-      "english": "The grandmother leads the girl to the river.",
+      "latin": "Canis cibum bonum capit.",
+      "english": "The dog takes the good food.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-7",
-      "latin": "Sed puella librum portat.",
-      "english": "But the girl carries the book.",
+      "latin": "Canis avem albam videt.",
+      "english": "The dog sees a white bird.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-8",
-      "latin": "Avia et puella pisces parvos vident.",
-      "english": "The grandmother and the girl see the small fish.",
+      "latin": "Itaque canis avem terret.",
+      "english": "And so the dog frightens the bird.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-9",
-      "latin": "Flores albi ab avia portantur.",
-      "english": "The white flowers are carried by the grandmother.",
+      "latin": "Agricola canem fidelem vocat.",
+      "english": "The farmer calls the faithful dog.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-10",
-      "latin": "Itaque puella aviam et flumen amat.",
-      "english": "And so the girl loves the grandmother and the river.",
+      "latin": "Canis ab agricola laudatur.",
+      "english": "The dog is praised by the farmer.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-11",
-      "latin": "Iudex iustus in civitate nostra leges custodit.",
-      "english": "The just judge guards the laws in our state.",
+      "latin": "Magister noster pueros in scholam ducit.",
+      "english": "Our teacher leads the boys into the school.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-12",
-      "latin": "Femina misera verba sua iudici dicit.",
-      "english": "The wretched woman speaks her own words to the judge.",
+      "latin": "Magister pueris libros novos dat.",
+      "english": "The teacher gives new books to the boys.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-13",
-      "latin": "Iudex verba feminae audit et veritatem quaerit.",
-      "english": "The judge hears the woman's words and seeks the truth.",
+      "latin": "Pueri verba magistri audiunt et libros aperiunt.",
+      "english": "The boys hear the teacher's words and open the books.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-14",
-      "latin": "Sed vir ferox contra feminam verba multa dicit.",
-      "english": "But a fierce man speaks many words against the woman.",
+      "latin": "Magister puero parvo verba difficilia dat.",
+      "english": "The teacher gives difficult words to the small boy.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-15",
-      "latin": "Nam vir ferox feminae miserae invidet.",
-      "english": "For the fierce man envies the wretched woman.",
+      "latin": "Puer magistro respondet, nam puer verba nova scit.",
+      "english": "The boy answers the teacher, for the boy knows the new words.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-16",
-      "latin": "Sed iudex sapiens feminae miserae credit.",
-      "english": "But the wise judge believes the wretched woman.",
+      "latin": "Itaque puer a magistro nostro laudatur.",
+      "english": "And so the boy is praised by our teacher.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-17",
-      "latin": "Itaque femina misera a iudice iusto servatur.",
-      "english": "And so the wretched woman is protected by the just judge.",
+      "latin": "Pueri verba magistri in libris suis scribunt.",
+      "english": "The boys write the teacher's words in their own books.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-18",
-      "latin": "Populus civitatis virum ferocem videt et verba iudicis audit.",
-      "english": "The people of the state see the fierce man and hear the judge's words.",
+      "latin": "Magister libros puerorum videt et verba vera laudat.",
+      "english": "The teacher sees the boys' books and praises the true words.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-19",
-      "latin": "Nam lex nostra a populo fideli amatur.",
-      "english": "For our law is loved by the loyal people.",
+      "latin": "Pueri magistrum sapientem amant, quod magister pueros monet.",
+      "english": "The boys love the wise teacher, because the teacher advises the boys.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-20",
-      "latin": "Itaque veritas et libertas in civitate nostra servantur.",
-      "english": "And so truth and freedom are preserved in our state.",
+      "latin": "Schola nostra a magistro fideli regitur.",
+      "english": "Our school is ruled by the faithful teacher.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-21",
-      "latin": "Agricolae miseri oppidi nostri a dracone feroci montis alti terrentur.",
-      "english": "The wretched farmers of our town are frightened by the fierce dragon of the high mountain.",
+      "latin": "Turris alta urbis veteris a militibus fortibus legionis nostrae custoditur.",
+      "english": "The tall tower of the old city is guarded by the brave soldiers of our legion.",
       "difficulty": "challenging"
     }
   ]
