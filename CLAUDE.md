@@ -23,23 +23,33 @@ wholesale-regenerate one of these files.
 shown as a table) follows this same **append + edit only** lifecycle —
 it's meant to accumulate as a running collection, never wiped.
 
-`public/data/sentences.json` is the opposite: every refresh is a **full
-wipe and regenerate**, not an append. The point of that feature is
-testing translation ability, not sentence recall, so the practice set
-must not accumulate into a fixed, memorizable bank the way the vocab
-files (and favorites.json) intentionally do. When generating a fresh
-batch, vary sentence structure and grammatical construction too, not
-just which vocab words get slotted in — otherwise the sentence
-*templates* become the thing that gets memorized instead. Vary the
-premise as well: new characters, new settings, new situations each
-time, so the little stories described under "Paragraph coherence" below
-don't become the memorizable thing either.
+The two sentence files — `public/data/sentences.json` (Latin → English)
+and `public/data/sentences-en-la.json` (English → Latin) — are the
+opposite: every refresh is a **full wipe and regenerate**, not an
+append. The point of that feature is testing translation ability, not
+sentence recall, so the practice set must not accumulate into a fixed,
+memorizable bank the way the vocab files (and favorites.json)
+intentionally do. When generating a fresh batch, vary sentence structure
+and grammatical construction too, not just which vocab words get slotted
+in — otherwise the sentence *templates* become the thing that gets
+memorized instead. Vary the premise as well: new characters, new
+settings, new situations each time, so the little stories described
+under "Paragraph coherence" below don't become the memorizable thing
+either.
+
+Regenerate the two files **independently**, and give them different
+premises from each other, not just from their own previous batch. If
+both directions drill the same little stories, the English → Latin set
+stops testing composition and starts testing recall of Latin the user
+just read in the other direction.
 
 ## Sentence generation
 
 Beginner-level guardrails for generating practice sentences, for now —
 the user will loosen these as their Latin improves, so don't assume they
-stay fixed:
+stay fixed. Everything in this section — these guardrails, the difficulty
+tiers, and the paragraph-coherence rules — applies to **both** sentence
+files; nothing below changes with the direction of the batch:
 
 - Unless a specific count is requested, generate 15 sentences per batch.
 - Nouns and adjectives: 1st, 2nd, and 3rd declension only. Skip 4th/5th
@@ -57,6 +67,21 @@ stay fixed:
   sentence could go either way, restructure it (word order, a different
   preposition, or splitting into a relative clause) until only one
   reading holds.
+
+### English → Latin batches
+
+`sentences-en-la.json` is practised in the other direction: the English
+is the prompt and the Latin is the answer, so the English side carries
+extra weight. Write it so it pins down everything the Latin has to
+encode — singular vs plural, who does what to whom, whose thing it is,
+and whether a possessive is reflexive ("his own dog", not "his dog").
+The student checks their own composition against the Latin face, and
+Latin word order is free, so they aren't matching a string — but they
+shouldn't have to guess which case or number the English meant.
+
+The reverse of the ambiguity rule applies too: don't write an English
+prompt that has two reasonable Latin renderings differing in grammar
+rather than word choice.
 
 ### Difficulty tiers
 

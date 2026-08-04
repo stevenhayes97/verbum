@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { CATEGORIES } from './data/categories';
-import type { Card, Category, CategoryFile, Difficulty, Section, Sentence, SentenceFile } from './types/flashcard';
+import type { Card, Category, CategoryFile, Section, SentenceDirection } from './types/flashcard';
 import { SectionNav } from './components/SectionNav/SectionNav';
 import { DeckSelector } from './components/DeckSelector/DeckSelector';
 import { SetCustomizer } from './components/SetCustomizer/SetCustomizer';
@@ -10,10 +10,10 @@ import { SentencePractice } from './components/SentencePractice/SentencePractice
 import { Favorites } from './components/Favorites/Favorites';
 import { VocabList } from './components/VocabList/VocabList';
 import { DeclensionTables } from './components/DeclensionTables/DeclensionTables';
+import { useSentenceDeck } from './hooks/useSentenceDeck';
 import { shuffle } from './utils/shuffle';
 import { DEFAULT_MAX_CARDS } from './utils/constants';
 import { cardMatchesFilters } from './utils/declension';
-import { sentenceMatchesFilters } from './utils/sentence';
 import styles from './App.module.css';
 
 async function fetchCategoryCards(dataUrl: string): Promise<Card[]> {
@@ -27,6 +27,7 @@ async function fetchCategoryCards(dataUrl: string): Promise<Card[]> {
 // it -- a plain "/data/..." path breaks once the site is served from the
 // /verbum/ subpath on GitHub Pages.
 const SENTENCES_URL = `${import.meta.env.BASE_URL}data/sentences.json`;
+const EN_LA_SENTENCES_URL = `${import.meta.env.BASE_URL}data/sentences-en-la.json`;
 
 // Root-absolute CSS url()s don't account for Vite's configured base path
 // (e.g. the /verbum/ subpath on GitHub Pages), so this is built from
@@ -53,16 +54,18 @@ function App() {
   // Sentence Practice state lives here (not inside SentencePractice) for the
   // same reason the flashcard state above does: App never unmounts when
   // `section` changes, only the JSX under each `section === '...'` branch
-  // does, so keeping state here lets you leave for Declension Tables (or any
-  // other section) and come back to the same sentence instead of a
-  // freshly-refetched, re-shuffled deck at index 0.
-  const [rawSentences, setRawSentences] = useState<Sentence[]>([]);
-  const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>(['easy']);
-  const [sentences, setSentences] = useState<Sentence[]>([]);
-  const [sentenceIndex, setSentenceIndex] = useState(0);
-  const [sentencesLoading, setSentencesLoading] = useState(true);
-  const [sentencesError, setSentencesError] = useState<string | null>(null);
-  const [sentencesLoaded, setSentencesLoaded] = useState(false);
+  // does, so keeping the decks here lets you leave for Declension Tables (or
+  // any other section) and come back to the same sentence instead of a
+  // freshly-refetched deck at index 0.
+  //
+  // The two directions are separate decks, each with its own file, filter and
+  // position, so switching between them doesn't disturb the other. Both hooks
+  // are called unconditionally; only the `active` argument changes.
+  const [sentenceDirection, setSentenceDirection] = useState<SentenceDirection>('la-en');
+  const inSentencePractice = section === 'sentence-practice';
+  const laEnDeck = useSentenceDeck(SENTENCES_URL, inSentencePractice && sentenceDirection === 'la-en');
+  const enLaDeck = useSentenceDeck(EN_LA_SENTENCES_URL, inSentencePractice && sentenceDirection === 'en-la');
+  const sentenceDeck = sentenceDirection === 'la-en' ? laEnDeck : enLaDeck;
 
   // Fetches whichever category is selected -- 'all' merges every other
   // enabled category instead of loading a single file.
@@ -100,41 +103,6 @@ function App() {
     setCards(deck.slice(0, limit));
     setCurrentIndex(0);
   }, [rawCards, selectedTags, selectedDeclensions, cardCount]);
-
-  // Fetches sentences.json the first time Sentence Practice is visited, not
-  // eagerly on app load -- sentencesLoaded guards against re-fetching, which
-  // would reset the user's place, on subsequent visits.
-  useEffect(() => {
-    if (section !== 'sentence-practice' || sentencesLoaded) return;
-
-    setSentencesLoading(true);
-    setSentencesError(null);
-
-    fetch(SENTENCES_URL)
-      .then((res) => {
-        if (!res.ok) throw new Error(`Failed to load ${SENTENCES_URL}`);
-        return res.json() as Promise<SentenceFile>;
-      })
-      .then((data) => {
-        setRawSentences(data.sentences);
-        setSentencesLoaded(true);
-      })
-      .catch((err: Error) => setSentencesError(err.message))
-      .finally(() => setSentencesLoading(false));
-  }, [section, sentencesLoaded]);
-
-  // Derives the displayed sentence pool from the raw fetched sentences plus
-  // the difficulty filter, resetting to the first card on any filter change.
-  // Unlike the rawCards -> cards derivation above, the pool is deliberately
-  // NOT shuffled: each difficulty tier is written as one coherent paragraph
-  // (see CLAUDE.md, "Paragraph coherence"), so file order is the reading
-  // order. filter() preserves it, which also means selecting several tiers
-  // plays their paragraphs back to back rather than interleaving them.
-  useEffect(() => {
-    const pool = rawSentences.filter((s) => sentenceMatchesFilters(s, selectedDifficulties));
-    setSentences(pool);
-    setSentenceIndex(0);
-  }, [rawSentences, selectedDifficulties]);
 
   const currentCard = cards[currentIndex];
 
@@ -179,13 +147,15 @@ function App() {
 
         {section === 'sentence-practice' && (
           <SentencePractice
-            sentences={sentences}
-            currentIndex={sentenceIndex}
-            onIndexChange={setSentenceIndex}
-            loading={sentencesLoading}
-            error={sentencesError}
-            selectedDifficulties={selectedDifficulties}
-            onDifficultiesChange={setSelectedDifficulties}
+            direction={sentenceDirection}
+            onDirectionChange={setSentenceDirection}
+            sentences={sentenceDeck.sentences}
+            currentIndex={sentenceDeck.currentIndex}
+            onIndexChange={sentenceDeck.setCurrentIndex}
+            loading={sentenceDeck.loading}
+            error={sentenceDeck.error}
+            selectedDifficulties={sentenceDeck.selectedDifficulties}
+            onDifficultiesChange={sentenceDeck.setSelectedDifficulties}
           />
         )}
         {section === 'vocab-list' && <VocabList />}

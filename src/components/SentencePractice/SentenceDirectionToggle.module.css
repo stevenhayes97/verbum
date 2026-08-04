@@ -1,0 +1,27 @@
+/* Styled like the vocab DeckSelector tabs rather than the difficulty pills
+   below it: this picks which set you're practising, the same job the deck
+   tabs do on the Flashcards section, so it sits a size step above the
+   smaller filter pills. */
+.toggle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.tab {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #fff;
+  color: #1a1410;
+  font-weight: 600;
+}

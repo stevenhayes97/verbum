@@ -1,13 +1,21 @@
 import { useEffect, useState } from 'react';
-import type { Sentence } from '../../types/flashcard';
+import type { Sentence, SentenceDirection } from '../../types/flashcard';
 import styles from './SentenceCard.module.css';
 
-export function SentenceCard({ sentence }: { sentence: Sentence }) {
-  const [flipped, setFlipped] = useState(false);
+interface SentenceCardProps {
+  sentence: Sentence;
+  direction: SentenceDirection;
+}
 
+export function SentenceCard({ sentence, direction }: SentenceCardProps) {
+  const [flipped, setFlipped] = useState(false);
+  const latinFirst = direction === 'la-en';
+
+  // Resets on a direction change as well as a card change, so flipping to
+  // the other direction never lands you on a face showing the answer.
   useEffect(() => {
     setFlipped(false);
-  }, [sentence.id]);
+  }, [sentence.id, direction]);
 
   return (
     <div
@@ -23,8 +31,12 @@ export function SentenceCard({ sentence }: { sentence: Sentence }) {
       }}
     >
       <div className={`${styles.inner} ${flipped ? styles.isFlipped : ''}`}>
-        <div className={`${styles.face} ${styles.front}`}>{sentence.latin}</div>
-        <div className={`${styles.face} ${styles.back}`}>{sentence.english}</div>
+        <div className={`${styles.face} ${styles.front} ${latinFirst ? styles.latin : styles.english}`}>
+          {latinFirst ? sentence.latin : sentence.english}
+        </div>
+        <div className={`${styles.face} ${styles.back} ${latinFirst ? styles.english : styles.latin}`}>
+          {latinFirst ? sentence.english : sentence.latin}
+        </div>
       </div>
     </div>
   );
