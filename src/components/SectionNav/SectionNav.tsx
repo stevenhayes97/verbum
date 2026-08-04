@@ -1,11 +1,9 @@
 import type { Section } from '../../types/flashcard';
 import styles from './SectionNav.module.css';
 
-// About is still a placeholder with no content behind it, so it stays
-// disabled — there's nothing to navigate to yet.
 const SECTIONS: { id: Section; label: string; enabled: boolean }[] = [
   { id: 'flashcards', label: 'Flashcards', enabled: true },
-  { id: 'about', label: 'About', enabled: false },
+  { id: 'about', label: 'About', enabled: true },
   { id: 'sentence-practice', label: 'Sentence Practice', enabled: true },
   { id: 'vocab-list', label: 'Vocab List', enabled: true },
   { id: 'favorites', label: 'Favorites', enabled: true },
