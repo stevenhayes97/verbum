@@ -90,6 +90,12 @@ export interface CategoryFile {
 
 export type Difficulty = 'easy' | 'intermediate' | 'challenging';
 
+// Which way a sentence card runs: 'la-en' shows the Latin and reveals the
+// English (comprehension), 'en-la' shows the English and reveals the Latin
+// (composition). Each direction has its own sentence file -- see the
+// "Sentence Practice" section of README.md.
+export type SentenceDirection = 'la-en' | 'en-la';
+
 export interface Sentence {
   id: string;
   latin: string;
@@ -97,8 +103,9 @@ export interface Sentence {
   difficulty: Difficulty;
 }
 
-// Unlike the vocab files, sentences.json is wiped and regenerated wholesale
-// each refresh (see CLAUDE.md) -- the `generated` date makes that lifecycle
+// Shape of both sentence files (sentences.json and sentences-en-la.json).
+// Unlike the vocab files, they're wiped and regenerated wholesale each
+// refresh (see CLAUDE.md) -- the `generated` date makes that lifecycle
 // visible in the data itself rather than only in the docs.
 export interface SentenceFile {
   generated: string;

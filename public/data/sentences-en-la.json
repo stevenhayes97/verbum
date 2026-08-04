@@ -1,0 +1,95 @@
+{
+  "generated": "2026-08-04",
+  "sentences": [
+    {
+      "id": "en-la-sentence-1",
+      "english": "The boy has a small dog.",
+      "latin": "Puer canem parvum habet.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "en-la-sentence-2",
+      "english": "The dog is loved by the boy.",
+      "latin": "Canis a puero amatur.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "en-la-sentence-3",
+      "english": "The dog leads the boy into the forest.",
+      "latin": "Canis puerum in silvam ducit.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "en-la-sentence-4",
+      "english": "The boy carries water and food.",
+      "latin": "Puer aquam et cibum portat.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "en-la-sentence-5",
+      "english": "And so the boy praises the good dog.",
+      "latin": "Itaque puer canem bonum laudat.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "en-la-sentence-6",
+      "english": "Our teacher gives new books to the boys.",
+      "latin": "Magister noster pueris libros novos dat.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-7",
+      "english": "The teacher warns our boys about the long war.",
+      "latin": "Magister pueros nostros de bello longo monet.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-8",
+      "english": "The loyal boys hear the teacher's words and answer.",
+      "latin": "Pueri fideles verba magistri audiunt et respondent.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-9",
+      "english": "And so the boys love their own books and trust the teacher.",
+      "latin": "Itaque pueri libros suos amant et magistro credunt.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-10",
+      "english": "Our teacher is praised by the loyal boys.",
+      "latin": "Magister noster a pueris fidelibus laudatur.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-11",
+      "english": "The wise queen of our city gives beautiful gifts to the immortal gods.",
+      "latin": "Regina sapiens urbis nostrae dona pulchra deis immortalibus dat.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-12",
+      "english": "The holy temple of the immortal gods is guarded by the loyal people.",
+      "latin": "Templum sanctum deorum immortalium a populo fideli custoditur.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-13",
+      "english": "The queen hears the grave voice of the old oracle and knows her own fate.",
+      "latin": "Regina vocem gravem oraculi veteris audit et fatum suum scit.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-14",
+      "english": "The glory of the wise queen is praised by all the people of the city.",
+      "latin": "Gloria reginae sapientis ab omni urbis populo laudatur.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-15",
+      "english": "And so the old kingdom is protected by the divine will of the immortal gods.",
+      "latin": "Itaque regnum vetus a numine deorum immortalium servatur.",
+      "difficulty": "challenging"
+    }
+  ]
+}

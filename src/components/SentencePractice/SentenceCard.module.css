@@ -39,12 +39,17 @@
   color: #1a1410;
 }
 
-.front {
+.back {
+  transform: rotateY(180deg);
+}
+
+/* Typography follows the language, not the side of the card: either face can
+   hold either language depending on the practice direction. */
+.latin {
   letter-spacing: 0.02em;
 }
 
-.back {
-  transform: rotateY(180deg);
+.english {
   font-style: italic;
 }
 
