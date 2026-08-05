@@ -58,7 +58,7 @@
     {
       "id": "sentence-10",
       "latin": "Soror fratri verba dulcia in libro scribit.",
-      "english": "The sister writes sweet words to the brother in a book.",
+      "english": "In a book, the sister writes sweet words to the brother.",
       "difficulty": "intermediate"
     },
     {
@@ -117,8 +117,8 @@
     },
     {
       "id": "sentence-20",
-      "latin": "Itaque victoria magna et praeclara a legione nostra fideli habetur.",
-      "english": "And so the great and illustrious victory is held by our faithful legion.",
+      "latin": "Itaque victoria magna et praeclara a legione nostra fideli servatur.",
+      "english": "And so the great and illustrious victory is preserved by our faithful legion.",
       "difficulty": "challenging"
     }
   ]
