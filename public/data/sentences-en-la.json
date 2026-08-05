@@ -1,94 +1,124 @@
 {
-  "generated": "2026-08-04",
+  "generated": "2026-08-05",
   "sentences": [
     {
       "id": "en-la-sentence-1",
-      "english": "The boy has a small dog.",
-      "latin": "Puer canem parvum habet.",
+      "english": "The poet writes new words in a book.",
+      "latin": "Poeta verba nova in libro scribit.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-2",
-      "english": "The dog is loved by the boy.",
-      "latin": "Canis a puero amatur.",
+      "english": "The Muse loves the poet's words.",
+      "latin": "Musa verba poetae amat.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-3",
-      "english": "The dog leads the boy into the forest.",
-      "latin": "Canis puerum in silvam ducit.",
+      "english": "The poet gives a small gift to the Muse.",
+      "latin": "Poeta Musae donum parvum dat.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-4",
-      "english": "The boy carries water and food.",
-      "latin": "Puer aquam et cibum portat.",
+      "english": "The Muse warns the good poet.",
+      "latin": "Musa poetam bonum monet.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-5",
-      "english": "And so the boy praises the good dog.",
-      "latin": "Itaque puer canem bonum laudat.",
+      "english": "A friend hears the poet's words and answers.",
+      "latin": "Amicus verba poetae audit et respondet.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-6",
-      "english": "Our teacher gives new books to the boys.",
-      "latin": "Magister noster pueris libros novos dat.",
-      "difficulty": "intermediate"
+      "english": "The good friend praises the Muse's gift.",
+      "latin": "Amicus bonus donum Musae laudat.",
+      "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-7",
-      "english": "The teacher warns our boys about the long war.",
-      "latin": "Magister pueros nostros de bello longo monet.",
-      "difficulty": "intermediate"
+      "english": "And so the poet writes a new book.",
+      "latin": "Itaque poeta librum novum scribit.",
+      "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-8",
-      "english": "The loyal boys hear the teacher's words and answer.",
-      "latin": "Pueri fideles verba magistri audiunt et respondent.",
+      "english": "Our consul gives new laws to the people.",
+      "latin": "Consul noster leges novas populo dat.",
       "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-9",
-      "english": "And so the boys love their own books and trust the teacher.",
-      "latin": "Itaque pueri libros suos amant et magistro credunt.",
+      "english": "The people trust the wise consul's new laws.",
+      "latin": "Populus legibus novis consulis sapientis credit.",
       "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-10",
-      "english": "Our teacher is praised by the loyal boys.",
-      "latin": "Magister noster a pueris fidelibus laudatur.",
+      "english": "The old senate house is guarded by loyal soldiers.",
+      "latin": "Curia vetus a militibus fidelibus custoditur.",
       "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-11",
-      "english": "The wise queen of our city gives beautiful gifts to the immortal gods.",
-      "latin": "Regina sapiens urbis nostrae dona pulchra deis immortalibus dat.",
-      "difficulty": "challenging"
+      "english": "Our wise consul commands the loyal soldiers.",
+      "latin": "Consul noster sapiens militibus fidelibus imperat.",
+      "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-12",
-      "english": "The holy temple of the immortal gods is guarded by the loyal people.",
-      "latin": "Templum sanctum deorum immortalium a populo fideli custoditur.",
-      "difficulty": "challenging"
+      "english": "The common people love long peace and order.",
+      "latin": "Plebs pacem longam et ordinem amat.",
+      "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-13",
-      "english": "The queen hears the grave voice of the old oracle and knows her own fate.",
-      "latin": "Regina vocem gravem oraculi veteris audit et fatum suum scit.",
-      "difficulty": "challenging"
+      "english": "The consul's law is praised by all the people.",
+      "latin": "Lex consulis ab omni populo laudatur.",
+      "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-14",
-      "english": "The glory of the wise queen is praised by all the people of the city.",
-      "latin": "Gloria reginae sapientis ab omni urbis populo laudatur.",
-      "difficulty": "challenging"
+      "english": "And so peace is preserved by the loyal consul.",
+      "latin": "Itaque pax a consule fideli servatur.",
+      "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-15",
-      "english": "And so the old kingdom is protected by the divine will of the immortal gods.",
-      "latin": "Itaque regnum vetus a numine deorum immortalium servatur.",
+      "english": "The fierce and immortal dragon guards the high mountain of the old kingdom.",
+      "latin": "Draco ferox et immortalis montem altum regni veteris custodit.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-16",
+      "english": "The brave soldiers of our great legion attack the fierce dragon.",
+      "latin": "Milites fortes legionis nostrae magnae draconem ferocem petunt.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-17",
+      "english": "The dragon frightens the brave soldiers of the legion with fierce fire and severe anger.",
+      "latin": "Draco milites fortes legionis igne feroci et ira gravi terret.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-18",
+      "english": "But the leader's great courage protects the legion's brave soldiers.",
+      "latin": "Sed ducis virtus magna milites fortes legionis servat.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-19",
+      "english": "The loyal cohort of our brave soldiers guards the old mountain's rampart.",
+      "latin": "Militum fortium nostrorum cohors fidelis montis veteris vallum custodit.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-20",
+      "english": "And so the high mountain is guarded by the loyal legion.",
+      "latin": "Itaque mons altus a legione fideli custoditur.",
       "difficulty": "challenging"
     }
   ]
