@@ -130,7 +130,7 @@
     {
       "id": "sentence-22",
       "latin": "Uxor deo donum pulchrum in templo dat.",
-      "english": "The wife gives a beautiful gift to the god in the temple.",
+      "english": "In the temple, the wife gives a beautiful gift to the god.",
       "difficulty": "intermediate"
     },
     {
@@ -196,7 +196,7 @@
     {
       "id": "sentence-33",
       "latin": "Vir uxori in via verba dulcia dicit.",
-      "english": "The man says sweet words to the wife on the road.",
+      "english": "On the road, the man says sweet words to the wife.",
       "difficulty": "intermediate"
     },
     {
@@ -267,7 +267,7 @@
     },
     {
       "id": "sentence-45",
-      "latin": "Vir a gravi periculo ab uxore fideli et forti servatur.",
+      "latin": "Vir a gravi periculo ab uxore sua fideli et forti servatur.",
       "english": "The husband is saved from the grave danger by his faithful and brave wife.",
       "difficulty": "challenging"
     },
