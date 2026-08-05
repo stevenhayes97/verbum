@@ -3,122 +3,302 @@
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Nauta insulam parvam petit.",
-      "english": "The sailor makes for a small island.",
+      "latin": "Vir et uxor agrum parvum habent.",
+      "english": "The man and the wife have a small field.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-2",
-      "latin": "In insula nauta amicum videt.",
-      "english": "On the island, the sailor sees a friend.",
+      "latin": "Vir equum bonum ducit.",
+      "english": "The man leads a good horse.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-3",
-      "latin": "Amicus nautae equum bonum habet.",
-      "english": "The sailor's friend has a good horse.",
+      "latin": "Uxor aquam ad mensam portat.",
+      "english": "The wife carries water to the table.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-4",
-      "latin": "Nauta et amicus equum ducunt.",
-      "english": "The sailor and the friend lead the horse.",
+      "latin": "Vir agrum suum amat.",
+      "english": "The man loves his own field.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-5",
-      "latin": "Nauta piscem videt et amicum vocat.",
-      "english": "The sailor sees a fish and calls the friend.",
+      "latin": "Uxor cibum bonum parat.",
+      "english": "The wife prepares good food.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-6",
-      "latin": "Amicus piscem parvum capit.",
-      "english": "The friend catches a small fish.",
+      "latin": "Vir piscem in flumine capit.",
+      "english": "The man catches a fish in the river.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-7",
-      "latin": "Nauta amicum bonum laudat.",
-      "english": "The sailor praises the good friend.",
+      "latin": "Uxor virum suum vocat.",
+      "english": "The wife calls her own husband.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-8",
-      "latin": "Pater noster fratri et sorori libros dat.",
-      "english": "Our father gives books to the brother and the sister.",
-      "difficulty": "intermediate"
+      "latin": "Vir piscem uxori dat.",
+      "english": "The man gives the fish to the wife.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-9",
-      "latin": "Frater et soror libros suos novos aperiunt.",
-      "english": "The brother and the sister open their own new books.",
-      "difficulty": "intermediate"
+      "latin": "Uxor piscem parvum laudat.",
+      "english": "The wife praises the small fish.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-10",
-      "latin": "Soror fratri verba dulcia in libro scribit.",
-      "english": "In a book, the sister writes sweet words to the brother.",
-      "difficulty": "intermediate"
+      "latin": "Vir florem pulchrum videt.",
+      "english": "The man sees a beautiful flower.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-11",
-      "latin": "Mater nostra sorori et fratri cibum bonum parat.",
-      "english": "Our mother prepares good food for the sister and the brother.",
-      "difficulty": "intermediate"
+      "latin": "Vir uxori florem dat.",
+      "english": "The man gives the flower to the wife.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-12",
-      "latin": "Cibus a fratre et sorore laudatur.",
-      "english": "The food is praised by the brother and the sister.",
-      "difficulty": "intermediate"
+      "latin": "Uxor florem novum amat.",
+      "english": "The wife loves the new flower.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-13",
-      "latin": "Pater fratrem et sororem sapientes monet.",
-      "english": "The father warns the wise brother and sister.",
-      "difficulty": "intermediate"
+      "latin": "Vir donum novum emit.",
+      "english": "The man buys a new gift.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-14",
-      "latin": "Itaque frater et soror patri fideli credunt.",
-      "english": "And so the brother and the sister trust the faithful father.",
-      "difficulty": "intermediate"
+      "latin": "Uxor donum novum capit.",
+      "english": "The wife takes the new gift.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-15",
-      "latin": "Gladiator ferox et fortis hostem in proelio magno petit.",
-      "english": "The fierce and brave gladiator attacks the enemy in the great battle.",
-      "difficulty": "challenging"
+      "latin": "Uxor donum novum aperit.",
+      "english": "The wife opens the new gift.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-16",
-      "latin": "Centurio iustus legionis nostrae gladiatorem clarum et fortem magna voce laudat.",
-      "english": "The just centurion of our legion praises the famous and brave gladiator with a loud voice.",
-      "difficulty": "challenging"
+      "latin": "Uxor virum bonum laudat.",
+      "english": "The wife praises the good husband.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-17",
-      "latin": "Scutum gladiatoris ferocis et fortis ab hoste forti capitur.",
-      "english": "The shield of the fierce and brave gladiator is captured by the brave enemy.",
-      "difficulty": "challenging"
+      "latin": "Vir et uxor mensam parant.",
+      "english": "The man and the wife prepare the table.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-18",
-      "latin": "Sed centurio fortis et sapiens novum scutum magnum gladiatori dat.",
-      "english": "But the brave and wise centurion gives a large new shield to the gladiator.",
-      "difficulty": "challenging"
+      "latin": "Vir avem in arbore videt.",
+      "english": "The man sees a bird in the tree.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-19",
-      "latin": "Gladiator scuto novo et magno hostem ferocem terret.",
-      "english": "The gladiator frightens the fierce enemy with the new, large shield.",
-      "difficulty": "challenging"
+      "latin": "Uxor avem pulchram audit.",
+      "english": "The wife hears the beautiful bird.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-20",
-      "latin": "Itaque victoria magna et praeclara a legione nostra fideli servatur.",
-      "english": "And so the great and illustrious victory is preserved by our faithful legion.",
+      "latin": "Vir et uxor cibum bonum habent.",
+      "english": "The man and the wife have good food.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sentence-21",
+      "latin": "Vir et uxor templum magni dei petunt.",
+      "english": "The man and the wife make for the temple of the great god.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-22",
+      "latin": "Uxor deo donum pulchrum in templo dat.",
+      "english": "In the temple, the wife gives a beautiful gift to the god.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-23",
+      "latin": "Vir deum sapientem magna voce laudat.",
+      "english": "The man praises the wise god with a loud voice.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-24",
+      "latin": "Nox nigra virum et uxorem terret.",
+      "english": "The black night frightens the man and the wife.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-25",
+      "latin": "Draco magnus et ferox oppidum petit.",
+      "english": "A great and fierce dragon attacks the town.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-26",
+      "latin": "Vir uxorem suam de periculo monet.",
+      "english": "The man warns his own wife about the danger.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-27",
+      "latin": "Itaque uxor viro suo fideli credit.",
+      "english": "And so the wife trusts her own faithful husband.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-28",
+      "latin": "Canis niger et fidelis portam magnam custodit.",
+      "english": "The black and faithful dog guards the great gate.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-29",
+      "latin": "Vir canem fortem et fidelem laudat.",
+      "english": "The man praises the brave and faithful dog.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-30",
+      "latin": "Itaque deus virum et uxorem servat.",
+      "english": "And so the god protects the man and the wife.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-31",
+      "latin": "Donum novum deo a viro et uxore datur.",
+      "english": "A new gift is given to the god by the man and the wife.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-32",
+      "latin": "Uxor cibum multum suae familiae parat.",
+      "english": "The wife prepares much food for her own family.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-33",
+      "latin": "Vir uxori in via verba dulcia dicit.",
+      "english": "On the road, the man says sweet words to the wife.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-34",
+      "latin": "Nam uxor virum suum fidelem amat.",
+      "english": "For the wife loves her own faithful husband.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-35",
+      "latin": "Itaque uxor viro suo felix respondet.",
+      "english": "And so the happy wife answers her own husband.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-36",
+      "latin": "Verba dulcia in via a viro dicuntur.",
+      "english": "Sweet words are said on the road by the man.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-37",
+      "latin": "Itaque pax oppido a deo servatur.",
+      "english": "And so peace is preserved for the town by the god.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-38",
+      "latin": "Vir et uxor deum iustum laudant.",
+      "english": "The man and the wife praise the just god.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-39",
+      "latin": "Vir et uxor multos amicos habent.",
+      "english": "The man and the wife have many friends.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-40",
+      "latin": "Itaque vir et uxor felices viam longam petunt.",
+      "english": "And so the happy man and wife make for the long road.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-41",
+      "latin": "Vir vetus et uxor fidelis vitam longam et difficilem habent.",
+      "english": "The old man and the faithful wife have a long and difficult life.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-42",
+      "latin": "Fama praeclara viri sapientis et uxoris eius per civitatem scitur.",
+      "english": "The brilliant fame of the wise man and of his wife is known throughout the community.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-43",
+      "latin": "Sed vir vetus et uxor fidelis gravi periculo maris terrentur.",
+      "english": "But the old man and the faithful wife are frightened by the grave danger of the sea.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-44",
+      "latin": "Itaque uxor sapiens deum immortalem pro viro suo vocat.",
+      "english": "And so the wise wife calls upon the immortal god on behalf of her own husband.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-45",
+      "latin": "Vir a gravi periculo ab uxore sua fideli et forti servatur.",
+      "english": "The husband is saved from the grave danger by his faithful and brave wife.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-46",
+      "latin": "Virtus magna et vera uxoris sapientis a viro laudatur.",
+      "english": "The great and true courage of the wise wife is praised by the husband.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-47",
+      "latin": "Nam fatum grave vitam viri et uxoris regit.",
+      "english": "For grave fate rules the life of the man and of the wife.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-48",
+      "latin": "Sed veritas clara eorum ab omni populo scitur.",
+      "english": "But their clear truth is known by all the people.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-49",
+      "latin": "Itaque nomen praeclarum viri et uxoris in aeternitate servatur.",
+      "english": "And so the illustrious name of the man and of the wife is preserved in eternity.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-50",
+      "latin": "Nam vir et uxor vitam veram et bonam habent.",
+      "english": "For the man and the wife have a true and good life.",
       "difficulty": "challenging"
     }
   ]
