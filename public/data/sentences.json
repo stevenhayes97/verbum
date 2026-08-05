@@ -1,130 +1,124 @@
 {
-  "generated": "2026-08-04",
+  "generated": "2026-08-05",
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Agricola canem parvum habet.",
-      "english": "The farmer has a small dog.",
+      "latin": "Nauta insulam parvam petit.",
+      "english": "The sailor makes for a small island.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-2",
-      "latin": "Canis agricolam bonum amat.",
-      "english": "The dog loves the good farmer.",
+      "latin": "In insula nauta amicum videt.",
+      "english": "On the island, the sailor sees a friend.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-3",
-      "latin": "Agricola canem in agrum ducit.",
-      "english": "The farmer leads the dog into the field.",
+      "latin": "Amicus nautae equum bonum habet.",
+      "english": "The sailor's friend has a good horse.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-4",
-      "latin": "Canis agrum magnum custodit.",
-      "english": "The dog guards the large field.",
+      "latin": "Nauta et amicus equum ducunt.",
+      "english": "The sailor and the friend lead the horse.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-5",
-      "latin": "Agricola aquam et cibum parat.",
-      "english": "The farmer prepares water and food.",
+      "latin": "Nauta piscem videt et amicum vocat.",
+      "english": "The sailor sees a fish and calls the friend.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-6",
-      "latin": "Canis cibum bonum capit.",
-      "english": "The dog takes the good food.",
+      "latin": "Amicus piscem parvum capit.",
+      "english": "The friend catches a small fish.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-7",
-      "latin": "Canis avem albam videt.",
-      "english": "The dog sees a white bird.",
+      "latin": "Nauta amicum bonum laudat.",
+      "english": "The sailor praises the good friend.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-8",
-      "latin": "Itaque canis avem terret.",
-      "english": "And so the dog frightens the bird.",
-      "difficulty": "easy"
+      "latin": "Pater noster fratri et sorori libros dat.",
+      "english": "Our father gives books to the brother and the sister.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-9",
-      "latin": "Agricola canem fidelem vocat.",
-      "english": "The farmer calls the faithful dog.",
-      "difficulty": "easy"
+      "latin": "Frater et soror libros suos novos aperiunt.",
+      "english": "The brother and the sister open their own new books.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-10",
-      "latin": "Canis ab agricola laudatur.",
-      "english": "The dog is praised by the farmer.",
-      "difficulty": "easy"
+      "latin": "Soror fratri verba dulcia in libro scribit.",
+      "english": "In a book, the sister writes sweet words to the brother.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-11",
-      "latin": "Magister noster pueros in scholam ducit.",
-      "english": "Our teacher leads the boys into the school.",
+      "latin": "Mater nostra sorori et fratri cibum bonum parat.",
+      "english": "Our mother prepares good food for the sister and the brother.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-12",
-      "latin": "Magister pueris libros novos dat.",
-      "english": "The teacher gives new books to the boys.",
+      "latin": "Cibus a fratre et sorore laudatur.",
+      "english": "The food is praised by the brother and the sister.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-13",
-      "latin": "Pueri verba magistri audiunt et libros aperiunt.",
-      "english": "The boys hear the teacher's words and open the books.",
+      "latin": "Pater fratrem et sororem sapientes monet.",
+      "english": "The father warns the wise brother and sister.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-14",
-      "latin": "Magister puero parvo verba difficilia dat.",
-      "english": "The teacher gives difficult words to the small boy.",
+      "latin": "Itaque frater et soror patri fideli credunt.",
+      "english": "And so the brother and the sister trust the faithful father.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-15",
-      "latin": "Puer magistro respondet, nam puer verba nova scit.",
-      "english": "The boy answers the teacher, for the boy knows the new words.",
-      "difficulty": "intermediate"
+      "latin": "Gladiator ferox et fortis hostem in proelio magno petit.",
+      "english": "The fierce and brave gladiator attacks the enemy in the great battle.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-16",
-      "latin": "Itaque puer a magistro nostro laudatur.",
-      "english": "And so the boy is praised by our teacher.",
-      "difficulty": "intermediate"
+      "latin": "Centurio iustus legionis nostrae gladiatorem clarum et fortem magna voce laudat.",
+      "english": "The just centurion of our legion praises the famous and brave gladiator with a loud voice.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-17",
-      "latin": "Pueri verba magistri in libris suis scribunt.",
-      "english": "The boys write the teacher's words in their own books.",
-      "difficulty": "intermediate"
+      "latin": "Scutum gladiatoris ferocis et fortis ab hoste forti capitur.",
+      "english": "The shield of the fierce and brave gladiator is captured by the brave enemy.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-18",
-      "latin": "Magister libros puerorum videt et verba vera laudat.",
-      "english": "The teacher sees the boys' books and praises the true words.",
-      "difficulty": "intermediate"
+      "latin": "Sed centurio fortis et sapiens novum scutum magnum gladiatori dat.",
+      "english": "But the brave and wise centurion gives a large new shield to the gladiator.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-19",
-      "latin": "Pueri magistrum sapientem amant, quod magister pueros monet.",
-      "english": "The boys love the wise teacher, because the teacher advises the boys.",
-      "difficulty": "intermediate"
+      "latin": "Gladiator scuto novo et magno hostem ferocem terret.",
+      "english": "The gladiator frightens the fierce enemy with the new, large shield.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-20",
-      "latin": "Schola nostra a magistro fideli regitur.",
-      "english": "Our school is ruled by the faithful teacher.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-21",
-      "latin": "Turris alta urbis veteris a militibus fortibus legionis nostrae custoditur.",
-      "english": "The tall tower of the old city is guarded by the brave soldiers of our legion.",
+      "latin": "Itaque victoria magna et praeclara a legione nostra fideli servatur.",
+      "english": "And so the great and illustrious victory is preserved by our faithful legion.",
       "difficulty": "challenging"
     }
   ]
