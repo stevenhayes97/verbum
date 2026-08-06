@@ -82,17 +82,24 @@ files; nothing below changes with the direction of the batch:
   preposition, or splitting into a relative clause) until only one
   reading holds.
 
-  This rule is about **readings that survive the context**, not about
-  endings that happen to look alike. Latin is full of syncretism — 1st
-  declension dative and genitive singular are both `-ae`, dative and
-  ablative plural are both `-īs`, and so on — and resolving those from
-  the surrounding words is exactly the skill being practised, not a
-  defect. `Nepōs aviae flōrem dat` is fine: `aviae` is formally genitive
-  too, but `dat` settles it, and "the grandson gives the grandmother's
-  flower" isn't a reading anyone actually arrives at. Only flag a
-  sentence when both readings are still standing *after* the reader has
-  used the context — as in the `in insulā` example above, where nothing
-  in the sentence tells you which noun the phrase attaches to.
+  The context that has to do the disambiguating is **the sentence's
+  own** — its grammar, its verb, its word order. The app shows one card
+  at a time and the tier filter can slice a story into a subset, so a
+  sentence never gets to lean on its neighbours to be understood. That's
+  what makes the `in insulā` case fail: two nouns are available for the
+  phrase to attach to and nothing *inside* the sentence picks one, so
+  there's no way to tell whether the sailor or the friend is on the
+  island.
+
+  This is not a rule against endings that merely look alike. Latin is
+  full of syncretism — 1st declension dative and genitive singular are
+  both `-ae`, dative and ablative plural are both `-īs`, and so on — and
+  resolving those from the rest of the sentence is exactly the skill
+  being practised, not a defect to design around. `Nepōs aviae flōrem
+  dat` is fine: `aviae` is formally genitive too, but `dat` settles it,
+  and "the grandson gives the grandmother's flower" isn't a reading
+  anyone actually arrives at. Flag a sentence only when two readings are
+  both still standing once its own words have been used up.
 
 ### English → Latin batches
 
