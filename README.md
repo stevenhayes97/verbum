@@ -46,6 +46,22 @@ repo's Settings → Pages, set "Build and deployment" → Source to
 **"GitHub Actions"**. Until that's set, the workflow's deploy step will
 fail even though the build succeeds.
 
+### If a deploy fails, don't re-run it — push a new commit
+
+A Pages deployment's id **is the commit SHA**, so a given commit gets one
+shot. If `actions/deploy-pages` gives up (its `timeout:` elapses while the
+deployment sits in `deployment_queued`, usually a Pages-side stall), it
+*cancels* that deployment on its way out. The SHA is then spent: re-running
+the same workflow run finds the cancelled record and fails within seconds
+with a bare **"Deployment cancelled."**, which looks like a fresh failure
+but is really an echo of the first one. Re-running will never clear it.
+
+Recovery is a new commit on `main` — a new SHA means a new deployment id
+and a clean queue entry. Worth knowing before burning three re-runs on it,
+since the error message gives no hint of any of this. The build job going
+green while only `deploy` fails is the tell that the problem is Pages-side
+rather than anything in the app.
+
 Because the site is served from a subpath (`/verbum/`) rather than a
 domain root, `vite.config.ts` sets `base: '/verbum/'`, and anything that
 would otherwise use a root-absolute path (`/data/...`, `/images/...`)
