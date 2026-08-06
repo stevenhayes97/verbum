@@ -4,29 +4,29 @@
     {
       "id": "adv-longe",
       "partOfSpeech": "adverb",
-      "adverb": { "stem": "Long", "ending": "e" },
+      "adverb": { "stem": "Long", "ending": "ē" },
       "sourceAdjective": "Longus",
       "english": "far, at length"
     },
     {
       "id": "adv-care",
       "partOfSpeech": "adverb",
-      "adverb": { "stem": "Car", "ending": "e" },
-      "sourceAdjective": "Carus",
+      "adverb": { "stem": "Cār", "ending": "ē" },
+      "sourceAdjective": "Cārus",
       "english": "dearly"
     },
     {
       "id": "adv-clare",
       "partOfSpeech": "adverb",
-      "adverb": { "stem": "Clar", "ending": "e" },
-      "sourceAdjective": "Clarus",
+      "adverb": { "stem": "Clār", "ending": "ē" },
+      "sourceAdjective": "Clārus",
       "english": "clearly, brightly"
     },
     {
       "id": "adv-pure",
       "partOfSpeech": "adverb",
-      "adverb": { "stem": "Pur", "ending": "e" },
-      "sourceAdjective": "Purus",
+      "adverb": { "stem": "Pūr", "ending": "ē" },
+      "sourceAdjective": "Pūrus",
       "english": "purely"
     },
     {
@@ -46,15 +46,15 @@
     {
       "id": "adv-acriter",
       "partOfSpeech": "adverb",
-      "adverb": { "stem": "Acr", "ending": "iter" },
-      "sourceAdjective": "Acer",
+      "adverb": { "stem": "Ācr", "ending": "iter" },
+      "sourceAdjective": "Ācer",
       "english": "keenly, sharply"
     },
     {
       "id": "adv-prudenter",
       "partOfSpeech": "adverb",
-      "adverb": { "stem": "Prudent", "ending": "er" },
-      "sourceAdjective": "Prudens",
+      "adverb": { "stem": "Prūdent", "ending": "er" },
+      "sourceAdjective": "Prūdēns",
       "english": "wisely"
     }
   ]

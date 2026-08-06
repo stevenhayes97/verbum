@@ -18,7 +18,7 @@
     {
       "id": "prep-de",
       "partOfSpeech": "preposition",
-      "preposition": "De",
+      "preposition": "Dē",
       "grammaticalCase": "Ablative",
       "english": "down from, concerning"
     },
@@ -32,7 +32,7 @@
     {
       "id": "prep-pro",
       "partOfSpeech": "preposition",
-      "preposition": "Pro",
+      "preposition": "Prō",
       "grammaticalCase": "Ablative",
       "english": "in front of, on behalf of"
     },
@@ -81,7 +81,7 @@
     {
       "id": "prep-contra",
       "partOfSpeech": "preposition",
-      "preposition": "Contra",
+      "preposition": "Contrā",
       "grammaticalCase": "Accusative",
       "english": "against"
     },
@@ -130,7 +130,7 @@
     {
       "id": "prep-trans",
       "partOfSpeech": "preposition",
-      "preposition": "Trans",
+      "preposition": "Trāns",
       "grammaticalCase": "Accusative",
       "english": "across"
     },

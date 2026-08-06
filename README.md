@@ -206,6 +206,12 @@ and the declension tables alike. Vowel length is phonemic in Latin
    compare equal.
 6. The only characters allowed outside ASCII are `ā ē ī ō ū Ā Ē Ī Ō Ū`.
    Capitalised headwords keep the macron on the capital: `Īra`, `Ōs`.
+7. Diphthongs (`ae`, `au`, `oe`, `eu`) are inherently long and take no
+   macron: `Nauta`, `Prae`, `Aurōra` — the `ō` is marked, the `au` isn't.
+8. Where the dictionaries disagree — typically a vowel before a doubled
+   consonant, like `stella` — follow the beginner-textbook convention and
+   leave it **unmarked**. The point is to teach the reading a student will
+   meet elsewhere, not to adjudicate etymology.
 
 Macrons are **display-only, never something you have to type**. The vocab
 list's search box folds them off both sides (`src/utils/latin.ts`), so
