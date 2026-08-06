@@ -10,6 +10,7 @@ import { SentencePractice } from './components/SentencePractice/SentencePractice
 import { Favorites } from './components/Favorites/Favorites';
 import { VocabList } from './components/VocabList/VocabList';
 import { DeclensionTables } from './components/DeclensionTables/DeclensionTables';
+import { PronunciationGuide } from './components/PronunciationGuide/PronunciationGuide';
 import { About } from './components/About/About';
 import { useSentenceDeck } from './hooks/useSentenceDeck';
 import { shuffle } from './utils/shuffle';
@@ -163,6 +164,7 @@ function App() {
         {section === 'vocab-list' && <VocabList />}
         {section === 'favorites' && <Favorites />}
         {section === 'declension-tables' && <DeclensionTables />}
+        {section === 'pronunciation-guide' && <PronunciationGuide />}
 
         <footer className={styles.footer}>
           Verbum — a Latin flashcard app
