@@ -111,8 +111,15 @@ function entryLabel(entry, index) {
   return entry?.id ?? `#${index + 1}`;
 }
 
-/** Character-set, Unicode-form, and positional-length checks. */
-function checkValue(file, where, value, errors, warnings) {
+/**
+ * Character-set and Unicode-form checks, plus (unless the value is a
+ * fragment) the positional-length rules.
+ *
+ * `stem` and `ending` are halves of a word, not words -- the stem of fāma
+ * is "Fām", whose m only looks final because the split cut it there. So
+ * positional rules run on the rejoined word instead, via checkJoinedWords.
+ */
+function checkValue(file, where, value, errors, warnings, { fragment = false } = {}) {
   const disallowed = value.match(DISALLOWED_CHAR);
   if (disallowed) {
     const code = disallowed[0].codePointAt(0).toString(16).padStart(4, '0');
@@ -123,6 +130,11 @@ function checkValue(file, where, value, errors, warnings) {
     errors.push(`[${file}] ${where}: "${value}" is not NFC-normalized — use precomposed vowels (ā = U+0101), not a combining macron (U+0304).`);
   }
 
+  if (fragment) return;
+  checkPositional(file, where, value, errors, warnings);
+}
+
+function checkPositional(file, where, value, errors, warnings) {
   const short = value.match(SHORT_BY_POSITION);
   if (short) {
     errors.push(`[${file}] ${where}: "${value}" macrons a vowel before "${short[0].slice(1)}" — vowels before nt, nd and word-final m are short.`);
@@ -135,6 +147,28 @@ function checkValue(file, where, value, errors, warnings) {
     if (MACRON_BEFORE_VOWEL.test(word) && !VOWEL_BEFORE_VOWEL_EXCEPTIONS.test(word)) {
       warnings.push(`[${file}] ${where}: "${word}" has a long vowel directly before another vowel — usually short (vocalis ante vocalem corripitur).`);
     }
+  }
+}
+
+/**
+ * Runs the positional rules on each {stem, ending} pair rejoined into the
+ * whole word it represents -- which is also the only way to catch a bad
+ * sequence straddling the split, e.g. a long vowel ending the stem
+ * immediately before an ending that starts with "nt".
+ */
+function checkJoinedWords(file, node, trail, errors, warnings) {
+  if (Array.isArray(node)) {
+    node.forEach((child, i) => checkJoinedWords(file, child, `${trail}[${i}]`, errors, warnings));
+    return;
+  }
+  if (!node || typeof node !== 'object') return;
+
+  if (typeof node.stem === 'string' && typeof node.ending === 'string') {
+    checkPositional(file, `${trail} (joined)`, node.stem + node.ending, errors, warnings);
+  }
+  for (const [key, child] of Object.entries(node)) {
+    if (NON_LATIN_KEYS.has(key)) continue;
+    checkJoinedWords(file, child, trail ? `${trail}.${key}` : key, errors, warnings);
   }
 }
 
@@ -215,8 +249,10 @@ async function main() {
     valueCount += values.length;
 
     for (const { path: where, value } of values) {
-      checkValue(file, where, value, errors, warnings);
+      const fragment = /\.(stem|ending)$/.test(where);
+      checkValue(file, where, value, errors, warnings, { fragment });
     }
+    checkJoinedWords(file, parsed, '', errors, warnings);
 
     if (Array.isArray(parsed.cards)) checkEndings(file, parsed.cards, errors);
     if (base) await checkAgainstBase(file, values, base, errors);
