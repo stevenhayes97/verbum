@@ -10,9 +10,14 @@ permissions:
   pages: write
   id-token: write
 
+# One deployment at a time, but never kill one that's already in flight --
+# this mirrors GitHub's own Pages starter workflow. Runs still queued when a
+# newer one arrives are superseded as before; only the in-progress
+# deployment is protected. Cancelling mid-flight is worse than it sounds:
+# see the timeout note on deploy-pages below.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -39,3 +44,12 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # Default is 600000 (10 min). On timeout this action doesn't just
+          # fail -- it cancels the Pages deployment, and the deployment id
+          # is the commit SHA, so that commit can never deploy again: every
+          # re-run of the same run finds the cancelled record and dies in
+          # seconds with a bare "Deployment cancelled." Recovering needs a
+          # brand new commit. A longer fuse lets a slow Pages queue drain
+          # instead of burning the SHA.
+          timeout: 1800000
