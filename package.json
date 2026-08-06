@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "cli": "node cli/index.mjs"
+    "cli": "node cli/index.mjs",
+    "validate:macrons": "node scripts/validate-macrons.mjs"
   },
   "dependencies": {
     "react": "^19.2.7",

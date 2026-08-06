@@ -29,9 +29,9 @@ export const DECLENSION_TABLES: DeclensionTable[] = [
     rows: [
       { case: 'Nominative', singular: '-a', plural: '-ae' },
       { case: 'Genitive', singular: '-ae', plural: '-ārum' },
-      { case: 'Dative', singular: '-ae', plural: '-is' },
+      { case: 'Dative', singular: '-ae', plural: '-īs' },
       { case: 'Accusative', singular: '-am', plural: '-ās' },
-      { case: 'Ablative', singular: '-ā', plural: '-is' },
+      { case: 'Ablative', singular: '-ā', plural: '-īs' },
       { case: 'Vocative', singular: '-a', plural: '-ae' },
     ],
   },

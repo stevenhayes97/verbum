@@ -9,8 +9,18 @@ plus other senses, note the closest/common one(s), the way existing
 entries already do (e.g. `"lord, master"`, `"to warn, advise"`).
 
 Also check new entries against the standing conventions documented in
-`README.md`: the `I` over `J` spelling preference ("Spelling Conventions"),
-and the canonical tag list ("Vocabulary Tags") if tags are being assigned.
+`README.md`: the `I` over `J` spelling preference and the **macron rules**
+("Spelling Conventions"), and the canonical tag list ("Vocabulary Tags")
+if tags are being assigned.
+
+**Every Latin field carries macrons** — `Amō`, not `Amo`; `Mātr` + `is`,
+not `Matr` + `is`. Endings are determined by the entry's own
+declension/conjugation and must match the paradigm exactly (1st decl. gen.
+`-ae`, 2nd `-ī`, 3rd `-is`, 4th `-ūs`, 5th `-eī`; 1st conj. inf. `-āre`,
+2nd `-ēre`, 3rd `-ere`, 4th `-īre`; adverbs `-ē`/`-iter`/`-er`). Look the
+stem vowels up rather than guessing — a wrong macron teaches the word
+wrong. Run `npm run validate:macrons` before committing; it catches the
+mechanical mistakes but not a stem vowel that's simply the wrong length.
 
 ## Data file lifecycles
 
@@ -52,6 +62,10 @@ tiers, and the paragraph-coherence rules — applies to **both** sentence
 files; nothing below changes with the direction of the batch:
 
 - Unless a specific count is requested, generate 15 sentences per batch.
+- Latin sentences carry macrons, same as the vocab files — see the
+  "Macrons" rules in `README.md`. Mark the case endings too, since that's
+  where vowel length does the most grammatical work (`puellā` ablative vs.
+  `puella` nominative).
 - Nouns and adjectives: 1st, 2nd, and 3rd declension only. Skip 4th/5th
   declension nouns (e.g. Manus, Res) when picking words for a sentence.
 - No adverbs.
