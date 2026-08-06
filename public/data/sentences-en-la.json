@@ -1,124 +1,94 @@
 {
-  "generated": "2026-08-05",
+  "generated": "2026-08-06",
   "sentences": [
     {
       "id": "en-la-sentence-1",
-      "english": "The poet writes new words in a book.",
-      "latin": "Poeta verba nova in libro scribit.",
+      "english": "The husband buys a big fish.",
+      "latin": "Maritus piscem magnum emit.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-2",
-      "english": "The Muse loves the poet's words.",
-      "latin": "Musa verba poetae amat.",
+      "english": "The small dog sees the big fish.",
+      "latin": "Canis parvus piscem magnum videt.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-3",
-      "english": "The poet gives a small gift to the Muse.",
-      "latin": "Poeta Musae donum parvum dat.",
+      "english": "The small dog seizes the big fish.",
+      "latin": "Canis parvus piscem magnum capit.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-4",
-      "english": "The Muse warns the good poet.",
-      "latin": "Musa poetam bonum monet.",
+      "english": "The husband sees the small dog.",
+      "latin": "Maritus canem parvum videt.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-5",
-      "english": "A friend hears the poet's words and answers.",
-      "latin": "Amicus verba poetae audit et respondet.",
+      "english": "And so the husband calls the wife.",
+      "latin": "Itaque maritus uxorem vocat.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-6",
-      "english": "The good friend praises the Muse's gift.",
-      "latin": "Amicus bonus donum Musae laudat.",
-      "difficulty": "easy"
+      "english": "The wife hears her own husband's clear voice.",
+      "latin": "Uxor mariti sui vocem claram audit.",
+      "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-7",
-      "english": "And so the poet writes a new book.",
-      "latin": "Itaque poeta librum novum scribit.",
-      "difficulty": "easy"
+      "english": "The husband tells his own wife true words.",
+      "latin": "Maritus uxori suae verba vera dicit.",
+      "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-8",
-      "english": "Our consul gives new laws to the people.",
-      "latin": "Consul noster leges novas populo dat.",
+      "english": "The husband gives the big fish to his own wife.",
+      "latin": "Maritus piscem magnum uxori suae dat.",
       "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-9",
-      "english": "The people trust the wise consul's new laws.",
-      "latin": "Populus legibus novis consulis sapientis credit.",
+      "english": "The small, lucky, and brave dog is praised.",
+      "latin": "Canis parvus, felix et fortis laudatur.",
       "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-10",
-      "english": "The old senate house is guarded by loyal soldiers.",
-      "latin": "Curia vetus a militibus fidelibus custoditur.",
+      "english": "But the husband envies the lucky and brave dog.",
+      "latin": "Sed maritus cani felici et forti invidet.",
       "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-11",
-      "english": "Our wise consul commands the loyal soldiers.",
-      "latin": "Consul noster sapiens militibus fidelibus imperat.",
-      "difficulty": "intermediate"
+      "english": "The wife loves the small, wise dog with great spirit.",
+      "latin": "Uxor canem parvum et sapientem magno animo amat.",
+      "difficulty": "challenging"
     },
     {
       "id": "en-la-sentence-12",
-      "english": "The common people love long peace and order.",
-      "latin": "Plebs pacem longam et ordinem amat.",
-      "difficulty": "intermediate"
+      "english": "The big fish is given to the whole family by the happy wife.",
+      "latin": "Piscis magnus ab uxore felici omni familiae datur.",
+      "difficulty": "challenging"
     },
     {
       "id": "en-la-sentence-13",
-      "english": "The consul's law is praised by all the people.",
-      "latin": "Lex consulis ab omni populo laudatur.",
-      "difficulty": "intermediate"
+      "english": "With a heavy spirit, the husband envies the brave and loyal dog.",
+      "latin": "Maritus animo gravi cani forti et fideli invidet.",
+      "difficulty": "challenging"
     },
     {
       "id": "en-la-sentence-14",
-      "english": "And so peace is preserved by the loyal consul.",
-      "latin": "Itaque pax a consule fideli servatur.",
-      "difficulty": "intermediate"
+      "english": "And so the whole family praises the small, loyal dog with great spirit.",
+      "latin": "Itaque omnis familia canem parvum et fidelem magno animo laudat.",
+      "difficulty": "challenging"
     },
     {
       "id": "en-la-sentence-15",
-      "english": "The fierce and immortal dragon guards the high mountain of the old kingdom.",
-      "latin": "Draco ferox et immortalis montem altum regni veteris custodit.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "en-la-sentence-16",
-      "english": "The brave soldiers of our great legion attack the fierce dragon.",
-      "latin": "Milites fortes legionis nostrae magnae draconem ferocem petunt.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "en-la-sentence-17",
-      "english": "The dragon frightens the brave soldiers of the legion with fierce fire and severe anger.",
-      "latin": "Draco milites fortes legionis igne feroci et ira gravi terret.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "en-la-sentence-18",
-      "english": "But the leader's great courage protects the legion's brave soldiers.",
-      "latin": "Sed ducis virtus magna milites fortes legionis servat.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "en-la-sentence-19",
-      "english": "The loyal cohort of our brave soldiers guards the old mountain's rampart.",
-      "latin": "Militum fortium nostrorum cohors fidelis vallum montis veteris custodit.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "en-la-sentence-20",
-      "english": "And so the high mountain is guarded by the loyal legion.",
-      "latin": "Itaque mons altus a legione fideli custoditur.",
+      "english": "For the small, wise dog unites the whole family.",
+      "latin": "Nam canis parvus et sapiens omnem familiam iungit.",
       "difficulty": "challenging"
     }
   ]
