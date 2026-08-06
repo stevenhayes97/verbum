@@ -279,10 +279,10 @@
     {
       "id": "verb-regno",
       "partOfSpeech": "verb",
-      "presentFirstSingular": "Regnō",
-      "infinitive": { "stem": "Regn", "ending": "āre" },
-      "perfectFirstSingular": "Regnāvī",
-      "perfectPassiveParticiple": "Regnātus",
+      "presentFirstSingular": "Rēgnō",
+      "infinitive": { "stem": "Rēgn", "ending": "āre" },
+      "perfectFirstSingular": "Rēgnāvī",
+      "perfectPassiveParticiple": "Rēgnātus",
       "conjugation": "1st",
       "english": "to reign, rule",
       "tags": ["governance"]
