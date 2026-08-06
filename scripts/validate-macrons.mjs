@@ -37,6 +37,8 @@ const DISALLOWED_CHAR = new RegExp(`[^\\x20-\\x7E${MACRON_VOWELS}]`, 'u');
 // already records, so they need no per-word judgement at all.
 const NOUN_GENITIVE_ENDINGS = { 1: 'ae', 2: 'ī', 3: 'is', 4: 'ūs', 5: 'eī' };
 const VERB_INFINITIVE_ENDINGS = { '1st': 'āre', '2nd': 'ēre', '3rd': 'ere', '4th': 'īre' };
+// dō, dăre is the one 1st-conjugation verb whose infinitive a is short.
+const ENDING_EXCEPTIONS = { 'verb-do': 'are' };
 const ADVERB_ENDINGS = ['ē', 'iter', 'er'];
 
 // Mirrors ordinal() in cli/index.mjs and src/utils/stemEnding.tsx.
@@ -45,10 +47,13 @@ function ordinal(n) {
   return `${n}${ORDINAL_SUFFIXES[n] ?? 'th'}`;
 }
 
+// JS \b is ASCII-only, so it would see a boundary between "m" and "ī" and
+// misread Ēmī as a macron before a final m. Spell the letter class out.
+const LETTER = `A-Za-z${MACRON_VOWELS}`;
 // A vowel immediately before nt, nd, or a word-final m is short.
-const SHORT_BY_POSITION = new RegExp(`[${MACRON_VOWELS}](?:n[td]|m\\b)`, 'u');
+const SHORT_BY_POSITION = new RegExp(`[${MACRON_VOWELS}](?:n[td]|m(?![${LETTER}]))`, 'u');
 // A vowel before ns or nf is long -- so an unmarked one is suspect.
-const LONG_BEFORE_NS_NF = /(?<![a-zA-Z])[a-zA-Z]*[aeiouAEIOU]n[sf]/u;
+const LONG_BEFORE_NS_NF = /[aeiouAEIOU]n[sf]/u;
 // "vocalis ante vocalem corripitur", with real exceptions (-īus, diēī, fīo).
 const MACRON_BEFORE_VOWEL = new RegExp(`[${MACRON_VOWELS}][aeiouAEIOU]`, 'u');
 const VOWEL_BEFORE_VOWEL_EXCEPTIONS = /(īus|ēī|fī)/u;
@@ -123,7 +128,7 @@ function checkValue(file, where, value, errors, warnings) {
     errors.push(`[${file}] ${where}: "${value}" macrons a vowel before "${short[0].slice(1)}" — vowels before nt, nd and word-final m are short.`);
   }
 
-  for (const word of value.split(/[^A-Za-zĀ-ſ]+/).filter(Boolean)) {
+  for (const word of value.split(new RegExp(`[^${LETTER}]+`, 'u')).filter(Boolean)) {
     if (LONG_BEFORE_NS_NF.test(word)) {
       warnings.push(`[${file}] ${where}: "${word}" has an unmarked vowel before ns/nf — that position is long (Īnsula, Cōnsul, Mēnsa).`);
     }
@@ -147,7 +152,7 @@ function checkEndings(file, cards, errors) {
     }
 
     if (card.partOfSpeech === 'verb') {
-      const expected = VERB_INFINITIVE_ENDINGS[card.conjugation];
+      const expected = ENDING_EXCEPTIONS[card.id] ?? VERB_INFINITIVE_ENDINGS[card.conjugation];
       const actual = card.infinitive?.ending;
       if (expected && actual !== expected) {
         errors.push(`[${file}] ${label}: infinitive ending "${actual}" — ${card.conjugation} conjugation takes "${expected}".`);
