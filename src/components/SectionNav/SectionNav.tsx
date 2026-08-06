@@ -8,6 +8,7 @@ const SECTIONS: { id: Section; label: string; enabled: boolean }[] = [
   { id: 'vocab-list', label: 'Vocab List', enabled: true },
   { id: 'favorites', label: 'Favorites', enabled: true },
   { id: 'declension-tables', label: 'Declensions', enabled: true },
+  { id: 'pronunciation-guide', label: 'Pronunciation', enabled: true },
 ];
 
 interface SectionNavProps {

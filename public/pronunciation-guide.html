@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latin Vowels — Classical Pronunciation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;450;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bronze-deep:#0E2723;
+    --bronze-panel:#143530;
+    --bronze-edge:#225147;
+    --patina:#4E9080;
+    --limestone:#EAE6D8;
+    --limestone-dim:#9FBAB1;
+    --copper:#E09A45;
+    --copper-deep:#B36F2C;
+
+    --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+    --body:"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    background:var(--bronze-deep);
+    background-image:
+      radial-gradient(ellipse 120% 60% at 50% -10%, rgba(78,144,128,.20), transparent 70%),
+      radial-gradient(ellipse 90% 50% at 90% 100%, rgba(224,154,69,.07), transparent 70%);
+    background-attachment:fixed;
+    color:var(--limestone);
+    font-family:var(--body);
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{max-width:660px;margin:0 auto;padding:0 20px 72px;}
+
+  a{color:inherit;}
+
+  :focus-visible{
+    outline:2px solid var(--copper);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  /* ---------- hero ---------- */
+
+  .hero{padding:52px 0 30px;}
+
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:.68rem;
+    letter-spacing:.26em;
+    text-transform:uppercase;
+    color:var(--patina);
+    margin:0 0 18px;
+  }
+
+  .hero h1{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:clamp(2.6rem,12vw,3.9rem);
+    line-height:.95;
+    letter-spacing:.005em;
+    margin:0 0 14px;
+  }
+
+  .hero h1 em{font-style:normal;color:var(--copper);}
+
+  .hero p{
+    margin:0;
+    max-width:44ch;
+    color:var(--limestone-dim);
+    font-size:.97rem;
+  }
+
+  /* ---------- thesis: the mark is the meaning ---------- */
+
+  .thesis{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1px;
+    background:var(--bronze-edge);
+    border:1px solid var(--bronze-edge);
+    border-radius:14px;
+    overflow:hidden;
+    margin:32px 0 10px;
+  }
+
+  .thesis-cell{
+    background:var(--bronze-panel);
+    padding:22px 18px 18px;
+    text-align:center;
+    border:0;
+    color:inherit;
+    font:inherit;
+    cursor:pointer;
+    display:block;
+    width:100%;
+  }
+
+  .thesis-cell .glyph{
+    font-family:var(--display);
+    font-size:4.1rem;
+    line-height:1;
+    display:block;
+    margin-bottom:6px;
+  }
+
+  .thesis-cell.is-long .glyph{color:var(--copper);}
+
+  .thesis-cell .tag{
+    font-family:var(--mono);
+    font-size:.66rem;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:var(--limestone-dim);
+    display:block;
+    margin-bottom:12px;
+  }
+
+  .thesis-note{
+    font-size:.87rem;
+    color:var(--limestone-dim);
+    text-align:center;
+    margin:0 0 8px;
+    font-style:italic;
+    font-family:var(--display);
+    font-size:1.05rem;
+  }
+
+  /* ---------- the quantity meter (signature) ---------- */
+
+  .meter{display:inline-flex;gap:4px;align-items:center;}
+
+  .beat{
+    width:16px;height:7px;
+    border-radius:2px;
+    background:var(--copper);
+    opacity:.34;
+  }
+
+  .beat.wide{width:34px;}
+
+  .meter.playing .beat{animation:pulse .42s ease-out both;}
+  .meter.playing .beat:nth-child(2){animation-delay:.42s;}
+
+  @keyframes pulse{
+    0%{opacity:.34;transform:scaleY(1);}
+    30%{opacity:1;transform:scaleY(2.1);}
+    100%{opacity:.34;transform:scaleY(1);}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    .meter.playing .beat{animation:none;opacity:1;}
+    *{transition:none !important;}
+  }
+
+  /* ---------- sticky nav ---------- */
+
+  nav{
+    position:sticky;top:0;z-index:20;
+    margin:26px -20px 0;
+    padding:11px 20px;
+    background:rgba(14,39,35,.93);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--bronze-edge);
+    overflow-x:auto;
+    white-space:nowrap;
+    scrollbar-width:none;
+  }
+
+  nav::-webkit-scrollbar{display:none;}
+
+  nav a{
+    display:inline-block;
+    font-family:var(--mono);
+    font-size:.7rem;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:var(--limestone-dim);
+    padding:5px 11px;
+    margin-right:5px;
+    border:1px solid var(--bronze-edge);
+    border-radius:100px;
+  }
+
+  nav a:hover{color:var(--copper);border-color:var(--copper-deep);}
+
+  /* ---------- sections ---------- */
+
+  section{padding-top:44px;}
+
+  .sec-head{
+    display:flex;
+    align-items:baseline;
+    gap:12px;
+    margin-bottom:6px;
+  }
+
+  .sec-head h2{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:1.85rem;
+    margin:0;
+    letter-spacing:.01em;
+  }
+
+  .sec-lat{
+    font-family:var(--mono);
+    font-size:.66rem;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:var(--patina);
+  }
+
+  .sec-sub{
+    margin:0 0 20px;
+    color:var(--limestone-dim);
+    font-size:.9rem;
+    max-width:46ch;
+  }
+
+  /* ---------- rows ---------- */
+
+  .rows{
+    border:1px solid var(--bronze-edge);
+    border-radius:14px;
+    overflow:hidden;
+    background:var(--bronze-panel);
+  }
+
+  .row{
+    display:grid;
+    grid-template-columns:56px 1fr;
+    gap:14px;
+    align-items:center;
+    padding:13px 16px;
+    border-bottom:1px solid rgba(34,81,71,.65);
+    width:100%;
+    text-align:left;
+    background:none;
+    border-left:0;border-right:0;border-top:0;
+    color:inherit;
+    font:inherit;
+    cursor:pointer;
+  }
+
+  .row:last-child{border-bottom:0;}
+
+  .row .glyph{
+    font-family:var(--display);
+    font-size:2.4rem;
+    line-height:1;
+    text-align:center;
+  }
+
+  .row.long .glyph{color:var(--copper);}
+
+  .row .key{
+    font-size:.94rem;
+    margin-bottom:3px;
+  }
+
+  .row .ex{
+    font-family:var(--display);
+    font-size:1.12rem;
+    color:var(--limestone-dim);
+  }
+
+  .row .top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+  }
+
+  .qword{color:var(--copper);font-style:normal;}
+
+  /* diphthong + rule rows share a simpler shape */
+
+  .row.wide-glyph{grid-template-columns:74px 1fr;}
+  .row.wide-glyph .glyph{font-size:1.9rem;}
+
+  .say{
+    font-family:var(--mono);
+    font-size:.82rem;
+    color:var(--copper);
+    letter-spacing:.02em;
+  }
+
+  /* ---------- callout ---------- */
+
+  .callout{
+    border:1px solid var(--bronze-edge);
+    border-left:3px solid var(--copper-deep);
+    border-radius:0 12px 12px 0;
+    background:rgba(20,53,48,.7);
+    padding:15px 17px;
+    margin-top:16px;
+    font-size:.9rem;
+    color:var(--limestone-dim);
+  }
+
+  .callout strong{color:var(--limestone);font-weight:600;}
+
+  /* ---------- minimal pairs ---------- */
+
+  .pair{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1px;
+    background:var(--bronze-edge);
+    border:1px solid var(--bronze-edge);
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:12px;
+  }
+
+  .pair div{
+    background:var(--bronze-panel);
+    padding:14px 12px;
+    text-align:center;
+  }
+
+  .pair .w{
+    font-family:var(--display);
+    font-size:1.75rem;
+    display:block;
+    line-height:1.1;
+  }
+
+  .pair .r{
+    display:block;
+    color:var(--limestone-dim);
+    font-size:.83rem;
+    margin-top:3px;
+  }
+
+  .pair .long .w{color:var(--copper);}
+
+  /* ---------- details ---------- */
+
+  details{
+    border:1px solid var(--bronze-edge);
+    border-radius:12px;
+    background:var(--bronze-panel);
+    padding:0 17px;
+    margin-top:14px;
+  }
+
+  summary{
+    cursor:pointer;
+    padding:15px 0;
+    font-weight:600;
+    font-size:.95rem;
+    list-style:none;
+  }
+
+  summary::-webkit-details-marker{display:none;}
+
+  summary::after{
+    content:"＋";
+    float:right;
+    color:var(--copper);
+    font-weight:400;
+  }
+
+  details[open] summary::after{content:"−";}
+
+  details .inner{
+    padding-bottom:18px;
+    font-size:.9rem;
+    color:var(--limestone-dim);
+  }
+
+  details .inner p{margin:0 0 12px;}
+  details .inner p:last-child{margin-bottom:0;}
+  details .inner strong{color:var(--limestone);}
+
+  ul.plain{margin:0 0 12px;padding-left:18px;}
+  ul.plain li{margin-bottom:5px;}
+
+  footer{
+    margin-top:52px;
+    padding-top:22px;
+    border-top:1px solid var(--bronze-edge);
+    font-family:var(--mono);
+    font-size:.68rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--patina);
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">Prōnūntiātiō classica</p>
+    <h1>Latin<br>Vowels &amp; <em>Length</em></h1>
+    <p>The macron isn't decoration. It tells you to hold the vowel about twice as long — and often it's the only thing separating two different words.</p>
+
+    <div class="thesis">
+      <button class="thesis-cell" type="button">
+        <span class="glyph">a</span>
+        <span class="tag">Short · one beat</span>
+        <span class="meter"><span class="beat"></span></span>
+      </button>
+      <button class="thesis-cell is-long" type="button">
+        <span class="glyph">ā</span>
+        <span class="tag">Long · two beats</span>
+        <span class="meter"><span class="beat"></span><span class="beat"></span></span>
+      </button>
+    </div>
+    <p class="thesis-note">Tap any row to see its length.</p>
+  </header>
+
+  <nav>
+    <a href="#vowels">Vowels</a>
+    <a href="#diphthongs">Diphthongs</a>
+    <a href="#split">Not diphthongs</a>
+    <a href="#cons-i">Consonantal I</a>
+    <a href="#cons-v">Consonantal V</a>
+    <a href="#traps">Traps</a>
+    <a href="#short-i">On short i</a>
+  </nav>
+
+  <section id="vowels">
+    <div class="sec-head"><h2>The five vowels</h2><span class="sec-lat">Vōcālēs</span></div>
+    <p class="sec-sub">Similar mouth shape, different duration. English keywords are approximations, not perfect matches.</p>
+
+    <div class="rows">
+
+      <button class="row" type="button">
+        <span class="glyph">a</span>
+        <span>
+          <span class="top"><span class="key"><em class="qword">a</em> in "aha"</span><span class="meter"><span class="beat"></span></span></span>
+          <span class="ex">amat · canis · magnus</span>
+        </span>
+      </button>
+
+      <button class="row long" type="button">
+        <span class="glyph">ā</span>
+        <span>
+          <span class="top"><span class="key"><em class="qword">a</em> in "father"</span><span class="meter"><span class="beat"></span><span class="beat"></span></span></span>
+          <span class="ex">āmō · mātūrus · fāma</span>
+        </span>
+      </button>
+
+      <button class="row" type="button">
+        <span class="glyph">e</span>
+        <span>
+          <span class="top"><span class="key"><em class="qword">e</em> in "pet"</span><span class="meter"><span class="beat"></span></span></span>
+          <span class="ex">est · bene · septem</span>
+        </span>
+      </button>
+
+      <button class="row long" type="button">
+        <span class="glyph">ē</span>
+        <span>
+          <span class="top"><span class="key"><em class="qword">ey</em> in "they" — no glide</span><span class="meter"><span class="beat"></span><span class="beat"></span></span></span>
+          <span class="ex">ēst · vidēre · rēs</span>
+        </span>
+      </button>
+
+      <button class="row" type="button">
+        <span class="glyph">i</span>
+        <span>
+          <span class="top"><span class="key"><em class="qword">i</em> in "pit"</span><span class="meter"><span class="beat"></span></span></span>
+          <span class="ex">in · quis · liber</span>
+        </span>
+      </button>
+
+      <button class="row long" type="button">
+        <span class="glyph">ī</span>
+        <span>
+          <span class="top"><span class="key"><em class="qword">ee</em> in "machine"</span><span class="meter"><span class="beat"></span><span class="beat"></span></span></span>
+          <span class="ex">īre · vīta · fīlius</span>
+        </span>
+      </button>
+
+      <button class="row" type="button">
+        <span class="glyph">o</span>
+        <span>
+          <span class="top"><span class="key"><em class="qword">o</em> in "for"</span><span class="meter"><span class="beat"></span></span></span>
+          <span class="ex">bonus · modo · locus</span>
+        </span>
+      </button>
+
+      <button class="row long" type="button">
+        <span class="glyph">ō</span>
+        <span>
+          <span class="top"><span class="key"><em class="qword">o</em> in "note" — no glide</span><span class="meter"><span class="beat"></span><span class="beat"></span></span></span>
+          <span class="ex">ōs · pōnō · sōlus</span>
+        </span>
+      </button>
+
+      <button class="row" type="button">
+        <span class="glyph">u</span>
+        <span>
+          <span class="top"><span class="key"><em class="qword">u</em> in "put"</span><span class="meter"><span class="beat"></span></span></span>
+          <span class="ex">ubi · sumus · dominus</span>
+        </span>
+      </button>
+
+      <button class="row long" type="button">
+        <span class="glyph">ū</span>
+        <span>
+          <span class="top"><span class="key"><em class="qword">oo</em> in "rude"</span><span class="meter"><span class="beat"></span><span class="beat"></span></span></span>
+          <span class="ex">ūna · lūna · mūrus</span>
+        </span>
+      </button>
+
+      <button class="row" type="button">
+        <span class="glyph">y</span>
+        <span>
+          <span class="top"><span class="key">French <em class="qword">u</em> / German <em class="qword">ü</em> — Greek loanwords</span><span class="meter"><span class="beat"></span></span></span>
+          <span class="ex">lyra · Syria</span>
+        </span>
+      </button>
+
+      <button class="row long" type="button">
+        <span class="glyph">ȳ</span>
+        <span>
+          <span class="top"><span class="key">Same, held longer</span><span class="meter"><span class="beat"></span><span class="beat"></span></span></span>
+          <span class="ex">Ēgyptus · tȳrannus</span>
+        </span>
+      </button>
+
+    </div>
+
+    <div class="callout">
+      <strong>The "no glide" rule.</strong> English <em>o</em> in "note" secretly ends in a <em>w</em>; English <em>ey</em> in "they" drifts toward <em>ee</em>. Latin <strong>ō</strong> and <strong>ē</strong> don't drift. Lock the mouth in place and hold it steady.
+    </div>
+  </section>
+
+  <section id="diphthongs">
+    <div class="sec-head"><h2>Diphthongs</h2><span class="sec-lat">Diphthongī</span></div>
+    <p class="sec-sub">Two vowels, one syllable, one continuous glide. All diphthongs count as long.</p>
+
+    <div class="rows">
+
+      <div class="row wide-glyph">
+        <span class="glyph">ae</span>
+        <span>
+          <span class="key say">eye — as in "aisle"</span>
+          <span class="ex">caelum · puella → puellae · maestus</span>
+        </span>
+      </div>
+
+      <div class="row wide-glyph">
+        <span class="glyph">oe</span>
+        <span>
+          <span class="key say">oy — as in "boy"</span>
+          <span class="ex">poena · proelium · foedus</span>
+        </span>
+      </div>
+
+      <div class="row wide-glyph">
+        <span class="glyph">au</span>
+        <span>
+          <span class="key say">ow — as in "how"</span>
+          <span class="ex">audit · nauta · aurum</span>
+        </span>
+      </div>
+
+      <div class="row wide-glyph">
+        <span class="glyph">eu</span>
+        <span>
+          <span class="key say">eh + oo, run together — not "yoo"</span>
+          <span class="ex">heu · Eurōpa · seu</span>
+        </span>
+      </div>
+
+      <div class="row wide-glyph">
+        <span class="glyph">ei</span>
+        <span>
+          <span class="key say">ay — as in "eight"</span>
+          <span class="ex">deinde · hei</span>
+        </span>
+      </div>
+
+      <div class="row wide-glyph">
+        <span class="glyph">ui</span>
+        <span>
+          <span class="key say">oo-ee, said fast</span>
+          <span class="ex">huic · cui · huius</span>
+        </span>
+      </div>
+
+    </div>
+
+    <div class="callout">
+      <strong>Where the two systems split hardest.</strong> Ecclesiastical (Church) Latin flattens both <strong>ae</strong> and <strong>oe</strong> into a plain "ay." Classical keeps them as true diphthongs — so <em>caelum</em> rhymes with "eye," not with "chay."
+    </div>
+  </section>
+
+  <section id="split">
+    <div class="sec-head"><h2>When ae &amp; oe aren't diphthongs</h2><span class="sec-lat">Diaeresis</span></div>
+    <p class="sec-sub">Sometimes each vowel keeps its own syllable. The macron usually gives it away.</p>
+
+    <div class="rows">
+      <div class="row wide-glyph">
+        <span class="glyph">āēr</span>
+        <span>
+          <span class="key say">AH-ehr — two syllables</span>
+          <span class="ex">not the "eye" sound</span>
+        </span>
+      </div>
+      <div class="row wide-glyph">
+        <span class="glyph">poēta</span>
+        <span>
+          <span class="key say">po-EH-ta — three syllables</span>
+          <span class="ex">o and ē belong to separate syllables</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section id="cons-i">
+    <div class="sec-head"><h2>Consonantal I</h2><span class="sec-lat">I cōnsonāns</span></div>
+    <p class="sec-sub">When <strong>i</strong> starts a word and a vowel follows, it turns into a <em>y</em> sound.</p>
+
+    <div class="rows">
+      <div class="row wide-glyph"><span class="glyph">Iūlius</span><span><span class="key say">YOO-lee-oos</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">Iūlia</span><span><span class="key say">YOO-lee-a</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">iam</span><span><span class="key say">yam</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">iānua</span><span><span class="key say">YAH-noo-a</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">iūcundus</span><span><span class="key say">yoo-KOON-doos</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">iubet</span><span><span class="key say">YOO-bet</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">iacet</span><span><span class="key say">YAH-ket</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">Iuppiter</span><span><span class="key say">YOOP-pi-ter</span></span></div>
+    </div>
+
+    <div class="callout">
+      <strong>Between two vowels, the y does double duty.</strong> You hear it on both sides of the syllable break.
+    </div>
+
+    <div class="rows" style="margin-top:12px;">
+      <div class="row wide-glyph"><span class="glyph">maior</span><span><span class="key say">MY-yor</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">eius</span><span><span class="key say">EY-yoos</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">cuius</span><span><span class="key say">KOO-yoos</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">huius</span><span><span class="key say">HOO-yoos</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">peior</span><span><span class="key say">PEY-yor</span></span></div>
+    </div>
+  </section>
+
+  <section id="cons-v">
+    <div class="sec-head"><h2>Consonantal V</h2><span class="sec-lat">V cōnsonāns</span></div>
+    <p class="sec-sub">Same principle as consonantal I, but it becomes a <em>w</em>. Classical Romans had no <em>v</em> sound as we know it.</p>
+
+    <div class="rows">
+      <div class="row wide-glyph"><span class="glyph">vīnum</span><span><span class="key say">WEE-noom</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">vōs</span><span><span class="key say">wohs</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">servus</span><span><span class="key say">SER-woos</span></span></div>
+      <div class="row wide-glyph"><span class="glyph">vidēre</span><span><span class="key say">wi-DEH-reh</span></span></div>
+    </div>
+  </section>
+
+  <section id="traps">
+    <div class="sec-head"><h2>Length carries meaning</h2><span class="sec-lat">Cavē</span></div>
+    <p class="sec-sub">Same letters. The macron is doing all the work.</p>
+
+    <div class="pair">
+      <div><span class="w">puella</span><span class="r">nominative — "the girl"</span></div>
+      <div class="long"><span class="w">puellā</span><span class="r">ablative — "by/with the girl"</span></div>
+    </div>
+
+    <div class="pair">
+      <div><span class="w">hic</span><span class="r">"this"</span></div>
+      <div class="long"><span class="w">hīc</span><span class="r">"here"</span></div>
+    </div>
+
+    <div class="pair">
+      <div><span class="w">malum</span><span class="r">"evil"</span></div>
+      <div class="long"><span class="w">mālum</span><span class="r">"apple"</span></div>
+    </div>
+
+    <div class="pair">
+      <div><span class="w">venit</span><span class="r">"he comes"</span></div>
+      <div class="long"><span class="w">vēnit</span><span class="r">"he came"</span></div>
+    </div>
+
+    <div class="callout">
+      That final <strong>-a</strong> pair is the one that bites people constantly in LLPSI. Train your ear on it early and a lot of case confusion sorts itself out.
+    </div>
+  </section>
+
+  <section id="short-i">
+    <div class="sec-head"><h2>The short i argument</h2><span class="sec-lat">Disputātiō</span></div>
+    <p class="sec-sub">You'll find contradicting answers on whether the "ih" of <em>pit</em> exists in Latin. Here's the state of play.</p>
+
+    <details>
+      <summary>Why the mainstream view says yes</summary>
+      <div class="inner">
+        <p>Allen's <strong>Vox Latina</strong> — the standard reference for classical pronunciation — holds that short <strong>i</strong> differed from long <strong>ī</strong> in <strong>quality</strong>, not just length: laxer and more open. He recommends the <em>pit</em> vowel as the practical approximation for English speakers.</p>
+        <p>The strongest evidence is what happened next. In the Romance languages, short <strong>i</strong> didn't merge with <strong>ī</strong> — it merged with long <strong>ē</strong>:</p>
+        <ul class="plain">
+          <li><strong>fidem</strong> → Italian <em>fede</em></li>
+          <li><strong>vīta</strong> → Italian <em>vita</em></li>
+          <li>Same with u: <strong>bucca</strong> → <em>bocca</em>, but <strong>lūna</strong> → <em>luna</em></li>
+        </ul>
+        <p>Roman spelling also wobbled — <strong>optimus/optumus</strong>, <strong>maximus/maxumus</strong> — which only makes sense if the vowel sat somewhere murky in the middle.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Where the other answer comes from</summary>
+      <div class="inner">
+        <p>Two places, mostly. Ecclesiastical pronunciation is Italianate, and Italian has no lax <em>i</em> at all — so in that system short i really is just a clipped [i]. And some classical teachers prefer a tidy "five vowels, length only" model because it's easier to teach and stops English speakers from mangling everything else.</p>
+        <p>Sardinian gets cited too: it merged Latin's vowels by length alone. It's a real data point, though most scholars read it as a later local development rather than evidence about Cicero's mouth.</p>
+      </div>
+    </details>
+
+    <div class="callout">
+      <strong>Practical takeaway.</strong> Use the <em>pit</em> vowel — it's solid, defensible ground. Just don't lean so hard it sounds like an impression. Length is the load-bearing feature; quality is the small stakes.
+    </div>
+  </section>
+
+  <footer>Classical · Restored Pronunciation</footer>
+
+</div>
+
+<script>
+  document.querySelectorAll('.row, .thesis-cell').forEach(function(el){
+    el.addEventListener('click', function(){
+      var m = el.querySelector('.meter');
+      if(!m) return;
+      m.classList.remove('playing');
+      void m.offsetWidth;
+      m.classList.add('playing');
+    });
+  });
+
+  document.querySelectorAll('.meter').forEach(function(m){
+    m.addEventListener('animationend', function(e){
+      if(e.target === m.lastElementChild) m.classList.remove('playing');
+    });
+  });
+</script>
+</body>
+</html>

@@ -6,7 +6,8 @@ export type Section =
   | 'sentence-practice'
   | 'favorites'
   | 'vocab-list'
-  | 'declension-tables';
+  | 'declension-tables'
+  | 'pronunciation-guide';
 export type Gender = 'Male' | 'Female' | 'Neuter';
 
 export interface StemEndingForm {
