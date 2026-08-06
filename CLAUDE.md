@@ -114,6 +114,13 @@ and structure, not from unlocking new grammar early:
   adjectives, passive voice with an ablative agent (a/ab), less common
   vocab — while still respecting the unambiguous-modifier rule above.
 
+  **`a/ab` marks a *personal* agent only** — someone who acts. An
+  inanimate cause takes a bare ablative of means with no preposition:
+  `ā iūdice regitur` ("ruled by the judge") but `lēgibus mūnītur`
+  ("fortified by the laws"), not `ā lēgibus`. Getting this wrong is easy
+  precisely because this tier asks for ablative agents, so check the
+  animacy of every agent before using `a/ab`.
+
 Unless told otherwise, split a batch evenly across the three tiers (e.g.
 a default batch of 15 = 5 easy / 5 intermediate / 5 challenging).
 

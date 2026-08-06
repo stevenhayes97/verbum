@@ -203,9 +203,26 @@ function checkEndings(file, cards, errors) {
 }
 
 /**
+ * Files whose whole point is to be replaced wholesale can't be held to a
+ * "nothing but diacritics changed" rule -- see hasAppendOnlyLifecycle.
+ */
+function hasAppendOnlyLifecycle(parsed) {
+  return !('generated' in parsed);
+}
+
+/**
  * Compares every Latin value against the same value at a git ref, macrons
  * folded off both sides. Any mismatch means the change was more than
  * diacritics -- a respelling, a typo, or an entry that moved.
+ *
+ * Only meaningful for the append+edit-only files (the vocab decks and
+ * favorites), where an entry that exists keeps its spelling. The two
+ * sentence files are wiped and regenerated wholesale every refresh, so a
+ * total rewrite is the correct outcome there and this check would flag
+ * every line of it. They're identified by their own `generated` key, which
+ * exists to mark exactly that lifecycle (see src/types/flashcard.ts) --
+ * keying off the data means a new vocab file is covered automatically and
+ * a new regenerated file opts out automatically, with no list to maintain.
  */
 async function checkAgainstBase(file, values, base, errors) {
   let raw;
@@ -255,7 +272,7 @@ async function main() {
     checkJoinedWords(file, parsed, '', errors, warnings);
 
     if (Array.isArray(parsed.cards)) checkEndings(file, parsed.cards, errors);
-    if (base) await checkAgainstBase(file, values, base, errors);
+    if (base && hasAppendOnlyLifecycle(parsed)) await checkAgainstBase(file, values, base, errors);
   }
 
   for (const message of errors) annotate('error', message);

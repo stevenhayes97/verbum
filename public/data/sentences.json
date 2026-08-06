@@ -33,8 +33,8 @@
     },
     {
       "id": "sentence-6",
-      "latin": "Nautae per magnum mare īnsulam altam petunt.",
-      "english": "The sailors seek the high island across the great sea.",
+      "latin": "Nautae longam viam per magnum mare ad īnsulam faciunt.",
+      "english": "The sailors make a long journey through the great sea to the island.",
       "difficulty": "intermediate"
     },
     {
@@ -87,7 +87,7 @@
     },
     {
       "id": "sentence-15",
-      "latin": "Nam iūstus ōrdō cīvitātis ā lēgibus clārīs et veteribus mūnītur.",
+      "latin": "Nam iūstus ōrdō cīvitātis lēgibus clārīs et veteribus mūnītur.",
       "english": "For the just order of the state is fortified by the clear and old laws.",
       "difficulty": "challenging"
     }

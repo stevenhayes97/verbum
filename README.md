@@ -224,7 +224,11 @@ paradigm-determined endings (rules 4 above), and the positional rules 2 and
 3. It runs in CI via `.github/workflows/macrons.yml`. Given a `--base <ref>`
 it additionally asserts that every Latin value, macrons folded off, still
 equals what it was at that ref — proof that a retrofit commit added
-diacritics and didn't quietly respell anything. What it *can't* check is
+diacritics and didn't quietly respell anything. That baseline check applies
+only to the **append + edit-only** files, which the script identifies by
+the absence of a `generated` key; the two sentence files are wiped and
+regenerated wholesale, so a total rewrite is correct there and holding them
+to it would flag every line. What it *can't* check is
 whether a given stem vowel is long by nature; that still needs a dictionary
 and a human.
 

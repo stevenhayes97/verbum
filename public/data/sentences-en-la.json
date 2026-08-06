@@ -39,8 +39,8 @@
     },
     {
       "id": "en-la-sentence-7",
-      "english": "Many men see the brave gladiator in the city.",
-      "latin": "Multī hominēs gladiātōrem fortem in urbe vident.",
+      "english": "Many men see the brave and famous gladiator.",
+      "latin": "Multī hominēs gladiātōrem fortem et clārum vident.",
       "difficulty": "intermediate"
     },
     {
@@ -57,8 +57,8 @@
     },
     {
       "id": "en-la-sentence-10",
-      "english": "And so the men of the city give a great victory to the brave gladiator.",
-      "latin": "Itaque hominēs urbis magnam victōriam gladiātōrī fortī dant.",
+      "english": "And so the men of the city give a great gift to the brave gladiator.",
+      "latin": "Itaque hominēs urbis magnum dōnum gladiātōrī fortī dant.",
       "difficulty": "intermediate"
     },
     {
@@ -69,8 +69,8 @@
     },
     {
       "id": "en-la-sentence-12",
-      "english": "The long shadows of the tall forests are made by the bright moon.",
-      "latin": "Umbrae longae altārum silvārum ā lūnā clārā faciuntur.",
+      "english": "The bright moon makes the long shadows of the tall forests and of the mountains.",
+      "latin": "Lūna clāra longās umbrās altārum silvārum et montium facit.",
       "difficulty": "challenging"
     },
     {
@@ -81,8 +81,8 @@
     },
     {
       "id": "en-la-sentence-14",
-      "english": "The white dawn is prepared by the bright sun after the long night.",
-      "latin": "Aurōra candida ā sōle clārō post longam noctem parātur.",
+      "english": "The white dawn is seen by my sister after the long night.",
+      "latin": "Aurōra candida post longam noctem ā sorōre meā vidētur.",
       "difficulty": "challenging"
     },
     {
