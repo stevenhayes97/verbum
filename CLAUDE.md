@@ -82,6 +82,18 @@ files; nothing below changes with the direction of the batch:
   preposition, or splitting into a relative clause) until only one
   reading holds.
 
+  This rule is about **readings that survive the context**, not about
+  endings that happen to look alike. Latin is full of syncretism — 1st
+  declension dative and genitive singular are both `-ae`, dative and
+  ablative plural are both `-īs`, and so on — and resolving those from
+  the surrounding words is exactly the skill being practised, not a
+  defect. `Nepōs aviae flōrem dat` is fine: `aviae` is formally genitive
+  too, but `dat` settles it, and "the grandson gives the grandmother's
+  flower" isn't a reading anyone actually arrives at. Only flag a
+  sentence when both readings are still standing *after* the reader has
+  used the context — as in the `in insulā` example above, where nothing
+  in the sentence tells you which noun the phrase attaches to.
+
 ### English → Latin batches
 
 `sentences-en-la.json` is practised in the other direction: the English
