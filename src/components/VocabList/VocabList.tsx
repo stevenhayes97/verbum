@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { CATEGORIES } from '../../data/categories';
 import type { Card, CategoryFile } from '../../types/flashcard';
+import { foldMacrons } from '../../utils/latin';
 import styles from './VocabList.module.css';
 
 interface Group {
@@ -45,9 +46,11 @@ function latinText(card: Card): string {
 }
 
 // Matches against the same Latin text the row shows (so a search for a
-// genitive like "patris" hits) plus the English gloss.
+// genitive like "patris" hits) plus the English gloss. Macrons are folded
+// off both sides, so "rex" finds "rēx" and pasting "rēx" back in still
+// works -- typing vowel length isn't practical on a laptop keyboard.
 function matches(card: Card, query: string): boolean {
-  return `${latinText(card)} ${card.english}`.toLowerCase().includes(query);
+  return foldMacrons(`${latinText(card)} ${card.english}`).toLowerCase().includes(query);
 }
 
 async function fetchCategoryCards(dataUrl: string): Promise<Card[]> {
@@ -74,6 +77,8 @@ export function VocabList() {
         setGroups(
           metas.map((meta, i) => ({
             label: meta.label,
+            // sensitivity: 'base' already folds case and macrons, so ordering
+            // agrees with the macron-insensitive matching in matches().
             cards: [...cardLists[i]].sort((a, b) =>
               headword(a).localeCompare(headword(b), undefined, { sensitivity: 'base' }),
             ),
@@ -87,7 +92,7 @@ export function VocabList() {
   // Groups that end up with no matching card drop out entirely, so the
   // headings left standing all have rows under them.
   const visibleGroups = useMemo(() => {
-    const needle = query.trim().toLowerCase();
+    const needle = foldMacrons(query).trim().toLowerCase();
     if (!needle) return groups;
     return groups
       .map((group) => ({ ...group, cards: group.cards.filter((card) => matches(card, needle)) }))

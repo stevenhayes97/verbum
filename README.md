@@ -136,10 +136,13 @@ Either way, the back shows the English translation.
 Verbs show the standard Latin citation form — the four **principal
 parts**: 1st singular present / infinitive / 1st singular perfect /
 perfect passive participle (PPP), with conjugation shown parenthetically,
-e.g. `Amo / Amare / Amavi / Amatus (1st conj.)`. The infinitive's ending
+e.g. `Amō / Amāre / Amāvī / Amātus (1st conj.)`. The infinitive's ending
 is bolded, the same way the genitive's ending is bolded for nouns —
-it's what reveals the conjugation (`-are`/`-ere`/`-ere`/`-ire` for
-1st/2nd/3rd/4th). The perfect stem is often irregular and can't be
+it's what reveals the conjugation (`-āre`/`-ēre`/`-ere`/`-īre` for
+1st/2nd/3rd/4th). Note that this only works because of the macrons: 2nd
+and 3rd conjugation are both `-ere` unmarked, so without vowel length the
+bolded ending would distinguish nothing for half the verbs (`monēre` vs.
+`regere`). The perfect stem is often irregular and can't be
 derived from the present stem (`video` → `vidi`, not `videvi`; `aperio` →
 `aperui`, not the expected `aperivi`), which is exactly why it's an
 explicit field rather than inferred.
@@ -157,8 +160,8 @@ bolded, plus the adjective it derives from for the pattern connection:
 e.g. `Fortiter (from Fortis)`. Formation is predictable from the source
 adjective's declension: 1st/2nd declension adjectives add `-ē` to the
 stem (`longus` → `longē`), 3rd declension adjectives add `-iter` (or
-just `-er` if the stem already ends in `-nt`, e.g. `prudens` → `prudenter`
-not `prudentiter`). Irregular/suppletive adverbs (e.g. `bonus` → `bene`,
+just `-er` if the stem already ends in `-nt`, e.g. `prūdēns` → `prūdenter`
+not `prūdentiter`). Irregular/suppletive adverbs (e.g. `bonus` → `bene`,
 not the regular `bone`) are deliberately not included yet, same reasoning
 as the deferred deponent verbs.
 
@@ -179,6 +182,55 @@ included yet — same reasoning as other deferred edge cases.
 Classical Latin orthography sometimes allows either `I` or `J` for the
 same sound (e.g. `Ianuarius`/`Januarius`, `maior`/`major`, `eius`/`ejus`).
 **Prefer `I` over `J`** consistently across all vocabulary entries.
+
+### Macrons
+
+All Latin text carries macrons — vocabulary entries, sentences, favorites,
+and the declension tables alike. Vowel length is phonemic in Latin
+(`liber` "book" vs. `līber` "free"; nominative `puella` vs. ablative
+`puellā`), so leaving it off means learning the words wrong. The rules:
+
+1. Mark every vowel that is **long by nature**, following Lewis & Short /
+   the Oxford Latin Dictionary. Don't mark vowels that are merely long by
+   position: `magnus` stays `magnus`, not `māgnus`.
+2. A vowel before `ns` or `nf` **is** long: `Īnsula`, `Cōnsul`, `Mēnsa`,
+   `Trāns`, `Sapiēns`.
+3. A vowel immediately before `nt`, `nd`, or a word-final `-m` is **short**
+   and never takes a macron: `amant`, `amandus`, `puellam`.
+4. Length is **position-dependent within a word's paradigm** — the same
+   letter can be long in one form and short in another. `Dēns` but genitive
+   stem `Dent-`; `Mōns` but `Mont-`. This is exactly why endings are filled
+   from the paradigm rather than copied off the nominative.
+5. Store **precomposed NFC** codepoints (`ā` = U+0101), never `a` followed
+   by a combining macron (U+0304). The two render identically but don't
+   compare equal.
+6. The only characters allowed outside ASCII are `ā ē ī ō ū Ā Ē Ī Ō Ū`.
+   Capitalised headwords keep the macron on the capital: `Īra`, `Ōs`.
+7. Diphthongs (`ae`, `au`, `oe`, `eu`) are inherently long and take no
+   macron: `Nauta`, `Prae`, `Aurōra` — the `ō` is marked, the `au` isn't.
+8. Where the dictionaries disagree — typically a vowel before a doubled
+   consonant, like `stella` — follow the beginner-textbook convention and
+   leave it **unmarked**. The point is to teach the reading a student will
+   meet elsewhere, not to adjudicate etymology.
+
+Macrons are **display-only, never something you have to type**. The vocab
+list's search box folds them off both sides (`src/utils/latin.ts`), so
+searching `rex` finds `Rēx` and `amare` finds `Amō, amāre` — vowel length
+is impractical to type on a laptop keyboard and isn't required anywhere.
+
+`npm run validate:macrons` checks everything about this that can be checked
+without a dictionary: the character set, the Unicode form, the
+paradigm-determined endings (rules 4 above), and the positional rules 2 and
+3. It runs in CI via `.github/workflows/macrons.yml`. Given a `--base <ref>`
+it additionally asserts that every Latin value, macrons folded off, still
+equals what it was at that ref — proof that a retrofit commit added
+diacritics and didn't quietly respell anything. That baseline check applies
+only to the **append + edit-only** files, which the script identifies by
+the absence of a `generated` key; the two sentence files are wiped and
+regenerated wholesale, so a total rewrite is correct there and holding them
+to it would flag every line. What it *can't* check is
+whether a given stem vowel is long by nature; that still needs a dictionary
+and a human.
 
 ## Word IDs
 

@@ -9,8 +9,18 @@ plus other senses, note the closest/common one(s), the way existing
 entries already do (e.g. `"lord, master"`, `"to warn, advise"`).
 
 Also check new entries against the standing conventions documented in
-`README.md`: the `I` over `J` spelling preference ("Spelling Conventions"),
-and the canonical tag list ("Vocabulary Tags") if tags are being assigned.
+`README.md`: the `I` over `J` spelling preference and the **macron rules**
+("Spelling Conventions"), and the canonical tag list ("Vocabulary Tags")
+if tags are being assigned.
+
+**Every Latin field carries macrons** — `Amō`, not `Amo`; `Mātr` + `is`,
+not `Matr` + `is`. Endings are determined by the entry's own
+declension/conjugation and must match the paradigm exactly (1st decl. gen.
+`-ae`, 2nd `-ī`, 3rd `-is`, 4th `-ūs`, 5th `-eī`; 1st conj. inf. `-āre`,
+2nd `-ēre`, 3rd `-ere`, 4th `-īre`; adverbs `-ē`/`-iter`/`-er`). Look the
+stem vowels up rather than guessing — a wrong macron teaches the word
+wrong. Run `npm run validate:macrons` before committing; it catches the
+mechanical mistakes but not a stem vowel that's simply the wrong length.
 
 ## Data file lifecycles
 
@@ -52,6 +62,10 @@ tiers, and the paragraph-coherence rules — applies to **both** sentence
 files; nothing below changes with the direction of the batch:
 
 - Unless a specific count is requested, generate 15 sentences per batch.
+- Latin sentences carry macrons, same as the vocab files — see the
+  "Macrons" rules in `README.md`. Mark the case endings too, since that's
+  where vowel length does the most grammatical work (`puellā` ablative vs.
+  `puella` nominative).
 - Nouns and adjectives: 1st, 2nd, and 3rd declension only. Skip 4th/5th
   declension nouns (e.g. Manus, Res) when picking words for a sentence.
 - No adverbs.
@@ -67,6 +81,25 @@ files; nothing below changes with the direction of the batch:
   sentence could go either way, restructure it (word order, a different
   preposition, or splitting into a relative clause) until only one
   reading holds.
+
+  The context that has to do the disambiguating is **the sentence's
+  own** — its grammar, its verb, its word order. The app shows one card
+  at a time and the tier filter can slice a story into a subset, so a
+  sentence never gets to lean on its neighbours to be understood. That's
+  what makes the `in insulā` case fail: two nouns are available for the
+  phrase to attach to and nothing *inside* the sentence picks one, so
+  there's no way to tell whether the sailor or the friend is on the
+  island.
+
+  This is not a rule against endings that merely look alike. Latin is
+  full of syncretism — 1st declension dative and genitive singular are
+  both `-ae`, dative and ablative plural are both `-īs`, and so on — and
+  resolving those from the rest of the sentence is exactly the skill
+  being practised, not a defect to design around. `Nepōs aviae flōrem
+  dat` is fine: `aviae` is formally genitive too, but `dat` settles it,
+  and "the grandson gives the grandmother's flower" isn't a reading
+  anyone actually arrives at. Flag a sentence only when two readings are
+  both still standing once its own words have been used up.
 
 ### English → Latin batches
 
@@ -99,6 +132,13 @@ and structure, not from unlocking new grammar early:
   (multiple adjectives/genitives per noun), more 3rd-declension nouns and
   adjectives, passive voice with an ablative agent (a/ab), less common
   vocab — while still respecting the unambiguous-modifier rule above.
+
+  **`a/ab` marks a *personal* agent only** — someone who acts. An
+  inanimate cause takes a bare ablative of means with no preposition:
+  `ā iūdice regitur` ("ruled by the judge") but `lēgibus mūnītur`
+  ("fortified by the laws"), not `ā lēgibus`. Getting this wrong is easy
+  precisely because this tier asks for ablative agents, so check the
+  animacy of every agent before using `a/ab`.
 
 Unless told otherwise, split a batch evenly across the three tiers (e.g.
 a default batch of 15 = 5 easy / 5 intermediate / 5 challenging).

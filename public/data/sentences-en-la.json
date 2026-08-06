@@ -3,92 +3,92 @@
   "sentences": [
     {
       "id": "en-la-sentence-1",
-      "english": "The husband buys a big fish.",
-      "latin": "Maritus piscem magnum emit.",
+      "english": "The grandmother loves her own grandson.",
+      "latin": "Avia nepōtem suum amat.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-2",
-      "english": "The small dog sees the big fish.",
-      "latin": "Canis parvus piscem magnum videt.",
+      "english": "The grandson gives a flower to the grandmother.",
+      "latin": "Nepōs aviae flōrem dat.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-3",
-      "english": "The small dog seizes the big fish.",
-      "latin": "Canis parvus piscem magnum capit.",
+      "english": "The grandmother sees a black bird.",
+      "latin": "Avia avem nigram videt.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-4",
-      "english": "The husband sees the small dog.",
-      "latin": "Maritus canem parvum videt.",
+      "english": "The grandson hears the black bird.",
+      "latin": "Nepōs avem nigram audit.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-5",
-      "english": "And so the husband calls the wife.",
-      "latin": "Itaque maritus uxorem vocat.",
+      "english": "And so the grandmother praises her own grandson.",
+      "latin": "Itaque avia nepōtem suum laudat.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-6",
-      "english": "The wife hears her own husband's clear voice.",
-      "latin": "Uxor mariti sui vocem claram audit.",
+      "english": "The gladiator carries a heavy shield and a long spear.",
+      "latin": "Gladiātor scūtum grave et hastam longam portat.",
       "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-7",
-      "english": "The husband tells his own wife true words.",
-      "latin": "Maritus uxori suae verba vera dicit.",
+      "english": "Many men see the brave and famous gladiator.",
+      "latin": "Multī hominēs gladiātōrem fortem et clārum vident.",
       "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-8",
-      "english": "The husband gives the big fish to his own wife.",
-      "latin": "Maritus piscem magnum uxori suae dat.",
+      "english": "The brave gladiator gives a clear signal to his own friends.",
+      "latin": "Gladiātor fortis suīs amīcīs signum clārum dat.",
       "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-9",
-      "english": "The small, lucky, and brave dog is praised.",
-      "latin": "Canis parvus, felix et fortis laudatur.",
+      "english": "The fierce enemy is captured in the serious battle.",
+      "latin": "Hostis ferōx in proeliō gravī capitur.",
       "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-10",
-      "english": "But the husband envies the lucky and brave dog.",
-      "latin": "Sed maritus cani felici et forti invidet.",
+      "english": "And so the men of the city give a great gift to the brave gladiator.",
+      "latin": "Itaque hominēs urbis magnum dōnum gladiātōrī fortī dant.",
       "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-11",
-      "english": "The wife loves the small, wise dog with great spirit.",
-      "latin": "Uxor canem parvum et sapientem magno animo amat.",
+      "english": "My sister sees the white moon and the many stars of the black night.",
+      "latin": "Soror mea lūnam candidam et multās stellās nigrae noctis videt.",
       "difficulty": "challenging"
     },
     {
       "id": "en-la-sentence-12",
-      "english": "The big fish is given to the whole family by the happy wife.",
-      "latin": "Piscis magnus ab uxore felici omni familiae datur.",
+      "english": "The bright moon makes the long shadows of the tall forests and of the mountains.",
+      "latin": "Lūna clāra longās umbrās altārum silvārum et montium facit.",
       "difficulty": "challenging"
     },
     {
       "id": "en-la-sentence-13",
-      "english": "With a heavy spirit, the husband envies the brave and loyal dog.",
-      "latin": "Maritus animo gravi cani forti et fideli invidet.",
+      "english": "For my sister seeks the truth of the immortal stars in her own mind.",
+      "latin": "Nam soror mea vēritātem stellārum immortālium in animō suō quaerit.",
       "difficulty": "challenging"
     },
     {
       "id": "en-la-sentence-14",
-      "english": "And so the whole family praises the small, loyal dog with great spirit.",
-      "latin": "Itaque omnis familia canem parvum et fidelem magno animo laudat.",
+      "english": "The white dawn is seen by my sister after the long night.",
+      "latin": "Aurōra candida post longam noctem ā sorōre meā vidētur.",
       "difficulty": "challenging"
     },
     {
       "id": "en-la-sentence-15",
-      "english": "For the small, wise dog unites the whole family.",
-      "latin": "Nam canis parvus et sapiens omnem familiam iungit.",
+      "english": "And so my sister praises the new dawn and the bright sun.",
+      "latin": "Itaque soror mea aurōram novam et sōlem clārum laudat.",
       "difficulty": "challenging"
     }
   ]

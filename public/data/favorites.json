@@ -3,13 +3,13 @@
     {
       "id": "favorite-imperium",
       "nominative": "Imperium",
-      "genitive": "imperii",
+      "genitive": "imperiī",
       "english": "power, command, empire"
     },
     {
       "id": "favorite-psittacus",
       "nominative": "Psittacus",
-      "genitive": "psittaci",
+      "genitive": "psittacī",
       "english": "parrot"
     },
     {
@@ -26,8 +26,8 @@
     },
     {
       "id": "favorite-sidus",
-      "nominative": "Sidus",
-      "genitive": "sideris",
+      "nominative": "Sīdus",
+      "genitive": "sīderis",
       "english": "star, constellation"
     },
     {
@@ -39,13 +39,13 @@
     {
       "id": "favorite-astrum",
       "nominative": "Astrum",
-      "genitive": "astri",
+      "genitive": "astrī",
       "english": "star, constellation"
     },
     {
       "id": "favorite-aurora",
-      "nominative": "Aurora",
-      "genitive": "aurorae",
+      "nominative": "Aurōra",
+      "genitive": "aurōrae",
       "english": "dawn, daybreak"
     }
   ]

@@ -3,170 +3,92 @@
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Pater filium amat.",
-      "english": "The father loves the son.",
+      "latin": "Magister bonus puerōs vocat.",
+      "english": "The good teacher calls the boys.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-2",
-      "latin": "Filius patrem audit.",
-      "english": "The son hears the father.",
+      "latin": "Puerī magistrum fidēlem audiunt.",
+      "english": "The boys hear the faithful teacher.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-3",
-      "latin": "Pater equum bonum habet.",
-      "english": "The father has a good horse.",
+      "latin": "Magister librum novum habet.",
+      "english": "The teacher has a new book.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-4",
-      "latin": "Filius equum parvum videt.",
-      "english": "The son sees a small horse.",
+      "latin": "Puer librum magistrī videt.",
+      "english": "The boy sees the teacher's book.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-5",
-      "latin": "Canis agrum custodit.",
-      "english": "The dog guards the field.",
+      "latin": "Itaque magister puerōs bonōs laudat.",
+      "english": "And so the teacher praises the good boys.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-6",
-      "latin": "Pater canem fidelem laudat.",
-      "english": "The father praises the faithful dog.",
-      "difficulty": "easy"
+      "latin": "Nautae longum iter per magnum mare ad īnsulam faciunt.",
+      "english": "The sailors make a long journey through the great sea to the island.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-7",
-      "latin": "Filius avem pulchram videt.",
-      "english": "The son sees a beautiful bird.",
-      "difficulty": "easy"
+      "latin": "Multae avēs in silvā altā audiuntur.",
+      "english": "Many birds are heard in the tall forest.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-8",
-      "latin": "Pater donum novum emit.",
-      "english": "The father buys a new gift.",
-      "difficulty": "easy"
+      "latin": "Nautae suīs amīcīs aquam et cibum dant.",
+      "english": "The sailors give water and food to their own friends.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-9",
-      "latin": "Filius donum novum aperit.",
-      "english": "The son opens the new gift.",
-      "difficulty": "easy"
+      "latin": "Nautae piscēs magnōs in aquā capiunt.",
+      "english": "The sailors catch big fish in the water.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-10",
-      "latin": "Pater et filius avem audiunt.",
-      "english": "The father and the son hear the bird.",
-      "difficulty": "easy"
+      "latin": "Itaque nautae fidēlēs īnsulam pulchram amant.",
+      "english": "And so the faithful sailors love the beautiful island.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-11",
-      "latin": "Regina urbem suam magnam regit.",
-      "english": "The queen rules her own great city.",
-      "difficulty": "intermediate"
+      "latin": "Iūdex sapiēns et iūstus lēgēs veterēs cīvitātis magnae servat.",
+      "english": "The wise and just judge preserves the old laws of the great state.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-12",
-      "latin": "Dux militibus suis fortibus imperat.",
-      "english": "The leader commands his own brave soldiers.",
-      "difficulty": "intermediate"
+      "latin": "Populus miser urbis magnae ā iūdice iūstō et sapientī regitur.",
+      "english": "The wretched people of the great city are ruled by the just and wise judge.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-13",
-      "latin": "Milites portam magnam custodiunt.",
-      "english": "The soldiers guard the great gate.",
-      "difficulty": "intermediate"
+      "latin": "Vēritās lēgum ā iūdice praeclārō omnibus hominibus dīcitur.",
+      "english": "The truth of the laws is spoken to all men by the illustrious judge.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-14",
-      "latin": "Hostes feroces urbem petunt.",
-      "english": "The fierce enemies attack the city.",
-      "difficulty": "intermediate"
+      "latin": "Itaque omnēs hominēs urbis vēritātem gravem iūdicis sapientis audiunt.",
+      "english": "And so all the men of the city hear the weighty truth of the wise judge.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-15",
-      "latin": "Populus gravi periculo terretur.",
-      "english": "The people are frightened by the serious danger.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-16",
-      "latin": "Dux militibus signum clarum dat.",
-      "english": "The leader gives a clear signal to the soldiers.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-17",
-      "latin": "Milites signum vident.",
-      "english": "The soldiers see the signal.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-18",
-      "latin": "Milites multos hostes capiunt.",
-      "english": "The soldiers capture many enemies.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-19",
-      "latin": "Milites magnam victoriam habent.",
-      "english": "The soldiers have a great victory.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-20",
-      "latin": "Regina populo suo pacem dat.",
-      "english": "The queen gives peace to her own people.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-21",
-      "latin": "Deo templum novum datur.",
-      "english": "A new temple is given to the god.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-22",
-      "latin": "In templo, regina donum pulchrum parat.",
-      "english": "In the temple, the queen prepares a beautiful gift.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-23",
-      "latin": "Populus deum sapientem laudat.",
-      "english": "The people praise the wise god.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-24",
-      "latin": "Itaque pax urbi magnae datur.",
-      "english": "And so peace is given to the great city.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-25",
-      "latin": "Regina populum suum servat.",
-      "english": "The queen protects her own people.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-26",
-      "latin": "Poeta vetus et sapiens musam praeclaram de vera gloria dei scribit.",
-      "english": "The old and wise poet writes an illustrious poem about the true glory of the god.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-27",
-      "latin": "Musa pulchra sapientis poetae a deo immortali servatur.",
-      "english": "The beautiful poem of the wise poet is preserved by the immortal god.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-28",
-      "latin": "Itaque poeta gloriam veram et praeclaram numine dei immortalis habet.",
-      "english": "And so the poet has true and illustrious glory by the will of the immortal god.",
+      "latin": "Nam iūstus ōrdō cīvitātis lēgibus clārīs et veteribus mūnītur.",
+      "english": "For the just order of the state is fortified by the clear and old laws.",
       "difficulty": "challenging"
     }
   ]

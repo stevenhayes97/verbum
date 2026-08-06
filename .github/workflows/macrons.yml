@@ -1,0 +1,37 @@
+name: Macrons
+
+# Mechanically validates the macron orthography of public/data/*.json
+# against the rules in README.md's "Spelling Conventions" section. Unlike
+# the Iudex / Altera Sententia judges, this needs no model and no API key —
+# it only checks what's deterministic (character set, Unicode form,
+# paradigm-determined endings, positional vowel length).
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The fold-equals-baseline check reads the PR's base commit, so
+          # a shallow clone isn't enough.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate macrons
+        run: |
+          if [ -n "${{ github.event.pull_request.base.sha }}" ]; then
+            node scripts/validate-macrons.mjs --base "${{ github.event.pull_request.base.sha }}"
+          else
+            node scripts/validate-macrons.mjs
+          fi
