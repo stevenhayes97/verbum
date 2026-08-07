@@ -52,7 +52,7 @@
     {
       "id": "sentence-9",
       "latin": "Vir pulchrum flōrem tollit.",
-      "english": "The husband picks up a beautiful flower.",
+      "english": "The husband lifts a beautiful flower.",
       "difficulty": "easy"
     },
     {
@@ -112,13 +112,13 @@
     {
       "id": "sentence-19",
       "latin": "Vir per silvam altam equō vehitur.",
-      "english": "The husband is carried through the tall forest by a horse.",
+      "english": "The husband is carried through the deep forest on horseback.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-20",
-      "latin": "Vir in monte altō avem videt.",
-      "english": "The husband sees a bird on the high mountain.",
+      "latin": "Vir montem altum petit.",
+      "english": "The husband makes for the high mountain.",
       "difficulty": "intermediate"
     },
     {
@@ -147,8 +147,8 @@
     },
     {
       "id": "sentence-25",
-      "latin": "Vir magnum perīculum in itinere videt.",
-      "english": "The husband sees great danger on the journey.",
+      "latin": "Vir magnum perīculum videt.",
+      "english": "The husband sees great danger.",
       "difficulty": "intermediate"
     },
     {
@@ -195,8 +195,8 @@
     },
     {
       "id": "sentence-33",
-      "latin": "Uxōrī suae ā virō dōnum novum datur.",
-      "english": "A new gift is given to his own wife by the husband.",
+      "latin": "Uxōrī eius ā virō dōnum novum datur.",
+      "english": "A new gift is given to his wife by the husband.",
       "difficulty": "intermediate"
     },
     {
@@ -231,7 +231,7 @@
     },
     {
       "id": "sentence-39",
-      "latin": "Uxor deum immortālem prō virō suō fortī petit.",
+      "latin": "Uxor deum immortālem prō virō suō fortī quaerit.",
       "english": "The wife asks the immortal god on behalf of her own brave husband.",
       "difficulty": "challenging"
     },
