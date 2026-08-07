@@ -407,6 +407,72 @@
       "conjugation": "2nd",
       "english": "to teach",
       "tags": ["communication"]
+    },
+    {
+      "id": "verb-gesto",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Gestō",
+      "infinitive": { "stem": "Gest", "ending": "āre" },
+      "perfectFirstSingular": "Gestāvī",
+      "perfectPassiveParticiple": "Gestātus",
+      "conjugation": "1st",
+      "english": "to carry, wear",
+      "tags": ["motion"]
+    },
+    {
+      "id": "verb-veho",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Vehō",
+      "infinitive": { "stem": "Veh", "ending": "ere" },
+      "perfectFirstSingular": "Vēxī",
+      "perfectPassiveParticiple": "Vectus",
+      "conjugation": "3rd",
+      "english": "to carry, convey",
+      "tags": ["motion"]
+    },
+    {
+      "id": "verb-debello",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Dēbellō",
+      "infinitive": { "stem": "Dēbell", "ending": "āre" },
+      "perfectFirstSingular": "Dēbellāvī",
+      "perfectPassiveParticiple": "Dēbellātus",
+      "conjugation": "1st",
+      "english": "to conquer, subdue",
+      "tags": ["governance"]
+    },
+    {
+      "id": "verb-opprimo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Opprimō",
+      "infinitive": { "stem": "Opprim", "ending": "ere" },
+      "perfectFirstSingular": "Oppressī",
+      "perfectPassiveParticiple": "Oppressus",
+      "conjugation": "3rd",
+      "english": "to oppress, overwhelm",
+      "tags": ["governance"]
+    },
+    {
+      "id": "verb-cano",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Canō",
+      "infinitive": { "stem": "Can", "ending": "ere" },
+      "perfectFirstSingular": "Cecinī",
+      "perfectPassiveParticiple": "Cantus",
+      "conjugation": "3rd",
+      "english": "to sing",
+      "tags": ["communication"]
+    },
+    {
+      "id": "verb-canto",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Cantō",
+      "infinitive": { "stem": "Cant", "ending": "āre" },
+      "perfectFirstSingular": "Cantāvī",
+      "perfectPassiveParticiple": "Cantātus",
+      "conjugation": "1st",
+      "english": "to sing, play (an instrument)",
+      "tags": ["communication"]
     }
   ]
 }
