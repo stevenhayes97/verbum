@@ -3,212 +3,92 @@
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Canis parvus cibum quaerit.",
-      "english": "The small dog searches for food.",
+      "latin": "Puer equum parvum habet.",
+      "english": "The boy has a small horse.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-2",
-      "latin": "Canis oppidum petit.",
-      "english": "The dog makes for the town.",
+      "latin": "Puer equō cibum dat.",
+      "english": "The boy gives food to the horse.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-3",
-      "latin": "In oppidō canis cibum videt.",
-      "english": "In the town, the dog sees food.",
+      "latin": "Equus cibum capit.",
+      "english": "The horse takes the food.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-4",
-      "latin": "In mēnsā agricola cibum habet.",
-      "english": "On the table, the farmer has food.",
+      "latin": "Puer equum ad viam dūcit.",
+      "english": "The boy leads the horse to the road.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-5",
-      "latin": "Canis agricolam videt.",
-      "english": "The dog sees the farmer.",
+      "latin": "Puer equum fidēlem amat.",
+      "english": "The boy loves the faithful horse.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-6",
-      "latin": "Nam canis cibum petit.",
-      "english": "For the dog seeks the food.",
-      "difficulty": "easy"
+      "latin": "Rēgīna poētam sapientem habet.",
+      "english": "The queen has a wise poet.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-7",
-      "latin": "Agricola canem fidēlem videt.",
-      "english": "The farmer sees the faithful dog.",
-      "difficulty": "easy"
+      "latin": "Poēta rēgīnae mūsam pulchram scrībit.",
+      "english": "The poet writes a beautiful song for the queen.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-8",
-      "latin": "Itaque agricola cibum canī dat.",
-      "english": "And so the farmer gives the food to the dog.",
-      "difficulty": "easy"
+      "latin": "Rēgīna novam mūsam audit.",
+      "english": "The queen hears the new song.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-9",
-      "latin": "Canis cibum ad silvam portat.",
-      "english": "The dog carries the food to the forest.",
-      "difficulty": "easy"
+      "latin": "Itaque rēgīna poētae dōnum magnum dat.",
+      "english": "And so the queen gives the poet a great gift.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-10",
-      "latin": "Canis agricolam fidēlem amat.",
-      "english": "The dog loves the faithful farmer.",
-      "difficulty": "easy"
+      "latin": "Poēta fidēlis ā rēgīnā sapientī laudātur.",
+      "english": "The faithful poet is praised by the wise queen.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-11",
-      "latin": "Fēmina parva sed fortis marītum habet.",
-      "english": "The small yet strong woman has a husband.",
-      "difficulty": "intermediate"
+      "latin": "Dux fortis mīlitēs suōs ad vallum altum dūcit.",
+      "english": "The brave general leads his own soldiers to the high rampart.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-12",
-      "latin": "Marītus scūtum magnum ad portam portat.",
-      "english": "The husband carries the large shield to the gate.",
-      "difficulty": "intermediate"
+      "latin": "Mīlitēs fortēs vallum altum gladiīs longīs mūniunt.",
+      "english": "The brave soldiers fortify the high rampart with long swords.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-13",
-      "latin": "Itaque fēmina marītō gladium longum dat.",
-      "english": "And so the woman gives the husband a long sword.",
-      "difficulty": "intermediate"
+      "latin": "Sed hostēs ferōcēs vallum petunt.",
+      "english": "But the fierce enemies attack the rampart.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-14",
-      "latin": "Marītus gladium longum habet.",
-      "english": "The husband has the long sword.",
-      "difficulty": "intermediate"
+      "latin": "Dux mīlitibus fortibus scūta magna dat.",
+      "english": "The general gives large shields to the brave soldiers.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-15",
-      "latin": "In viā populus lapidem magnum videt.",
-      "english": "On the road, the people see a large stone.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-16",
-      "latin": "Marītus lapidem capit.",
-      "english": "The husband takes the stone.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-17",
-      "latin": "Fēmina lapidem ā suō marītō capit.",
-      "english": "The woman takes the stone from her own husband.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-18",
-      "latin": "Fēmina lapidem tollit et portat.",
-      "english": "The woman lifts and carries the stone.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-19",
-      "latin": "Populus fēminam fortem videt et laudat.",
-      "english": "The people see and praise the strong woman.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-20",
-      "latin": "Amīcus marītī fēminam fortem videt.",
-      "english": "The husband's friend sees the strong woman.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-21",
-      "latin": "Sed amīcus fēminae virtūtī invidet.",
-      "english": "But the friend envies the woman her courage.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-22",
-      "latin": "In agrō amīcus fēminam ad arborem magnam dūcit.",
-      "english": "In the field, the friend leads the woman to a large tree.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-23",
-      "latin": "Fēmina arborem magnam tollit.",
-      "english": "The woman lifts the large tree.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-24",
-      "latin": "Itaque amīcus fēminae dōnum dat.",
-      "english": "And so the friend gives the woman a gift.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-25",
-      "latin": "Amīcus fēminae crēdit.",
-      "english": "The friend believes the woman.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-26",
-      "latin": "Marītus fēminam suam laudat.",
-      "english": "The husband praises his own woman.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-27",
-      "latin": "Fēmina portam gravem oppidī aperit.",
-      "english": "The woman opens the heavy gate of the town.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-28",
-      "latin": "Porta ā fēminā aperītur.",
-      "english": "The gate is opened by the woman.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-29",
-      "latin": "Fēmina et marītus ā populō laudantur.",
-      "english": "The woman and the husband are praised by the people.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-30",
-      "latin": "Itaque marītus fēminam suam fortem amat.",
-      "english": "And so the husband loves his own strong woman.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-31",
-      "latin": "In scholā magister sapiēns frātrem et sorōrem docet.",
-      "english": "In the school, the wise teacher teaches the brother and the sister.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-32",
-      "latin": "In librō magnō frāter verba difficilia magistrī sapientis scrībit.",
-      "english": "In the big book, the brother writes the wise teacher's difficult words.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-33",
-      "latin": "Magister sapiēns sorōrem fortem dē verbīs difficilibus librī monet.",
-      "english": "The wise teacher warns the strong sister about the book's difficult words.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-34",
-      "latin": "Soror sapiēns omnia verba difficilia librī magistrō dīcit.",
-      "english": "The wise sister tells the teacher all the difficult words of the book.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-35",
-      "latin": "Itaque frāter fortis et soror sapiēns ā magistrō sapientī laudantur.",
-      "english": "And so the brave brother and the wise sister are praised by the wise teacher.",
+      "latin": "Itaque vallum ā mīlitibus fortibus custōdītur.",
+      "english": "And so the rampart is guarded by the brave soldiers.",
       "difficulty": "challenging"
     }
   ]
