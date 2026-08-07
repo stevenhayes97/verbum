@@ -1,94 +1,214 @@
 {
-  "generated": "2026-08-06",
+  "generated": "2026-08-07",
   "sentences": [
     {
       "id": "en-la-sentence-1",
-      "english": "The grandmother loves her own grandson.",
-      "latin": "Avia nepōtem suum amat.",
+      "english": "The bird searches for water.",
+      "latin": "Avis aquam quaerit.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-2",
-      "english": "The grandson gives a flower to the grandmother.",
-      "latin": "Nepōs aviae flōrem dat.",
+      "english": "The bird makes for the river.",
+      "latin": "Avis flūmen petit.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-3",
-      "english": "The grandmother sees a black bird.",
-      "latin": "Avia avem nigram videt.",
+      "english": "Near the river, the bird sees a girl.",
+      "latin": "Prope flūmen avis puellam videt.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-4",
-      "english": "The grandson hears the black bird.",
-      "latin": "Nepōs avem nigram audit.",
+      "english": "The girl has water.",
+      "latin": "Puella aquam habet.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-5",
-      "english": "And so the grandmother praises her own grandson.",
-      "latin": "Itaque avia nepōtem suum laudat.",
+      "english": "The girl gives the bird the water.",
+      "latin": "Puella aquam avī dat.",
       "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-6",
-      "english": "The gladiator carries a heavy shield and a long spear.",
-      "latin": "Gladiātor scūtum grave et hastam longam portat.",
-      "difficulty": "intermediate"
+      "english": "The bird takes the water.",
+      "latin": "Avis aquam capit.",
+      "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-7",
-      "english": "Many men see the brave and famous gladiator.",
-      "latin": "Multī hominēs gladiātōrem fortem et clārum vident.",
-      "difficulty": "intermediate"
+      "english": "The bird carries the water to the forest.",
+      "latin": "Avis aquam ad silvam portat.",
+      "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-8",
-      "english": "The brave gladiator gives a clear signal to his own friends.",
-      "latin": "Gladiātor fortis suīs amīcīs signum clārum dat.",
-      "difficulty": "intermediate"
+      "english": "And so the bird loves the girl.",
+      "latin": "Itaque avis puellam amat.",
+      "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-9",
-      "english": "The fierce enemy is captured in the serious battle.",
-      "latin": "Hostis ferōx in proeliō gravī capitur.",
-      "difficulty": "intermediate"
+      "english": "The girl guards the bird.",
+      "latin": "Puella avem custōdit.",
+      "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-10",
-      "english": "And so the men of the city give a great gift to the brave gladiator.",
-      "latin": "Itaque hominēs urbis magnum dōnum gladiātōrī fortī dant.",
-      "difficulty": "intermediate"
+      "english": "The bird loves the faithful girl.",
+      "latin": "Avis puellam fidēlem amat.",
+      "difficulty": "easy"
     },
     {
       "id": "en-la-sentence-11",
-      "english": "My sister sees the white moon and the many stars of the black night.",
-      "latin": "Soror mea lūnam candidam et multās stellās nigrae noctis videt.",
-      "difficulty": "challenging"
+      "english": "The small yet strong husband has a wife.",
+      "latin": "Marītus parvus sed fortis uxōrem habet.",
+      "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-12",
-      "english": "The bright moon makes the long shadows of the tall forests and of the mountains.",
-      "latin": "Lūna clāra longās umbrās altārum silvārum et montium facit.",
-      "difficulty": "challenging"
+      "english": "The wife carries many books to the table.",
+      "latin": "Uxor multōs librōs ad mēnsam portat.",
+      "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-13",
-      "english": "For my sister seeks the truth of the immortal stars in her own mind.",
-      "latin": "Nam soror mea vēritātem stellārum immortālium in animō suō quaerit.",
-      "difficulty": "challenging"
+      "english": "The husband lifts the many books.",
+      "latin": "Marītus librōs multōs tollit.",
+      "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-14",
-      "english": "The white dawn is seen by my sister after the long night.",
-      "latin": "Aurōra candida post longam noctem ā sorōre meā vidētur.",
-      "difficulty": "challenging"
+      "english": "And so the wife gives the husband a new book.",
+      "latin": "Itaque uxor marītō librum novum dat.",
+      "difficulty": "intermediate"
     },
     {
       "id": "en-la-sentence-15",
-      "english": "And so my sister praises the new dawn and the bright sun.",
-      "latin": "Itaque soror mea aurōram novam et sōlem clārum laudat.",
+      "english": "The husband has the new book.",
+      "latin": "Marītus librum novum habet.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-16",
+      "english": "In the field, the wife sees a heavy table.",
+      "latin": "In agrō uxor mēnsam gravem videt.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-17",
+      "english": "The husband lifts the heavy table.",
+      "latin": "Marītus mēnsam gravem tollit.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-18",
+      "english": "The husband carries the table to the town.",
+      "latin": "Marītus mēnsam ad oppidum portat.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-19",
+      "english": "The people see and praise the strong husband.",
+      "latin": "Populus marītum fortem videt et laudat.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-20",
+      "english": "The wife's friend sees the strong husband.",
+      "latin": "Amīca uxōris marītum fortem videt.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-21",
+      "english": "But the friend envies the husband's courage.",
+      "latin": "Sed amīca virtūtī marītī invidet.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-22",
+      "english": "In the town, the friend leads the husband to the rampart.",
+      "latin": "In oppidō amīca marītum ad vallum dūcit.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-23",
+      "english": "The husband fortifies the great rampart.",
+      "latin": "Marītus vallum magnum mūnit.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-24",
+      "english": "And so the friend gives the husband a gift.",
+      "latin": "Itaque amīca marītō dōnum dat.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-25",
+      "english": "The friend believes the husband.",
+      "latin": "Amīca marītō crēdit.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-26",
+      "english": "The wife praises her own husband.",
+      "latin": "Uxor marītum suum laudat.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-27",
+      "english": "The people praise the husband and the wife.",
+      "latin": "Populus marītum et uxōrem laudat.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-28",
+      "english": "The husband and the wife are praised by the people.",
+      "latin": "Marītus et uxor ā populō laudantur.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-29",
+      "english": "The wife opens the new book.",
+      "latin": "Uxor librum novum aperit.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-30",
+      "english": "And so the husband loves his own strong wife.",
+      "latin": "Itaque marītus uxōrem suam fortem amat.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "en-la-sentence-31",
+      "english": "In the school, the wise teacher teaches the grandson and the granddaughter.",
+      "latin": "In scholā magister sapiēns nepōtem et neptem docet.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-32",
+      "english": "The wise grandson hears the wise teacher's beautiful and new song.",
+      "latin": "Nepōs sapiēns magistrī sapientis pulchram et novam mūsam audit.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-33",
+      "english": "The wise teacher warns the strong granddaughter about the difficult song.",
+      "latin": "Magister sapiēns neptem fortem dē mūsā difficilī monet.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-34",
+      "english": "The wise granddaughter tells the teacher all the difficult words of the song.",
+      "latin": "Neptis sapiēns omnia verba difficilia mūsae magistrō dīcit.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "en-la-sentence-35",
+      "english": "And so the brave grandson and the wise granddaughter are praised by the wise teacher.",
+      "latin": "Itaque nepōs fortis et neptis sapiēns ā magistrō sapientī laudantur.",
       "difficulty": "challenging"
     }
   ]

@@ -22,7 +22,7 @@
     {
       "id": "sentence-4",
       "latin": "In mēnsā agricola cibum habet.",
-      "english": "At the table, the farmer has food.",
+      "english": "On the table, the farmer has food.",
       "difficulty": "easy"
     },
     {
@@ -88,7 +88,7 @@
     {
       "id": "sentence-15",
       "latin": "In viā populus lapidem magnum videt.",
-      "english": "In the road, the people see a large stone.",
+      "english": "On the road, the people see a large stone.",
       "difficulty": "intermediate"
     },
     {
@@ -124,7 +124,7 @@
     {
       "id": "sentence-21",
       "latin": "Sed amīcus fēminae virtūtī invidet.",
-      "english": "But the friend envies the woman's courage.",
+      "english": "But the friend envies the woman her courage.",
       "difficulty": "intermediate"
     },
     {
@@ -154,7 +154,7 @@
     {
       "id": "sentence-26",
       "latin": "Marītus fēminam suam laudat.",
-      "english": "The husband praises his own wife.",
+      "english": "The husband praises his own woman.",
       "difficulty": "intermediate"
     },
     {
@@ -178,7 +178,7 @@
     {
       "id": "sentence-30",
       "latin": "Itaque marītus fēminam suam fortem amat.",
-      "english": "And so the husband loves his own strong wife.",
+      "english": "And so the husband loves his own strong woman.",
       "difficulty": "intermediate"
     },
     {
