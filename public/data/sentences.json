@@ -1,94 +1,214 @@
 {
-  "generated": "2026-08-06",
+  "generated": "2026-08-07",
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Magister bonus puerōs vocat.",
-      "english": "The good teacher calls the boys.",
+      "latin": "Mīles fortis canem fidēlem habet.",
+      "english": "The brave soldier has a faithful dog.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-2",
-      "latin": "Puerī magistrum fidēlem audiunt.",
-      "english": "The boys hear the faithful teacher.",
+      "latin": "Canis mīlitis parvum oppidum custōdit.",
+      "english": "The soldier's dog guards the small town.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-3",
-      "latin": "Magister librum novum habet.",
-      "english": "The teacher has a new book.",
+      "latin": "Puer parvus canem bonum videt.",
+      "english": "The small boy sees the good dog.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-4",
-      "latin": "Puer librum magistrī videt.",
-      "english": "The boy sees the teacher's book.",
+      "latin": "Nam puer canem fidēlem laudat.",
+      "english": "For the boy praises the faithful dog.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-5",
-      "latin": "Itaque magister puerōs bonōs laudat.",
-      "english": "And so the teacher praises the good boys.",
+      "latin": "Itaque canis puerum amat.",
+      "english": "And so the dog loves the boy.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-6",
-      "latin": "Nautae longum iter per magnum mare ad īnsulam faciunt.",
-      "english": "The sailors make a long journey through the great sea to the island.",
-      "difficulty": "intermediate"
+      "latin": "Puer canem et mīlitem vocat.",
+      "english": "The boy calls the dog and the soldier.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-7",
-      "latin": "Multae avēs in silvā altā audiuntur.",
-      "english": "Many birds are heard in the tall forest.",
-      "difficulty": "intermediate"
+      "latin": "Canis et mīles puerum petunt.",
+      "english": "The dog and the soldier make for the boy.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-8",
-      "latin": "Nautae suīs amīcīs aquam et cibum dant.",
-      "english": "The sailors give water and food to their own friends.",
-      "difficulty": "intermediate"
+      "latin": "Mīles puerum videt et laudat.",
+      "english": "The soldier sees and praises the boy.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-9",
-      "latin": "Nautae piscēs magnōs in aquā capiunt.",
-      "english": "The sailors catch big fish in the water.",
-      "difficulty": "intermediate"
+      "latin": "Canis puerum et mīlitem servat.",
+      "english": "The dog protects the boy and the soldier.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-10",
-      "latin": "Itaque nautae fidēlēs īnsulam pulchram amant.",
-      "english": "And so the faithful sailors love the beautiful island.",
-      "difficulty": "intermediate"
+      "latin": "Itaque mīles puerum et canem amat.",
+      "english": "And so the soldier loves the boy and the dog.",
+      "difficulty": "easy"
     },
     {
       "id": "sentence-11",
-      "latin": "Iūdex sapiēns et iūstus lēgēs veterēs cīvitātis magnae servat.",
-      "english": "The wise and just judge preserves the old laws of the great state.",
-      "difficulty": "challenging"
+      "latin": "Vir agrum magnum prope oppidum habet.",
+      "english": "The man has a large field near the town.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-12",
-      "latin": "Populus miser urbis magnae ā iūdice iūstō et sapientī regitur.",
-      "english": "The wretched people of the great city are ruled by the just and wise judge.",
-      "difficulty": "challenging"
+      "latin": "Fēmina flōrēs pulchrōs in agrō videt.",
+      "english": "The woman sees the beautiful flowers in the field.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-13",
-      "latin": "Vēritās lēgum ā iūdice praeclārō omnibus hominibus dīcitur.",
-      "english": "The truth of the laws is spoken to all men by the illustrious judge.",
-      "difficulty": "challenging"
+      "latin": "Itaque vir flōrēs pulchrōs fēminae dat.",
+      "english": "And so the man gives the beautiful flowers to the woman.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-14",
-      "latin": "Itaque omnēs hominēs urbis vēritātem gravem iūdicis sapientis audiunt.",
-      "english": "And so all the men of the city hear the weighty truth of the wise judge.",
-      "difficulty": "challenging"
+      "latin": "Fēmina virum laudat et amat.",
+      "english": "The woman praises and loves the man.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-15",
-      "latin": "Nam iūstus ōrdō cīvitātis lēgibus clārīs et veteribus mūnītur.",
-      "english": "For the just order of the state is fortified by the clear and old laws.",
+      "latin": "Vir fēminae librum novum dat.",
+      "english": "The man gives the woman a new book.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-16",
+      "latin": "Fēmina librum ad templum portat.",
+      "english": "The woman carries the book to the temple.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-17",
+      "latin": "Vir fēminam ad templum dūcit.",
+      "english": "The man leads the woman to the temple.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-18",
+      "latin": "In templō vir et fēmina dōna dant.",
+      "english": "In the temple, the man and woman give gifts.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-19",
+      "latin": "Fēmina suam fīliam parvam habet.",
+      "english": "The woman has her own small daughter.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-20",
+      "latin": "Vir fīliae eius dōnum dat.",
+      "english": "The man gives a gift to her daughter.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-21",
+      "latin": "Fīlia parva dōnum novum amat.",
+      "english": "The small daughter loves the new gift.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-22",
+      "latin": "Cibus et vīnum in oppidō emuntur.",
+      "english": "Food and wine are bought in the town.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-23",
+      "latin": "Cibus et vīnum ad mēnsam portantur.",
+      "english": "Food and wine are carried to the table.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-24",
+      "latin": "Amīcus virī fēminam videt et virō invidet.",
+      "english": "The man's friend sees the woman and envies the man.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-25",
+      "latin": "Fēmina virum dē amīcō monet.",
+      "english": "The woman warns the man about the friend.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-26",
+      "latin": "Itaque vir fēminae crēdit.",
+      "english": "And so the man believes the woman.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-27",
+      "latin": "Sed amīcus mēnsam fēminae petit.",
+      "english": "But the friend makes for the woman's table.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-28",
+      "latin": "Vir amīcum ā mēnsā mittit.",
+      "english": "The man sends the friend from the table.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-29",
+      "latin": "Nam vir amīcum monet.",
+      "english": "For the man warns the friend.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-30",
+      "latin": "Itaque vir fēminam et fīliam amat.",
+      "english": "And so the man loves the woman and the daughter.",
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "sentence-31",
+      "latin": "Rēx sapiēns et rēgīna iūsta magnum rēgnum regunt.",
+      "english": "The wise king and the just queen rule a great kingdom.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-32",
+      "latin": "Populus fidēlis magnae cīvitātis rēgem sapientem et rēgīnam iūstam amat.",
+      "english": "The faithful people of the great state love the wise king and the just queen.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-33",
+      "latin": "Rēgīna praeclāra scēptrum vetus et corōnam pulchram habet.",
+      "english": "The illustrious queen has an old scepter and a beautiful crown.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-34",
+      "latin": "Gravēs lēgēs omnium populōrum ā rēge sapientī servantur.",
+      "english": "The weighty laws of all the peoples are preserved by the wise king.",
+      "difficulty": "challenging"
+    },
+    {
+      "id": "sentence-35",
+      "latin": "Itaque rēgīna praeclāra ā populō fidēlī et fēlīcī amātur.",
+      "english": "And so the illustrious queen is loved by the faithful and happy people.",
       "difficulty": "challenging"
     }
   ]
