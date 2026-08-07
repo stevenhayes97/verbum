@@ -291,11 +291,11 @@ reuse an existing one if it fits, to avoid near-duplicates like `war` /
 they're introduced.
 
 - `family` — kinship terms (Pater, Mater, Frater, Soror, Filius, Filia, Avus, Avia, Maritus, Uxor, Vir, Familia, Nepos, Neptis)
-- `people` — persons / social roles (Rex, Puella, Nauta, Dominus, Servus, Femina, Amicus, Homo, Agricola, Poeta, Puer, Regina, Hostis, Centurio, Amica, Gladiator, Magister, Socius, Cantor)
-- `royalty` — kingship, rule (Rex, Regina)
+- `people` — persons / social roles (Rex, Puella, Nauta, Dominus, Servus, Femina, Amicus, Homo, Agricola, Poeta, Puer, Regina, Hostis, Centurio, Amica, Gladiator, Magister, Socius, Cantor, Regulus)
+- `royalty` — kingship, rule (Rex, Regina, Regulus)
 - `religion` — sacred, temple-related (Templum, Deus, Caelum, Sanctus, Numen, Oraculum, Immortalis, Iuppiter)
 - `body` — body parts (Manus, Corpus, Caput, Pectus, Umerus, Bracchium, Crus, Pes, Membrum, Capillus, Os, Labrum, Auris, Collum, Dens, Cor, Venter, Tergum, Dorsum)
-- `abstract` — generic/non-concrete nouns (Res, Verbum, Nomen, Vox, Fortuna, Vita, Fama, Animus, Periculum, Veritas, Origo, Mors, Ars, Gloria, Musa, Fatum, Aeternitas)
+- `abstract` — generic/non-concrete nouns (Res, Verbum, Nomen, Vox, Fortuna, Vita, Fama, Animus, Periculum, Veritas, Origo, Mors, Ars, Gloria, Musa, Fatum, Aeternitas, Firmitas)
 - `size` — physical dimension: big/small/long/short (Magnus, Parvus, Longus, Brevis, Altus)
 - `character` — personal qualities/traits: virtue, fortune, disposition (Bonus, Fortis, Felix, Virtus, Fidelis, Gravis, Praeclarus, Ferox, Sapiens, Iustus)
 - `quantity` — quantifiers (Omnis, Pars, Multus)
@@ -305,10 +305,10 @@ they're introduced.
 - `animals` (Equus, Aquila, Draco, Avis, Piscis)
 - `objects` — physical items (Liber, Porta, Donum, Mensa)
 - `food` — food and drink (Cibus, Vinum)
-- `military` — war, army (Bellum, Miles, Dux, Gladius, Hasta, Scutum, Legio, Hostis, Victoria, Proelium, Vulnus, Exercitus, Centurio, Imperator, Aquila, Vexillum, Triumphus, Gladiator, Socius)
+- `military` — war, army (Bellum, Miles, Dux, Gladius, Hasta, Scutum, Legio, Hostis, Victoria, Proelium, Vulnus, Exercitus, Centurio, Imperator, Aquila, Vexillum, Triumphus, Gladiator, Socius, Arcus)
 - `politics` — governance, civic life (Civitas, Lex, Pax, Dux, Populus, Libertas, Ordo, Imperator, Senatus, Consul, Triumphus)
 - `time` (Tempus, Novus, Vetus)
-- `emotion` (Ira, Miser)
+- `emotion` (Ira, Miser, Osculum)
 - `appearance` — physical/sensory descriptive qualities (Pulcher, Dulcis, Formosus, Candidus, Decorus, Venustus, Niger, Albus, Ruber, Clarus)
 
 ## Verb Tags
@@ -324,7 +324,7 @@ first, reuse if it fits" rule applies before adding a new one:
 - `emotion` — Amo, Terreo, Invideo
 - `possession` — Habeo, Do, Emo, Capio
 - `motion` — Duco, Mitto, Porto, Tollo, Peto, Gesto, Veho
-- `governance` — Rego, Munio, Custodio, Impero, Iubeo, Regno, Servo, Debello, Opprimo
+- `governance` — Rego, Munio, Custodio, Impero, Iubeo, Regno, Servo, Debello, Opprimo, Pugno
 - `change-of-state` — Paro, Finio, Aperio, Facio, Iungo
 - `cognition` — Credo, Scio, Cogito, Quaero
 
