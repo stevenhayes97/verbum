@@ -473,6 +473,17 @@
       "conjugation": "1st",
       "english": "to sing, play (an instrument)",
       "tags": ["communication"]
+    },
+    {
+      "id": "verb-pugno",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Pugnō",
+      "infinitive": { "stem": "Pugn", "ending": "āre" },
+      "perfectFirstSingular": "Pugnāvī",
+      "perfectPassiveParticiple": "Pugnātus",
+      "conjugation": "1st",
+      "english": "to fight",
+      "tags": ["governance"]
     }
   ]
 }

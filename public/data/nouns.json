@@ -1570,6 +1570,46 @@
       "gender": "Male",
       "english": "singer",
       "tags": ["people"]
+    },
+    {
+      "id": "noun-regulus",
+      "partOfSpeech": "noun",
+      "nominative": "Rēgulus",
+      "genitive": { "stem": "Rēgul", "ending": "ī" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "prince, petty king",
+      "tags": ["people", "royalty"]
+    },
+    {
+      "id": "noun-firmitas",
+      "partOfSpeech": "noun",
+      "nominative": "Firmitās",
+      "genitive": { "stem": "Firmitāt", "ending": "is" },
+      "declension": 3,
+      "gender": "Female",
+      "english": "firmness, stability",
+      "tags": ["abstract"]
+    },
+    {
+      "id": "noun-osculum",
+      "partOfSpeech": "noun",
+      "nominative": "Ōsculum",
+      "genitive": { "stem": "Ōscul", "ending": "ī" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "kiss",
+      "tags": ["emotion"]
+    },
+    {
+      "id": "noun-arcus",
+      "partOfSpeech": "noun",
+      "nominative": "Arcus",
+      "genitive": { "stem": "Arc", "ending": "ūs" },
+      "declension": 4,
+      "gender": "Male",
+      "english": "bow, arch",
+      "tags": ["military"]
     }
   ]
 }

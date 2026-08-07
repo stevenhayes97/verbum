@@ -458,6 +458,16 @@
       "neuter": "Difficile",
       "declensionLabel": "3rd",
       "english": "difficult"
+    },
+    {
+      "id": "adj-muliebris",
+      "partOfSpeech": "adjective",
+      "adjectiveForm": "triplet",
+      "masculine": "Muliebris",
+      "feminine": "Muliebris",
+      "neuter": "Muliebre",
+      "declensionLabel": "3rd",
+      "english": "womanly, feminine"
     }
   ]
 }
