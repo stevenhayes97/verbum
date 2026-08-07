@@ -117,8 +117,8 @@
     },
     {
       "id": "sentence-20",
-      "latin": "Vir fīliae fēminae dōnum dat.",
-      "english": "The man gives a gift to the woman's daughter.",
+      "latin": "Vir fīliae eius dōnum dat.",
+      "english": "The man gives a gift to her daughter.",
       "difficulty": "intermediate"
     },
     {
@@ -159,14 +159,14 @@
     },
     {
       "id": "sentence-27",
-      "latin": "Sed amīcus fēminae mēnsam petit.",
+      "latin": "Sed amīcus mēnsam fēminae petit.",
       "english": "But the friend makes for the woman's table.",
       "difficulty": "intermediate"
     },
     {
       "id": "sentence-28",
       "latin": "Vir amīcum ā mēnsā mittit.",
-      "english": "The man sends the friend away from the table.",
+      "english": "The man sends the friend from the table.",
       "difficulty": "intermediate"
     },
     {
