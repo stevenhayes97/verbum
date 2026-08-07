@@ -320,7 +320,7 @@ tag list, grouped by semantic type rather than theme. The same "check
 first, reuse if it fits" rule applies before adding a new one:
 
 - `perception` — Video, Audio
-- `communication` — Voco, Laudo, Scribo, Moneo, Respondeo, Dico
+- `communication` — Voco, Laudo, Scribo, Moneo, Respondeo, Dico, Doceo
 - `emotion` — Amo, Terreo, Invideo
 - `possession` — Habeo, Do, Emo, Capio
 - `motion` — Duco, Mitto, Porto, Tollo, Peto
