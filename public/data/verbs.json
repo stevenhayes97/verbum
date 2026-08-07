@@ -396,6 +396,17 @@
       "conjugation": "1st",
       "english": "to save, protect, preserve",
       "tags": ["governance"]
+    },
+    {
+      "id": "verb-doceo",
+      "partOfSpeech": "verb",
+      "presentFirstSingular": "Doceō",
+      "infinitive": { "stem": "Doc", "ending": "ēre" },
+      "perfectFirstSingular": "Docuī",
+      "perfectPassiveParticiple": "Doctus",
+      "conjugation": "2nd",
+      "english": "to teach",
+      "tags": ["communication"]
     }
   ]
 }
