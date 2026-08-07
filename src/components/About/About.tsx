@@ -12,6 +12,8 @@ export function About() {
         Built by Steven Hayes, with Claude Code and Cursor doing a lot of the
         typing.
       </p>
+      <p>
+        This should be supplementary for your Latin learning. 
     </div>
   );
 }
