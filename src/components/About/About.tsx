@@ -14,6 +14,7 @@ export function About() {
       </p>
       <p>
         This should be supplementary for your Latin learning. 
+      </p>
     </div>
   );
 }
