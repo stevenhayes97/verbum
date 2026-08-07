@@ -4,7 +4,7 @@
     {
       "id": "en-la-sentence-1",
       "english": "The servant carries wine to the master.",
-      "latin": "Servus vīnum dominō portat.",
+      "latin": "Servus vīnum ad dominum portat.",
       "difficulty": "easy"
     },
     {
@@ -64,7 +64,7 @@
     {
       "id": "en-la-sentence-11",
       "english": "The fierce commander leads the strong legion of soldiers into the great battle.",
-      "latin": "Imperator ferōx legiōnem mīlitum fortem in proelium magnum dūcit.",
+      "latin": "Imperātor ferōx legiōnem mīlitum fortem in proelium magnum dūcit.",
       "difficulty": "challenging"
     },
     {
@@ -82,13 +82,13 @@
     {
       "id": "en-la-sentence-14",
       "english": "And so the fierce commander gives great gifts to the legion's soldiers.",
-      "latin": "Itaque imperator ferōx mīlitibus legiōnis dōna magna dat.",
+      "latin": "Itaque imperātor ferōx mīlitibus legiōnis dōna magna dat.",
       "difficulty": "challenging"
     },
     {
       "id": "en-la-sentence-15",
       "english": "The fierce commander is praised by the strong legion.",
-      "latin": "Imperator ferōx ā legiōne fortī laudātur.",
+      "latin": "Imperātor ferōx ā legiōne fortī laudātur.",
       "difficulty": "challenging"
     }
   ]

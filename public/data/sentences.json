@@ -39,8 +39,8 @@
     },
     {
       "id": "sentence-7",
-      "latin": "Poēta rēgīnae mūsam pulchram scrībit.",
-      "english": "The poet writes a beautiful song for the queen.",
+      "latin": "Poēta rēgīnae mūsam pulchram dat.",
+      "english": "The poet gives the queen a beautiful song.",
       "difficulty": "intermediate"
     },
     {
@@ -69,8 +69,8 @@
     },
     {
       "id": "sentence-12",
-      "latin": "Mīlitēs fortēs vallum altum gladiīs longīs mūniunt.",
-      "english": "The brave soldiers fortify the high rampart with long swords.",
+      "latin": "Mīlitēs fortēs vallum altum lapidibus magnīs mūniunt.",
+      "english": "The brave soldiers fortify the high rampart with large stones.",
       "difficulty": "challenging"
     },
     {
