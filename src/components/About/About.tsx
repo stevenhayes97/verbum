@@ -4,7 +4,7 @@ export function About() {
   return (
     <div className={styles.panel}>
       <p>
-        Verbum is a Latin vocabulary and grammar trainer — flashcards, sentence
+        Verbum is a Latin vocabulary and grammar trainer - flashcards, sentence
         practice, a vocab list, and declension tables, all in one place for
         working through Latin a bit at a time.
       </p>
