@@ -1510,6 +1510,66 @@
       "gender": "Female",
       "english": "school",
       "tags": ["place"]
+    },
+    {
+      "id": "noun-tergum",
+      "partOfSpeech": "noun",
+      "nominative": "Tergum",
+      "genitive": { "stem": "Terg", "ending": "ī" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "back",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-dorsum",
+      "partOfSpeech": "noun",
+      "nominative": "Dorsum",
+      "genitive": { "stem": "Dors", "ending": "ī" },
+      "declension": 2,
+      "gender": "Neuter",
+      "english": "back, ridge",
+      "tags": ["body"]
+    },
+    {
+      "id": "noun-europa",
+      "partOfSpeech": "noun",
+      "nominative": "Eurōpa",
+      "genitive": { "stem": "Eurōp", "ending": "ae" },
+      "declension": 1,
+      "gender": "Female",
+      "english": "Europe",
+      "tags": ["place"]
+    },
+    {
+      "id": "noun-iuppiter",
+      "partOfSpeech": "noun",
+      "nominative": "Iuppiter",
+      "genitive": { "stem": "Iov", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "Jupiter",
+      "tags": ["religion"]
+    },
+    {
+      "id": "noun-socius",
+      "partOfSpeech": "noun",
+      "nominative": "Socius",
+      "genitive": { "stem": "Soci", "ending": "ī" },
+      "declension": 2,
+      "gender": "Male",
+      "english": "ally, comrade",
+      "tags": ["military", "people"]
+    },
+    {
+      "id": "noun-cantor",
+      "partOfSpeech": "noun",
+      "nominative": "Cantor",
+      "genitive": { "stem": "Cantōr", "ending": "is" },
+      "declension": 3,
+      "gender": "Male",
+      "english": "singer",
+      "tags": ["people"]
     }
   ]
 }
