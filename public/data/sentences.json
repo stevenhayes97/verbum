@@ -195,8 +195,8 @@
     },
     {
       "id": "sentence-33",
-      "latin": "Uxōrī eius ā virō dōnum novum datur.",
-      "english": "A new gift is given to his wife by the husband.",
+      "latin": "Uxōrī ā virō dōnum novum datur.",
+      "english": "A new gift is given to the wife by the husband.",
       "difficulty": "intermediate"
     },
     {
@@ -232,7 +232,7 @@
     {
       "id": "sentence-39",
       "latin": "Uxor deum immortālem prō virō suō fortī quaerit.",
-      "english": "The wife asks the immortal god on behalf of her own brave husband.",
+      "english": "The wife seeks the immortal god on behalf of her own brave husband.",
       "difficulty": "challenging"
     },
     {
