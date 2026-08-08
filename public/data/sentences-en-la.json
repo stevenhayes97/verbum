@@ -2,6 +2,36 @@
   "generated": "2026-08-07",
   "sentences": [
     {
+      "id": "en-la-sentence-warmup-1",
+      "english": "The girl has a book.",
+      "latin": "Puella librum habet.",
+      "difficulty": "warm-up"
+    },
+    {
+      "id": "en-la-sentence-warmup-2",
+      "english": "The friend sees the new book.",
+      "latin": "Amīca novum librum videt.",
+      "difficulty": "warm-up"
+    },
+    {
+      "id": "en-la-sentence-warmup-3",
+      "english": "The girl calls her own friend.",
+      "latin": "Puella amīcam suam vocat.",
+      "difficulty": "warm-up"
+    },
+    {
+      "id": "en-la-sentence-warmup-4",
+      "english": "The friend praises the good girl.",
+      "latin": "Amīca bonam puellam laudat.",
+      "difficulty": "warm-up"
+    },
+    {
+      "id": "en-la-sentence-warmup-5",
+      "english": "The girl loves her own friend.",
+      "latin": "Puella amīcam suam amat.",
+      "difficulty": "warm-up"
+    },
+    {
       "id": "en-la-sentence-1",
       "english": "The servant carries wine to the master.",
       "latin": "Servus vīnum ad dominum portat.",

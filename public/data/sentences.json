@@ -1,244 +1,124 @@
 {
-  "generated": "2026-08-07",
+  "generated": "2026-08-08",
   "sentences": [
     {
       "id": "sentence-1",
-      "latin": "Vir agrum magnum habet.",
-      "english": "The husband has a large field.",
-      "difficulty": "easy"
+      "latin": "Agricola fīlium vocat.",
+      "english": "The farmer calls the son.",
+      "difficulty": "warm-up"
     },
     {
       "id": "sentence-2",
-      "latin": "Vir aquam ad agrum portat.",
-      "english": "The husband carries water to the field.",
-      "difficulty": "easy"
+      "latin": "Fīlius parvum equum videt.",
+      "english": "The son sees a small horse.",
+      "difficulty": "warm-up"
     },
     {
       "id": "sentence-3",
-      "latin": "Canis parvus agrum custōdit.",
-      "english": "The small dog guards the field.",
-      "difficulty": "easy"
+      "latin": "Agricola equum amat.",
+      "english": "The farmer loves the horse.",
+      "difficulty": "warm-up"
     },
     {
       "id": "sentence-4",
-      "latin": "Uxor bonum cibum parat.",
-      "english": "The wife prepares good food.",
-      "difficulty": "easy"
+      "latin": "Fīlius agricolam bonum laudat.",
+      "english": "The son praises the good farmer.",
+      "difficulty": "warm-up"
     },
     {
       "id": "sentence-5",
-      "latin": "Uxor novum vīnum emit.",
-      "english": "The wife buys new wine.",
-      "difficulty": "easy"
+      "latin": "Agricola parvum dōnum portat.",
+      "english": "The farmer carries a small gift.",
+      "difficulty": "warm-up"
     },
     {
       "id": "sentence-6",
-      "latin": "Fīlius parvus canem videt.",
-      "english": "The small son sees the dog.",
+      "latin": "Magister librum habet.",
+      "english": "The teacher has a book.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-7",
-      "latin": "Fīlia avem parvam audit.",
-      "english": "The daughter hears the small bird.",
+      "latin": "Puer novum librum videt.",
+      "english": "The boy sees the new book.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-8",
-      "latin": "Familia multum cibum habet.",
-      "english": "The family has much food.",
+      "latin": "Magister puerum docet.",
+      "english": "The teacher teaches the boy.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-9",
-      "latin": "Vir pulchrum flōrem tollit.",
-      "english": "The husband lifts a beautiful flower.",
+      "latin": "Puer sapientem magistrum audit.",
+      "english": "The boy hears the wise teacher.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-10",
-      "latin": "Uxor pulchrum flōrem videt.",
-      "english": "The wife sees the beautiful flower.",
+      "latin": "Magister puerum bonum laudat.",
+      "english": "The teacher praises the good boy.",
       "difficulty": "easy"
     },
     {
       "id": "sentence-11",
-      "latin": "Uxor virum bonum laudat.",
-      "english": "The wife praises the good husband.",
-      "difficulty": "easy"
+      "latin": "Poēta templum sānctum deī petit.",
+      "english": "The poet seeks the god's sacred temple.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-12",
-      "latin": "Vir fidēlem uxōrem amat.",
-      "english": "The husband loves the faithful wife.",
-      "difficulty": "easy"
+      "latin": "Poēta deō dōnum novum suum dat.",
+      "english": "The poet gives his own new gift to the god.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-13",
-      "latin": "Vir fīlium sapientem docet.",
-      "english": "The husband teaches the wise son.",
-      "difficulty": "easy"
+      "latin": "Templum sānctum ā deō custōdītur.",
+      "english": "The sacred temple is guarded by the god.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-14",
-      "latin": "Vir sōlem videt.",
-      "english": "The husband sees the sun.",
-      "difficulty": "easy"
+      "latin": "Ōrāculum sapiēns poētae fidēlī respondet.",
+      "english": "The wise oracle answers the faithful poet.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-15",
-      "latin": "Uxor stellās videt.",
-      "english": "The wife sees the stars.",
-      "difficulty": "easy"
+      "latin": "Itaque poēta deum sapientem laudat.",
+      "english": "And so the poet praises the wise god.",
+      "difficulty": "intermediate"
     },
     {
       "id": "sentence-16",
-      "latin": "Vir ad urbem novam cum amīcō suō iter facit.",
-      "english": "The husband makes a journey to the new city with his own friend.",
-      "difficulty": "intermediate"
+      "latin": "Rēx fortis urbem magnam et veterem cum mīlitibus ferōcibus servat.",
+      "english": "The brave king protects the great and old city with fierce soldiers.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-17",
-      "latin": "Uxor dē virō suō fortī cōgitat.",
-      "english": "The wife thinks about her own brave husband.",
-      "difficulty": "intermediate"
+      "latin": "Hostis populī ferōx ā duce fidēlī et sapientī dēbellātur.",
+      "english": "The people's fierce enemy is subdued by the loyal and wise general.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-18",
-      "latin": "In templō deō dōnum ab uxōre datur.",
-      "english": "In the temple, a gift is given to the god by the wife.",
-      "difficulty": "intermediate"
+      "latin": "Rēx populum iūstīs lēgibus regit.",
+      "english": "The king rules the people with just laws.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-19",
-      "latin": "Vir per silvam altam equō vehitur.",
-      "english": "The husband is carried through the deep forest on horseback.",
-      "difficulty": "intermediate"
+      "latin": "Rēx magnus ducem hostium fortem capit.",
+      "english": "The great king captures the enemies' brave general.",
+      "difficulty": "challenging"
     },
     {
       "id": "sentence-20",
-      "latin": "Vir montem altum petit.",
-      "english": "The husband makes for the high mountain.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-21",
-      "latin": "Vir magnam urbem novam videt.",
-      "english": "The husband sees the great new city.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-22",
-      "latin": "Vir in urbe dōna multa emit.",
-      "english": "The husband buys many gifts in the city.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-23",
-      "latin": "Vir uxōrī suae librum novum emit.",
-      "english": "The husband buys his own wife a new book.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-24",
-      "latin": "Vir amīcō suō dōnum parvum dat.",
-      "english": "The husband gives his own friend a small gift.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-25",
-      "latin": "Vir magnum perīculum videt.",
-      "english": "The husband sees great danger.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-26",
-      "latin": "Vir deum magnā vōce vocat.",
-      "english": "The husband calls the god with a loud voice.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-27",
-      "latin": "Deus fidēlem virum ā perīculō servat.",
-      "english": "The god saves the faithful husband from danger.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-28",
-      "latin": "Uxor in templō bonum deum laudat.",
-      "english": "The wife praises the good god in the temple.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-29",
-      "latin": "Amīcus uxōrī bona verba scrībit.",
-      "english": "The friend writes good words to the wife.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-30",
-      "latin": "Uxor fēlīx verba amīcī videt.",
-      "english": "The happy wife sees the friend's words.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-31",
-      "latin": "Vir ad familiam suam iter facit.",
-      "english": "The husband makes a journey to his own family.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-32",
-      "latin": "Uxor fēlīx virum suum videt.",
-      "english": "The happy wife sees her own husband.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-33",
-      "latin": "Uxōrī ā virō dōnum novum datur.",
-      "english": "A new gift is given to the wife by the husband.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-34",
-      "latin": "Uxor virum suum fortem laudat.",
-      "english": "The wife praises her own brave husband.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-35",
-      "latin": "Vir et uxor in templō deō dōnum dant.",
-      "english": "The husband and wife give the god a gift in the temple.",
-      "difficulty": "intermediate"
-    },
-    {
-      "id": "sentence-36",
-      "latin": "Mīles fortis ā rēge sapientī ad bellum longum et grave mittitur.",
-      "english": "The brave soldier is sent to the long and serious war by the wise king.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-37",
-      "latin": "Uxor mīlitis magnō et gravī perīculō opprimitur.",
-      "english": "The soldier's wife is overwhelmed by great and serious danger.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-38",
-      "latin": "Oppidum rēgis ā mīlitibus fortibus et fidēlibus custōdītur.",
-      "english": "The king's town is guarded by the brave and faithful soldiers.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-39",
-      "latin": "Uxor deum immortālem prō virō suō fortī quaerit.",
-      "english": "The wife seeks the immortal god on behalf of her own brave husband.",
-      "difficulty": "challenging"
-    },
-    {
-      "id": "sentence-40",
-      "latin": "Itaque uxor fēlīx virum suum fortem et fidēlem videt.",
-      "english": "And so the happy wife sees her own brave and faithful husband.",
+      "latin": "Itaque rēx fortis et sapiēns ab omnibus laudātur.",
+      "english": "And so the brave and wise king is praised by everyone.",
       "difficulty": "challenging"
     }
   ]

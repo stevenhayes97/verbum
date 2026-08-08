@@ -7,6 +7,7 @@ interface SentenceFiltersProps {
 }
 
 const TIERS: { id: Difficulty; label: string }[] = [
+  { id: 'warm-up', label: 'Warm Up' },
   { id: 'easy', label: 'Easy' },
   { id: 'intermediate', label: 'Intermediate' },
   { id: 'challenging', label: 'Challenging' },
