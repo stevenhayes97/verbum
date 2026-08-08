@@ -89,7 +89,7 @@ export interface CategoryFile {
   cards: Card[];
 }
 
-export type Difficulty = 'easy' | 'intermediate' | 'challenging';
+export type Difficulty = 'warm-up' | 'easy' | 'intermediate' | 'challenging';
 
 // Which way a sentence card runs: 'la-en' shows the Latin and reveals the
 // English (comprehension), 'en-la' shows the English and reveals the Latin

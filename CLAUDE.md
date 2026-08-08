@@ -61,7 +61,8 @@ stay fixed. Everything in this section — these guardrails, the difficulty
 tiers, and the paragraph-coherence rules — applies to **both** sentence
 files; nothing below changes with the direction of the batch:
 
-- Unless a specific count is requested, generate 15 sentences per batch.
+- Unless a specific count is requested, generate 20 sentences per batch
+  (see "Difficulty tiers" below for the per-tier split).
 - Latin sentences carry macrons, same as the vocab files — see the
   "Macrons" rules in `README.md`. Mark the case endings too, since that's
   where vowel length does the most grammatical work (`puellā` ablative vs.
@@ -118,11 +119,23 @@ rather than word choice.
 
 ### Difficulty tiers
 
-Every sentence gets a `difficulty: "easy" | "intermediate" | "challenging"`
-field. All three tiers stay within the guardrails above (present tense
-only, 1st–3rd declension, no adverbs) — difficulty comes from vocabulary
-and structure, not from unlocking new grammar early:
+Every sentence gets a
+`difficulty: "warm-up" | "easy" | "intermediate" | "challenging"` field.
+All four tiers stay within the guardrails above (present tense only,
+1st–3rd declension, no adverbs) — difficulty comes from vocabulary and
+structure, not from unlocking new grammar early. **warm-up** is the one
+exception: it layers extra restrictions *on top of* the shared guardrails
+rather than just picking simpler vocab, since it's meant to sit before
+someone can handle even the **easy** tier:
 
+- **warm-up** — shortest (roughly 3–5 words), one clause, straight
+  SVO/SOV order. On top of the shared guardrails, this tier only: uses
+  **1st and 2nd declension nouns** (no 3rd-declension nouns at all, even
+  common ones like `canis` or `mīles`); uses only **singular, active-voice**
+  verbs (no plural subjects, no passive); and allows **at most one
+  adjective per sentence** (zero is fine too). Keep the case use to
+  nominative and accusative — no dative indirect objects, no genitives,
+  same as **easy** below.
 - **easy** — short (roughly 4–6 words), common/high-frequency vocab, one
   clause, simple SVO/SOV order, mostly active voice.
 - **intermediate** — slightly longer (roughly 6–9 words), a mix of active
@@ -140,8 +153,9 @@ and structure, not from unlocking new grammar early:
   precisely because this tier asks for ablative agents, so check the
   animacy of every agent before using `a/ab`.
 
-Unless told otherwise, split a batch evenly across the three tiers (e.g.
-a default batch of 15 = 5 easy / 5 intermediate / 5 challenging).
+Unless told otherwise, split a batch evenly across the four tiers (e.g.
+a default batch of 20 = 5 warm-up / 5 easy / 5 intermediate / 5
+challenging).
 
 ### Paragraph coherence
 
@@ -152,12 +166,12 @@ written to be read in file order: the first sentence opens the scene,
 the last one closes it. The app presents sentences in file order, so
 narrative order in `sentences.json` is the order the user practices in.
 
-The three paragraphs must be **unrelated to each other** — three
-separate mini-stories with their own casts and settings, not one
-narrative split across the tiers and not three chapters of the same
-story. A default batch of 15 is therefore three 5-sentence stories:
-one easy, one intermediate, one challenging, with nothing carrying over
-between them.
+The four paragraphs must be **unrelated to each other** — four separate
+mini-stories with their own casts and settings, not one narrative split
+across the tiers and not four chapters of the same story. A default
+batch of 20 is therefore four 5-sentence stories: one warm-up, one easy,
+one intermediate, one challenging, with nothing carrying over between
+them.
 
 To let the prose actually flow, two categories of cohesion vocabulary
 are allowed even when they aren't in the vocab files:

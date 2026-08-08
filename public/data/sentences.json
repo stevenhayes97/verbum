@@ -2,6 +2,36 @@
   "generated": "2026-08-07",
   "sentences": [
     {
+      "id": "sentence-warmup-1",
+      "latin": "Puer avum videt.",
+      "english": "The boy sees the grandfather.",
+      "difficulty": "warm-up"
+    },
+    {
+      "id": "sentence-warmup-2",
+      "latin": "Avus parvum equum habet.",
+      "english": "The grandfather has a small horse.",
+      "difficulty": "warm-up"
+    },
+    {
+      "id": "sentence-warmup-3",
+      "latin": "Puer equum amat.",
+      "english": "The boy loves the horse.",
+      "difficulty": "warm-up"
+    },
+    {
+      "id": "sentence-warmup-4",
+      "latin": "Avus puerum vocat.",
+      "english": "The grandfather calls the boy.",
+      "difficulty": "warm-up"
+    },
+    {
+      "id": "sentence-warmup-5",
+      "latin": "Puer bonum avum laudat.",
+      "english": "The boy praises the good grandfather.",
+      "difficulty": "warm-up"
+    },
+    {
       "id": "sentence-1",
       "latin": "Vir agrum magnum habet.",
       "english": "The husband has a large field.",
