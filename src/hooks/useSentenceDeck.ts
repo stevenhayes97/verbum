@@ -28,7 +28,7 @@ export interface SentenceDeck {
 // than eagerly on app load.
 export function useSentenceDeck(dataUrl: string, active: boolean): SentenceDeck {
   const [rawSentences, setRawSentences] = useState<Sentence[]>([]);
-  const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>(['easy']);
+  const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>(['warm-up']);
   const [sentences, setSentences] = useState<Sentence[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(true);

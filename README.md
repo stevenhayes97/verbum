@@ -382,7 +382,7 @@ not on app load.
 Each sentence carries a `difficulty` of `warm-up`, `easy`, `intermediate`,
 or `challenging`. A pill filter above the card lets you pick which tier(s)
 are in play — Warm Up, Easy, Intermediate, Challenging, or All — and
-multiple tiers can be selected at once; it defaults to Easy only. The
+multiple tiers can be selected at once; it defaults to Warm Up only. The
 filter works the same way in both directions. See CLAUDE.md's "Sentence
 generation" section for the rubric behind each tier — `warm-up` sits below
 `easy` and layers on extra restrictions (1st/2nd declension nouns only,
