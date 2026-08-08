@@ -15,8 +15,8 @@
     },
     {
       "id": "en-la-sentence-warmup-3",
-      "english": "The girl calls her friend.",
-      "latin": "Puella amīcam vocat.",
+      "english": "The girl calls her own friend.",
+      "latin": "Puella amīcam suam vocat.",
       "difficulty": "warm-up"
     },
     {
@@ -27,8 +27,8 @@
     },
     {
       "id": "en-la-sentence-warmup-5",
-      "english": "The girl loves her friend.",
-      "latin": "Puella amīcam amat.",
+      "english": "The girl loves her own friend.",
+      "latin": "Puella amīcam suam amat.",
       "difficulty": "warm-up"
     },
     {
